@@ -325,7 +325,7 @@ UHDM::any* CompileHelper::compileVariable(
                             fC->EndColumn(declarationId));
     } else {
       ts = compileTypespec(component, fC, declarationId, compileDesign, reduce,
-                         pstmt, instance, true);
+                           pstmt, instance, true);
     }
   }
   bool isSigned = true;
