@@ -804,11 +804,11 @@ gen_scope                                              4
 gen_scope_array                                        4
 hier_path                                             15
 import_typespec                                        4
-int_typespec                                          71
-int_var                                                6
+int_typespec                                          70
+int_var                                                5
 integer_typespec                                      14
 io_decl                                               11
-logic_net                                              3
+logic_net                                              2
 logic_typespec                                        48
 logic_var                                              3
 module_inst                                           16
@@ -820,14 +820,13 @@ parameter                                             41
 range                                                 66
 ref_module                                             2
 ref_obj                                               29
-ref_typespec                                         247
-ref_var                                                1
+ref_typespec                                         245
 string_typespec                                       44
 struct_typespec                                       16
 tagged_pattern                                        44
 task                                                   9
 typespec_member                                       32
-unsupported_typespec                                   2
+unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -850,11 +849,11 @@ gen_scope                                              6
 gen_scope_array                                        6
 hier_path                                             15
 import_typespec                                        4
-int_typespec                                          71
-int_var                                                6
+int_typespec                                          70
+int_var                                                5
 integer_typespec                                      14
 io_decl                                               22
-logic_net                                              3
+logic_net                                              2
 logic_typespec                                        48
 logic_var                                              3
 module_inst                                           16
@@ -866,14 +865,13 @@ parameter                                             41
 range                                                 66
 ref_module                                             2
 ref_obj                                               29
-ref_typespec                                         262
-ref_var                                                1
+ref_typespec                                         260
 string_typespec                                       44
 struct_typespec                                       16
 tagged_pattern                                        44
 task                                                  18
 typespec_member                                       32
-unsupported_typespec                                   2
+unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ParamArraySelect/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ParamArraySelect/slpp_all/checker/surelog.chk.html ...
@@ -2505,13 +2503,6 @@ design: (work@top)
     |vpiName:aaa
     |vpiFullName:work@top.aaa
     |vpiNetType:36
-  |vpiNet:
-  \_logic_net: (work@top.k), line:61:21, endln:61:22
-    |vpiParent:
-    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/ParamArraySelect/dut.sv, line:51:1, endln:71:10
-    |vpiName:k
-    |vpiFullName:work@top.k
-    |vpiNetType:1
   |vpiRefModule:
   \_ref_module: work@otp_ctrl_lci (u_otp_ctrl_lci), line:56:5, endln:56:19
     |vpiParent:
@@ -2544,9 +2535,10 @@ design: (work@top)
           \_int_var: (work@top.k), line:61:14, endln:61:15
           |vpiFullName:work@top.k
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:61:14, endln:61:15
         |vpiName:k
         |vpiFullName:work@top.k
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:61:21, endln:61:32
       |vpiParent:
@@ -2559,7 +2551,7 @@ design: (work@top)
         |vpiName:k
         |vpiFullName:work@top.k
         |vpiActual:
-        \_logic_net: (work@top.k), line:61:21, endln:61:22
+        \_int_var: (work@top.k), line:61:14, endln:61:15
       |vpiOperand:
       \_constant: , line:61:25, endln:61:32
         |vpiParent:
@@ -2587,7 +2579,7 @@ design: (work@top)
         |vpiName:k
         |vpiFullName:work@top.k
         |vpiActual:
-        \_logic_net: (work@top.k), line:61:21, endln:61:22
+        \_int_var: (work@top.k), line:61:14, endln:61:15
     |vpiStmt:
     \_named_begin: (work@top.gen_part_sel)
       |vpiParent:
@@ -3921,6 +3913,7 @@ design: (work@top)
   |vpiParent:
   \_parameter: (work@top.OtpByteAddrWidth), line:58:17, endln:58:33
   |vpiSigned:1
+\_int_typespec: , line:61:14, endln:61:15
 \_int_typespec: , line:6:13, endln:6:16
   |vpiParent:
   \_ref_typespec: (work@top)
@@ -5428,7 +5421,6 @@ design: (work@top)
   |vpiFullName:work@top.gen_part_sel[1].DigestOffset
   |vpiActual:
   \_logic_typespec: , line:65:16, endln:65:44
-\_int_typespec: 
 \_int_typespec: 
 ===================
 [  FATAL] : 0

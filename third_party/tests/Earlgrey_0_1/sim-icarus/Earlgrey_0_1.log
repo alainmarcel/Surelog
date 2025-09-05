@@ -6191,12 +6191,12 @@ import_typespec                                      115
 include_file_info                                    104
 indexed_part_select                                  948
 initial                                                3
-int_typespec                                       22917
-int_var                                              510
+int_typespec                                       22683
+int_var                                              276
 integer_typespec                                     480
 integer_var                                            1
 io_decl                                              253
-logic_net                                          27147
+logic_net                                          27103
 logic_typespec                                     67336
 logic_var                                          13044
 module_inst                                         6189
@@ -6214,8 +6214,7 @@ property_spec                                          2
 range                                              47840
 ref_module                                          1917
 ref_obj                                           155497
-ref_typespec                                      128635
-ref_var                                               80
+ref_typespec                                      128321
 return_stmt                                          111
 string_typespec                                     3531
 struct_net                                           184
@@ -6225,7 +6224,7 @@ sys_func_call                                        321
 tagged_pattern                                      2403
 task                                                   9
 typespec_member                                     4457
-unsupported_typespec                                  94
+unsupported_typespec                                  14
 var_select                                          2153
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
@@ -6266,12 +6265,12 @@ import_typespec                                      115
 include_file_info                                    104
 indexed_part_select                                 2911
 initial                                               45
-int_typespec                                       22917
-int_var                                             1745
+int_typespec                                       22683
+int_var                                             1511
 integer_typespec                                     480
 integer_var                                            1
 io_decl                                             2275
-logic_net                                          27147
+logic_net                                          27103
 logic_typespec                                     67336
 logic_var                                          23278
 module_inst                                         6953
@@ -6289,8 +6288,7 @@ property_spec                                          4
 range                                              48319
 ref_module                                          1917
 ref_obj                                           388976
-ref_typespec                                      206981
-ref_var                                               80
+ref_typespec                                      206667
 return_stmt                                         1419
 string_typespec                                     3821
 struct_net                                           184
@@ -6300,7 +6298,7 @@ sys_func_call                                        450
 tagged_pattern                                      2693
 task                                                  18
 typespec_member                                     4457
-unsupported_typespec                                  94
+unsupported_typespec                                  14
 var_select                                          8367
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Earlgrey_0_1/slpp_all/surelog.uhdm ...

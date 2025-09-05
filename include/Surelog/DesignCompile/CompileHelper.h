@@ -274,7 +274,7 @@ class CompileHelper final {
   UHDM::any* compileVariable(DesignComponent* component, const FileContent* fC,
                              NodeId nodeId, CompileDesign* compileDesign,
                              Reduce reduce, UHDM::any* pstmt,
-                             ValuedComponentI* instance, bool muteErrors);
+                             ValuedComponentI* instance, bool muteErrors, bool implicitInt = false);
 
   UHDM::typespec* compileTypespec(DesignComponent* component,
                                   const FileContent* fC, NodeId nodeId,

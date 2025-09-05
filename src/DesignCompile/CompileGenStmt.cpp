@@ -299,7 +299,7 @@ UHDM::VectorOfgen_stmt* CompileHelper::compileGenStmt(
     fC->populateCoreMembers(varInit, varInit, assign_stmt);
     if (variables* varb = (variables*)compileVariable(
             component, fC, Var, compileDesign, Reduce::No, assign_stmt, nullptr,
-            false)) {
+            /*Mute errors*/ false, /*Implicit int*/ true)) {
       assign_stmt->Lhs(varb);
       varb->VpiParent(assign_stmt);
       varb->VpiName(fC->SymName(Var));

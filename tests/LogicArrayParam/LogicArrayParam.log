@@ -263,9 +263,8 @@ gen_if                                                 1
 gen_scope                                             56
 gen_scope_array                                       56
 import_typespec                                        1
-int_typespec                                          80
-int_var                                                2
-logic_net                                              1
+int_typespec                                          79
+int_var                                                1
 logic_typespec                                         7
 module_inst                                           56
 named_begin                                            1
@@ -276,9 +275,7 @@ parameter                                             83
 range                                                 55
 ref_module                                             9
 ref_obj                                               14
-ref_typespec                                         166
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                         164
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -293,9 +290,8 @@ gen_if                                                 1
 gen_scope                                             84
 gen_scope_array                                       84
 import_typespec                                        1
-int_typespec                                          80
-int_var                                                2
-logic_net                                              1
+int_typespec                                          79
+int_var                                                1
 logic_typespec                                         7
 module_inst                                           64
 named_begin                                            1
@@ -306,9 +302,7 @@ parameter                                             83
 range                                                 55
 ref_module                                             9
 ref_obj                                               14
-ref_typespec                                         226
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                         224
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/LogicArrayParam/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/LogicArrayParam/slpp_all/checker/surelog.chk.html ...
@@ -734,13 +728,6 @@ design: (work@alert_handler)
   |vpiTypedef:
   \_import_typespec: (alert_pkg), line:21:10, endln:21:22
   |vpiDefName:work@alert_handler
-  |vpiNet:
-  \_logic_net: (work@alert_handler.k), line:25:23, endln:25:24
-    |vpiParent:
-    \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-    |vpiName:k
-    |vpiFullName:work@alert_handler.k
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -765,9 +752,10 @@ design: (work@alert_handler)
           \_int_var: (work@alert_handler.k), line:25:15, endln:25:16
           |vpiFullName:work@alert_handler.k
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:25:15, endln:25:16
         |vpiName:k
         |vpiFullName:work@alert_handler.k
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:25:23, endln:25:34
       |vpiParent:
@@ -780,7 +768,7 @@ design: (work@alert_handler)
         |vpiName:k
         |vpiFullName:work@alert_handler.k
         |vpiActual:
-        \_logic_net: (work@alert_handler.k), line:25:23, endln:25:24
+        \_int_var: (work@alert_handler.k), line:25:15, endln:25:16
       |vpiOperand:
       \_constant: , line:25:27, endln:25:34
         |vpiParent:
@@ -808,7 +796,7 @@ design: (work@alert_handler)
         |vpiName:k
         |vpiFullName:work@alert_handler.k
         |vpiActual:
-        \_logic_net: (work@alert_handler.k), line:25:23, endln:25:24
+        \_int_var: (work@alert_handler.k), line:25:15, endln:25:16
     |vpiStmt:
     \_named_begin: (work@alert_handler.gen_alerts)
       |vpiParent:
@@ -2582,6 +2570,7 @@ design: (work@alert_handler)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:25:15, endln:25:16
 \_int_typespec: , line:12:14, endln:12:26
   |vpiParent:
   \_ref_typespec: (work@alert_handler)
@@ -3956,7 +3945,6 @@ design: (work@alert_handler)
   |vpiFullName:work@alert_handler.gen_alerts[19].debug
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
-\_int_typespec: 
 \_int_typespec: 
 ===================
 [  FATAL] : 0

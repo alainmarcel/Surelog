@@ -3482,6 +3482,22 @@ void UhdmWriter::lateBinding(Serializer& s, DesignComponent* mod, scope* m) {
             }
           }
         }
+      } else if (parent->UhdmType() == uhdmgen_for) {
+        gen_for* for_stmt = (gen_for*)parent;
+        if (VectorOfany* inits = for_stmt->VpiForInitStmts()) {
+          for (auto init : *inits) {
+            if (init->UhdmType() == uhdmassignment) {
+              assignment* as = (assignment*)init;
+              const expr* lhs = as->Lhs();
+              if (lhs && lhs->VpiName() == name) {
+                if (lhs->UhdmType() == uhdmref_var) continue;
+                if (lhs->UhdmType() == uhdmref_obj) continue;
+                ref->Actual_group((expr*)lhs);
+                break;
+              }
+            }
+          }
+        }
       } else if (parent->UhdmType() == uhdmbegin) {
         begin* b = (begin*)parent;
         if (auto vars = b->Variables()) {

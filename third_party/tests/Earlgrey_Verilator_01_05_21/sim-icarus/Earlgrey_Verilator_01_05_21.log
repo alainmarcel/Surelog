@@ -14366,14 +14366,14 @@ import_typespec                                      282
 include_file_info                                    184
 indexed_part_select                                 1916
 initial                                               30
-int_typespec                                       68304
-int_var                                             1278
+int_typespec                                       67658
+int_var                                              632
 integer_typespec                                    1778
 integer_var                                            8
 interface_inst                                        10
 interface_typespec                                     1
 io_decl                                              433
-logic_net                                          68734
+logic_net                                          68627
 logic_typespec                                    205427
 logic_var                                          30672
 method_func_call                                       1
@@ -14391,8 +14391,8 @@ port                                               91788
 range                                             156371
 ref_module                                          5040
 ref_obj                                           332655
-ref_typespec                                      410165
-ref_var                                              174
+ref_typespec                                      409347
+ref_var                                                2
 return_stmt                                          429
 string_typespec                                    26445
 string_var                                            19
@@ -14403,7 +14403,7 @@ sys_func_call                                        493
 tagged_pattern                                     22865
 task                                                   9
 typespec_member                                    41235
-unsupported_typespec                                 198
+unsupported_typespec                                  26
 var_select                                          3914
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
@@ -14451,14 +14451,14 @@ import_typespec                                      282
 include_file_info                                    184
 indexed_part_select                                13347
 initial                                              634
-int_typespec                                       68316
-int_var                                             9912
+int_typespec                                       67670
+int_var                                             9266
 integer_typespec                                    1778
 integer_var                                           12
 interface_inst                                        10
 interface_typespec                                     1
 io_decl                                            19631
-logic_net                                          68734
+logic_net                                          68627
 logic_typespec                                    205427
 logic_var                                          81286
 method_func_call                                       1
@@ -14476,8 +14476,8 @@ port                                              224742
 range                                             159527
 ref_module                                          5040
 ref_obj                                          1087949
-ref_typespec                                      753216
-ref_var                                              176
+ref_typespec                                      752398
+ref_var                                                4
 return_stmt                                        15514
 string_typespec                                    26835
 string_var                                            36
@@ -14488,7 +14488,7 @@ sys_func_call                                       2403
 tagged_pattern                                     23255
 task                                                  18
 typespec_member                                    41235
-unsupported_typespec                                 198
+unsupported_typespec                                  26
 var_select                                         16611
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Earlgrey_Verilator_01_05_21/slpp_all/surelog.uhdm ...

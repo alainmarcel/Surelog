@@ -692,10 +692,10 @@ gen_for                                                1
 gen_region                                             1
 gen_scope                                             44
 gen_scope_array                                       44
-int_typespec                                          53
-int_var                                                6
+int_typespec                                          52
+int_var                                                5
 io_decl                                               11
-logic_net                                              5
+logic_net                                              4
 logic_typespec                                         6
 logic_var                                              1
 module_inst                                           23
@@ -707,10 +707,8 @@ port                                                   4
 range                                                 12
 ref_module                                            15
 ref_obj                                               14
-ref_typespec                                          70
-ref_var                                                1
+ref_typespec                                          68
 task                                                   9
-unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/GenerateModule/slpp_unit/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/GenerateModule/slpp_unit/checker/surelog.chk.html ...
@@ -1305,13 +1303,6 @@ design: (work@small_test)
     \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenerateModule/top.v, line:21:1, endln:26:10
     |vpiName:b
     |vpiFullName:work@top.b
-  |vpiNet:
-  \_logic_net: (work@top.i), line:23:20, endln:23:21
-    |vpiParent:
-    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenerateModule/top.v, line:21:1, endln:26:10
-    |vpiName:i
-    |vpiFullName:work@top.i
-    |vpiNetType:1
   |vpiPort:
   \_port: (a), line:21:24, endln:21:25
     |vpiParent:
@@ -1378,9 +1369,10 @@ design: (work@small_test)
           \_int_var: (work@top.i), line:23:15, endln:23:16
           |vpiFullName:work@top.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:23:15, endln:23:16
         |vpiName:i
         |vpiFullName:work@top.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:23:20, endln:23:23
       |vpiParent:
@@ -1393,7 +1385,7 @@ design: (work@small_test)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:23:20, endln:23:21
+        \_int_var: (work@top.i), line:23:15, endln:23:16
       |vpiOperand:
       \_constant: , line:23:22, endln:23:23
         |vpiParent:
@@ -1414,7 +1406,7 @@ design: (work@small_test)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:23:20, endln:23:21
+        \_int_var: (work@top.i), line:23:15, endln:23:16
     |vpiStmt:
     \_begin: (work@top)
       |vpiParent:
@@ -2391,6 +2383,7 @@ design: (work@small_test)
     |vpiRightRange:
     \_constant: 
       |INT:0
+\_int_typespec: , line:23:15, endln:23:16
 \_class_typespec: 
   |vpiClassDefn:
   \_class_defn: (work@mailbox), file:${SURELOG_DIR}/tests/GenerateModule/builtin.sv, line:1:3, endln:27:11
@@ -2604,7 +2597,6 @@ design: (work@small_test)
       |vpiParent:
       \_range: 
       |INT:0
-\_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 

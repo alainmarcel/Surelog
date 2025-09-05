@@ -482,10 +482,9 @@ gen_if                                                 1
 gen_scope                                             34
 gen_scope_array                                       34
 import_typespec                                        1
-int_typespec                                          73
-int_var                                                6
+int_typespec                                          72
+int_var                                                5
 io_decl                                               11
-logic_net                                              1
 logic_var                                              1
 module_inst                                            7
 named_begin                                            2
@@ -495,10 +494,8 @@ param_assign                                          20
 parameter                                             34
 range                                                 16
 ref_obj                                               22
-ref_typespec                                         103
-ref_var                                                1
+ref_typespec                                         101
 task                                                   9
-unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -520,10 +517,9 @@ gen_if                                                 1
 gen_scope                                             51
 gen_scope_array                                       51
 import_typespec                                        1
-int_typespec                                          73
-int_var                                                6
+int_typespec                                          72
+int_var                                                5
 io_decl                                               22
-logic_net                                              1
 logic_var                                              1
 module_inst                                            7
 named_begin                                            2
@@ -533,10 +529,8 @@ param_assign                                          20
 parameter                                             34
 range                                                 16
 ref_obj                                               29
-ref_typespec                                         118
-ref_var                                                1
+ref_typespec                                         116
 task                                                  18
-unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ComplexBitSelect/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ComplexBitSelect/slpp_all/checker/surelog.chk.html ...
@@ -1632,13 +1626,6 @@ design: (work@flash_ctrl_info_cfg)
   |vpiTypedef:
   \_import_typespec: (flash_ctrl_pkg), line:12:35, endln:12:52
   |vpiDefName:work@flash_ctrl_info_cfg
-  |vpiNet:
-  \_logic_net: (work@flash_ctrl_info_cfg.i), line:16:21, endln:16:22
-    |vpiParent:
-    \_module_inst: work@flash_ctrl_info_cfg (work@flash_ctrl_info_cfg), file:${SURELOG_DIR}/tests/ComplexBitSelect/dut.sv, line:12:1, endln:24:10
-    |vpiName:i
-    |vpiFullName:work@flash_ctrl_info_cfg.i
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -1663,9 +1650,10 @@ design: (work@flash_ctrl_info_cfg)
           \_int_var: (work@flash_ctrl_info_cfg.i), line:16:14, endln:16:15
           |vpiFullName:work@flash_ctrl_info_cfg.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:16:14, endln:16:15
         |vpiName:i
         |vpiFullName:work@flash_ctrl_info_cfg.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:16:21, endln:16:37
       |vpiParent:
@@ -1678,7 +1666,7 @@ design: (work@flash_ctrl_info_cfg)
         |vpiName:i
         |vpiFullName:work@flash_ctrl_info_cfg.i
         |vpiActual:
-        \_logic_net: (work@flash_ctrl_info_cfg.i), line:16:21, endln:16:22
+        \_int_var: (work@flash_ctrl_info_cfg.i), line:16:14, endln:16:15
       |vpiOperand:
       \_constant: , line:16:25, endln:16:37
         |vpiParent:
@@ -1706,7 +1694,7 @@ design: (work@flash_ctrl_info_cfg)
         |vpiName:i
         |vpiFullName:work@flash_ctrl_info_cfg.i
         |vpiActual:
-        \_logic_net: (work@flash_ctrl_info_cfg.i), line:16:21, endln:16:22
+        \_int_var: (work@flash_ctrl_info_cfg.i), line:16:14, endln:16:15
     |vpiStmt:
     \_named_begin: (work@flash_ctrl_info_cfg.gen_info_priv)
       |vpiParent:
@@ -2743,6 +2731,7 @@ design: (work@flash_ctrl_info_cfg)
   |vpiParent:
   \_parameter: (work@flash_ctrl_info_cfg.InfoSel), line:14:17, endln:14:24
   |vpiSigned:1
+\_int_typespec: , line:16:14, endln:16:15
 \_int_typespec: , line:8:13, endln:8:16
   |vpiParent:
   \_ref_typespec: (work@flash_ctrl_info_cfg)
@@ -3118,7 +3107,6 @@ design: (work@flash_ctrl_info_cfg)
   |vpiParent:
   \_ref_typespec: (work@flash_ctrl_info_cfg.InfoSel)
   |vpiSigned:1
-\_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 

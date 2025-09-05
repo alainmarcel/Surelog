@@ -173,9 +173,9 @@ gen_for                                                1
 gen_scope                                              2
 gen_scope_array                                        2
 hier_path                                              7
-int_typespec                                           4
-int_var                                                2
-logic_net                                              2
+int_typespec                                           3
+int_var                                                1
+logic_net                                              1
 module_inst                                            7
 named_begin                                            1
 operation                                              4
@@ -184,12 +184,10 @@ packed_array_var                                       1
 parameter                                              1
 range                                                  6
 ref_obj                                               12
-ref_typespec                                           9
-ref_var                                                1
+ref_typespec                                           7
 struct_typespec                                        1
 struct_var                                             1
 typespec_member                                        1
-unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -202,9 +200,9 @@ gen_for                                                1
 gen_scope                                              3
 gen_scope_array                                        3
 hier_path                                              9
-int_typespec                                           4
-int_var                                                2
-logic_net                                              2
+int_typespec                                           3
+int_var                                                1
+logic_net                                              1
 module_inst                                            7
 named_begin                                            1
 operation                                              4
@@ -213,12 +211,10 @@ packed_array_var                                       1
 parameter                                              1
 range                                                  6
 ref_obj                                               15
-ref_typespec                                          10
-ref_var                                                1
+ref_typespec                                           8
 struct_typespec                                        1
 struct_var                                             1
 typespec_member                                        1
-unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [ERR:UH0725] ${SURELOG_DIR}/tests/HierPathLhs/dut.sv:3:12: Unresolved hierarchical reference "hw2reg.alert_cause[k].d".
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/HierPathLhs/slpp_all/surelog.uhdm ...
@@ -235,13 +231,6 @@ design: (work@alert_handler_reg_wrap)
   \_design: (work@alert_handler_reg_wrap)
   |vpiFullName:work@alert_handler_reg_wrap
   |vpiDefName:work@alert_handler_reg_wrap
-  |vpiNet:
-  \_logic_net: (work@alert_handler_reg_wrap.k), line:2:22, endln:2:23
-    |vpiParent:
-    \_module_inst: work@alert_handler_reg_wrap (work@alert_handler_reg_wrap), file:${SURELOG_DIR}/tests/HierPathLhs/dut.sv, line:1:1, endln:5:10
-    |vpiName:k
-    |vpiFullName:work@alert_handler_reg_wrap.k
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -266,9 +255,10 @@ design: (work@alert_handler_reg_wrap)
           \_int_var: (work@alert_handler_reg_wrap.k), line:2:15, endln:2:16
           |vpiFullName:work@alert_handler_reg_wrap.k
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:2:15, endln:2:16
         |vpiName:k
         |vpiFullName:work@alert_handler_reg_wrap.k
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:2:22, endln:2:27
       |vpiParent:
@@ -281,7 +271,7 @@ design: (work@alert_handler_reg_wrap)
         |vpiName:k
         |vpiFullName:work@alert_handler_reg_wrap.k
         |vpiActual:
-        \_logic_net: (work@alert_handler_reg_wrap.k), line:2:22, endln:2:23
+        \_int_var: (work@alert_handler_reg_wrap.k), line:2:15, endln:2:16
       |vpiOperand:
       \_constant: , line:2:26, endln:2:27
         |vpiParent:
@@ -302,7 +292,7 @@ design: (work@alert_handler_reg_wrap)
         |vpiName:k
         |vpiFullName:work@alert_handler_reg_wrap.k
         |vpiActual:
-        \_logic_net: (work@alert_handler_reg_wrap.k), line:2:22, endln:2:23
+        \_int_var: (work@alert_handler_reg_wrap.k), line:2:15, endln:2:16
     |vpiStmt:
     \_named_begin: (work@alert_handler_reg_wrap.gen_alert_cause)
       |vpiParent:
@@ -648,6 +638,7 @@ design: (work@alert_handler_reg_wrap)
           |vpiConstType:9
       |vpiName:a[0][0].x[0]
 \_weaklyReferenced:
+\_int_typespec: , line:2:15, endln:2:16
 \_hier_path: (alert_cause[k].d), line:3:19, endln:3:30
   |vpiActual:
   \_bit_select: (alert_cause[k]), line:3:19, endln:3:30
@@ -753,7 +744,6 @@ design: (work@alert_handler_reg_wrap)
   |vpiFullName:work@alert_handler_reg_wrap.gen_alert_cause[0]
   |vpiGenScope:
   \_gen_scope: (work@alert_handler_reg_wrap.gen_alert_cause[0]), line:2:34, endln:4:6
-\_int_typespec: 
 \_int_typespec: 
 \_cont_assign: , line:15:10, endln:15:26
   |vpiParent:

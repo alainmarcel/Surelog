@@ -94,16 +94,13 @@ design                                                 1
 gen_for                                                1
 gen_scope                                              6
 gen_scope_array                                        6
-int_typespec                                           5
-int_var                                                2
-logic_net                                              1
+int_typespec                                           4
+int_var                                                1
 module_inst                                            4
 operation                                              6
 parameter                                              3
 ref_obj                                               10
-ref_typespec                                           6
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                           4
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -116,16 +113,13 @@ design                                                 1
 gen_for                                                1
 gen_scope                                              9
 gen_scope_array                                        9
-int_typespec                                           5
-int_var                                                2
-logic_net                                              1
+int_typespec                                           4
+int_var                                                1
 module_inst                                            4
 operation                                              6
 parameter                                              3
 ref_obj                                               13
-ref_typespec                                           9
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                           7
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/GenFor/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/GenFor/slpp_all/checker/surelog.chk.html ...
@@ -141,13 +135,6 @@ design: (work@top)
   \_design: (work@top)
   |vpiFullName:work@top
   |vpiDefName:work@top
-  |vpiNet:
-  \_logic_net: (work@top.i), line:4:16, endln:4:17
-    |vpiParent:
-    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenFor/dut.sv, line:2:1, endln:8:10
-    |vpiName:i
-    |vpiFullName:work@top.i
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -172,9 +159,10 @@ design: (work@top)
           \_int_var: (work@top.i), line:4:9, endln:4:10
           |vpiFullName:work@top.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:4:9, endln:4:10
         |vpiName:i
         |vpiFullName:work@top.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:4:16, endln:4:21
       |vpiParent:
@@ -187,7 +175,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:4:9, endln:4:10
       |vpiOperand:
       \_constant: , line:4:20, endln:4:21
         |vpiParent:
@@ -213,7 +201,7 @@ design: (work@top)
           |vpiName:i
           |vpiFullName:work@top.i
           |vpiActual:
-          \_logic_net: (work@top.i), line:4:16, endln:4:17
+          \_int_var: (work@top.i), line:4:9, endln:4:10
         |vpiOperand:
         \_constant: , line:4:32, endln:4:33
           |vpiParent:
@@ -229,7 +217,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:4:9, endln:4:10
     |vpiStmt:
     \_begin: (work@top)
       |vpiParent:
@@ -424,6 +412,7 @@ design: (work@top)
             |vpiActual:
             \_parameter: (work@top.genblk1[2].i), line:4:0
 \_weaklyReferenced:
+\_int_typespec: , line:4:9, endln:4:10
 \_cont_assign: , line:5:14, endln:5:27
   |vpiParent:
   \_gen_scope: (work@top.genblk1[0]), line:4:35, endln:6:7
@@ -522,7 +511,6 @@ design: (work@top)
   |vpiFullName:work@top.genblk1[2]
   |vpiGenScope:
   \_gen_scope: (work@top.genblk1[2]), line:4:35, endln:6:7
-\_int_typespec: 
 \_int_typespec: 
 ===================
 [  FATAL] : 0

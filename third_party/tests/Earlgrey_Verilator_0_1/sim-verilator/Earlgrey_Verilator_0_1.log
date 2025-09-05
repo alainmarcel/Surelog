@@ -5847,13 +5847,13 @@ import_typespec                                      118
 include_file_info                                    104
 indexed_part_select                                  900
 initial                                                9
-int_typespec                                       21653
-int_var                                              521
+int_typespec                                       21439
+int_var                                              307
 integer_typespec                                     435
 integer_var                                            1
 interface_inst                                         1
 io_decl                                              357
-logic_net                                          26847
+logic_net                                          26802
 logic_typespec                                     67766
 logic_var                                          12617
 module_inst                                         5797
@@ -5870,8 +5870,7 @@ port                                               37447
 range                                              49006
 ref_module                                          1821
 ref_obj                                           155158
-ref_typespec                                      127208
-ref_var                                               82
+ref_typespec                                      126912
 return_stmt                                          369
 string_typespec                                     3590
 string_var                                            14
@@ -5882,7 +5881,7 @@ sys_func_call                                        396
 tagged_pattern                                      2403
 task                                                   9
 typespec_member                                     4454
-unsupported_typespec                                  96
+unsupported_typespec                                  14
 var_select                                          1975
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
@@ -5928,13 +5927,13 @@ import_typespec                                      118
 include_file_info                                    104
 indexed_part_select                                 2807
 initial                                               56
-int_typespec                                       21653
-int_var                                             1747
+int_typespec                                       21439
+int_var                                             1533
 integer_typespec                                     435
 integer_var                                            1
 interface_inst                                         1
 io_decl                                             2569
-logic_net                                          26847
+logic_net                                          26802
 logic_typespec                                     67766
 logic_var                                          21763
 module_inst                                         6364
@@ -5951,8 +5950,7 @@ port                                               64704
 range                                              49485
 ref_module                                          1821
 ref_obj                                           371874
-ref_typespec                                      201103
-ref_var                                               82
+ref_typespec                                      200807
 return_stmt                                         2045
 string_typespec                                     3880
 string_var                                            31
@@ -5963,7 +5961,7 @@ sys_func_call                                        639
 tagged_pattern                                      2693
 task                                                  18
 typespec_member                                     4454
-unsupported_typespec                                  96
+unsupported_typespec                                  14
 var_select                                          8035
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Earlgrey_Verilator_0_1/slpp_all/surelog.uhdm ...

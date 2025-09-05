@@ -250,7 +250,7 @@ variables* CompileHelper::getSimpleVarFromTypespec(
 UHDM::any* CompileHelper::compileVariable(
     DesignComponent* component, const FileContent* fC, NodeId declarationId,
     CompileDesign* compileDesign, Reduce reduce, UHDM::any* pstmt,
-    SURELOG::ValuedComponentI* instance, bool muteErrors) {
+    SURELOG::ValuedComponentI* instance, bool muteErrors, bool implicitInt) {
   UHDM::Serializer& s = compileDesign->getSerializer();
   Design* design = compileDesign->getCompiler()->getDesign();
   UHDM::any* result = nullptr;
@@ -318,8 +318,15 @@ UHDM::any* CompileHelper::compileVariable(
   VObjectType decl_type = fC->Type(declarationId);
   if (decl_type != VObjectType::paPs_or_hierarchical_identifier &&
       decl_type != VObjectType::paImplicit_class_handle) {
-    ts = compileTypespec(component, fC, declarationId, compileDesign, reduce,
+    if (implicitInt) {
+      ts = buildIntTypespec(compileDesign, fC->getFileId(), "", "",
+                            fC->Line(declarationId), fC->Column(declarationId),
+                            fC->EndLine(declarationId),
+                            fC->EndColumn(declarationId));
+    } else {
+      ts = compileTypespec(component, fC, declarationId, compileDesign, reduce,
                          pstmt, instance, true);
+    }
   }
   bool isSigned = true;
   const NodeId signId = fC->Sibling(variable);
@@ -401,6 +408,14 @@ UHDM::any* CompileHelper::compileVariable(
             tsRef->Actual_typespec(ts);
             var->Typespec(tsRef);
           }
+          result = var;
+        } else if (implicitInt) {
+          int_var* var = s.MakeInt_var();
+          ref_typespec* tsRef = s.MakeRef_typespec();
+          tsRef->VpiParent(var);
+          tsRef->Actual_typespec(ts);
+          var->Typespec(tsRef);
+          var->VpiSigned(isSigned);
           result = var;
         } else {
           ref_var* ref = s.MakeRef_var();

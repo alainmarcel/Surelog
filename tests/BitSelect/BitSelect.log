@@ -199,9 +199,8 @@ design                                                 1
 gen_for                                                1
 gen_scope                                              6
 gen_scope_array                                        6
-int_typespec                                          13
-int_var                                                2
-logic_net                                              1
+int_typespec                                          12
+int_var                                                1
 logic_typespec                                         6
 module_inst                                           11
 named_begin                                            1
@@ -211,9 +210,7 @@ parameter                                             13
 range                                                  6
 ref_module                                             4
 ref_obj                                                6
-ref_typespec                                          32
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                          30
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -225,9 +222,8 @@ design                                                 1
 gen_for                                                1
 gen_scope                                              9
 gen_scope_array                                        9
-int_typespec                                          13
-int_var                                                2
-logic_net                                              1
+int_typespec                                          12
+int_var                                                1
 logic_typespec                                         6
 module_inst                                           14
 named_begin                                            1
@@ -237,9 +233,7 @@ parameter                                             13
 range                                                  6
 ref_module                                             4
 ref_obj                                                6
-ref_typespec                                          41
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                          39
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/BitSelect/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/BitSelect/slpp_all/checker/surelog.chk.html ...
@@ -399,13 +393,6 @@ design: (work@dut)
     |vpiLhs:
     \_parameter: (work@dut.res), line:9:11, endln:9:14
   |vpiDefName:work@dut
-  |vpiNet:
-  \_logic_net: (work@dut.i), line:10:20, endln:10:21
-    |vpiParent:
-    \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/BitSelect/dut.sv, line:6:1, endln:15:10
-    |vpiName:i
-    |vpiFullName:work@dut.i
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -430,9 +417,10 @@ design: (work@dut)
           \_int_var: (work@dut.i), line:10:13, endln:10:14
           |vpiFullName:work@dut.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:10:13, endln:10:14
         |vpiName:i
         |vpiFullName:work@dut.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:10:20, endln:10:33
       |vpiParent:
@@ -445,7 +433,7 @@ design: (work@dut)
         |vpiName:i
         |vpiFullName:work@dut.i
         |vpiActual:
-        \_logic_net: (work@dut.i), line:10:20, endln:10:21
+        \_int_var: (work@dut.i), line:10:13, endln:10:14
       |vpiOperand:
       \_ref_obj: (work@dut.NumAlerts), line:10:24, endln:10:33
         |vpiParent:
@@ -464,7 +452,7 @@ design: (work@dut)
         |vpiName:i
         |vpiFullName:work@dut.i
         |vpiActual:
-        \_logic_net: (work@dut.i), line:10:20, endln:10:21
+        \_int_var: (work@dut.i), line:10:13, endln:10:14
     |vpiStmt:
     \_named_begin: (work@dut.gen_alert_tx)
       |vpiParent:
@@ -830,6 +818,7 @@ design: (work@dut)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:10:13, endln:10:14
 \_param_assign: , line:3:17, endln:3:31
   |vpiParent:
   \_module_inst: work@alert_sender (work@dut.gen_alert_tx[0].i_alert_sender), file:${SURELOG_DIR}/tests/BitSelect/dut.sv, line:11:3, endln:13:23
@@ -1016,7 +1005,6 @@ design: (work@dut)
   |vpiFullName:work@dut.gen_alert_tx[2].i_alert_sender.AsyncOn
   |vpiActual:
   \_bit_typespec: , line:3:13, endln:3:16
-\_int_typespec: 
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0

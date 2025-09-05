@@ -204,9 +204,9 @@ design                                                 1
 gen_for                                                1
 gen_scope                                             12
 gen_scope_array                                       12
-int_typespec                                           8
-int_var                                                2
-logic_net                                              8
+int_typespec                                           7
+int_var                                                1
+logic_net                                              7
 logic_typespec                                        12
 module_inst                                           13
 named_begin                                            1
@@ -216,9 +216,7 @@ port                                                  11
 range                                                 51
 ref_module                                             4
 ref_obj                                               17
-ref_typespec                                          21
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                          19
 var_select                                             8
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
@@ -229,9 +227,9 @@ design                                                 1
 gen_for                                                1
 gen_scope                                             18
 gen_scope_array                                       18
-int_typespec                                           8
-int_var                                                2
-logic_net                                              8
+int_typespec                                           7
+int_var                                                1
+logic_net                                              7
 logic_typespec                                        12
 module_inst                                           17
 named_begin                                            1
@@ -241,9 +239,7 @@ port                                                  24
 range                                                 51
 ref_module                                             4
 ref_obj                                               30
-ref_typespec                                          40
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                          38
 var_select                                            20
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/VarSelectGenStmt/slpp_all/surelog.uhdm ...
@@ -301,13 +297,6 @@ design: (work@aes_sub_bytes)
     |vpiName:data_i
     |vpiFullName:work@aes_sub_bytes.data_i
     |vpiNetType:36
-  |vpiNet:
-  \_logic_net: (work@aes_sub_bytes.j), line:14:22, endln:14:23
-    |vpiParent:
-    \_module_inst: work@aes_sub_bytes (work@aes_sub_bytes), file:${SURELOG_DIR}/tests/VarSelectGenStmt/dut.sv, line:8:1, endln:23:10
-    |vpiName:j
-    |vpiFullName:work@aes_sub_bytes.j
-    |vpiNetType:1
   |vpiPort:
   \_port: (data_i), line:10:32, endln:10:38
     |vpiParent:
@@ -353,9 +342,10 @@ design: (work@aes_sub_bytes)
           \_int_var: (work@aes_sub_bytes.j), line:14:15, endln:14:16
           |vpiFullName:work@aes_sub_bytes.j
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:14:15, endln:14:16
         |vpiName:j
         |vpiFullName:work@aes_sub_bytes.j
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:14:22, endln:14:27
       |vpiParent:
@@ -368,7 +358,7 @@ design: (work@aes_sub_bytes)
         |vpiName:j
         |vpiFullName:work@aes_sub_bytes.j
         |vpiActual:
-        \_logic_net: (work@aes_sub_bytes.j), line:14:22, endln:14:23
+        \_int_var: (work@aes_sub_bytes.j), line:14:15, endln:14:16
       |vpiOperand:
       \_constant: , line:14:26, endln:14:27
         |vpiParent:
@@ -389,7 +379,7 @@ design: (work@aes_sub_bytes)
         |vpiName:j
         |vpiFullName:work@aes_sub_bytes.j
         |vpiActual:
-        \_logic_net: (work@aes_sub_bytes.j), line:14:22, endln:14:23
+        \_int_var: (work@aes_sub_bytes.j), line:14:15, endln:14:16
     |vpiStmt:
     \_named_begin: (work@aes_sub_bytes.gen_sbox_j)
       |vpiParent:
@@ -878,6 +868,7 @@ design: (work@aes_sub_bytes)
               |vpiInstance:
               \_module_inst: work@aes_sbox (work@aes_sub_bytes.gen_sbox_j[1].gen_sbox_i[1].aes_sbox_ij), file:${SURELOG_DIR}/tests/VarSelectGenStmt/dut.sv, line:16:7, endln:19:9
 \_weaklyReferenced:
+\_int_typespec: , line:14:15, endln:14:16
 \_logic_typespec: , line:10:10, endln:10:31
   |vpiRange:
   \_range: , line:10:16, endln:10:21
@@ -1885,7 +1876,6 @@ design: (work@aes_sub_bytes)
   |vpiFullName:work@aes_sub_bytes.gen_sbox_j[1]
   |vpiGenScope:
   \_gen_scope: (work@aes_sub_bytes.gen_sbox_j[1]), line:14:34, endln:21:6
-\_int_typespec: 
 \_int_typespec: 
 ===================
 [  FATAL] : 0

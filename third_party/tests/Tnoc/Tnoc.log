@@ -4056,13 +4056,13 @@ if_else                                              322
 if_stmt                                             1652
 import_typespec                                       33
 indexed_part_select                                    3
-int_typespec                                      158891
-int_var                                             2317
+int_typespec                                      156711
+int_var                                              137
 interface_array                                      419
 interface_inst                                      9805
 interface_typespec                                 14374
 io_decl                                            44249
-logic_net                                           1216
+logic_net                                           1198
 logic_typespec                                     21594
 logic_var                                          32868
 method_func_call                                     325
@@ -4082,8 +4082,8 @@ port                                                8778
 range                                              46440
 ref_module                                           548
 ref_obj                                           120343
-ref_typespec                                      727393
-ref_var                                               60
+ref_typespec                                      725189
+ref_var                                               36
 return_stmt                                          289
 short_int_typespec                                390472
 string_typespec                                    17382
@@ -4095,7 +4095,7 @@ tagged_pattern                                     17382
 task                                                   9
 type_parameter                                        28
 typespec_member                                   390889
-unsupported_typespec                                 139
+unsupported_typespec                                 115
 var_select                                           185
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Tnoc/slpp_all/surelog.uhdm ...

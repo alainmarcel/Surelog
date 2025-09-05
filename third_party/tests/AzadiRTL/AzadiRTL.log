@@ -13848,12 +13848,12 @@ import_typespec                                       34
 include_file_info                                     10
 indexed_part_select                                  222
 initial                                               17
-int_typespec                                       12714
-int_var                                              272
+int_typespec                                       12651
+int_var                                              209
 integer_typespec                                     256
 integer_var                                           20
 io_decl                                              197
-logic_net                                          10748
+logic_net                                          10713
 logic_typespec                                     24339
 logic_var                                           4577
 long_int_typespec                                      6
@@ -13873,8 +13873,8 @@ property_spec                                         31
 range                                              19371
 ref_module                                           476
 ref_obj                                            57560
-ref_typespec                                       78095
-ref_var                                               67
+ref_typespec                                       77973
+ref_var                                                8
 return_stmt                                          118
 string_typespec                                    25586
 struct_net                                            67
@@ -13885,7 +13885,7 @@ tagged_pattern                                     25144
 task                                                   9
 type_parameter                                        26
 typespec_member                                     2266
-unsupported_typespec                                 194
+unsupported_typespec                                 135
 var_select                                           284
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
@@ -13929,12 +13929,12 @@ import_typespec                                       34
 include_file_info                                     10
 indexed_part_select                                  365
 initial                                               92
-int_typespec                                       12714
-int_var                                              528
+int_typespec                                       12651
+int_var                                              465
 integer_typespec                                     256
 integer_var                                           78
 io_decl                                              485
-logic_net                                          10748
+logic_net                                          10713
 logic_typespec                                     24339
 logic_var                                           6547
 long_int_typespec                                      6
@@ -13954,8 +13954,8 @@ property_spec                                        110
 range                                              19409
 ref_module                                           476
 ref_obj                                           124713
-ref_typespec                                      104730
-ref_var                                               95
+ref_typespec                                      104608
+ref_var                                               36
 return_stmt                                          317
 string_typespec                                    25757
 struct_net                                            67
@@ -13966,7 +13966,7 @@ tagged_pattern                                     25315
 task                                                  18
 type_parameter                                        26
 typespec_member                                     2266
-unsupported_typespec                                 194
+unsupported_typespec                                 135
 var_select                                           497
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/AzadiRTL/slpp_all/surelog.uhdm ...

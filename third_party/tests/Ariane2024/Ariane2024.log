@@ -6689,12 +6689,12 @@ import_typespec                                       71
 include_file_info                                      9
 indexed_part_select                                  684
 initial                                              123
-int_typespec                                       48184
-int_var                                              776
+int_typespec                                       48069
+int_var                                              661
 integer_typespec                                    3190
 integer_var                                            6
 io_decl                                              349
-logic_net                                           6768
+logic_net                                           6726
 logic_typespec                                     21905
 logic_var                                           3670
 long_int_typespec                                     10
@@ -6714,8 +6714,8 @@ property_spec                                        404
 range                                              25863
 ref_module                                           362
 ref_obj                                            90470
-ref_typespec                                      104707
-ref_var                                               98
+ref_typespec                                      104515
+ref_var                                               21
 return_stmt                                          342
 short_int_typespec                                    16
 short_int_var                                          6
@@ -6731,7 +6731,7 @@ type_parameter                                       483
 typespec_member                                    38480
 union_typespec                                         7
 union_var                                              3
-unsupported_typespec                                1513
+unsupported_typespec                                1436
 var_select                                          1245
 void_typespec                                         72
 === UHDM Object Stats End ===

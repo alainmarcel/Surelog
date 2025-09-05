@@ -759,11 +759,11 @@ gen_for                                                2
 gen_region                                             1
 gen_scope                                             14
 gen_scope_array                                       14
-int_typespec                                          42
-int_var                                                8
+int_typespec                                          40
+int_var                                                6
 interface_inst                                         6
 io_decl                                               11
-logic_net                                              9
+logic_net                                              7
 logic_typespec                                        11
 logic_var                                              4
 module_inst                                            9
@@ -776,10 +776,8 @@ port                                                   5
 range                                                 16
 ref_module                                             2
 ref_obj                                               34
-ref_typespec                                          67
-ref_var                                                2
+ref_typespec                                          63
 task                                                   9
-unsupported_typespec                                   2
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/GenerateInterface/slpp_unit/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/GenerateInterface/slpp_unit/checker/surelog.chk.html ...
@@ -1364,9 +1362,10 @@ design: (work@top)
           \_int_var: (work@abc_if.i), line:6:15, endln:6:16
           |vpiFullName:work@abc_if.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:6:15, endln:6:16
         |vpiName:i
         |vpiFullName:work@abc_if.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:6:19, endln:6:29
       |vpiParent:
@@ -1379,7 +1378,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@abc_if.i
         |vpiActual:
-        \_logic_net: (work@top.intf.i), line:6:19, endln:6:20
+        \_int_var: (work@abc_if.i), line:6:15, endln:6:16
       |vpiOperand:
       \_ref_obj: (work@abc_if.NO_Input), line:6:21, endln:6:29
         |vpiParent:
@@ -1398,7 +1397,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@abc_if.i
         |vpiActual:
-        \_logic_net: (work@top.intf.i), line:6:19, endln:6:20
+        \_int_var: (work@abc_if.i), line:6:15, endln:6:16
     |vpiStmt:
     \_named_begin: (work@abc_if.block)
       |vpiParent:
@@ -1505,9 +1504,10 @@ design: (work@top)
           \_int_var: (work@pins_if.i), line:28:17, endln:28:18
           |vpiFullName:work@pins_if.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:28:17, endln:28:18
         |vpiName:i
         |vpiFullName:work@pins_if.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:28:24, endln:28:33
       |vpiParent:
@@ -1520,7 +1520,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@pins_if.i
         |vpiActual:
-        \_logic_net: (work@top2.intf.i), line:28:24, endln:28:25
+        \_int_var: (work@pins_if.i), line:28:17, endln:28:18
       |vpiOperand:
       \_ref_obj: (work@pins_if.Width), line:28:28, endln:28:33
         |vpiParent:
@@ -1539,7 +1539,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@pins_if.i
         |vpiActual:
-        \_logic_net: (work@top2.intf.i), line:28:24, endln:28:25
+        \_int_var: (work@pins_if.i), line:28:17, endln:28:18
     |vpiStmt:
     \_begin: (work@pins_if)
       |vpiParent:
@@ -1737,13 +1737,6 @@ design: (work@top)
     |vpiDefName:work@abc_if
     |vpiDefFile:${SURELOG_DIR}/tests/GenerateInterface/top.sv
     |vpiDefLineNo:1
-    |vpiNet:
-    \_logic_net: (work@top.intf.i), line:6:19, endln:6:20
-      |vpiParent:
-      \_interface_inst: work@abc_if (work@top.intf), file:${SURELOG_DIR}/tests/GenerateInterface/top.sv, line:17:3, endln:17:17
-      |vpiName:i
-      |vpiFullName:work@top.intf.i
-      |vpiNetType:1
     |vpiInstance:
     \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenerateInterface/top.sv, line:16:1, endln:19:10
     |vpiGenScopeArray:
@@ -2056,13 +2049,6 @@ design: (work@top)
         \_logic_typespec: , line:23:9, endln:23:20
       |vpiName:pins
       |vpiFullName:work@top2.intf.pins
-    |vpiNet:
-    \_logic_net: (work@top2.intf.i), line:28:24, endln:28:25
-      |vpiParent:
-      \_interface_inst: work@pins_if (work@top2.intf), file:${SURELOG_DIR}/tests/GenerateInterface/top.sv, line:35:1, endln:35:39
-      |vpiName:i
-      |vpiFullName:work@top2.intf.i
-      |vpiNetType:1
     |vpiInstance:
     \_module_inst: work@top2 (work@top2), file:${SURELOG_DIR}/tests/GenerateInterface/top.sv, line:34:1, endln:43:10
     |vpiPort:
@@ -2415,10 +2401,12 @@ design: (work@top)
   |vpiParent:
   \_parameter: (work@abc_if.NO_Input), line:1:24, endln:1:32
   |vpiSigned:1
+\_int_typespec: , line:6:15, endln:6:16
 \_int_typespec: , line:22:32, endln:22:35
   |vpiParent:
   \_parameter: (work@pins_if.Width), line:22:36, endln:22:41
   |vpiSigned:1
+\_int_typespec: , line:28:17, endln:28:18
 \_int_typespec: , line:34:26, endln:34:29
   |vpiParent:
   \_parameter: (work@top2.Width), line:34:30, endln:34:35
@@ -2738,7 +2726,6 @@ design: (work@top)
 \_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 
-\_int_typespec: 
 \_int_typespec: , line:34:26, endln:34:29
   |vpiParent:
   \_ref_typespec: (work@top2.Width)
@@ -2747,7 +2734,6 @@ design: (work@top)
   |vpiParent:
   \_ref_typespec: (work@top2.intf.Width)
   |vpiSigned:1
-\_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 

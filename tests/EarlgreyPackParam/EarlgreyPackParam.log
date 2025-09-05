@@ -416,9 +416,8 @@ gen_for                                                1
 gen_if                                                 2
 gen_scope                                             16
 gen_scope_array                                       16
-int_typespec                                          11
-int_var                                                2
-logic_net                                              1
+int_typespec                                          10
+int_var                                                1
 logic_typespec                                        10
 module_inst                                           31
 named_begin                                            3
@@ -430,9 +429,7 @@ part_select                                            3
 range                                                 10
 ref_module                                            10
 ref_obj                                                6
-ref_typespec                                          61
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                          59
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -445,9 +442,8 @@ gen_for                                                1
 gen_if                                                 2
 gen_scope                                             32
 gen_scope_array                                       32
-int_typespec                                          11
-int_var                                                2
-logic_net                                              1
+int_typespec                                          10
+int_var                                                1
 logic_typespec                                        10
 module_inst                                           45
 named_begin                                            3
@@ -459,9 +455,7 @@ part_select                                            3
 range                                                 10
 ref_module                                            10
 ref_obj                                                6
-ref_typespec                                          89
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                          87
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/EarlgreyPackParam/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/EarlgreyPackParam/slpp_all/checker/surelog.chk.html ...
@@ -681,13 +675,6 @@ design: (work@test)
     |vpiLhs:
     \_parameter: (work@aes.AlertAsyncOn), line:50:28, endln:50:40
   |vpiDefName:work@aes
-  |vpiNet:
-  \_logic_net: (work@aes.i), line:52:23, endln:52:24
-    |vpiParent:
-    \_module_inst: work@aes (work@aes), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:49:1, endln:60:10
-    |vpiName:i
-    |vpiFullName:work@aes.i
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -712,9 +699,10 @@ design: (work@test)
           \_int_var: (work@aes.i), line:52:16, endln:52:17
           |vpiFullName:work@aes.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:52:16, endln:52:17
         |vpiName:i
         |vpiFullName:work@aes.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:52:23, endln:52:28
       |vpiParent:
@@ -727,7 +715,7 @@ design: (work@test)
         |vpiName:i
         |vpiFullName:work@aes.i
         |vpiActual:
-        \_logic_net: (work@aes.i), line:52:23, endln:52:24
+        \_int_var: (work@aes.i), line:52:16, endln:52:17
       |vpiOperand:
       \_constant: , line:52:27, endln:52:28
         |vpiParent:
@@ -748,7 +736,7 @@ design: (work@test)
         |vpiName:i
         |vpiFullName:work@aes.i
         |vpiActual:
-        \_logic_net: (work@aes.i), line:52:23, endln:52:24
+        \_int_var: (work@aes.i), line:52:16, endln:52:17
     |vpiStmt:
     \_named_begin: (work@aes.gen_alert_tx)
       |vpiParent:
@@ -1847,6 +1835,7 @@ design: (work@test)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:52:16, endln:52:17
 \_bit_typespec: , line:15:13, endln:15:16
   |vpiParent:
   \_parameter: (work@prim_alert_sender.AsyncOn), line:15:17, endln:15:24
@@ -2346,7 +2335,6 @@ design: (work@test)
   |vpiFullName:work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack.AsyncOn
   |vpiActual:
   \_bit_typespec: , line:32:13, endln:32:16
-\_int_typespec: 
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0
