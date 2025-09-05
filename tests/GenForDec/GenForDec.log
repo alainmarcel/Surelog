@@ -237,16 +237,13 @@ design                                                 1
 gen_for                                                4
 gen_scope                                             20
 gen_scope_array                                       20
-int_typespec                                          18
-int_var                                                8
-logic_net                                              1
+int_typespec                                          14
+int_var                                                4
 module_inst                                            4
 operation                                             20
 parameter                                             10
 ref_obj                                               32
-ref_typespec                                          22
-ref_var                                                4
-unsupported_typespec                                   4
+ref_typespec                                          14
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -259,16 +256,13 @@ design                                                 1
 gen_for                                                4
 gen_scope                                             30
 gen_scope_array                                       30
-int_typespec                                          18
-int_var                                                8
-logic_net                                              1
+int_typespec                                          14
+int_var                                                4
 module_inst                                            4
 operation                                             20
 parameter                                             10
 ref_obj                                               42
-ref_typespec                                          32
-ref_var                                                4
-unsupported_typespec                                   4
+ref_typespec                                          24
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/GenForDec/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/GenForDec/slpp_all/checker/surelog.chk.html ...
@@ -284,13 +278,6 @@ design: (work@top)
   \_design: (work@top)
   |vpiFullName:work@top
   |vpiDefName:work@top
-  |vpiNet:
-  \_logic_net: (work@top.i), line:4:16, endln:4:17
-    |vpiParent:
-    \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/GenForDec/dut.sv, line:2:1, endln:20:10
-    |vpiName:i
-    |vpiFullName:work@top.i
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -315,9 +302,10 @@ design: (work@top)
           \_int_var: (work@top.i), line:4:9, endln:4:10
           |vpiFullName:work@top.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:4:9, endln:4:10
         |vpiName:i
         |vpiFullName:work@top.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:4:16, endln:4:21
       |vpiParent:
@@ -330,7 +318,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:4:9, endln:4:10
       |vpiOperand:
       \_constant: , line:4:20, endln:4:21
         |vpiParent:
@@ -351,7 +339,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:4:9, endln:4:10
     |vpiStmt:
     \_begin: (work@top)
       |vpiParent:
@@ -405,9 +393,10 @@ design: (work@top)
           \_int_var: (work@top.i), line:8:9, endln:8:10
           |vpiFullName:work@top.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:8:9, endln:8:10
         |vpiName:i
         |vpiFullName:work@top.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:8:16, endln:8:21
       |vpiParent:
@@ -420,7 +409,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:8:9, endln:8:10
       |vpiOperand:
       \_constant: , line:8:20, endln:8:21
         |vpiParent:
@@ -441,7 +430,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:8:9, endln:8:10
     |vpiStmt:
     \_begin: (work@top)
       |vpiParent:
@@ -495,9 +484,10 @@ design: (work@top)
           \_int_var: (work@top.i), line:12:9, endln:12:10
           |vpiFullName:work@top.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:12:9, endln:12:10
         |vpiName:i
         |vpiFullName:work@top.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:12:16, endln:12:21
       |vpiParent:
@@ -510,7 +500,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:12:9, endln:12:10
       |vpiOperand:
       \_constant: , line:12:20, endln:12:21
         |vpiParent:
@@ -537,7 +527,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:12:9, endln:12:10
     |vpiStmt:
     \_begin: (work@top)
       |vpiParent:
@@ -591,9 +581,10 @@ design: (work@top)
           \_int_var: (work@top.i), line:16:8, endln:16:9
           |vpiFullName:work@top.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:16:8, endln:16:9
         |vpiName:i
         |vpiFullName:work@top.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:16:15, endln:16:20
       |vpiParent:
@@ -606,7 +597,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:16:8, endln:16:9
       |vpiOperand:
       \_constant: , line:16:19, endln:16:20
         |vpiParent:
@@ -633,7 +624,7 @@ design: (work@top)
         |vpiName:i
         |vpiFullName:work@top.i
         |vpiActual:
-        \_logic_net: (work@top.i), line:4:16, endln:4:17
+        \_int_var: (work@top.i), line:16:8, endln:16:9
     |vpiStmt:
     \_begin: (work@top)
       |vpiParent:
@@ -1192,6 +1183,10 @@ design: (work@top)
             |vpiActual:
             \_parameter: (work@top.genblk4[1].i), line:16:0
 \_weaklyReferenced:
+\_int_typespec: , line:4:9, endln:4:10
+\_int_typespec: , line:8:9, endln:8:10
+\_int_typespec: , line:12:9, endln:12:10
+\_int_typespec: , line:16:8, endln:16:9
 \_cont_assign: , line:5:14, endln:5:27
   |vpiParent:
   \_gen_scope: (work@top.genblk1[3]), line:4:29, endln:6:7
@@ -1521,10 +1516,6 @@ design: (work@top)
   |vpiFullName:work@top.genblk4[1]
   |vpiGenScope:
   \_gen_scope: (work@top.genblk4[1]), line:16:29, endln:18:7
-\_int_typespec: 
-\_int_typespec: 
-\_int_typespec: 
-\_int_typespec: 
 \_int_typespec: 
 ===================
 [  FATAL] : 0

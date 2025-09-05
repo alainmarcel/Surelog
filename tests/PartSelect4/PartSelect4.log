@@ -267,9 +267,8 @@ gen_for                                                1
 gen_scope                                             16
 gen_scope_array                                       16
 indexed_part_select                                   10
-int_typespec                                          23
-int_var                                                2
-logic_net                                              1
+int_typespec                                          22
+int_var                                                1
 logic_typespec                                         1
 module_inst                                           26
 named_begin                                            1
@@ -279,9 +278,7 @@ parameter                                             25
 range                                                  5
 ref_module                                            10
 ref_obj                                                5
-ref_typespec                                          40
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                          38
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -293,9 +290,8 @@ gen_for                                                1
 gen_scope                                             24
 gen_scope_array                                       24
 indexed_part_select                                   10
-int_typespec                                          23
-int_var                                                2
-logic_net                                              1
+int_typespec                                          22
+int_var                                                1
 logic_typespec                                         1
 module_inst                                           34
 named_begin                                            1
@@ -305,9 +301,7 @@ parameter                                             25
 range                                                  5
 ref_module                                            10
 ref_obj                                                5
-ref_typespec                                          64
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                          62
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/PartSelect4/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/PartSelect4/slpp_all/checker/surelog.chk.html ...
@@ -386,13 +380,6 @@ design: (work@xbar_main)
     |vpiLhs:
     \_parameter: (work@tlul_socket_1n.DReqDepth), line:5:75, endln:5:84
   |vpiDefName:work@tlul_socket_1n
-  |vpiNet:
-  \_logic_net: (work@tlul_socket_1n.i), line:6:23, endln:6:24
-    |vpiParent:
-    \_module_inst: work@tlul_socket_1n (work@tlul_socket_1n), file:${SURELOG_DIR}/tests/PartSelect4/dut.sv, line:5:1, endln:9:10
-    |vpiName:i
-    |vpiFullName:work@tlul_socket_1n.i
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -417,9 +404,10 @@ design: (work@xbar_main)
           \_int_var: (work@tlul_socket_1n.i), line:6:15, endln:6:16
           |vpiFullName:work@tlul_socket_1n.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:6:15, endln:6:16
         |vpiName:i
         |vpiFullName:work@tlul_socket_1n.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:6:23, endln:6:28
       |vpiParent:
@@ -432,7 +420,7 @@ design: (work@xbar_main)
         |vpiName:i
         |vpiFullName:work@tlul_socket_1n.i
         |vpiActual:
-        \_logic_net: (work@tlul_socket_1n.i), line:6:23, endln:6:24
+        \_int_var: (work@tlul_socket_1n.i), line:6:15, endln:6:16
       |vpiOperand:
       \_ref_obj: (work@tlul_socket_1n.N), line:6:27, endln:6:28
         |vpiParent:
@@ -451,7 +439,7 @@ design: (work@xbar_main)
         |vpiName:i
         |vpiFullName:work@tlul_socket_1n.i
         |vpiActual:
-        \_logic_net: (work@tlul_socket_1n.i), line:6:23, endln:6:24
+        \_int_var: (work@tlul_socket_1n.i), line:6:15, endln:6:16
     |vpiStmt:
     \_named_begin: (work@tlul_socket_1n.gen_dfifo)
       |vpiParent:
@@ -1320,6 +1308,7 @@ design: (work@xbar_main)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:6:15, endln:6:16
 \_int_typespec: , line:18:2, endln:18:35
   |vpiRange:
   \_range: 
@@ -1728,7 +1717,6 @@ design: (work@xbar_main)
   |vpiFullName:work@xbar_main.u_s1n_25.gen_dfifo[7].fifo_d.ReqDepth
   |vpiActual:
   \_int_typespec: , line:2:35, endln:2:47
-\_int_typespec: 
 \_int_typespec: , line:18:2, endln:18:35
   |vpiParent:
   \_ref_typespec: (work@top.A)

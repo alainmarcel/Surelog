@@ -129,17 +129,14 @@ constant                                              10
 cont_assign                                            1
 design                                                 1
 gen_for                                                1
-int_typespec                                           5
-int_var                                                2
-logic_net                                              1
+int_typespec                                           4
+int_var                                                1
 module_inst                                            4
 operation                                              8
 param_assign                                           2
 parameter                                              2
 ref_obj                                                8
-ref_typespec                                           8
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                           6
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -150,17 +147,14 @@ constant                                              10
 cont_assign                                            1
 design                                                 1
 gen_for                                                1
-int_typespec                                           5
-int_var                                                2
-logic_net                                              1
+int_typespec                                           4
+int_var                                                1
 module_inst                                            4
 operation                                              8
 param_assign                                           2
 parameter                                              2
 ref_obj                                                8
-ref_typespec                                           8
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                           6
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/NegInt/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/NegInt/slpp_all/checker/surelog.chk.html ...
@@ -207,13 +201,6 @@ design: (work@find_first_one)
     |vpiLhs:
     \_parameter: (work@find_first_one.WIDTH), line:1:40, endln:1:45
   |vpiDefName:work@find_first_one
-  |vpiNet:
-  \_logic_net: (work@find_first_one.i), line:2:24, endln:2:25
-    |vpiParent:
-    \_module_inst: work@find_first_one (work@find_first_one), file:${SURELOG_DIR}/tests/NegInt/dut.sv, line:1:1, endln:5:10
-    |vpiName:i
-    |vpiFullName:work@find_first_one.i
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -238,9 +225,10 @@ design: (work@find_first_one)
           \_int_var: (work@find_first_one.i), line:2:17, endln:2:18
           |vpiFullName:work@find_first_one.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:2:17, endln:2:18
         |vpiName:i
         |vpiFullName:work@find_first_one.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:2:24, endln:2:33
       |vpiParent:
@@ -253,7 +241,7 @@ design: (work@find_first_one)
         |vpiName:i
         |vpiFullName:work@find_first_one.i
         |vpiActual:
-        \_logic_net: (work@find_first_one.i), line:2:24, endln:2:25
+        \_int_var: (work@find_first_one.i), line:2:17, endln:2:18
       |vpiOperand:
       \_ref_obj: (work@find_first_one.WIDTH), line:2:28, endln:2:33
         |vpiParent:
@@ -272,7 +260,7 @@ design: (work@find_first_one)
         |vpiName:i
         |vpiFullName:work@find_first_one.i
         |vpiActual:
-        \_logic_net: (work@find_first_one.i), line:2:24, endln:2:25
+        \_int_var: (work@find_first_one.i), line:2:17, endln:2:18
     |vpiStmt:
     \_begin: (work@find_first_one)
       |vpiParent:
@@ -401,11 +389,11 @@ design: (work@find_first_one)
   |vpiParent:
   \_parameter: (work@find_first_one.WIDTH), line:1:40, endln:1:45
   |vpiSigned:1
+\_int_typespec: , line:2:17, endln:2:18
 \_int_typespec: , line:1:36, endln:1:39
   |vpiParent:
   \_ref_typespec: (work@find_first_one.WIDTH)
   |vpiSigned:1
-\_int_typespec: 
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0

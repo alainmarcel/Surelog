@@ -1832,8 +1832,8 @@ import_typespec                                        1
 include_file_info                                    166
 indexed_part_select                                   41
 initial                                                1
-int_typespec                                        3260
-int_var                                             1366
+int_typespec                                        3261
+int_var                                             1367
 interface_inst                                         5
 interface_typespec                                     3
 io_decl                                             6913
@@ -1861,7 +1861,7 @@ real_var                                               8
 ref_module                                             2
 ref_obj                                            41270
 ref_typespec                                       23807
-ref_var                                             1789
+ref_var                                             1788
 repeat                                                26
 return_stmt                                         3272
 string_typespec                                     3333
@@ -1876,7 +1876,7 @@ time_typespec                                        107
 time_var                                              38
 type_parameter                                       273
 typespec_member                                       47
-unsupported_typespec                                1859
+unsupported_typespec                                1858
 var_select                                           306
 wait_fork                                              1
 wait_stmt                                             45

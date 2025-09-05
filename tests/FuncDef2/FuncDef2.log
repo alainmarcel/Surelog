@@ -3652,10 +3652,10 @@ hier_path                                             74
 if_else                                               20
 if_stmt                                               18
 import_typespec                                        1
-int_typespec                                         130
-int_var                                               88
+int_typespec                                         129
+int_var                                               87
 io_decl                                               72
-logic_net                                              7
+logic_net                                              6
 logic_typespec                                        42
 logic_var                                             66
 module_inst                                           58
@@ -3667,8 +3667,7 @@ parameter                                            144
 port                                                   6
 range                                                 25
 ref_obj                                              493
-ref_typespec                                         563
-ref_var                                                1
+ref_typespec                                         561
 return_stmt                                           88
 short_int_typespec                                    96
 string_typespec                                       88
@@ -3676,7 +3675,7 @@ struct_typespec                                       14
 sys_func_call                                          5
 tagged_pattern                                        88
 typespec_member                                      102
-unsupported_typespec                                  10
+unsupported_typespec                                   9
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -3704,10 +3703,10 @@ hier_path                                            159
 if_else                                               50
 if_stmt                                               45
 import_typespec                                        1
-int_typespec                                         130
-int_var                                              193
+int_typespec                                         129
+int_var                                              192
 io_decl                                              180
-logic_net                                              7
+logic_net                                              6
 logic_typespec                                        42
 logic_var                                             66
 module_inst                                           58
@@ -3719,8 +3718,7 @@ parameter                                            144
 port                                                   9
 range                                                 25
 ref_obj                                             1076
-ref_typespec                                         801
-ref_var                                                1
+ref_typespec                                         799
 return_stmt                                          220
 short_int_typespec                                    96
 string_typespec                                       88
@@ -3728,7 +3726,7 @@ struct_typespec                                       14
 sys_func_call                                         10
 tagged_pattern                                        88
 typespec_member                                      102
-unsupported_typespec                                  10
+unsupported_typespec                                   9
 === UHDM Object Stats End ===
 [ERR:UH0725] ${SURELOG_DIR}/tests/FuncDef2/dut.sv:417:33: Unresolved hierarchical reference "receiver_if.valid[i]".
 [ERR:UH0725] ${SURELOG_DIR}/tests/FuncDef2/dut.sv:417:7: Unresolved hierarchical reference "sender_if[i].valid".
@@ -20241,13 +20239,6 @@ design: (work@tnoc_vc_splitter)
     \_module_inst: work@tnoc_vc_splitter (work@tnoc_vc_splitter), file:${SURELOG_DIR}/tests/FuncDef2/dut.sv, line:404:1, endln:433:10
     |vpiName:sender_if
     |vpiFullName:work@tnoc_vc_splitter.sender_if
-  |vpiNet:
-  \_logic_net: (work@tnoc_vc_splitter.i), line:415:21, endln:415:22
-    |vpiParent:
-    \_module_inst: work@tnoc_vc_splitter (work@tnoc_vc_splitter), file:${SURELOG_DIR}/tests/FuncDef2/dut.sv, line:404:1, endln:433:10
-    |vpiName:i
-    |vpiFullName:work@tnoc_vc_splitter.i
-    |vpiNetType:1
   |vpiPort:
   \_port: (types), line:411:25, endln:411:30
     |vpiParent:
@@ -20335,9 +20326,10 @@ design: (work@tnoc_vc_splitter)
           \_int_var: (work@tnoc_vc_splitter.i), line:415:15, endln:415:16
           |vpiFullName:work@tnoc_vc_splitter.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:415:15, endln:415:16
         |vpiName:i
         |vpiFullName:work@tnoc_vc_splitter.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:415:21, endln:415:33
       |vpiParent:
@@ -20350,7 +20342,7 @@ design: (work@tnoc_vc_splitter)
         |vpiName:i
         |vpiFullName:work@tnoc_vc_splitter.i
         |vpiActual:
-        \_logic_net: (work@tnoc_vc_splitter.i), line:415:21, endln:415:22
+        \_int_var: (work@tnoc_vc_splitter.i), line:415:15, endln:415:16
       |vpiOperand:
       \_ref_obj: (work@tnoc_vc_splitter.CHANNELS), line:415:25, endln:415:33
         |vpiParent:
@@ -20369,7 +20361,7 @@ design: (work@tnoc_vc_splitter)
         |vpiName:i
         |vpiFullName:work@tnoc_vc_splitter.i
         |vpiActual:
-        \_logic_net: (work@tnoc_vc_splitter.i), line:415:21, endln:415:22
+        \_int_var: (work@tnoc_vc_splitter.i), line:415:15, endln:415:16
     |vpiStmt:
     \_named_begin: (work@tnoc_vc_splitter.g)
       |vpiParent:
@@ -31975,6 +31967,7 @@ design: (work@tnoc_vc_splitter)
   |vpiParent:
   \_parameter: (work@tnoc_vc_splitter.CHANNELS), line:409:35, endln:409:43
   |vpiSigned:1
+\_int_typespec: , line:415:15, endln:415:16
 \_struct_typespec: (tnoc_pkg::tnoc_packet_config), line:387:5, endln:387:23
   |vpiParent:
   \_ref_typespec: (work@tnoc_vc_splitter)
@@ -32879,7 +32872,6 @@ design: (work@tnoc_vc_splitter)
   |vpiParent:
   \_ref_typespec: (work@tnoc_vc_splitter.CHANNELS)
   |vpiSigned:1
-\_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 
 ===================

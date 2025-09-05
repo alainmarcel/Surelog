@@ -124,9 +124,9 @@ design                                                 1
 gen_for                                                1
 gen_scope                                              2
 gen_scope_array                                        2
-int_typespec                                           3
-int_var                                                2
-logic_net                                              4
+int_typespec                                           2
+int_var                                                1
+logic_net                                              3
 logic_typespec                                         5
 logic_var                                              1
 module_inst                                            7
@@ -137,9 +137,7 @@ port                                                   4
 range                                                  3
 ref_module                                             2
 ref_obj                                                6
-ref_typespec                                           9
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                           7
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -150,9 +148,9 @@ design                                                 1
 gen_for                                                1
 gen_scope                                              3
 gen_scope_array                                        3
-int_typespec                                           3
-int_var                                                2
-logic_net                                              4
+int_typespec                                           2
+int_var                                                1
+logic_net                                              3
 logic_typespec                                         5
 logic_var                                              1
 module_inst                                            8
@@ -163,9 +161,7 @@ port                                                   7
 range                                                  3
 ref_module                                             2
 ref_obj                                                9
-ref_typespec                                          13
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                          11
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/GenScopeFullName/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/GenScopeFullName/slpp_all/checker/surelog.chk.html ...
@@ -195,13 +191,6 @@ design: (work@dut)
     |vpiName:a
     |vpiFullName:work@dut.a
     |vpiNetType:36
-  |vpiNet:
-  \_logic_net: (work@dut.i), line:4:22, endln:4:23
-    |vpiParent:
-    \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/GenScopeFullName/dut.sv, line:1:1, endln:10:10
-    |vpiName:i
-    |vpiFullName:work@dut.i
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -226,9 +215,10 @@ design: (work@dut)
           \_int_var: (work@dut.i), line:4:15, endln:4:16
           |vpiFullName:work@dut.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:4:15, endln:4:16
         |vpiName:i
         |vpiFullName:work@dut.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:4:22, endln:4:27
       |vpiParent:
@@ -241,7 +231,7 @@ design: (work@dut)
         |vpiName:i
         |vpiFullName:work@dut.i
         |vpiActual:
-        \_logic_net: (work@dut.i), line:4:22, endln:4:23
+        \_int_var: (work@dut.i), line:4:15, endln:4:16
       |vpiOperand:
       \_constant: , line:4:26, endln:4:27
         |vpiParent:
@@ -262,7 +252,7 @@ design: (work@dut)
         |vpiName:i
         |vpiFullName:work@dut.i
         |vpiActual:
-        \_logic_net: (work@dut.i), line:4:22, endln:4:23
+        \_int_var: (work@dut.i), line:4:15, endln:4:16
     |vpiStmt:
     \_named_begin: (work@dut.gen_modules)
       |vpiParent:
@@ -437,6 +427,7 @@ design: (work@dut)
           |vpiInstance:
           \_module_inst: work@ibex_counter (work@dut.gen_modules[0].module_in_genscope), file:${SURELOG_DIR}/tests/GenScopeFullName/dut.sv, line:5:7, endln:5:49
 \_weaklyReferenced:
+\_int_typespec: , line:4:15, endln:4:16
 \_logic_typespec: , line:2:4, endln:2:15
   |vpiParent:
   \_logic_var: (work@dut.a), line:2:16, endln:2:17
@@ -543,7 +534,6 @@ design: (work@dut)
   |vpiFullName:work@dut.gen_modules[0]
   |vpiGenScope:
   \_gen_scope: (work@dut.gen_modules[0]), line:4:34, endln:8:7
-\_int_typespec: 
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0

@@ -5361,12 +5361,12 @@ import_typespec                                       92
 include_file_info                                     70
 indexed_part_select                                  830
 initial                                               64
-int_typespec                                       16881
-int_var                                              587
+int_typespec                                       16675
+int_var                                              381
 integer_typespec                                     226
 integer_var                                            8
 io_decl                                              273
-logic_net                                          35503
+logic_net                                          35463
 logic_typespec                                     93681
 logic_var                                          12596
 module_inst                                        10358
@@ -5387,8 +5387,8 @@ property_spec                                        479
 range                                              71435
 ref_module                                          2376
 ref_obj                                           166312
-ref_typespec                                      158765
-ref_var                                               74
+ref_typespec                                      158487
+ref_var                                                2
 return_stmt                                          137
 sequence_decl                                         36
 string_typespec                                     8895
@@ -5399,7 +5399,7 @@ sys_func_call                                       2745
 tagged_pattern                                      6169
 task                                                   9
 typespec_member                                    11527
-unsupported_typespec                                 488
+unsupported_typespec                                 416
 var_select                                           882
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/IncompTitan/slpp_all/surelog.uhdm ...

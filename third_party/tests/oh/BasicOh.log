@@ -680,8 +680,8 @@ gen_scope_array                                       30
 if_else                                               57
 if_stmt                                               28
 indexed_part_select                                    3
-int_typespec                                         352
-int_var                                                4
+int_typespec                                         357
+int_var                                                9
 integer_typespec                                       8
 integer_var                                            6
 io_decl                                               11
@@ -702,11 +702,10 @@ range                                                206
 ref_module                                            47
 ref_obj                                             1850
 ref_typespec                                        1148
-ref_var                                               12
+ref_var                                                7
 string_typespec                                      114
 sys_func_call                                         14
 task                                                   9
-unsupported_typespec                                   5
 var_select                                             6
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
@@ -739,8 +738,8 @@ gen_scope_array                                       57
 if_else                                               85
 if_stmt                                               32
 indexed_part_select                                    3
-int_typespec                                         352
-int_var                                                4
+int_typespec                                         357
+int_var                                                9
 integer_typespec                                       8
 integer_var                                            7
 io_decl                                               22
@@ -761,11 +760,10 @@ range                                                206
 ref_module                                            47
 ref_obj                                             2256
 ref_typespec                                        1305
-ref_var                                               15
+ref_var                                               10
 string_typespec                                      114
 sys_func_call                                         14
 task                                                  18
-unsupported_typespec                                   5
 var_select                                             7
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/BasicOh/slpp_all/surelog.uhdm ...

@@ -430,18 +430,15 @@ design                                                 1
 gen_for                                                1
 gen_scope                                            520
 gen_scope_array                                      520
-int_typespec                                         140
-int_var                                                2
-logic_net                                              1
+int_typespec                                         139
+int_var                                                1
 module_inst                                            4
 named_begin                                            1
 operation                                            399
 param_assign                                           6
 parameter                                            138
 ref_obj                                                3
-ref_typespec                                         150
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                         148
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -451,18 +448,15 @@ design                                                 1
 gen_for                                                1
 gen_scope                                            780
 gen_scope_array                                      780
-int_typespec                                         140
-int_var                                                2
-logic_net                                              1
+int_typespec                                         139
+int_var                                                1
 module_inst                                            4
 named_begin                                            1
 operation                                            399
 param_assign                                           6
 parameter                                            138
 ref_obj                                                3
-ref_typespec                                         282
-ref_var                                                1
-unsupported_typespec                                   1
+ref_typespec                                         280
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ParamOverload4/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ParamOverload4/slpp_all/checker/surelog.chk.html ...
@@ -583,13 +577,6 @@ design: (work@ibex_pmp)
     |vpiLhs:
     \_parameter: (work@ibex_pmp.PMPNumRegions), line:9:28, endln:9:41
   |vpiDefName:work@ibex_pmp
-  |vpiNet:
-  \_logic_net: (work@ibex_pmp.r), line:20:22, endln:20:23
-    |vpiParent:
-    \_module_inst: work@ibex_pmp (work@ibex_pmp), file:${SURELOG_DIR}/tests/ParamOverload4/dut.sv, line:2:1, endln:34:10
-    |vpiName:r
-    |vpiFullName:work@ibex_pmp.r
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -614,9 +601,10 @@ design: (work@ibex_pmp)
           \_int_var: (work@ibex_pmp.r), line:20:15, endln:20:16
           |vpiFullName:work@ibex_pmp.r
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:20:15, endln:20:16
         |vpiName:r
         |vpiFullName:work@ibex_pmp.r
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:20:22, endln:20:39
       |vpiParent:
@@ -629,7 +617,7 @@ design: (work@ibex_pmp)
         |vpiName:r
         |vpiFullName:work@ibex_pmp.r
         |vpiActual:
-        \_logic_net: (work@ibex_pmp.r), line:20:22, endln:20:23
+        \_int_var: (work@ibex_pmp.r), line:20:15, endln:20:16
       |vpiOperand:
       \_ref_obj: (work@ibex_pmp.PMPNumRegions), line:20:26, endln:20:39
         |vpiParent:
@@ -648,7 +636,7 @@ design: (work@ibex_pmp)
         |vpiName:r
         |vpiFullName:work@ibex_pmp.r
         |vpiActual:
-        \_logic_net: (work@ibex_pmp.r), line:20:22, endln:20:23
+        \_int_var: (work@ibex_pmp.r), line:20:15, endln:20:16
     |vpiStmt:
     \_named_begin: (work@ibex_pmp.g_addr_exp)
       |vpiParent:
@@ -5618,6 +5606,7 @@ design: (work@ibex_pmp)
 \_int_typespec: , line:9:15, endln:9:27
   |vpiParent:
   \_parameter: (work@ibex_pmp.PMPNumRegions), line:9:28, endln:9:41
+\_int_typespec: , line:20:15, endln:20:16
 \_int_typespec: , line:5:15, endln:5:27
   |vpiParent:
   \_ref_typespec: (work@ibex_pmp.PMPGranularity)
@@ -5627,7 +5616,6 @@ design: (work@ibex_pmp)
 \_int_typespec: , line:9:15, endln:9:27
   |vpiParent:
   \_ref_typespec: (work@ibex_pmp.PMPNumRegions)
-\_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 
 \_int_typespec: 

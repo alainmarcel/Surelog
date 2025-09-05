@@ -35,9 +35,9 @@ gen_scope                                              4
 gen_scope_array                                        4
 hier_path                                              6
 initial                                                1
-int_typespec                                           4
-int_var                                                2
-logic_net                                             14
+int_typespec                                           3
+int_var                                                1
+logic_net                                             13
 logic_typespec                                        11
 logic_var                                              3
 module_inst                                           14
@@ -47,14 +47,12 @@ parameter                                              2
 range                                                 22
 ref_module                                             3
 ref_obj                                               21
-ref_typespec                                          43
-ref_var                                                1
+ref_typespec                                          41
 struct_net                                             3
 struct_typespec                                        4
 struct_var                                             6
 sys_func_call                                          1
 typespec_member                                       10
-unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -74,9 +72,9 @@ gen_scope                                              6
 gen_scope_array                                        6
 hier_path                                             10
 initial                                                3
-int_typespec                                           4
-int_var                                                2
-logic_net                                             14
+int_typespec                                           3
+int_var                                                1
+logic_net                                             13
 logic_typespec                                        11
 logic_var                                              3
 module_inst                                           14
@@ -86,14 +84,12 @@ parameter                                              2
 range                                                 22
 ref_module                                             3
 ref_obj                                               35
-ref_typespec                                          45
-ref_var                                                1
+ref_typespec                                          43
 struct_net                                             3
 struct_typespec                                        4
 struct_var                                             6
 sys_func_call                                          3
 typespec_member                                       10
-unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/StructVar/slpp_unit/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/StructVar/slpp_unit/checker/surelog.chk.html ...
@@ -478,13 +474,6 @@ design: (work@test)
     \_module_inst: work@prim_generic_ram_1 (work@prim_generic_ram_1), file:${SURELOG_DIR}/tests/StructVar/dut.sv, line:47:1, endln:66:10
     |vpiName:pmp_cfg
     |vpiFullName:work@prim_generic_ram_1.pmp_cfg
-  |vpiNet:
-  \_logic_net: (work@prim_generic_ram_1.i), line:59:21, endln:59:22
-    |vpiParent:
-    \_module_inst: work@prim_generic_ram_1 (work@prim_generic_ram_1), file:${SURELOG_DIR}/tests/StructVar/dut.sv, line:47:1, endln:66:10
-    |vpiName:i
-    |vpiFullName:work@prim_generic_ram_1.i
-    |vpiNetType:1
   |vpiGenStmt:
   \_gen_for: 
     |vpiParent:
@@ -509,9 +498,10 @@ design: (work@test)
           \_int_var: (work@prim_generic_ram_1.i), line:59:14, endln:59:15
           |vpiFullName:work@prim_generic_ram_1.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:59:14, endln:59:15
         |vpiName:i
         |vpiFullName:work@prim_generic_ram_1.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:59:21, endln:59:26
       |vpiParent:
@@ -524,7 +514,7 @@ design: (work@test)
         |vpiName:i
         |vpiFullName:work@prim_generic_ram_1.i
         |vpiActual:
-        \_logic_net: (work@prim_generic_ram_1.i), line:59:21, endln:59:22
+        \_int_var: (work@prim_generic_ram_1.i), line:59:14, endln:59:15
       |vpiOperand:
       \_constant: , line:59:25, endln:59:26
         |vpiParent:
@@ -545,7 +535,7 @@ design: (work@test)
         |vpiName:i
         |vpiFullName:work@prim_generic_ram_1.i
         |vpiActual:
-        \_logic_net: (work@prim_generic_ram_1.i), line:59:21, endln:59:22
+        \_int_var: (work@prim_generic_ram_1.i), line:59:14, endln:59:15
     |vpiStmt:
     \_named_begin: (work@prim_generic_ram_1.g_pmp_csrs)
       |vpiParent:
@@ -1840,6 +1830,7 @@ design: (work@test)
 \_logic_typespec: , line:53:5, endln:53:10
   |vpiParent:
   \_typespec_member: (lock), line:53:20, endln:53:24
+\_int_typespec: , line:59:14, endln:59:15
 \_array_typespec: 
 \_logic_typespec: , line:26:3, endln:26:15
   |vpiParent:
@@ -2123,7 +2114,6 @@ design: (work@test)
   |BIN:01
   |vpiDecompile:2'b01
   |vpiSize:2
-\_int_typespec: 
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0

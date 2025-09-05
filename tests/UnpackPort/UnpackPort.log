@@ -413,10 +413,10 @@ function                                               9
 gen_for                                                1
 gen_scope                                             14
 gen_scope_array                                       14
-int_typespec                                          18
-int_var                                                6
+int_typespec                                          17
+int_var                                                5
 io_decl                                               11
-logic_net                                              2
+logic_net                                              1
 logic_typespec                                         8
 logic_var                                              1
 module_inst                                            4
@@ -427,13 +427,12 @@ parameter                                              7
 port                                                   2
 range                                                 11
 ref_obj                                               19
-ref_typespec                                          50
-ref_var                                                1
+ref_typespec                                          48
 struct_net                                             1
 struct_typespec                                        8
 task                                                   9
 typespec_member                                        8
-unsupported_typespec                                   2
+unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -454,10 +453,10 @@ function                                              18
 gen_for                                                1
 gen_scope                                             21
 gen_scope_array                                       21
-int_typespec                                          18
-int_var                                                6
+int_typespec                                          17
+int_var                                                5
 io_decl                                               22
-logic_net                                              2
+logic_net                                              1
 logic_typespec                                         8
 logic_var                                              1
 module_inst                                            4
@@ -468,13 +467,12 @@ parameter                                              7
 port                                                   3
 range                                                 11
 ref_obj                                               27
-ref_typespec                                          70
-ref_var                                                1
+ref_typespec                                          68
 struct_net                                             1
 struct_typespec                                        8
 task                                                  18
 typespec_member                                        8
-unsupported_typespec                                   2
+unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/UnpackPort/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/UnpackPort/slpp_all/checker/surelog.chk.html ...
@@ -1004,13 +1002,6 @@ design: (work@dut)
     \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/UnpackPort/dut.sv, line:1:1, endln:11:10
     |vpiName:var3
     |vpiFullName:work@dut.var3
-  |vpiNet:
-  \_logic_net: (work@dut.i), line:8:20, endln:8:21
-    |vpiParent:
-    \_module_inst: work@dut (work@dut), file:${SURELOG_DIR}/tests/UnpackPort/dut.sv, line:1:1, endln:11:10
-    |vpiName:i
-    |vpiFullName:work@dut.i
-    |vpiNetType:1
   |vpiPort:
   \_port: (var3), line:1:12, endln:1:16
     |vpiParent:
@@ -1056,9 +1047,10 @@ design: (work@dut)
           \_int_var: (work@dut.i), line:8:15, endln:8:16
           |vpiFullName:work@dut.i
           |vpiActual:
-          \_int_typespec: 
+          \_int_typespec: , line:8:15, endln:8:16
         |vpiName:i
         |vpiFullName:work@dut.i
+        |vpiSigned:1
     |vpiCondition:
     \_operation: , line:8:20, endln:8:23
       |vpiParent:
@@ -1071,7 +1063,7 @@ design: (work@dut)
         |vpiName:i
         |vpiFullName:work@dut.i
         |vpiActual:
-        \_logic_net: (work@dut.i), line:8:20, endln:8:21
+        \_int_var: (work@dut.i), line:8:15, endln:8:16
       |vpiOperand:
       \_constant: , line:8:22, endln:8:23
         |vpiParent:
@@ -1092,7 +1084,7 @@ design: (work@dut)
         |vpiName:i
         |vpiFullName:work@dut.i
         |vpiActual:
-        \_logic_net: (work@dut.i), line:8:20, endln:8:21
+        \_int_var: (work@dut.i), line:8:15, endln:8:16
     |vpiStmt:
     \_named_begin: (work@dut.g_fill)
       |vpiParent:
@@ -1704,6 +1696,7 @@ design: (work@dut)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:8:15, endln:8:16
 \_unsupported_typespec: (struct2), line:9:24, endln:9:31
   |vpiName:struct2
 \_function: (work@mailbox::new), line:3:5, endln:4:16
@@ -2792,7 +2785,6 @@ design: (work@dut)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
-\_int_typespec: 
 \_int_typespec: 
 ===================
 [  FATAL] : 0
