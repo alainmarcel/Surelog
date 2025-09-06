@@ -1,0 +1,943 @@
+[INF:CM0023] Creating log file "${SURELOG_DIR}/build/regression/GenVarRef/slpp_all/surelog.log".
+AST_DEBUG_BEGIN
+LIB:  work
+FILE: ${SURELOG_DIR}/tests/GenVarRef/dut.sv
+n<> u<0> t<_INVALID_> f<0> l<0:0>
+n<> u<1> t<Null_rule> p<136> s<135> l<1:1> el<1:0>
+n<none> u<2> t<StringConst> p<3> l<1:18> el<1:22>
+n<> u<3> t<Default_nettype_directive> p<4> c<2> l<1:1> el<1:22>
+n<> u<4> t<Top_directives> p<5> c<3> l<1:1> el<1:22>
+n<> u<5> t<Description> p<135> c<4> s<134> l<1:1> el<1:22>
+n<module> u<6> t<Module_keyword> p<15> s<7> l<3:1> el<3:7>
+n<gate> u<7> t<StringConst> p<15> s<14> l<3:8> el<3:12>
+n<a> u<8> t<StringConst> p<11> s<10> l<3:13> el<3:14>
+n<> u<9> t<Constant_bit_select> p<10> l<3:14> el<3:14>
+n<> u<10> t<Constant_select> p<11> c<9> l<3:14> el<3:14>
+n<> u<11> t<Port_reference> p<12> c<8> l<3:13> el<3:14>
+n<> u<12> t<Port_expression> p<13> c<11> l<3:13> el<3:14>
+n<> u<13> t<Port> p<14> c<12> l<3:13> el<3:14>
+n<> u<14> t<List_of_ports> p<15> c<13> l<3:12> el<3:15>
+n<> u<15> t<Module_nonansi_header> p<133> c<6> s<64> l<3:1> el<3:16>
+n<i> u<16> t<StringConst> p<21> s<20> l<4:14> el<4:15>
+n<0> u<17> t<IntConst> p<18> l<4:18> el<4:19>
+n<> u<18> t<Primary_literal> p<19> c<17> l<4:18> el<4:19>
+n<> u<19> t<Constant_primary> p<20> c<18> l<4:18> el<4:19>
+n<> u<20> t<Constant_expression> p<21> c<19> l<4:18> el<4:19>
+n<> u<21> t<Genvar_initialization> p<60> c<16> s<31> l<4:7> el<4:19>
+n<i> u<22> t<StringConst> p<23> l<4:21> el<4:22>
+n<> u<23> t<Primary_literal> p<24> c<22> l<4:21> el<4:22>
+n<> u<24> t<Constant_primary> p<25> c<23> l<4:21> el<4:22>
+n<> u<25> t<Constant_expression> p<31> c<24> s<30> l<4:21> el<4:22>
+n<2> u<26> t<IntConst> p<27> l<4:25> el<4:26>
+n<> u<27> t<Primary_literal> p<28> c<26> l<4:25> el<4:26>
+n<> u<28> t<Constant_primary> p<29> c<27> l<4:25> el<4:26>
+n<> u<29> t<Constant_expression> p<31> c<28> l<4:25> el<4:26>
+n<> u<30> t<BinOp_Less> p<31> s<29> l<4:23> el<4:24>
+n<> u<31> t<Constant_expression> p<60> c<25> s<34> l<4:21> el<4:26>
+n<i> u<32> t<StringConst> p<34> s<33> l<4:28> el<4:29>
+n<> u<33> t<IncDec_PlusPlus> p<34> l<4:29> el<4:31>
+n<> u<34> t<Genvar_iteration> p<60> c<32> s<59> l<4:28> el<4:31>
+n<> u<35> t<NetType_Wire> p<54> s<46> l<5:3> el<5:7>
+n<i> u<36> t<StringConst> p<37> l<5:9> el<5:10>
+n<> u<37> t<Primary_literal> p<38> c<36> l<5:9> el<5:10>
+n<> u<38> t<Constant_primary> p<39> c<37> l<5:9> el<5:10>
+n<> u<39> t<Constant_expression> p<44> c<38> s<43> l<5:9> el<5:10>
+n<0> u<40> t<IntConst> p<41> l<5:11> el<5:12>
+n<> u<41> t<Primary_literal> p<42> c<40> l<5:11> el<5:12>
+n<> u<42> t<Constant_primary> p<43> c<41> l<5:11> el<5:12>
+n<> u<43> t<Constant_expression> p<44> c<42> l<5:11> el<5:12>
+n<> u<44> t<Constant_range> p<45> c<39> l<5:9> el<5:12>
+n<> u<45> t<Packed_dimension> p<46> c<44> l<5:8> el<5:13>
+n<> u<46> t<Data_type_or_implicit> p<54> c<45> s<53> l<5:8> el<5:13>
+n<x> u<47> t<StringConst> p<52> s<51> l<5:14> el<5:15>
+n<> u<48> t<Number_Tick1> p<49> l<5:18> el<5:20>
+n<> u<49> t<Primary_literal> p<50> c<48> l<5:18> el<5:20>
+n<> u<50> t<Primary> p<51> c<49> l<5:18> el<5:20>
+n<> u<51> t<Expression> p<52> c<50> l<5:18> el<5:20>
+n<> u<52> t<Net_decl_assignment> p<53> c<47> l<5:14> el<5:20>
+n<> u<53> t<List_of_net_decl_assignments> p<54> c<52> l<5:14> el<5:20>
+n<> u<54> t<Net_declaration> p<55> c<35> l<5:3> el<5:21>
+n<> u<55> t<Package_or_generate_item_declaration> p<56> c<54> l<5:3> el<5:21>
+n<> u<56> t<Module_or_generate_item_declaration> p<57> c<55> l<5:3> el<5:21>
+n<> u<57> t<Module_common_item> p<58> c<56> l<5:3> el<5:21>
+n<> u<58> t<Module_or_generate_item> p<59> c<57> l<5:3> el<5:21>
+n<> u<59> t<Generate_item> p<60> c<58> l<5:3> el<5:21>
+n<> u<60> t<Loop_generate_construct> p<61> c<21> l<4:2> el<5:21>
+n<> u<61> t<Module_common_item> p<62> c<60> l<4:2> el<5:21>
+n<> u<62> t<Module_or_generate_item> p<63> c<61> l<4:2> el<5:21>
+n<> u<63> t<Non_port_module_item> p<64> c<62> l<4:2> el<5:21>
+n<> u<64> t<Module_item> p<133> c<63> s<82> l<4:2> el<5:21>
+n<> u<65> t<NetType_Wire> p<77> s<76> l<7:9> el<7:13>
+n<32> u<66> t<IntConst> p<67> l<7:15> el<7:17>
+n<> u<67> t<Primary_literal> p<68> c<66> l<7:15> el<7:17>
+n<> u<68> t<Constant_primary> p<69> c<67> l<7:15> el<7:17>
+n<> u<69> t<Constant_expression> p<74> c<68> s<73> l<7:15> el<7:17>
+n<0> u<70> t<IntConst> p<71> l<7:18> el<7:19>
+n<> u<71> t<Primary_literal> p<72> c<70> l<7:18> el<7:19>
+n<> u<72> t<Constant_primary> p<73> c<71> l<7:18> el<7:19>
+n<> u<73> t<Constant_expression> p<74> c<72> l<7:18> el<7:19>
+n<> u<74> t<Constant_range> p<75> c<69> l<7:15> el<7:19>
+n<> u<75> t<Packed_dimension> p<76> c<74> l<7:14> el<7:20>
+n<> u<76> t<Data_type_or_implicit> p<77> c<75> l<7:14> el<7:20>
+n<> u<77> t<Net_port_type> p<80> c<65> s<79> l<7:9> el<7:20>
+n<a> u<78> t<StringConst> p<79> l<7:21> el<7:22>
+n<> u<79> t<List_of_port_identifiers> p<80> c<78> l<7:21> el<7:22>
+n<> u<80> t<Output_declaration> p<81> c<77> l<7:2> el<7:22>
+n<> u<81> t<Port_declaration> p<82> c<80> l<7:2> el<7:22>
+n<> u<82> t<Module_item> p<133> c<81> s<131> l<7:2> el<7:23>
+n<a> u<83> t<StringConst> p<84> l<8:9> el<8:10>
+n<> u<84> t<Ps_or_hierarchical_identifier> p<87> c<83> s<86> l<8:9> el<8:10>
+n<> u<85> t<Constant_bit_select> p<86> l<8:11> el<8:11>
+n<> u<86> t<Constant_select> p<87> c<85> l<8:11> el<8:11>
+n<> u<87> t<Net_lvalue> p<125> c<84> s<124> l<8:9> el<8:10>
+n<> u<88> t<Number_1Tickb0> p<89> l<8:14> el<8:18>
+n<> u<89> t<Primary_literal> p<90> c<88> l<8:14> el<8:18>
+n<> u<90> t<Primary> p<91> c<89> l<8:14> el<8:18>
+n<> u<91> t<Expression> p<122> c<90> s<102> l<8:14> el<8:18>
+n<genblk1> u<92> t<StringConst> p<100> s<96> l<8:20> el<8:27>
+n<0> u<93> t<IntConst> p<94> l<8:28> el<8:29>
+n<> u<94> t<Primary_literal> p<95> c<93> l<8:28> el<8:29>
+n<> u<95> t<Constant_primary> p<96> c<94> l<8:28> el<8:29>
+n<> u<96> t<Constant_expression> p<100> c<95> s<97> l<8:28> el<8:29>
+n<x> u<97> t<StringConst> p<100> s<99> l<8:31> el<8:32>
+n<> u<98> t<Bit_select> p<99> l<8:32> el<8:32>
+n<> u<99> t<Select> p<100> c<98> l<8:32> el<8:32>
+n<> u<100> t<Complex_func_call> p<101> c<92> l<8:20> el<8:32>
+n<> u<101> t<Primary> p<102> c<100> l<8:20> el<8:32>
+n<> u<102> t<Expression> p<122> c<101> s<106> l<8:20> el<8:32>
+n<> u<103> t<Number_1Tickb0> p<104> l<8:34> el<8:38>
+n<> u<104> t<Primary_literal> p<105> c<103> l<8:34> el<8:38>
+n<> u<105> t<Primary> p<106> c<104> l<8:34> el<8:38>
+n<> u<106> t<Expression> p<122> c<105> s<117> l<8:34> el<8:38>
+n<genblk1> u<107> t<StringConst> p<115> s<111> l<8:40> el<8:47>
+n<1> u<108> t<IntConst> p<109> l<8:48> el<8:49>
+n<> u<109> t<Primary_literal> p<110> c<108> l<8:48> el<8:49>
+n<> u<110> t<Constant_primary> p<111> c<109> l<8:48> el<8:49>
+n<> u<111> t<Constant_expression> p<115> c<110> s<112> l<8:48> el<8:49>
+n<x> u<112> t<StringConst> p<115> s<114> l<8:51> el<8:52>
+n<> u<113> t<Bit_select> p<114> l<8:52> el<8:52>
+n<> u<114> t<Select> p<115> c<113> l<8:52> el<8:52>
+n<> u<115> t<Complex_func_call> p<116> c<107> l<8:40> el<8:52>
+n<> u<116> t<Primary> p<117> c<115> l<8:40> el<8:52>
+n<> u<117> t<Expression> p<122> c<116> s<121> l<8:40> el<8:52>
+n<> u<118> t<Number_1Tickb0> p<119> l<8:54> el<8:58>
+n<> u<119> t<Primary_literal> p<120> c<118> l<8:54> el<8:58>
+n<> u<120> t<Primary> p<121> c<119> l<8:54> el<8:58>
+n<> u<121> t<Expression> p<122> c<120> l<8:54> el<8:58>
+n<> u<122> t<Concatenation> p<123> c<91> l<8:13> el<8:59>
+n<> u<123> t<Primary> p<124> c<122> l<8:13> el<8:59>
+n<> u<124> t<Expression> p<125> c<123> l<8:13> el<8:59>
+n<> u<125> t<Net_assignment> p<126> c<87> l<8:9> el<8:59>
+n<> u<126> t<List_of_net_assignments> p<127> c<125> l<8:9> el<8:59>
+n<> u<127> t<Continuous_assign> p<128> c<126> l<8:2> el<8:60>
+n<> u<128> t<Module_common_item> p<129> c<127> l<8:2> el<8:60>
+n<> u<129> t<Module_or_generate_item> p<130> c<128> l<8:2> el<8:60>
+n<> u<130> t<Non_port_module_item> p<131> c<129> l<8:2> el<8:60>
+n<> u<131> t<Module_item> p<133> c<130> s<132> l<8:2> el<8:60>
+n<> u<132> t<ENDMODULE> p<133> l<9:1> el<9:10>
+n<> u<133> t<Module_declaration> p<134> c<15> l<3:1> el<9:10>
+n<> u<134> t<Description> p<135> c<133> l<3:1> el<9:10>
+n<> u<135> t<Source_text> p<136> c<5> l<1:1> el<9:10>
+n<> u<136> t<Top_level_rule> c<1> l<1:1> el<10:1>
+AST_DEBUG_END
+[WRN:PA0205] ${SURELOG_DIR}/tests/GenVarRef/dut.sv:3:1: No timescale set for "gate".
+[INF:CP0300] Compilation...
+[INF:CP0303] ${SURELOG_DIR}/tests/GenVarRef/dut.sv:3:1: Compile module "work@gate".
+[INF:EL0526] Design Elaboration...
+[INF:CP0335] ${SURELOG_DIR}/tests/GenVarRef/dut.sv:5:3: Compile generate block "work@gate.genblk1[0]".
+[INF:CP0335] ${SURELOG_DIR}/tests/GenVarRef/dut.sv:5:3: Compile generate block "work@gate.genblk1[1]".
+[NTE:EL0503] ${SURELOG_DIR}/tests/GenVarRef/dut.sv:3:1: Top level module "work@gate".
+[NTE:EL0508] Nb Top level modules: 1.
+[NTE:EL0509] Max instance depth: 1.
+[NTE:EL0510] Nb instances: 1.
+[NTE:EL0511] Nb leaf instances: 0.
+[INF:UH0706] Creating UHDM Model...
+=== UHDM Object Stats Begin (Non-Elaborated Model) ===
+assignment                                             1
+begin                                                  1
+bit_select                                             4
+constant                                              49
+cont_assign                                            6
+design                                                 1
+gen_for                                                1
+gen_scope                                              4
+gen_scope_array                                        4
+hier_path                                              4
+int_typespec                                           3
+int_var                                                1
+logic_net                                              6
+logic_typespec                                         7
+module_inst                                            7
+operation                                              7
+parameter                                              2
+port                                                   2
+range                                                 10
+ref_obj                                               10
+ref_typespec                                          10
+=== UHDM Object Stats End ===
+[INF:UH0707] Elaborating UHDM...
+=== UHDM Object Stats Begin (Elaborated Model) ===
+assignment                                             1
+begin                                                  1
+bit_select                                             6
+constant                                              49
+cont_assign                                            9
+design                                                 1
+gen_for                                                1
+gen_scope                                              6
+gen_scope_array                                        6
+hier_path                                              6
+int_typespec                                           3
+int_var                                                1
+logic_net                                              6
+logic_typespec                                         7
+module_inst                                            7
+operation                                              8
+parameter                                              2
+port                                                   3
+range                                                 10
+ref_obj                                               14
+ref_typespec                                          13
+=== UHDM Object Stats End ===
+[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/GenVarRef/slpp_all/surelog.uhdm ...
+[INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/GenVarRef/slpp_all/checker/surelog.chk.html ...
+[INF:UH0710] Loading UHDM DB: ${SURELOG_DIR}/build/regression/GenVarRef/slpp_all/surelog.uhdm ...
+[INF:UH0711] Decompiling UHDM...
+====== UHDM =======
+design: (work@gate)
+|vpiElaborated:1
+|vpiName:work@gate
+|uhdmallModules:
+\_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+  |vpiParent:
+  \_design: (work@gate)
+  |vpiFullName:work@gate
+  |vpiDefName:work@gate
+  |vpiNet:
+  \_logic_net: (work@gate.a), line:3:13, endln:3:14
+    |vpiParent:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+    |vpiName:a
+    |vpiFullName:work@gate.a
+    |vpiNetType:1
+  |vpiPort:
+  \_port: (a), line:3:13, endln:3:14
+    |vpiParent:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+    |vpiName:a
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@gate.a.a), line:3:13, endln:3:14
+      |vpiParent:
+      \_port: (a), line:3:13, endln:3:14
+      |vpiName:a
+      |vpiFullName:work@gate.a.a
+      |vpiActual:
+      \_logic_net: (work@gate.a), line:3:13, endln:3:14
+    |vpiTypedef:
+    \_ref_typespec: (work@gate.a)
+      |vpiParent:
+      \_port: (a), line:3:13, endln:3:14
+      |vpiFullName:work@gate.a
+      |vpiActual:
+      \_logic_typespec: , line:7:9, endln:7:20
+  |vpiContAssign:
+  \_cont_assign: , line:8:9, endln:8:59
+    |vpiParent:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+    |vpiRhs:
+    \_operation: , line:8:13, endln:8:59
+      |vpiParent:
+      \_cont_assign: , line:8:9, endln:8:59
+      |vpiOpType:33
+      |vpiOperand:
+      \_constant: , line:8:14, endln:8:18
+        |vpiDecompile:1'b0
+        |vpiSize:1
+        |BIN:0
+        |vpiConstType:3
+      |vpiOperand:
+      \_hier_path: (genblk1[0].x), line:8:20, endln:8:32
+        |vpiParent:
+        \_operation: , line:8:13, endln:8:59
+        |vpiActual:
+        \_bit_select: (genblk1[0]), line:8:20, endln:8:27
+          |vpiParent:
+          \_hier_path: (genblk1[0].x), line:8:20, endln:8:32
+          |vpiName:genblk1
+          |vpiFullName:genblk1[0]
+          |vpiIndex:
+          \_constant: , line:8:28, endln:8:29
+            |vpiDecompile:0
+            |vpiSize:64
+            |UINT:0
+            |vpiConstType:9
+        |vpiActual:
+        \_ref_obj: (work@gate.x), line:8:31, endln:8:32
+          |vpiParent:
+          \_hier_path: (genblk1[0].x), line:8:20, endln:8:32
+          |vpiName:x
+          |vpiFullName:work@gate.x
+        |vpiName:genblk1[0].x
+      |vpiOperand:
+      \_constant: , line:8:34, endln:8:38
+        |vpiDecompile:1'b0
+        |vpiSize:1
+        |BIN:0
+        |vpiConstType:3
+      |vpiOperand:
+      \_hier_path: (genblk1[1].x), line:8:40, endln:8:52
+        |vpiParent:
+        \_operation: , line:8:13, endln:8:59
+        |vpiActual:
+        \_bit_select: (genblk1[1]), line:8:40, endln:8:47
+          |vpiParent:
+          \_hier_path: (genblk1[1].x), line:8:40, endln:8:52
+          |vpiName:genblk1
+          |vpiFullName:genblk1[1]
+          |vpiIndex:
+          \_constant: , line:8:48, endln:8:49
+            |vpiDecompile:1
+            |vpiSize:64
+            |UINT:1
+            |vpiConstType:9
+        |vpiActual:
+        \_ref_obj: (work@gate.x), line:8:51, endln:8:52
+          |vpiParent:
+          \_hier_path: (genblk1[1].x), line:8:40, endln:8:52
+          |vpiName:x
+          |vpiFullName:work@gate.x
+        |vpiName:genblk1[1].x
+      |vpiOperand:
+      \_constant: , line:8:54, endln:8:58
+        |vpiDecompile:1'b0
+        |vpiSize:1
+        |BIN:0
+        |vpiConstType:3
+    |vpiLhs:
+    \_ref_obj: (work@gate.a), line:8:9, endln:8:10
+      |vpiParent:
+      \_cont_assign: , line:8:9, endln:8:59
+      |vpiName:a
+      |vpiFullName:work@gate.a
+      |vpiActual:
+      \_logic_net: (work@gate.a), line:3:13, endln:3:14
+  |vpiGenStmt:
+  \_gen_for: 
+    |vpiParent:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+    |vpiForInitStmt:
+    \_assignment: , line:4:7, endln:4:19
+      |vpiParent:
+      \_gen_for: 
+      |vpiRhs:
+      \_constant: , line:4:18, endln:4:19
+        |vpiDecompile:0
+        |vpiSize:64
+        |UINT:0
+        |vpiConstType:9
+      |vpiLhs:
+      \_int_var: (work@gate.i), line:4:14, endln:4:15
+        |vpiParent:
+        \_assignment: , line:4:7, endln:4:19
+        |vpiTypespec:
+        \_ref_typespec: (work@gate.i)
+          |vpiParent:
+          \_int_var: (work@gate.i), line:4:14, endln:4:15
+          |vpiFullName:work@gate.i
+          |vpiActual:
+          \_int_typespec: , line:4:14, endln:4:15
+        |vpiName:i
+        |vpiFullName:work@gate.i
+        |vpiSigned:1
+    |vpiCondition:
+    \_operation: , line:4:21, endln:4:26
+      |vpiParent:
+      \_gen_for: 
+      |vpiOpType:20
+      |vpiOperand:
+      \_ref_obj: (work@gate.i), line:4:21, endln:4:22
+        |vpiParent:
+        \_operation: , line:4:21, endln:4:26
+        |vpiName:i
+        |vpiFullName:work@gate.i
+        |vpiActual:
+        \_int_var: (work@gate.i), line:4:14, endln:4:15
+      |vpiOperand:
+      \_constant: , line:4:25, endln:4:26
+        |vpiParent:
+        \_operation: , line:4:21, endln:4:26
+        |vpiDecompile:2
+        |vpiSize:64
+        |UINT:2
+        |vpiConstType:9
+    |vpiForIncStmt:
+    \_operation: , line:4:28, endln:4:29
+      |vpiParent:
+      \_gen_for: 
+      |vpiOpType:62
+      |vpiOperand:
+      \_ref_obj: (work@gate.i)
+        |vpiParent:
+        \_gen_for: 
+        |vpiName:i
+        |vpiFullName:work@gate.i
+        |vpiActual:
+        \_int_var: (work@gate.i), line:4:14, endln:4:15
+    |vpiStmt:
+    \_begin: (work@gate)
+      |vpiParent:
+      \_gen_for: 
+      |vpiFullName:work@gate
+|uhdmtopModules:
+\_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+  |vpiParent:
+  \_design: (work@gate)
+  |vpiName:work@gate
+  |vpiDefName:work@gate
+  |vpiTop:1
+  |vpiNet:
+  \_logic_net: (work@gate.a), line:3:13, endln:3:14
+    |vpiParent:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+    |vpiTypespec:
+    \_ref_typespec: (work@gate.a)
+      |vpiParent:
+      \_logic_net: (work@gate.a), line:3:13, endln:3:14
+      |vpiFullName:work@gate.a
+      |vpiActual:
+      \_logic_typespec: , line:7:9, endln:7:20
+    |vpiName:a
+    |vpiFullName:work@gate.a
+    |vpiNetType:1
+  |vpiTopModule:1
+  |vpiPort:
+  \_port: (a), line:3:13, endln:3:14
+    |vpiParent:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+    |vpiName:a
+    |vpiDirection:2
+    |vpiLowConn:
+    \_ref_obj: (work@gate.a), line:3:13, endln:3:14
+      |vpiParent:
+      \_port: (a), line:3:13, endln:3:14
+      |vpiName:a
+      |vpiFullName:work@gate.a
+      |vpiActual:
+      \_logic_net: (work@gate.a), line:3:13, endln:3:14
+    |vpiTypedef:
+    \_ref_typespec: (work@gate.a)
+      |vpiParent:
+      \_port: (a), line:3:13, endln:3:14
+      |vpiFullName:work@gate.a
+      |vpiActual:
+      \_logic_typespec: , line:7:9, endln:7:20
+    |vpiInstance:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+  |vpiGenScopeArray:
+  \_gen_scope_array: (work@gate.genblk1[0]), line:5:3, endln:5:21
+    |vpiParent:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+    |vpiName:genblk1[0]
+    |vpiFullName:work@gate.genblk1[0]
+    |vpiGenScope:
+    \_gen_scope: (work@gate.genblk1[0]), line:5:3, endln:5:21
+      |vpiParent:
+      \_gen_scope_array: (work@gate.genblk1[0]), line:5:3, endln:5:21
+      |vpiFullName:work@gate.genblk1[0]
+      |vpiParameter:
+      \_parameter: (work@gate.genblk1[0].i), line:4:0
+        |vpiParent:
+        \_gen_scope: (work@gate.genblk1[0]), line:5:3, endln:5:21
+        |UINT:0
+        |vpiTypespec:
+        \_ref_typespec: (work@gate.genblk1[0].i)
+          |vpiParent:
+          \_parameter: (work@gate.genblk1[0].i), line:4:0
+          |vpiFullName:work@gate.genblk1[0].i
+          |vpiActual:
+          \_int_typespec: 
+        |vpiLocalParam:1
+        |vpiName:i
+        |vpiFullName:work@gate.genblk1[0].i
+      |vpiNet:
+      \_logic_net: (work@gate.genblk1[0].x), line:5:14, endln:5:15
+        |vpiParent:
+        \_gen_scope: (work@gate.genblk1[0]), line:5:3, endln:5:21
+        |vpiTypespec:
+        \_ref_typespec: (work@gate.genblk1[0].x)
+          |vpiParent:
+          \_logic_net: (work@gate.genblk1[0].x), line:5:14, endln:5:15
+          |vpiFullName:work@gate.genblk1[0].x
+          |vpiActual:
+          \_logic_typespec: , line:5:3, endln:5:13
+        |vpiName:x
+        |vpiFullName:work@gate.genblk1[0].x
+        |vpiNetType:1
+      |vpiContAssign:
+      \_cont_assign: , line:5:14, endln:5:15
+        |vpiParent:
+        \_gen_scope: (work@gate.genblk1[0]), line:5:3, endln:5:21
+        |vpiNetDeclAssign:1
+        |vpiRhs:
+        \_constant: , line:5:18, endln:5:20
+          |vpiParent:
+          \_cont_assign: , line:5:14, endln:5:15
+          |vpiDecompile:1
+          |vpiSize:1
+          |UINT:1
+          |vpiConstType:9
+        |vpiLhs:
+        \_logic_net: (work@gate.genblk1[0].x), line:5:14, endln:5:15
+  |vpiGenScopeArray:
+  \_gen_scope_array: (work@gate.genblk1[1]), line:5:3, endln:5:21
+    |vpiParent:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+    |vpiName:genblk1[1]
+    |vpiFullName:work@gate.genblk1[1]
+    |vpiGenScope:
+    \_gen_scope: (work@gate.genblk1[1]), line:5:3, endln:5:21
+      |vpiParent:
+      \_gen_scope_array: (work@gate.genblk1[1]), line:5:3, endln:5:21
+      |vpiFullName:work@gate.genblk1[1]
+      |vpiParameter:
+      \_parameter: (work@gate.genblk1[1].i), line:4:0
+        |vpiParent:
+        \_gen_scope: (work@gate.genblk1[1]), line:5:3, endln:5:21
+        |UINT:1
+        |vpiTypespec:
+        \_ref_typespec: (work@gate.genblk1[1].i)
+          |vpiParent:
+          \_parameter: (work@gate.genblk1[1].i), line:4:0
+          |vpiFullName:work@gate.genblk1[1].i
+          |vpiActual:
+          \_int_typespec: 
+        |vpiLocalParam:1
+        |vpiName:i
+        |vpiFullName:work@gate.genblk1[1].i
+      |vpiNet:
+      \_logic_net: (work@gate.genblk1[1].x), line:5:14, endln:5:15
+        |vpiParent:
+        \_gen_scope: (work@gate.genblk1[1]), line:5:3, endln:5:21
+        |vpiTypespec:
+        \_ref_typespec: (work@gate.genblk1[1].x)
+          |vpiParent:
+          \_logic_net: (work@gate.genblk1[1].x), line:5:14, endln:5:15
+          |vpiFullName:work@gate.genblk1[1].x
+          |vpiActual:
+          \_logic_typespec: , line:5:3, endln:5:13
+        |vpiName:x
+        |vpiFullName:work@gate.genblk1[1].x
+        |vpiNetType:1
+      |vpiContAssign:
+      \_cont_assign: , line:5:14, endln:5:15
+        |vpiParent:
+        \_gen_scope: (work@gate.genblk1[1]), line:5:3, endln:5:21
+        |vpiNetDeclAssign:1
+        |vpiRhs:
+        \_constant: , line:5:18, endln:5:20
+          |vpiParent:
+          \_cont_assign: , line:5:14, endln:5:15
+          |vpiDecompile:3
+          |vpiSize:2
+          |UINT:3
+          |vpiConstType:9
+        |vpiLhs:
+        \_logic_net: (work@gate.genblk1[1].x), line:5:14, endln:5:15
+  |vpiContAssign:
+  \_cont_assign: , line:8:9, endln:8:59
+    |vpiParent:
+    \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+    |vpiRhs:
+    \_operation: , line:8:13, endln:8:59
+      |vpiParent:
+      \_cont_assign: , line:8:9, endln:8:59
+      |vpiOpType:33
+      |vpiOperand:
+      \_constant: , line:8:14, endln:8:18
+        |vpiParent:
+        \_operation: , line:8:13, endln:8:59
+        |vpiDecompile:1'b0
+        |vpiSize:1
+        |BIN:0
+        |vpiConstType:3
+      |vpiOperand:
+      \_hier_path: (genblk1[0].x), line:8:20, endln:8:32
+        |vpiParent:
+        \_operation: , line:8:13, endln:8:59
+        |vpiActual:
+        \_bit_select: (genblk1[0]), line:8:20, endln:8:27
+          |vpiParent:
+          \_hier_path: (genblk1[0].x), line:8:20, endln:8:32
+          |vpiName:genblk1
+          |vpiFullName:genblk1[0]
+          |vpiActual:
+          \_gen_scope: (work@gate.genblk1[0]), line:5:3, endln:5:21
+          |vpiIndex:
+          \_constant: , line:8:28, endln:8:29
+            |vpiParent:
+            \_bit_select: (genblk1[0]), line:8:20, endln:8:27
+            |vpiDecompile:0
+            |vpiSize:64
+            |UINT:0
+            |vpiConstType:9
+        |vpiActual:
+        \_ref_obj: (work@gate.x), line:8:31, endln:8:32
+          |vpiParent:
+          \_hier_path: (genblk1[0].x), line:8:20, endln:8:32
+          |vpiName:x
+          |vpiFullName:work@gate.x
+          |vpiActual:
+          \_logic_net: (work@gate.genblk1[0].x), line:5:14, endln:5:15
+        |vpiName:genblk1[0].x
+      |vpiOperand:
+      \_constant: , line:8:34, endln:8:38
+        |vpiParent:
+        \_operation: , line:8:13, endln:8:59
+        |vpiDecompile:1'b0
+        |vpiSize:1
+        |BIN:0
+        |vpiConstType:3
+      |vpiOperand:
+      \_hier_path: (genblk1[1].x), line:8:40, endln:8:52
+        |vpiParent:
+        \_operation: , line:8:13, endln:8:59
+        |vpiActual:
+        \_bit_select: (genblk1[1]), line:8:40, endln:8:47
+          |vpiParent:
+          \_hier_path: (genblk1[1].x), line:8:40, endln:8:52
+          |vpiName:genblk1
+          |vpiFullName:genblk1[1]
+          |vpiActual:
+          \_gen_scope: (work@gate.genblk1[1]), line:5:3, endln:5:21
+          |vpiIndex:
+          \_constant: , line:8:48, endln:8:49
+            |vpiParent:
+            \_bit_select: (genblk1[1]), line:8:40, endln:8:47
+            |vpiDecompile:1
+            |vpiSize:64
+            |UINT:1
+            |vpiConstType:9
+        |vpiActual:
+        \_ref_obj: (work@gate.x), line:8:51, endln:8:52
+          |vpiParent:
+          \_hier_path: (genblk1[1].x), line:8:40, endln:8:52
+          |vpiName:x
+          |vpiFullName:work@gate.x
+          |vpiActual:
+          \_logic_net: (work@gate.genblk1[1].x), line:5:14, endln:5:15
+        |vpiName:genblk1[1].x
+      |vpiOperand:
+      \_constant: , line:8:54, endln:8:58
+        |vpiParent:
+        \_operation: , line:8:13, endln:8:59
+        |vpiDecompile:1'b0
+        |vpiSize:1
+        |BIN:0
+        |vpiConstType:3
+    |vpiLhs:
+    \_ref_obj: (work@gate.a), line:8:9, endln:8:10
+      |vpiParent:
+      \_cont_assign: , line:8:9, endln:8:59
+      |vpiName:a
+      |vpiFullName:work@gate.a
+      |vpiActual:
+      \_logic_net: (work@gate.a), line:3:13, endln:3:14
+\_weaklyReferenced:
+\_int_typespec: , line:4:14, endln:4:15
+\_logic_typespec: , line:7:9, endln:7:20
+  |vpiRange:
+  \_range: , line:7:14, endln:7:20
+    |vpiParent:
+    \_logic_typespec: , line:7:9, endln:7:20
+    |vpiLeftRange:
+    \_constant: , line:7:15, endln:7:17
+      |vpiParent:
+      \_range: , line:7:14, endln:7:20
+      |vpiDecompile:32
+      |vpiSize:64
+      |UINT:32
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:18, endln:7:19
+      |vpiParent:
+      \_range: , line:7:14, endln:7:20
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:7:9, endln:7:20
+  |vpiRange:
+  \_range: , line:7:14, endln:7:20
+    |vpiParent:
+    \_logic_typespec: , line:7:9, endln:7:20
+    |vpiLeftRange:
+    \_constant: , line:7:15, endln:7:17
+      |vpiParent:
+      \_range: , line:7:14, endln:7:20
+      |vpiDecompile:32
+      |vpiSize:64
+      |UINT:32
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:18, endln:7:19
+      |vpiParent:
+      \_range: , line:7:14, endln:7:20
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:5:3, endln:5:13
+  |vpiRange:
+  \_range: , line:5:8, endln:5:13
+    |vpiParent:
+    \_logic_typespec: , line:5:3, endln:5:13
+    |vpiLeftRange:
+    \_constant: , line:5:9, endln:5:10
+      |vpiParent:
+      \_range: , line:5:8, endln:5:13
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:5:11, endln:5:12
+      |vpiParent:
+      \_range: , line:5:8, endln:5:13
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:5:3, endln:5:13
+  |vpiRange:
+  \_range: , line:5:8, endln:5:13
+    |vpiParent:
+    \_logic_typespec: , line:5:3, endln:5:13
+    |vpiLeftRange:
+    \_constant: , line:5:9, endln:5:10
+      |vpiParent:
+      \_range: , line:5:8, endln:5:13
+      |vpiDecompile:1
+      |vpiSize:64
+      |UINT:1
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:5:11, endln:5:12
+      |vpiParent:
+      \_range: , line:5:8, endln:5:13
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:7:9, endln:7:20
+  |vpiRange:
+  \_range: , line:7:14, endln:7:20
+    |vpiParent:
+    \_logic_typespec: , line:7:9, endln:7:20
+    |vpiLeftRange:
+    \_constant: , line:7:15, endln:7:17
+      |vpiParent:
+      \_range: , line:7:14, endln:7:20
+      |vpiDecompile:32
+      |vpiSize:64
+      |UINT:32
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:18, endln:7:19
+      |vpiParent:
+      \_range: , line:7:14, endln:7:20
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_operation: , line:8:13, endln:8:59
+  |vpiParent:
+  \_cont_assign: , line:8:9, endln:8:59
+  |vpiOpType:33
+  |vpiOperand:
+  \_constant: , line:8:14, endln:8:18
+  |vpiOperand:
+  \_hier_path: (genblk1[0].x), line:8:20, endln:8:32
+    |vpiParent:
+    \_operation: , line:8:13, endln:8:59
+    |vpiActual:
+    \_bit_select: (genblk1[0]), line:8:20, endln:8:27
+      |vpiParent:
+      \_hier_path: (genblk1[0].x), line:8:20, endln:8:32
+      |vpiName:genblk1
+      |vpiFullName:genblk1[0]
+      |vpiIndex:
+      \_constant: , line:8:28, endln:8:29
+    |vpiActual:
+    \_ref_obj: (work@gate.x), line:8:31, endln:8:32
+      |vpiParent:
+      \_hier_path: (genblk1[0].x), line:8:20, endln:8:32
+      |vpiName:x
+      |vpiFullName:work@gate.x
+    |vpiName:genblk1[0].x
+  |vpiOperand:
+  \_constant: , line:8:34, endln:8:38
+  |vpiOperand:
+  \_hier_path: (genblk1[1].x), line:8:40, endln:8:52
+    |vpiParent:
+    \_operation: , line:8:13, endln:8:59
+    |vpiActual:
+    \_bit_select: (genblk1[1]), line:8:40, endln:8:47
+      |vpiParent:
+      \_hier_path: (genblk1[1].x), line:8:40, endln:8:52
+      |vpiName:genblk1
+      |vpiFullName:genblk1[1]
+      |vpiIndex:
+      \_constant: , line:8:48, endln:8:49
+    |vpiActual:
+    \_ref_obj: (work@gate.x), line:8:51, endln:8:52
+      |vpiParent:
+      \_hier_path: (genblk1[1].x), line:8:40, endln:8:52
+      |vpiName:x
+      |vpiFullName:work@gate.x
+    |vpiName:genblk1[1].x
+  |vpiOperand:
+  \_constant: , line:8:54, endln:8:58
+\_cont_assign: , line:8:9, endln:8:59
+  |vpiParent:
+  \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+  |vpiRhs:
+  \_operation: , line:8:13, endln:8:59
+  |vpiLhs:
+  \_ref_obj: (work@gate.a), line:8:9, endln:8:10
+    |vpiParent:
+    \_cont_assign: , line:8:9, endln:8:59
+    |vpiName:a
+    |vpiFullName:work@gate.a
+    |vpiActual:
+    \_logic_net: (work@gate.a), line:3:13, endln:3:14
+\_gen_scope: (work@gate.genblk1[0]), line:5:3, endln:5:21
+  |vpiParent:
+  \_gen_scope_array: (work@gate.genblk1[0]), line:5:3, endln:5:21
+  |vpiFullName:work@gate.genblk1[0]
+  |vpiParameter:
+  \_parameter: (work@gate.genblk1[0].i), line:4:0
+  |vpiNet:
+  \_logic_net: (work@gate.genblk1[0].x), line:5:14, endln:5:15
+  |vpiContAssign:
+  \_cont_assign: , line:5:14, endln:5:15
+    |vpiParent:
+    \_gen_scope: (work@gate.genblk1[0]), line:5:3, endln:5:21
+    |vpiNetDeclAssign:1
+    |vpiRhs:
+    \_constant: , line:5:18, endln:5:20
+    |vpiLhs:
+    \_logic_net: (work@gate.genblk1[0].x), line:5:14, endln:5:15
+      |vpiParent:
+      \_cont_assign: , line:5:14, endln:5:15
+      |vpiTypespec:
+      \_ref_typespec: (work@gate.genblk1[0].x)
+        |vpiParent:
+        \_logic_net: (work@gate.genblk1[0].x), line:5:14, endln:5:15
+        |vpiFullName:work@gate.genblk1[0].x
+        |vpiActual:
+        \_logic_typespec: , line:5:3, endln:5:13
+      |vpiName:x
+      |vpiFullName:work@gate.genblk1[0].x
+      |vpiNetType:1
+\_gen_scope_array: (work@gate.genblk1[0]), line:5:3, endln:5:21
+  |vpiParent:
+  \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+  |vpiName:genblk1[0]
+  |vpiFullName:work@gate.genblk1[0]
+  |vpiGenScope:
+  \_gen_scope: (work@gate.genblk1[0]), line:5:3, endln:5:21
+\_logic_typespec: , line:5:3, endln:5:13
+  |vpiParent:
+  \_ref_typespec: (work@gate.genblk1[0].x)
+  |vpiRange:
+  \_range: , line:5:8, endln:5:13
+    |vpiParent:
+    \_logic_typespec: , line:5:3, endln:5:13
+    |vpiLeftRange:
+    \_constant: , line:5:9, endln:5:10
+      |vpiParent:
+      \_range: , line:5:8, endln:5:13
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:5:11, endln:5:12
+      |vpiParent:
+      \_range: , line:5:8, endln:5:13
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_int_typespec: 
+\_gen_scope: (work@gate.genblk1[1]), line:5:3, endln:5:21
+  |vpiParent:
+  \_gen_scope_array: (work@gate.genblk1[1]), line:5:3, endln:5:21
+  |vpiFullName:work@gate.genblk1[1]
+  |vpiParameter:
+  \_parameter: (work@gate.genblk1[1].i), line:4:0
+  |vpiNet:
+  \_logic_net: (work@gate.genblk1[1].x), line:5:14, endln:5:15
+  |vpiContAssign:
+  \_cont_assign: , line:5:14, endln:5:15
+    |vpiParent:
+    \_gen_scope: (work@gate.genblk1[1]), line:5:3, endln:5:21
+    |vpiNetDeclAssign:1
+    |vpiRhs:
+    \_constant: , line:5:18, endln:5:20
+    |vpiLhs:
+    \_logic_net: (work@gate.genblk1[1].x), line:5:14, endln:5:15
+      |vpiParent:
+      \_cont_assign: , line:5:14, endln:5:15
+      |vpiTypespec:
+      \_ref_typespec: (work@gate.genblk1[1].x)
+        |vpiParent:
+        \_logic_net: (work@gate.genblk1[1].x), line:5:14, endln:5:15
+        |vpiFullName:work@gate.genblk1[1].x
+        |vpiActual:
+        \_logic_typespec: , line:5:3, endln:5:13
+      |vpiName:x
+      |vpiFullName:work@gate.genblk1[1].x
+      |vpiNetType:1
+\_gen_scope_array: (work@gate.genblk1[1]), line:5:3, endln:5:21
+  |vpiParent:
+  \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenVarRef/dut.sv, line:3:1, endln:9:10
+  |vpiName:genblk1[1]
+  |vpiFullName:work@gate.genblk1[1]
+  |vpiGenScope:
+  \_gen_scope: (work@gate.genblk1[1]), line:5:3, endln:5:21
+\_logic_typespec: , line:5:3, endln:5:13
+  |vpiParent:
+  \_ref_typespec: (work@gate.genblk1[1].x)
+  |vpiRange:
+  \_range: , line:5:8, endln:5:13
+    |vpiParent:
+    \_logic_typespec: , line:5:3, endln:5:13
+    |vpiLeftRange:
+    \_constant: , line:5:9, endln:5:10
+      |vpiParent:
+      \_range: , line:5:8, endln:5:13
+      |vpiDecompile:1
+      |vpiSize:64
+      |UINT:1
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:5:11, endln:5:12
+      |vpiParent:
+      \_range: , line:5:8, endln:5:13
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_int_typespec: 
+===================
+[  FATAL] : 0
+[ SYNTAX] : 0
+[  ERROR] : 0
+[WARNING] : 1
+[   NOTE] : 5
+
+============================== Begin RoundTrip Results ==============================
+[roundtrip]: ${SURELOG_DIR}/tests/GenVarRef/dut.sv | ${SURELOG_DIR}/build/regression/GenVarRef/roundtrip/dut_000.sv | 4 | 9 |
+============================== End RoundTrip Results ==============================

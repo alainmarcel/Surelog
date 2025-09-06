@@ -67,10 +67,10 @@ Running: cd ${SURELOG_DIR}/build/regression/CoresSweRVMP/slpp_all/mp_preprocess;
 [  6%] Generating 10_lsu_bus_intf.sv
 [ 12%] Generating 11_ifu_bp_ctl.sv
 [ 18%] Generating 12_beh_lib.sv
-[ 25%] Generating 13_ifu_mem_ctl.sv
-[ 31%] Generating 14_mem_lib.sv
+[ 25%] Generating 14_mem_lib.sv
+[ 31%] Generating 13_ifu_mem_ctl.sv
 [ 37%] Generating 15_exu.sv
-[ 43%] Generating 16_dec_decode_ctl.sv
+[ 50%] Generating 16_dec_decode_ctl.sv
 [ 50%] Generating 1_lsu_stbuf.sv
 [ 56%] Generating 2_ahb_to_axi4.sv
 [ 62%] Generating 3_rvjtag_tap.sv
