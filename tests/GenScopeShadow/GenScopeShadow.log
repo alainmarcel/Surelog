@@ -660,7 +660,7 @@ design: (work@gate)
         |vpiName:x
         |vpiFullName:blk[0].sub.x
         |vpiActual:
-        \_logic_net: (work@gate.x), line:4:16, endln:4:17
+        \_logic_net: (work@gate.blk[0].sub.x), line:8:24, endln:8:25
       |vpiName:blk[0].sub.x
 \_weaklyReferenced:
 \_int_typespec: , line:5:17, endln:5:18

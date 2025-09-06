@@ -26583,7 +26583,7 @@ design: (work@top)
             \_hier_path: (CVA6Cfg.NrNonIdempotentRules), line:568:28, endln:568:56
             |vpiName:CVA6Cfg
             |vpiActual:
-            \_parameter: (work@top.CVA6Cfg), line:614:35, endln:614:42
+            \_io_decl: (CVA6Cfg), line:468:86, endln:468:93
           |vpiActual:
           \_ref_obj: (build_config_pkg::build_config::NrNonIdempotentRules), line:568:36, endln:568:56
             |vpiParent:
@@ -26601,7 +26601,7 @@ design: (work@top)
             \_hier_path: (CVA6Cfg.NonIdempotentLength), line:568:60, endln:568:87
             |vpiName:CVA6Cfg
             |vpiActual:
-            \_parameter: (work@top.CVA6Cfg), line:614:35, endln:614:42
+            \_io_decl: (CVA6Cfg), line:468:86, endln:468:93
           |vpiActual:
           \_ref_obj: (build_config_pkg::build_config::NonIdempotentLength), line:568:68, endln:568:87
             |vpiParent:
@@ -41040,30 +41040,6 @@ design: (work@top)
   \_typespec_member: (SV), line:406:18, endln:406:20
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
-\_operation: , line:418:13, endln:418:29
-  |vpiParent:
-  \_immediate_assert: , line:418:5, endln:418:31
-  |vpiOpType:18
-  |vpiOperand:
-  \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
-    |vpiParent:
-    \_operation: , line:418:13, endln:418:29
-    |vpiActual:
-    \_ref_obj: (Cfg), line:418:13, endln:418:16
-      |vpiParent:
-      \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
-      |vpiName:Cfg
-      |vpiActual:
-      \_io_decl: (Cfg), line:415:48, endln:415:51
-    |vpiActual:
-    \_ref_obj: (config_pkg::check_cfg::RASDepth), line:418:17, endln:418:25
-      |vpiParent:
-      \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
-      |vpiName:RASDepth
-      |vpiFullName:config_pkg::check_cfg::RASDepth
-    |vpiName:Cfg.RASDepth
-  |vpiOperand:
-  \_constant: , line:418:28, endln:418:29
 \_io_decl: (Cfg), line:415:48, endln:415:51
   |vpiParent:
   \_function: (config_pkg::check_cfg), line:415:3, endln:427:14
@@ -41096,6 +41072,29 @@ design: (work@top)
       \_begin: (config_pkg::check_cfg), line:419:5, endln:419:60
       |vpiExpr:
       \_operation: , line:418:13, endln:418:29
+        |vpiParent:
+        \_immediate_assert: , line:418:5, endln:418:31
+        |vpiOpType:18
+        |vpiOperand:
+        \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
+          |vpiParent:
+          \_operation: , line:418:13, endln:418:29
+          |vpiActual:
+          \_ref_obj: (Cfg), line:418:13, endln:418:16
+            |vpiParent:
+            \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
+            |vpiName:Cfg
+            |vpiActual:
+            \_io_decl: (Cfg), line:415:48, endln:415:51
+          |vpiActual:
+          \_ref_obj: (config_pkg::check_cfg::RASDepth), line:418:17, endln:418:25
+            |vpiParent:
+            \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
+            |vpiName:RASDepth
+            |vpiFullName:config_pkg::check_cfg::RASDepth
+          |vpiName:Cfg.RASDepth
+        |vpiOperand:
+        \_constant: , line:418:28, endln:418:29
     |vpiStmt:
     \_immediate_assert: , line:419:5, endln:419:60
       |vpiParent:
@@ -44289,30 +44288,6 @@ design: (work@top)
   \_typespec_member: (SV), line:406:18, endln:406:20
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
-\_operation: , line:418:13, endln:418:29
-  |vpiParent:
-  \_immediate_assert: , line:418:5, endln:418:31
-  |vpiOpType:18
-  |vpiOperand:
-  \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
-    |vpiParent:
-    \_operation: , line:418:13, endln:418:29
-    |vpiActual:
-    \_ref_obj: (Cfg), line:418:13, endln:418:16
-      |vpiParent:
-      \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
-      |vpiName:Cfg
-      |vpiActual:
-      \_io_decl: (Cfg), line:415:48, endln:415:51
-    |vpiActual:
-    \_ref_obj: (config_pkg::check_cfg::RASDepth), line:418:17, endln:418:25
-      |vpiParent:
-      \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
-      |vpiName:RASDepth
-      |vpiFullName:config_pkg::check_cfg::RASDepth
-    |vpiName:Cfg.RASDepth
-  |vpiOperand:
-  \_constant: , line:418:28, endln:418:29
 \_io_decl: (Cfg), line:415:48, endln:415:51
   |vpiParent:
   \_function: (config_pkg::check_cfg), line:415:3, endln:427:14
@@ -44345,6 +44320,29 @@ design: (work@top)
       \_begin: (config_pkg::check_cfg), line:419:5, endln:419:60
       |vpiExpr:
       \_operation: , line:418:13, endln:418:29
+        |vpiParent:
+        \_immediate_assert: , line:418:5, endln:418:31
+        |vpiOpType:18
+        |vpiOperand:
+        \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
+          |vpiParent:
+          \_operation: , line:418:13, endln:418:29
+          |vpiActual:
+          \_ref_obj: (Cfg), line:418:13, endln:418:16
+            |vpiParent:
+            \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
+            |vpiName:Cfg
+            |vpiActual:
+            \_io_decl: (Cfg), line:415:48, endln:415:51
+          |vpiActual:
+          \_ref_obj: (config_pkg::check_cfg::RASDepth), line:418:17, endln:418:25
+            |vpiParent:
+            \_hier_path: (Cfg.RASDepth), line:418:13, endln:418:25
+            |vpiName:RASDepth
+            |vpiFullName:config_pkg::check_cfg::RASDepth
+          |vpiName:Cfg.RASDepth
+        |vpiOperand:
+        \_constant: , line:418:28, endln:418:29
     |vpiStmt:
     \_immediate_assert: , line:419:5, endln:419:60
       |vpiParent:

@@ -242,6 +242,77 @@ design: (unnamed)
 \_weaklyReferenced:
 \_unsupported_typespec: (uvm_object), line:6:32, endln:6:42
   |vpiName:uvm_object
+\_class_var: (pack::uvm_event_base::do_copy::e), line:7:16, endln:7:17
+  |vpiParent:
+  \_begin: (pack::uvm_event_base::do_copy), line:9:1, endln:9:21
+  |vpiTypespec:
+  \_ref_typespec: (pack::uvm_event_base::do_copy::e)
+    |vpiParent:
+    \_class_var: (pack::uvm_event_base::do_copy::e), line:7:16, endln:7:17
+    |vpiFullName:pack::uvm_event_base::do_copy::e
+    |vpiActual:
+    \_class_typespec: , line:7:1, endln:7:15
+  |vpiName:e
+  |vpiFullName:pack::uvm_event_base::do_copy::e
+\_begin: (pack::uvm_event_base::do_copy), line:9:1, endln:9:21
+  |vpiParent:
+  \_function: (pack::uvm_event_base::do_copy), line:6:1, endln:6:8
+  |vpiFullName:pack::uvm_event_base::do_copy
+  |vpiVariables:
+  \_class_var: (pack::uvm_event_base::do_copy::e), line:7:16, endln:7:17
+  |vpiStmt:
+  \_assignment: , line:9:1, endln:9:20
+    |vpiParent:
+    \_begin: (pack::uvm_event_base::do_copy), line:9:1, endln:9:21
+    |vpiOpType:82
+    |vpiBlocking:1
+    |vpiRhs:
+    \_hier_path: (e.m_event), line:9:11, endln:9:20
+      |vpiParent:
+      \_assignment: , line:9:1, endln:9:20
+      |vpiActual:
+      \_ref_obj: (e), line:9:11, endln:9:12
+        |vpiParent:
+        \_hier_path: (e.m_event), line:9:11, endln:9:20
+        |vpiName:e
+      |vpiActual:
+      \_ref_obj: (pack::uvm_event_base::do_copy::m_event), line:9:13, endln:9:20
+        |vpiParent:
+        \_hier_path: (e.m_event), line:9:11, endln:9:20
+        |vpiName:m_event
+        |vpiFullName:pack::uvm_event_base::do_copy::m_event
+      |vpiName:e.m_event
+    |vpiLhs:
+    \_ref_obj: (pack::uvm_event_base::do_copy::m_event), line:9:1, endln:9:8
+      |vpiParent:
+      \_assignment: , line:9:1, endln:9:20
+      |vpiName:m_event
+      |vpiFullName:pack::uvm_event_base::do_copy::m_event
+\_function: (pack::uvm_event_base::do_copy), line:6:1, endln:6:8
+  |vpiParent:
+  \_class_defn: (pack::uvm_event_base), file:${SURELOG_DIR}/tests/NamedEventHierPath/dut.sv, line:3:9, endln:12:9
+  |vpiName:do_copy
+  |vpiFullName:pack::uvm_event_base::do_copy
+  |vpiVariables:
+  \_class_var: (pack::uvm_event_base::do_copy::e), line:7:16, endln:7:17
+  |vpiMethod:1
+  |vpiVisibility:1
+  |vpiVirtual:1
+  |vpiIODecl:
+  \_io_decl: (rhs), line:6:43, endln:6:46
+    |vpiParent:
+    \_function: (pack::uvm_event_base::do_copy), line:6:1, endln:6:8
+    |vpiDirection:1
+    |vpiName:rhs
+    |vpiTypedef:
+    \_ref_typespec: (pack::uvm_event_base::do_copy::rhs)
+      |vpiParent:
+      \_io_decl: (rhs), line:6:43, endln:6:46
+      |vpiFullName:pack::uvm_event_base::do_copy::rhs
+      |vpiActual:
+      \_unsupported_typespec: (uvm_object), line:6:32, endln:6:42
+  |vpiStmt:
+  \_begin: (pack::uvm_event_base::do_copy), line:9:1, endln:9:21
 \_class_typespec: , line:7:1, endln:7:15
   |vpiClassDefn:
   \_class_defn: (pack::uvm_event_base), file:${SURELOG_DIR}/tests/NamedEventHierPath/dut.sv, line:3:9, endln:12:9

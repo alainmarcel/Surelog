@@ -1584,123 +1584,121 @@ design: (unnamed)
 \_class_typespec: , line:28:7, endln:28:29
   |vpiClassDefn:
   \_class_defn: (uvm::uvm_vreg_field_cb_iter), file:${SURELOG_DIR}/tests/ForLoopBind/dut.sv, line:6:1, endln:11:9
-\_class_typespec: , line:29:12, endln:29:30
-  |vpiClassDefn:
-  \_class_defn: (uvm::uvm_vreg_field_cbs), file:${SURELOG_DIR}/tests/ForLoopBind/dut.sv, line:13:1, endln:15:9
-\_operation: , line:29:41, endln:29:51
+\_class_var: (uvm::uvm_vreg::write::cb), line:29:31, endln:29:33
   |vpiParent:
-  \_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
-  |vpiOpType:15
-  |vpiOperand:
-  \_ref_obj: (uvm::uvm_vreg::write::cb), line:29:41, endln:29:43
+  \_assignment: , line:29:12, endln:29:39
+  |vpiTypespec:
+  \_ref_typespec: (uvm::uvm_vreg::write::cb)
     |vpiParent:
-    \_operation: , line:29:41, endln:29:51
-    |vpiName:cb
+    \_class_var: (uvm::uvm_vreg::write::cb), line:29:31, endln:29:33
     |vpiFullName:uvm::uvm_vreg::write::cb
     |vpiActual:
-    \_class_var: (uvm::uvm_vreg::write::cb), line:29:31, endln:29:33
-  |vpiOperand:
-  \_constant: , line:29:47, endln:29:51
-\_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
+    \_class_typespec: , line:29:12, endln:29:30
+  |vpiName:cb
+  |vpiFullName:uvm::uvm_vreg::write::cb
+\_assignment: , line:29:12, endln:29:39
+  |vpiParent:
+  \_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
+  |vpiRhs:
+  \_ref_obj: (uvm::uvm_vreg::write::cbs), line:29:36, endln:29:39
+    |vpiParent:
+    \_assignment: , line:29:12, endln:29:39
+    |vpiName:cbs
+    |vpiFullName:uvm::uvm_vreg::write::cbs
+    |vpiActual:
+    \_class_var: (uvm::uvm_vreg::write::cbs), line:28:30, endln:28:33
+  |vpiLhs:
+  \_class_var: (uvm::uvm_vreg::write::cb), line:29:31, endln:29:33
+\_class_var: (uvm::uvm_vreg::write::cbs), line:28:30, endln:28:33
   |vpiParent:
   \_begin: (uvm::uvm_vreg::write), line:27:24, endln:33:7
-  |vpiFullName:uvm::uvm_vreg::write
-  |vpiForInitStmt:
-  \_assignment: , line:29:12, endln:29:39
+  |vpiTypespec:
+  \_ref_typespec: (uvm::uvm_vreg::write::cbs)
     |vpiParent:
-    \_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
-    |vpiRhs:
-    \_ref_obj: (uvm::uvm_vreg::write::cbs), line:29:36, endln:29:39
-      |vpiParent:
-      \_assignment: , line:29:12, endln:29:39
-      |vpiName:cbs
-      |vpiFullName:uvm::uvm_vreg::write::cbs
-      |vpiActual:
-      \_class_var: (uvm::uvm_vreg::write::cbs), line:28:30, endln:28:33
-    |vpiLhs:
-    \_class_var: (uvm::uvm_vreg::write::cb), line:29:31, endln:29:33
-      |vpiParent:
-      \_assignment: , line:29:12, endln:29:39
-      |vpiTypespec:
-      \_ref_typespec: (uvm::uvm_vreg::write::cb)
-        |vpiParent:
-        \_class_var: (uvm::uvm_vreg::write::cb), line:29:31, endln:29:33
-        |vpiFullName:uvm::uvm_vreg::write::cb
-        |vpiActual:
-        \_class_typespec: , line:29:12, endln:29:30
-      |vpiName:cb
-      |vpiFullName:uvm::uvm_vreg::write::cb
-  |vpiForIncStmt:
-  \_assignment: , line:30:12, endln:30:20
-    |vpiParent:
-    \_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
-    |vpiOpType:82
-    |vpiBlocking:1
-    |vpiRhs:
-    \_ref_obj: (uvm::uvm_vreg::write::cbs), line:30:17, endln:30:20
-      |vpiParent:
-      \_assignment: , line:30:12, endln:30:20
-      |vpiName:cbs
-      |vpiFullName:uvm::uvm_vreg::write::cbs
-      |vpiActual:
-      \_class_var: (uvm::uvm_vreg::write::cbs), line:28:30, endln:28:33
-    |vpiLhs:
-    \_ref_obj: (uvm::uvm_vreg::write::cb), line:30:12, endln:30:14
-      |vpiParent:
-      \_assignment: , line:30:12, endln:30:20
-      |vpiName:cb
-      |vpiFullName:uvm::uvm_vreg::write::cb
-      |vpiActual:
-      \_class_var: (uvm::uvm_vreg::write::cb), line:29:31, endln:29:33
-  |vpiCondition:
-  \_operation: , line:29:41, endln:29:51
-  |vpiStmt:
-  \_begin: (uvm::uvm_vreg::write), line:30:22, endln:32:10
-    |vpiParent:
-    \_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
-    |vpiFullName:uvm::uvm_vreg::write
-    |vpiStmt:
-    \_assignment: , line:31:10, endln:31:22
-      |vpiParent:
-      \_begin: (uvm::uvm_vreg::write), line:30:22, endln:32:10
-      |vpiOpType:82
-      |vpiBlocking:1
-      |vpiRhs:
-      \_constant: , line:31:21, endln:31:22
-      |vpiLhs:
-      \_hier_path: (cb.fname), line:31:10, endln:31:18
-        |vpiParent:
-        \_assignment: , line:31:10, endln:31:22
-        |vpiActual:
-        \_ref_obj: (cb), line:31:13, endln:31:18
-          |vpiParent:
-          \_hier_path: (cb.fname), line:31:10, endln:31:18
-          |vpiName:cb
-        |vpiActual:
-        \_ref_obj: (fname), line:31:13, endln:31:18
-          |vpiParent:
-          \_hier_path: (cb.fname), line:31:10, endln:31:18
-          |vpiName:fname
-        |vpiName:cb.fname
+    \_class_var: (uvm::uvm_vreg::write::cbs), line:28:30, endln:28:33
+    |vpiFullName:uvm::uvm_vreg::write::cbs
+    |vpiActual:
+    \_class_typespec: , line:28:7, endln:28:29
+  |vpiName:cbs
+  |vpiFullName:uvm::uvm_vreg::write::cbs
 \_begin: (uvm::uvm_vreg::write), line:27:24, endln:33:7
   |vpiParent:
   \_foreach_stmt: (uvm::uvm_vreg::write), line:27:4, endln:27:11
   |vpiFullName:uvm::uvm_vreg::write
   |vpiVariables:
   \_class_var: (uvm::uvm_vreg::write::cbs), line:28:30, endln:28:33
-    |vpiParent:
-    \_begin: (uvm::uvm_vreg::write), line:27:24, endln:33:7
-    |vpiTypespec:
-    \_ref_typespec: (uvm::uvm_vreg::write::cbs)
-      |vpiParent:
-      \_class_var: (uvm::uvm_vreg::write::cbs), line:28:30, endln:28:33
-      |vpiFullName:uvm::uvm_vreg::write::cbs
-      |vpiActual:
-      \_class_typespec: , line:28:7, endln:28:29
-    |vpiName:cbs
-    |vpiFullName:uvm::uvm_vreg::write::cbs
   |vpiStmt:
   \_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
+    |vpiParent:
+    \_begin: (uvm::uvm_vreg::write), line:27:24, endln:33:7
+    |vpiFullName:uvm::uvm_vreg::write
+    |vpiForInitStmt:
+    \_assignment: , line:29:12, endln:29:39
+    |vpiForIncStmt:
+    \_assignment: , line:30:12, endln:30:20
+      |vpiParent:
+      \_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
+      |vpiOpType:82
+      |vpiBlocking:1
+      |vpiRhs:
+      \_ref_obj: (uvm::uvm_vreg::write::cbs), line:30:17, endln:30:20
+        |vpiParent:
+        \_assignment: , line:30:12, endln:30:20
+        |vpiName:cbs
+        |vpiFullName:uvm::uvm_vreg::write::cbs
+        |vpiActual:
+        \_class_var: (uvm::uvm_vreg::write::cbs), line:28:30, endln:28:33
+      |vpiLhs:
+      \_ref_obj: (uvm::uvm_vreg::write::cb), line:30:12, endln:30:14
+        |vpiParent:
+        \_assignment: , line:30:12, endln:30:20
+        |vpiName:cb
+        |vpiFullName:uvm::uvm_vreg::write::cb
+        |vpiActual:
+        \_class_var: (uvm::uvm_vreg::write::cb), line:29:31, endln:29:33
+    |vpiCondition:
+    \_operation: , line:29:41, endln:29:51
+      |vpiParent:
+      \_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
+      |vpiOpType:15
+      |vpiOperand:
+      \_ref_obj: (uvm::uvm_vreg::write::cb), line:29:41, endln:29:43
+        |vpiParent:
+        \_operation: , line:29:41, endln:29:51
+        |vpiName:cb
+        |vpiFullName:uvm::uvm_vreg::write::cb
+        |vpiActual:
+        \_class_var: (uvm::uvm_vreg::write::cb), line:29:31, endln:29:33
+      |vpiOperand:
+      \_constant: , line:29:47, endln:29:51
+    |vpiStmt:
+    \_begin: (uvm::uvm_vreg::write), line:30:22, endln:32:10
+      |vpiParent:
+      \_for_stmt: (uvm::uvm_vreg::write), line:29:7, endln:29:10
+      |vpiFullName:uvm::uvm_vreg::write
+      |vpiStmt:
+      \_assignment: , line:31:10, endln:31:22
+        |vpiParent:
+        \_begin: (uvm::uvm_vreg::write), line:30:22, endln:32:10
+        |vpiOpType:82
+        |vpiBlocking:1
+        |vpiRhs:
+        \_constant: , line:31:21, endln:31:22
+        |vpiLhs:
+        \_hier_path: (cb.fname), line:31:10, endln:31:18
+          |vpiParent:
+          \_assignment: , line:31:10, endln:31:22
+          |vpiActual:
+          \_ref_obj: (cb), line:31:13, endln:31:18
+            |vpiParent:
+            \_hier_path: (cb.fname), line:31:10, endln:31:18
+            |vpiName:cb
+          |vpiActual:
+          \_ref_obj: (fname), line:31:13, endln:31:18
+            |vpiParent:
+            \_hier_path: (cb.fname), line:31:10, endln:31:18
+            |vpiName:fname
+          |vpiName:cb.fname
 \_foreach_stmt: (uvm::uvm_vreg::write), line:27:4, endln:27:11
   |vpiParent:
   \_begin: (uvm::uvm_vreg::write), line:27:4, endln:33:7
@@ -1764,6 +1762,9 @@ design: (unnamed)
   \_begin: (uvm::uvm_vreg::write), line:27:4, endln:33:7
   |vpiInstance:
   \_package: uvm (uvm::), file:${SURELOG_DIR}/tests/ForLoopBind/dut.sv, line:1:1, endln:36:11
+\_class_typespec: , line:29:12, endln:29:30
+  |vpiClassDefn:
+  \_class_defn: (uvm::uvm_vreg_field_cbs), file:${SURELOG_DIR}/tests/ForLoopBind/dut.sv, line:13:1, endln:15:9
 \_class_typespec: , line:26:4, endln:26:20
   |vpiClassDefn:
   \_class_defn: (uvm::uvm_vreg_cb_iter), file:${SURELOG_DIR}/tests/ForLoopBind/dut.sv, line:3:1, endln:4:9

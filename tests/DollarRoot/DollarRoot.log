@@ -21916,7 +21916,7 @@ design: (work@top)
             \_hier_path: (cmd.trans), line:584:7, endln:584:16
             |vpiName:trans
             |vpiActual:
-            \_io_decl: (trans), line:571:22, endln:571:27
+            \_typespec_member: (trans), line:47:37, endln:47:42
           |vpiName:cmd.trans
       |vpiStmt:
       \_assignment: , line:585:7, endln:585:77
@@ -24734,7 +24734,7 @@ design: (work@top)
             \_hier_path: (rsp.burstcount), line:765:7, endln:765:21
             |vpiName:burstcount
             |vpiActual:
-            \_io_decl: (burstcount), line:760:18, endln:760:28
+            \_typespec_member: (burstcount), line:58:37, endln:58:47
           |vpiName:rsp.burstcount
       |vpiStmt:
       \_for_stmt: (work@test_program.create_response), line:766:7, endln:766:10

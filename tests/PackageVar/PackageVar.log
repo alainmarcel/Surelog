@@ -708,7 +708,7 @@ design: (unnamed)
                   \_hier_path: (ovm_auto_options_object.printer), line:34:5, endln:34:36
                   |vpiName:printer
                   |vpiActual:
-                  \_io_decl: (printer), line:23:45, endln:23:52
+                  \_class_var: (pack::ovm_options_container::printer), line:7:17, endln:7:24
                 |vpiName:ovm_auto_options_object.printer
             |vpiStmt:
             \_func_call: (m_field_automation), line:35:5, endln:35:44
@@ -960,26 +960,6 @@ design: (unnamed)
           |vpiName:do_print
   |vpiInstance:
   \_package: pack (pack::), file:${SURELOG_DIR}/tests/PackageVar/dut.sv, line:1:1, endln:42:11
-\_class_typespec: (ovm_printer), line:23:33, endln:23:44
-  |vpiName:ovm_printer
-  |vpiInstance:
-  \_package: pack (pack::), file:${SURELOG_DIR}/tests/PackageVar/dut.sv, line:1:1, endln:42:11
-  |vpiClassDefn:
-  \_class_defn: (pack::ovm_printer), file:${SURELOG_DIR}/tests/PackageVar/dut.sv, line:3:1, endln:4:9
-\_operation: , line:25:6, endln:25:19
-  |vpiParent:
-  \_begin: (pack::ovm_object::print), line:28:3, endln:38:6
-  |vpiOpType:14
-  |vpiOperand:
-  \_ref_obj: (pack::ovm_object::print::printer), line:25:6, endln:25:13
-    |vpiParent:
-    \_operation: , line:25:6, endln:25:19
-    |vpiName:printer
-    |vpiFullName:pack::ovm_object::print::printer
-    |vpiActual:
-    \_io_decl: (printer), line:23:45, endln:23:52
-  |vpiOperand:
-  \_constant: , line:25:15, endln:25:19
 \_io_decl: (printer), line:23:45, endln:23:52
   |vpiParent:
   \_function: (pack::ovm_object::print), line:23:1, endln:39:12
@@ -1011,6 +991,19 @@ design: (unnamed)
       \_begin: (pack::ovm_object::print), line:28:3, endln:38:6
       |vpiCondition:
       \_operation: , line:25:6, endln:25:19
+        |vpiParent:
+        \_begin: (pack::ovm_object::print), line:28:3, endln:38:6
+        |vpiOpType:14
+        |vpiOperand:
+        \_ref_obj: (pack::ovm_object::print::printer), line:25:6, endln:25:13
+          |vpiParent:
+          \_operation: , line:25:6, endln:25:19
+          |vpiName:printer
+          |vpiFullName:pack::ovm_object::print::printer
+          |vpiActual:
+          \_io_decl: (printer), line:23:45, endln:23:52
+        |vpiOperand:
+        \_constant: , line:25:15, endln:25:19
       |vpiStmt:
       \_assignment: , line:26:5, endln:26:34
         |vpiParent:
@@ -1149,6 +1142,12 @@ design: (unnamed)
           |vpiName:do_print
   |vpiInstance:
   \_package: pack (pack::), file:${SURELOG_DIR}/tests/PackageVar/dut.sv, line:1:1, endln:42:11
+\_class_typespec: (ovm_printer), line:23:33, endln:23:44
+  |vpiName:ovm_printer
+  |vpiInstance:
+  \_package: pack (pack::), file:${SURELOG_DIR}/tests/PackageVar/dut.sv, line:1:1, endln:42:11
+  |vpiClassDefn:
+  \_class_defn: (pack::ovm_printer), file:${SURELOG_DIR}/tests/PackageVar/dut.sv, line:3:1, endln:4:9
 \_class_typespec: (ovm_printer), line:15:28, endln:15:39
   |vpiName:ovm_printer
   |vpiClassDefn:

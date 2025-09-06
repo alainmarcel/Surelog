@@ -873,35 +873,6 @@ design: (unnamed)
   |vpiFullName:pack::uvm_mem_region::Xend_offsetX
   |vpiAutomatic:1
   |vpiVisibility:1
-\_array_var: (pack::uvm_mem_mam::in_use), line:36:16, endln:36:22
-  |vpiParent:
-  \_class_defn: (pack::uvm_mem_mam), file:${SURELOG_DIR}/tests/BitSelectHier/dut.sv, line:34:1, endln:39:9
-  |vpiSize:1
-  |vpiTypespec:
-  \_ref_typespec: (pack::uvm_mem_mam::in_use)
-    |vpiParent:
-    \_array_var: (pack::uvm_mem_mam::in_use), line:36:16, endln:36:22
-    |vpiFullName:pack::uvm_mem_mam::in_use
-    |vpiActual:
-    \_array_typespec: 
-  |vpiName:in_use
-  |vpiFullName:pack::uvm_mem_mam::in_use
-  |vpiAutomatic:1
-  |vpiRandType:1
-  |vpiVisibility:1
-  |vpiArrayType:4
-  |vpiReg:
-  \_class_var: (pack::uvm_mem_mam::in_use), line:36:16, endln:36:22
-    |vpiParent:
-    \_array_var: (pack::uvm_mem_mam::in_use), line:36:16, endln:36:22
-    |vpiTypespec:
-    \_ref_typespec: (pack::uvm_mem_mam::in_use)
-      |vpiParent:
-      \_class_var: (pack::uvm_mem_mam::in_use), line:36:16, endln:36:22
-      |vpiFullName:pack::uvm_mem_mam::in_use
-      |vpiActual:
-      \_class_typespec: (uvm_mem_region), line:36:1, endln:36:15
-    |vpiFullName:pack::uvm_mem_mam::in_use
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0
