@@ -797,6 +797,8 @@ design: (work@top)
         |vpiParent:
         \_hier_path: (genblk1.foo.x1), line:67:16, endln:67:30
         |vpiName:x1
+        |vpiActual:
+        \_logic_net: (work@top.genblk1.foo.x1), line:38:38, endln:38:40
       |vpiName:genblk1.foo.x1
   |vpiContAssign:
   \_cont_assign: , line:68:16, endln:68:29
@@ -902,6 +904,8 @@ design: (work@top)
         |vpiParent:
         \_hier_path: (bar2.baz.x3), line:71:16, endln:71:27
         |vpiName:x3
+        |vpiActual:
+        \_logic_net: (work@top.bar2.baz.x3), line:58:38, endln:58:40
       |vpiName:bar2.baz.x3
   |vpiContAssign:
   \_cont_assign: , line:72:16, endln:72:31
@@ -932,6 +936,8 @@ design: (work@top)
         |vpiParent:
         \_hier_path: (bar2.baz.z3), line:72:16, endln:72:27
         |vpiName:z3
+        |vpiActual:
+        \_logic_net: (work@top.bar2.baz.z3), line:59:37, endln:59:39
       |vpiName:bar2.baz.z3
 \_weaklyReferenced:
 \_logic_typespec: , line:35:25, endln:35:29
