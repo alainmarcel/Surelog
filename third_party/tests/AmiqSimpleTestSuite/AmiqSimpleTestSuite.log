@@ -6215,6 +6215,7 @@ while_stmt                                           271
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:656:14: Non synthesizable construct, set_recursion_policy
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:665:25: Non synthesizable construct, get_handle
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:697:43: Non synthesizable construct,
+[LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:697:43: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:706:14: Non synthesizable construct, get
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:709:7: Non synthesizable construct, trigger
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:715:41: Non synthesizable construct,
@@ -6229,12 +6230,14 @@ while_stmt                                           271
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:733:4: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:733:9: Non synthesizable construct, tmp_time
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:747:42: Non synthesizable construct, get_db
+[LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:731:43: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:753:37: Non synthesizable construct, open_recorder
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:757:38: Non synthesizable construct, open_recorder
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:762:15: Non synthesizable construct, establish_link
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:766:34: Non synthesizable construct, get_handle
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:782:28: Non synthesizable construct, get
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:783:19: Non synthesizable construct, trigger
+[LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:792:40: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:792:40: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:800:19: Non synthesizable construct, close
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:805:24: Non synthesizable construct, free
@@ -9167,14 +9170,12 @@ while_stmt                                           271
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:655:14: Non synthesizable construct, record_object
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:656:14: Non synthesizable construct, set_recursion_policy
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:665:25: Non synthesizable construct, get_handle
-[LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:697:43: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:706:14: Non synthesizable construct, get
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:709:7: Non synthesizable construct, trigger
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:715:41: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:723:47: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:733:4: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:733:9: Non synthesizable construct, tmp_time
-[LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:731:43: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:733:4: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:733:9: Non synthesizable construct, tmp_time
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:747:42: Non synthesizable construct, get_db
@@ -9184,7 +9185,6 @@ while_stmt                                           271
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:766:34: Non synthesizable construct, get_handle
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:782:28: Non synthesizable construct, get
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:783:19: Non synthesizable construct, trigger
-[LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:792:40: Non synthesizable construct,
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:800:19: Non synthesizable construct, close
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:805:24: Non synthesizable construct, free
 [LINT]: ${SURELOG_DIR}/build/bin/1800.2-2017-1.0/src/base/uvm_transaction.svh:813:26: Non synthesizable construct, get

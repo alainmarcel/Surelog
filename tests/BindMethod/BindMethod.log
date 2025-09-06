@@ -414,6 +414,72 @@ design: (unnamed)
   |vpiClassDefn:
   \_class_defn: (uvm::uvm_vreg_field_cbs), file:${SURELOG_DIR}/tests/BindMethod/dut.sv, line:9:1, endln:11:9
 \_weaklyReferenced:
+\_class_var: (uvm::uvm_vreg::write::cbs), line:19:22, endln:19:25
+  |vpiParent:
+  \_begin: (uvm::uvm_vreg::write), line:20:3, endln:20:27
+  |vpiTypespec:
+  \_ref_typespec: (uvm::uvm_vreg::write::cbs)
+    |vpiParent:
+    \_class_var: (uvm::uvm_vreg::write::cbs), line:19:22, endln:19:25
+    |vpiFullName:uvm::uvm_vreg::write::cbs
+    |vpiActual:
+    \_class_typespec: , line:19:3, endln:19:21
+  |vpiName:cbs
+  |vpiFullName:uvm::uvm_vreg::write::cbs
+\_begin: (uvm::uvm_vreg::write), line:20:3, endln:20:27
+  |vpiParent:
+  \_task: (uvm::uvm_vreg::write), line:18:1, endln:21:8
+  |vpiFullName:uvm::uvm_vreg::write
+  |vpiVariables:
+  \_class_var: (uvm::uvm_vreg::write::cbs), line:19:22, endln:19:25
+  |vpiStmt:
+  \_assignment: , line:20:3, endln:20:26
+    |vpiParent:
+    \_begin: (uvm::uvm_vreg::write), line:20:3, endln:20:27
+    |vpiOpType:82
+    |vpiBlocking:1
+    |vpiRhs:
+    \_hier_path: (cbs.first), line:20:15, endln:20:26
+      |vpiParent:
+      \_assignment: , line:20:3, endln:20:26
+      |vpiActual:
+      \_ref_obj: (cbs), line:20:15, endln:20:18
+        |vpiParent:
+        \_hier_path: (cbs.first), line:20:15, endln:20:26
+        |vpiName:cbs
+      |vpiActual:
+      \_method_func_call: (first), line:20:19, endln:20:24
+        |vpiParent:
+        \_hier_path: (cbs.first), line:20:15, endln:20:26
+        |vpiName:first
+      |vpiName:cbs.first
+    |vpiLhs:
+    \_hier_path: (cbs.fname), line:20:3, endln:20:12
+      |vpiParent:
+      \_assignment: , line:20:3, endln:20:26
+      |vpiActual:
+      \_ref_obj: (cbs), line:20:7, endln:20:12
+        |vpiParent:
+        \_hier_path: (cbs.fname), line:20:3, endln:20:12
+        |vpiName:cbs
+      |vpiActual:
+      \_ref_obj: (fname), line:20:7, endln:20:12
+        |vpiParent:
+        \_hier_path: (cbs.fname), line:20:3, endln:20:12
+        |vpiName:fname
+      |vpiName:cbs.fname
+\_task: (uvm::uvm_vreg::write), line:18:1, endln:21:8
+  |vpiParent:
+  \_class_defn: (uvm::uvm_vreg), file:${SURELOG_DIR}/tests/BindMethod/dut.sv, line:14:1, endln:16:9
+  |vpiName:write
+  |vpiFullName:uvm::uvm_vreg::write
+  |vpiVariables:
+  \_class_var: (uvm::uvm_vreg::write::cbs), line:19:22, endln:19:25
+  |vpiVisibility:1
+  |vpiStmt:
+  \_begin: (uvm::uvm_vreg::write), line:20:3, endln:20:27
+  |vpiInstance:
+  \_package: uvm (uvm::), file:${SURELOG_DIR}/tests/BindMethod/dut.sv, line:1:1, endln:23:11
 \_class_typespec: , line:19:3, endln:19:21
   |vpiClassDefn:
   \_class_defn: (uvm::uvm_vreg_field_cbs), file:${SURELOG_DIR}/tests/BindMethod/dut.sv, line:9:1, endln:11:9

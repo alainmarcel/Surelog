@@ -695,35 +695,35 @@ design: (unnamed)
   |vpiSigned:1
   |vpiAutomatic:1
   |vpiVisibility:3
-\_array_var: (uvm::uvm_phase::m_predecessors), line:20:16, endln:20:30
+\_array_var: (uvm::uvm_object::m_successors), line:4:16, endln:4:28
   |vpiParent:
-  \_class_defn: (uvm::uvm_phase), file:${SURELOG_DIR}/tests/ThisHier/dut.sv, line:19:1, endln:22:9
+  \_class_defn: (uvm::uvm_object), file:${SURELOG_DIR}/tests/ThisHier/dut.sv, line:3:1, endln:5:9
   |vpiSize:1
   |vpiTypespec:
-  \_ref_typespec: (uvm::uvm_phase::m_predecessors)
+  \_ref_typespec: (uvm::uvm_object::m_successors)
     |vpiParent:
-    \_array_var: (uvm::uvm_phase::m_predecessors), line:20:16, endln:20:30
-    |vpiFullName:uvm::uvm_phase::m_predecessors
+    \_array_var: (uvm::uvm_object::m_successors), line:4:16, endln:4:28
+    |vpiFullName:uvm::uvm_object::m_successors
     |vpiActual:
     \_array_typespec: 
-  |vpiName:m_predecessors
-  |vpiFullName:uvm::uvm_phase::m_predecessors
+  |vpiName:m_successors
+  |vpiFullName:uvm::uvm_object::m_successors
   |vpiAutomatic:1
   |vpiRandType:1
   |vpiVisibility:2
   |vpiArrayType:3
   |vpiReg:
-  \_bit_var: (uvm::uvm_phase::m_predecessors), line:20:16, endln:20:30
+  \_bit_var: (uvm::uvm_object::m_successors), line:4:16, endln:4:28
     |vpiParent:
-    \_array_var: (uvm::uvm_phase::m_predecessors), line:20:16, endln:20:30
+    \_array_var: (uvm::uvm_object::m_successors), line:4:16, endln:4:28
     |vpiTypespec:
-    \_ref_typespec: (uvm::uvm_phase::m_predecessors)
+    \_ref_typespec: (uvm::uvm_object::m_successors)
       |vpiParent:
-      \_bit_var: (uvm::uvm_phase::m_predecessors), line:20:16, endln:20:30
-      |vpiFullName:uvm::uvm_phase::m_predecessors
+      \_bit_var: (uvm::uvm_object::m_successors), line:4:16, endln:4:28
+      |vpiFullName:uvm::uvm_object::m_successors
       |vpiActual:
-      \_bit_typespec: , line:20:11, endln:20:14
-    |vpiFullName:uvm::uvm_phase::m_predecessors
+      \_bit_typespec: , line:4:11, endln:4:14
+    |vpiFullName:uvm::uvm_object::m_successors
 \_func_call: (size)
   |vpiParent:
   \_hier_path: (this.m_predecessors.size), line:27:5, endln:27:9

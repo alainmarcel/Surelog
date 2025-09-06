@@ -576,6 +576,145 @@ design: (work@top)
   |vpiName:uvm_callback
   |vpiClassDefn:
   \_class_defn: (pkg::uvm_callback), file:${SURELOG_DIR}/tests/ArrayMethodIterator/dut.sv, line:6:3, endln:8:11
+\_array_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
+  |vpiParent:
+  \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
+  |vpiTypespec:
+  \_ref_typespec: (pkg::uvm_callbacks::get_all::callbacks_to_append)
+    |vpiParent:
+    \_array_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
+    |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
+    |vpiActual:
+    \_array_typespec: , line:15:6, endln:15:27
+  |vpiName:callbacks_to_append
+  |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
+  |vpiArrayType:4
+  |vpiReg:
+  \_class_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
+    |vpiParent:
+    \_array_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
+    |vpiTypespec:
+    \_ref_typespec: (pkg::uvm_callbacks::get_all::callbacks_to_append)
+      |vpiParent:
+      \_class_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
+      |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
+      |vpiActual:
+      \_class_typespec: (uvm_callback), line:10:50, endln:10:62
+    |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
+\_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
+  |vpiParent:
+  \_function: (pkg::uvm_callbacks::get_all), line:12:2, endln:21:12
+  |vpiFullName:pkg::uvm_callbacks::get_all
+  |vpiVariables:
+  \_class_var: (pkg::uvm_callbacks::get_all::cb), line:14:6, endln:14:8
+    |vpiParent:
+    \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
+    |vpiTypespec:
+    \_ref_typespec: (pkg::uvm_callbacks::get_all::cb)
+      |vpiParent:
+      \_class_var: (pkg::uvm_callbacks::get_all::cb), line:14:6, endln:14:8
+      |vpiFullName:pkg::uvm_callbacks::get_all::cb
+      |vpiActual:
+      \_class_typespec: (uvm_callback), line:10:50, endln:10:62
+    |vpiName:cb
+    |vpiFullName:pkg::uvm_callbacks::get_all::cb
+  |vpiVariables:
+  \_class_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
+  |vpiVariables:
+  \_array_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
+  |vpiVariables:
+  \_class_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
+    |vpiParent:
+    \_array_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
+    |vpiTypespec:
+    \_ref_typespec: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append)
+      |vpiParent:
+      \_class_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
+      |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
+      |vpiActual:
+      \_class_typespec: (uvm_callback), line:10:50, endln:10:62
+    |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
+  |vpiVariables:
+  \_array_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
+    |vpiParent:
+    \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
+    |vpiTypespec:
+    \_ref_typespec: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append)
+      |vpiParent:
+      \_array_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
+      |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
+      |vpiActual:
+      \_array_typespec: , line:16:6, endln:16:34
+    |vpiName:unique_callbacks_to_append
+    |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
+    |vpiArrayType:4
+    |vpiReg:
+    \_class_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
+  |vpiStmt:
+  \_assignment: , line:19:3, endln:19:90
+    |vpiParent:
+    \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
+    |vpiOpType:82
+    |vpiBlocking:1
+    |vpiRhs:
+    \_hier_path: (callbacks_to_append), line:19:32, endln:19:90
+      |vpiParent:
+      \_assignment: , line:19:3, endln:19:90
+      |vpiActual:
+      \_ref_obj: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:19:32, endln:19:51
+        |vpiParent:
+        \_hier_path: (callbacks_to_append), line:19:32, endln:19:90
+        |vpiName:callbacks_to_append
+        |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
+      |vpiActual:
+      \_method_func_call: (unique), line:19:52, endln:19:58
+        |vpiParent:
+        \_hier_path: (callbacks_to_append), line:19:32, endln:19:90
+        |vpiArgument:
+        \_ref_obj: (pkg::uvm_callbacks::get_all::callbacks_to_append::cb_), line:19:60, endln:19:63
+          |vpiParent:
+          \_method_func_call: (unique), line:19:52, endln:19:58
+          |vpiName:cb_
+          |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append::cb_
+        |vpiName:unique
+        |vpiWith:
+        \_hier_path: (cb_.get_inst_id), line:19:73, endln:19:88
+          |vpiParent:
+          \_assignment: , line:19:3, endln:19:90
+          |vpiActual:
+          \_ref_obj: (cb_), line:19:73, endln:19:76
+            |vpiParent:
+            \_hier_path: (cb_.get_inst_id), line:19:73, endln:19:88
+            |vpiName:cb_
+          |vpiActual:
+          \_ref_obj: (pkg::uvm_callbacks::get_all::get_inst_id), line:19:77, endln:19:88
+            |vpiParent:
+            \_hier_path: (cb_.get_inst_id), line:19:73, endln:19:88
+            |vpiName:get_inst_id
+            |vpiFullName:pkg::uvm_callbacks::get_all::get_inst_id
+          |vpiName:cb_.get_inst_id
+      |vpiName:callbacks_to_append
+    |vpiLhs:
+    \_ref_obj: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:19:3, endln:19:29
+      |vpiParent:
+      \_assignment: , line:19:3, endln:19:90
+      |vpiName:unique_callbacks_to_append
+      |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
+\_function: (pkg::uvm_callbacks::get_all), line:12:2, endln:21:12
+  |vpiParent:
+  \_class_defn: (pkg::uvm_callbacks), file:${SURELOG_DIR}/tests/ArrayMethodIterator/dut.sv, line:10:1, endln:23:9
+  |vpiName:get_all
+  |vpiFullName:pkg::uvm_callbacks::get_all
+  |vpiVariables:
+  \_class_var: (pkg::uvm_callbacks::get_all::cb), line:14:6, endln:14:8
+  |vpiVariables:
+  \_array_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
+  |vpiVariables:
+  \_array_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
+  |vpiMethod:1
+  |vpiVisibility:1
+  |vpiStmt:
+  \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
 \_array_typespec: , line:15:6, endln:15:27
   |vpiRange:
   \_range: , line:15:26, endln:15:27
@@ -669,146 +808,6 @@ design: (work@top)
     \_class_typespec: (uvm_callback), line:10:50, endln:10:62
   |vpiName:cb_
   |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append::cb_
-\_method_func_call: (unique), line:19:52, endln:19:58
-  |vpiParent:
-  \_hier_path: (callbacks_to_append), line:19:32, endln:19:90
-  |vpiArgument:
-  \_ref_obj: (pkg::uvm_callbacks::get_all::callbacks_to_append::cb_), line:19:60, endln:19:63
-    |vpiParent:
-    \_method_func_call: (unique), line:19:52, endln:19:58
-    |vpiName:cb_
-    |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append::cb_
-  |vpiName:unique
-  |vpiWith:
-  \_hier_path: (cb_.get_inst_id), line:19:73, endln:19:88
-    |vpiParent:
-    \_assignment: , line:19:3, endln:19:90
-    |vpiActual:
-    \_ref_obj: (cb_), line:19:73, endln:19:76
-      |vpiParent:
-      \_hier_path: (cb_.get_inst_id), line:19:73, endln:19:88
-      |vpiName:cb_
-    |vpiActual:
-    \_ref_obj: (pkg::uvm_callbacks::get_all::get_inst_id), line:19:77, endln:19:88
-      |vpiParent:
-      \_hier_path: (cb_.get_inst_id), line:19:73, endln:19:88
-      |vpiName:get_inst_id
-      |vpiFullName:pkg::uvm_callbacks::get_all::get_inst_id
-    |vpiName:cb_.get_inst_id
-\_assignment: , line:19:3, endln:19:90
-  |vpiParent:
-  \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
-  |vpiOpType:82
-  |vpiBlocking:1
-  |vpiRhs:
-  \_hier_path: (callbacks_to_append), line:19:32, endln:19:90
-    |vpiParent:
-    \_assignment: , line:19:3, endln:19:90
-    |vpiActual:
-    \_ref_obj: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:19:32, endln:19:51
-      |vpiParent:
-      \_hier_path: (callbacks_to_append), line:19:32, endln:19:90
-      |vpiName:callbacks_to_append
-      |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
-    |vpiActual:
-    \_method_func_call: (unique), line:19:52, endln:19:58
-    |vpiName:callbacks_to_append
-  |vpiLhs:
-  \_ref_obj: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:19:3, endln:19:29
-    |vpiParent:
-    \_assignment: , line:19:3, endln:19:90
-    |vpiName:unique_callbacks_to_append
-    |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
-\_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
-  |vpiParent:
-  \_function: (pkg::uvm_callbacks::get_all), line:12:2, endln:21:12
-  |vpiFullName:pkg::uvm_callbacks::get_all
-  |vpiVariables:
-  \_class_var: (pkg::uvm_callbacks::get_all::cb), line:14:6, endln:14:8
-    |vpiParent:
-    \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
-    |vpiTypespec:
-    \_ref_typespec: (pkg::uvm_callbacks::get_all::cb)
-      |vpiParent:
-      \_class_var: (pkg::uvm_callbacks::get_all::cb), line:14:6, endln:14:8
-      |vpiFullName:pkg::uvm_callbacks::get_all::cb
-      |vpiActual:
-      \_class_typespec: (uvm_callback), line:10:50, endln:10:62
-    |vpiName:cb
-    |vpiFullName:pkg::uvm_callbacks::get_all::cb
-  |vpiVariables:
-  \_class_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
-    |vpiParent:
-    \_array_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
-    |vpiTypespec:
-    \_ref_typespec: (pkg::uvm_callbacks::get_all::callbacks_to_append)
-      |vpiParent:
-      \_class_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
-      |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
-      |vpiActual:
-      \_class_typespec: (uvm_callback), line:10:50, endln:10:62
-    |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
-  |vpiVariables:
-  \_array_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
-    |vpiParent:
-    \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
-    |vpiTypespec:
-    \_ref_typespec: (pkg::uvm_callbacks::get_all::callbacks_to_append)
-      |vpiParent:
-      \_array_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
-      |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
-      |vpiActual:
-      \_array_typespec: , line:15:6, endln:15:27
-    |vpiName:callbacks_to_append
-    |vpiFullName:pkg::uvm_callbacks::get_all::callbacks_to_append
-    |vpiArrayType:4
-    |vpiReg:
-    \_class_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
-  |vpiVariables:
-  \_class_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
-    |vpiParent:
-    \_array_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
-    |vpiTypespec:
-    \_ref_typespec: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append)
-      |vpiParent:
-      \_class_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
-      |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
-      |vpiActual:
-      \_class_typespec: (uvm_callback), line:10:50, endln:10:62
-    |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
-  |vpiVariables:
-  \_array_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
-    |vpiParent:
-    \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
-    |vpiTypespec:
-    \_ref_typespec: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append)
-      |vpiParent:
-      \_array_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
-      |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
-      |vpiActual:
-      \_array_typespec: , line:16:6, endln:16:34
-    |vpiName:unique_callbacks_to_append
-    |vpiFullName:pkg::uvm_callbacks::get_all::unique_callbacks_to_append
-    |vpiArrayType:4
-    |vpiReg:
-    \_class_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
-  |vpiStmt:
-  \_assignment: , line:19:3, endln:19:90
-\_function: (pkg::uvm_callbacks::get_all), line:12:2, endln:21:12
-  |vpiParent:
-  \_class_defn: (pkg::uvm_callbacks), file:${SURELOG_DIR}/tests/ArrayMethodIterator/dut.sv, line:10:1, endln:23:9
-  |vpiName:get_all
-  |vpiFullName:pkg::uvm_callbacks::get_all
-  |vpiVariables:
-  \_class_var: (pkg::uvm_callbacks::get_all::cb), line:14:6, endln:14:8
-  |vpiVariables:
-  \_array_var: (pkg::uvm_callbacks::get_all::callbacks_to_append), line:15:6, endln:15:25
-  |vpiVariables:
-  \_array_var: (pkg::uvm_callbacks::get_all::unique_callbacks_to_append), line:16:6, endln:16:32
-  |vpiMethod:1
-  |vpiVisibility:1
-  |vpiStmt:
-  \_begin: (pkg::uvm_callbacks::get_all), line:15:3, endln:15:29
 ===================
 [  FATAL] : 0
 [ SYNTAX] : 0

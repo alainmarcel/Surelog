@@ -1200,7 +1200,7 @@ design: (work@carryadd)
                     |vpiName:C
                     |vpiFullName:work@carryadd.STAGE[1].genblk1.C
                     |vpiActual:
-                    \_logic_net: (work@carryadd.STAGE[1].C), line:12:22, endln:12:23
+                    \_logic_net: (work@carryadd.STAGE[0].C), line:12:22, endln:12:23
                   |vpiName:STAGE[i - 1].C
             |vpiLhs:
             \_ref_obj: (work@carryadd.STAGE[1].genblk1.C), line:16:32, endln:16:33
@@ -1280,7 +1280,7 @@ design: (work@carryadd)
                   |vpiName:C
                   |vpiFullName:work@carryadd.STAGE[1].genblk1.C
                   |vpiActual:
-                  \_logic_net: (work@carryadd.STAGE[1].C), line:12:22, endln:12:23
+                  \_logic_net: (work@carryadd.STAGE[0].C), line:12:22, endln:12:23
                 |vpiName:STAGE[i - 1].C
             |vpiLhs:
             \_ref_obj: (work@carryadd.STAGE[1].genblk1.Y), line:17:32, endln:17:33

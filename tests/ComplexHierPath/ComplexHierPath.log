@@ -650,7 +650,7 @@ design: (work@genblk_dive_top)
                 |vpiName:x
                 |vpiFullName:work@genblk_dive_top.Z.A.x
                 |vpiActual:
-                \_logic_net: (work@genblk_dive_top.Z.A.x), line:6:38, endln:6:39
+                \_logic_net: (work@genblk_dive_top.Z.A.B.x), line:8:46, endln:8:47
               |vpiName:B.x
             |vpiLhs:
             \_hier_path: (B.C.x), line:16:40, endln:16:45
@@ -676,7 +676,7 @@ design: (work@genblk_dive_top)
                 \_hier_path: (B.C.x), line:16:40, endln:16:45
                 |vpiName:x
                 |vpiActual:
-                \_logic_net: (work@genblk_dive_top.Z.A.x), line:6:38, endln:6:39
+                \_logic_net: (work@genblk_dive_top.Z.A.B.C.x), line:10:54, endln:10:55
               |vpiName:B.C.x
           |vpiGenScopeArray:
           \_gen_scope_array: (work@genblk_dive_top.Z.A.B), line:7:40, endln:15:36
@@ -739,7 +739,7 @@ design: (work@genblk_dive_top)
                     |vpiName:x
                     |vpiFullName:work@genblk_dive_top.Z.A.B.x
                     |vpiActual:
-                    \_logic_net: (work@genblk_dive_top.Z.A.B.x), line:8:46, endln:8:47
+                    \_logic_net: (work@genblk_dive_top.Z.A.B.C.x), line:10:54, endln:10:55
                   |vpiName:A.B.C.x
                 |vpiLhs:
                 \_hier_path: (A.x), line:14:48, endln:14:51
@@ -758,7 +758,7 @@ design: (work@genblk_dive_top)
                     \_hier_path: (A.x), line:14:48, endln:14:51
                     |vpiName:x
                     |vpiActual:
-                    \_logic_net: (work@genblk_dive_top.Z.A.B.x), line:8:46, endln:8:47
+                    \_logic_net: (work@genblk_dive_top.Z.A.x), line:6:38, endln:6:39
                   |vpiName:A.x
               |vpiGenScopeArray:
               \_gen_scope_array: (work@genblk_dive_top.Z.A.B.C), line:9:48, endln:13:44
@@ -869,7 +869,7 @@ design: (work@genblk_dive_top)
                         \_hier_path: (B.x), line:11:56, endln:11:59
                         |vpiName:x
                         |vpiActual:
-                        \_logic_net: (work@genblk_dive_top.Z.A.B.C.x), line:10:54, endln:10:55
+                        \_logic_net: (work@genblk_dive_top.Z.A.B.x), line:8:46, endln:8:47
                       |vpiName:B.x
   |vpiContAssign:
   \_cont_assign: , line:20:16, endln:20:25
@@ -900,7 +900,7 @@ design: (work@genblk_dive_top)
         |vpiName:x
         |vpiFullName:work@genblk_dive_top.x
         |vpiActual:
-        \_logic_net: (work@genblk_dive_top.x), line:2:36, endln:2:37
+        \_logic_net: (work@genblk_dive_top.Z.A.x), line:6:38, endln:6:39
       |vpiName:Z.A.x
     |vpiLhs:
     \_ref_obj: (work@genblk_dive_top.x), line:20:16, endln:20:17

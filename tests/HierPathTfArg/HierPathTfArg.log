@@ -908,7 +908,7 @@ design: (work@top)
             \_hier_path: (i.blk.f), line:30:18, endln:30:28
             |vpiName:blk
             |vpiActual:
-            \_gen_scope: (work@top.blk), line:19:16, endln:24:12
+            \_gen_scope: (work@top.i.blk), line:8:20, endln:13:16
           |vpiActual:
           \_method_func_call: (f), line:30:24, endln:30:25
             |vpiParent:

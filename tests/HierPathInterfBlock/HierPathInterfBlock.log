@@ -822,7 +822,7 @@ design: (work@top)
             \_hier_path: (i.blk.f), line:26:18, endln:26:27
             |vpiName:blk
             |vpiActual:
-            \_gen_scope: (work@top.blk), line:17:12, endln:21:8
+            \_gen_scope: (work@top.i.blk), line:5:12, endln:9:8
           |vpiActual:
           \_method_func_call: (f), line:26:24, endln:26:25
             |vpiParent:

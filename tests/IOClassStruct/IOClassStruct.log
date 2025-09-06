@@ -327,6 +327,55 @@ design: (unnamed)
         |vpiRefEndLineNo:7
         |vpiRefEndColumnNo:17
 \_weaklyReferenced:
+\_class_var: (uvm_pkg::uvm_resource_base::record_read_access::access_record), line:16:35, endln:16:48
+  |vpiParent:
+  \_begin: (uvm_pkg::uvm_resource_base::record_read_access), line:18:6, endln:18:33
+  |vpiTypespec:
+  \_ref_typespec: (uvm_pkg::uvm_resource_base::record_read_access::access_record)
+    |vpiParent:
+    \_class_var: (uvm_pkg::uvm_resource_base::record_read_access::access_record), line:16:35, endln:16:48
+    |vpiFullName:uvm_pkg::uvm_resource_base::record_read_access::access_record
+    |vpiActual:
+    \_struct_typespec: (access_t), line:5:11, endln:8:4
+  |vpiName:access_record
+  |vpiFullName:uvm_pkg::uvm_resource_base::record_read_access::access_record
+\_begin: (uvm_pkg::uvm_resource_base::record_read_access), line:18:6, endln:18:33
+  |vpiParent:
+  \_function: (uvm_pkg::uvm_resource_base::record_read_access), line:14:3, endln:20:14
+  |vpiFullName:uvm_pkg::uvm_resource_base::record_read_access
+  |vpiVariables:
+  \_class_var: (uvm_pkg::uvm_resource_base::record_read_access::access_record), line:16:35, endln:16:48
+  |vpiStmt:
+  \_operation: , line:18:6, endln:18:32
+    |vpiParent:
+    \_begin: (uvm_pkg::uvm_resource_base::record_read_access), line:18:6, endln:18:33
+    |vpiOpType:62
+    |vpiOperand:
+    \_hier_path: (access_record.read_count), line:18:6, endln:18:30
+      |vpiParent:
+      \_operation: , line:18:6, endln:18:32
+      |vpiActual:
+      \_ref_obj: (access_record), line:18:20, endln:18:30
+        |vpiParent:
+        \_hier_path: (access_record.read_count), line:18:6, endln:18:30
+        |vpiName:access_record
+      |vpiActual:
+      \_ref_obj: (read_count), line:18:20, endln:18:30
+        |vpiParent:
+        \_hier_path: (access_record.read_count), line:18:6, endln:18:30
+        |vpiName:read_count
+      |vpiName:access_record.read_count
+\_function: (uvm_pkg::uvm_resource_base::record_read_access), line:14:3, endln:20:14
+  |vpiParent:
+  \_class_defn: (uvm_pkg::uvm_resource_base), file:${SURELOG_DIR}/tests/IOClassStruct/dut.sv, line:12:1, endln:28:9
+  |vpiName:record_read_access
+  |vpiFullName:uvm_pkg::uvm_resource_base::record_read_access
+  |vpiVariables:
+  \_class_var: (uvm_pkg::uvm_resource_base::record_read_access::access_record), line:16:35, endln:16:48
+  |vpiMethod:1
+  |vpiVisibility:1
+  |vpiStmt:
+  \_begin: (uvm_pkg::uvm_resource_base::record_read_access), line:18:6, endln:18:33
 \_struct_typespec: (access_t), line:5:11, endln:8:4
   |vpiParent:
   \_class_defn: (uvm_pkg::uvm_resource_types), file:${SURELOG_DIR}/tests/IOClassStruct/dut.sv, line:3:1, endln:10:9
@@ -359,6 +408,7 @@ design: (unnamed)
 [   NOTE] : 4
 
 ============================== Begin Linting Results ==============================
+[LINT]: ${SURELOG_DIR}/tests/IOClassStruct/dut.sv:16:35: Non synthesizable construct, access_record
 [LINT]: ${SURELOG_DIR}/tests/IOClassStruct/dut.sv:16:35: Non synthesizable construct, access_record
 [LINT]: ${SURELOG_DIR}/tests/IOClassStruct/dut.sv:16:35: Non synthesizable construct, access_record
 [LINT]: ${SURELOG_DIR}/tests/IOClassStruct/dut.sv:12:1: Non synthesizable construct, uvm_resource_base

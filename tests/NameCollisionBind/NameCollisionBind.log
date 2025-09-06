@@ -364,7 +364,7 @@ design: (work@CSR_Unit)
         \_hier_path: (perfCounter.perfCounter.numLoadMiss), line:25:18, endln:25:53
         |vpiName:perfCounter
         |vpiActual:
-        \_interface_inst: work@PerformanceCounterIF (work@CSR_Unit.perfCounter), file:${SURELOG_DIR}/tests/NameCollisionBind/dut.sv, line:20:0
+        \_struct_var: (work@CSR_Unit.perfCounter.perfCounter), line:13:21, endln:13:32
       |vpiActual:
       \_ref_obj: (work@CSR_Unit.numLoadMiss), line:25:42, endln:25:53
         |vpiParent:

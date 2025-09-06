@@ -327,7 +327,7 @@ design: (work@or_ex)
         \_hier_path: (lg.a), line:14:10, endln:14:14
         |vpiName:a
         |vpiActual:
-        \_logic_net: (work@or_ex.a), line:9:22, endln:9:23
+        \_logic_var: (work@or_ex.lg.a), line:3:12, endln:3:13
       |vpiName:lg.a
 \_weaklyReferenced:
 \_logic_typespec: , line:9:11, endln:9:21

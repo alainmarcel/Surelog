@@ -5703,7 +5703,7 @@ design: (work@r5p_lsu)
         |vpiName:rd
         |vpiFullName:work@r5p_lsu.rd
         |vpiActual:
-        \_logic_net: (work@r5p_lsu.rd), line:151:25, endln:151:27
+        \_typespec_member: (rd), line:107:128, endln:107:130
       |vpiName:dec.r.rd
     |vpiLhs:
     \_ref_obj: (work@r5p_lsu.rd), line:161:8, endln:161:10
@@ -5742,7 +5742,7 @@ design: (work@r5p_lsu)
         |vpiName:rs1
         |vpiFullName:work@r5p_lsu.rs1
         |vpiActual:
-        \_logic_net: (work@r5p_lsu.rs1), line:152:25, endln:152:28
+        \_typespec_member: (rs1), line:107:98, endln:107:101
       |vpiName:dec.r.rs1
     |vpiLhs:
     \_ref_obj: (work@r5p_lsu.rs1), line:162:8, endln:162:11
@@ -5781,7 +5781,7 @@ design: (work@r5p_lsu)
         |vpiName:rs2
         |vpiFullName:work@r5p_lsu.rs2
         |vpiActual:
-        \_logic_net: (work@r5p_lsu.rs2), line:153:25, endln:153:28
+        \_typespec_member: (rs2), line:107:81, endln:107:84
       |vpiName:dec.r.rs2
     |vpiLhs:
     \_ref_obj: (work@r5p_lsu.rs2), line:163:8, endln:163:11
