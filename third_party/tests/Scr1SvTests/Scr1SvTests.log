@@ -165,7 +165,7 @@ case_stmt                                            121
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                           12172
+constant                                           12173
 cont_assign                                         1130
 delay_control                                          7
 design                                                 1
