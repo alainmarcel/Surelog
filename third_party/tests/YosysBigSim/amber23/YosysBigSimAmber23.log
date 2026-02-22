@@ -262,7 +262,7 @@ begin                                                246
 bit_select                                          1789
 case_item                                            395
 case_stmt                                             26
-constant                                           15486
+constant                                           15497
 cont_assign                                          685
 delay_control                                          3
 design                                                 1
