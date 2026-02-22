@@ -233,7 +233,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_var_dup_bad.v -l t_var_dup_bad.v.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_var_dup_bad.v:65:3: Syntax error: extraneous input 'output' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_var_dup_bad.v:65:3: Syntax error: extraneous input 'output' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
    output bad_reout_port;
    ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_var_dup_bad.v:65:24: Syntax error: no viable alternative at input 'bad_reout_port;',
@@ -349,32 +349,35 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:14:7: Syntax error: no viable alternative at input 'sub\n     #(,',
      #(,  // Not found
        ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:15:15: Syntax error: no viable alternative at input '(1',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:14:7: Syntax error: mismatched input ',' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+     #(,  // Not found
+       ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:15:14: Syntax error: missing ';' at '(',
+       .NEXIST(1),  // Not found
+              ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:15:15: Syntax error: mismatched input '1' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
        .NEXIST(1),  // Not found
                ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:16:10: Syntax error: no viable alternative at input '(2',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:15:17: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ',',
+       .NEXIST(1),  // Not found
+                 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:16:7: Syntax error: extraneous input '.' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+       .P(2),
+       ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:16:9: Syntax error: missing ';' at '(',
+       .P(2),
+         ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:16:10: Syntax error: mismatched input '2' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
        .P(2),
           ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:17:10: Syntax error: no viable alternative at input '(3',
-       .P(3))  // Dup
-          ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:18:8: Syntax error: no viable alternative at input '(.',
-   sub (.o(o),
-        ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:18:12: Syntax error: extraneous input ')' expecting ',',
-   sub (.o(o),
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:16:12: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ',',
+       .P(2),
             ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:19:8: Syntax error: extraneous input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
-        .i(i),
-        ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:20:8: Syntax error: extraneous input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
-        .i(i2),  // Dup
-        ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:21:8: Syntax error: extraneous input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
-        .nexist(i2)  // Not found
-        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_pindup_bad.v:17:7: Syntax error: extraneous input '.' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+       .P(3))  // Dup
+       ^--.
 [  FATAL] : 0
-[ SYNTAX] : 9
+[ SYNTAX] : 10
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -437,12 +440,18 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_display.v:11:39: Syntax error: no viable alternative at input 'module t ();\n\n\n   SURELOG_MACRO_NOT_DEFINED:error!!!  "Only Verilator supports PLI-ish DPI calls and sformat conversion."',
    SURELOG_MACRO_NOT_DEFINED:error!!!  "Only Verilator supports PLI-ish DPI calls and sformat conversion."
                                        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_display.v:8:10: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module t ();
+          ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_display.v:8:11: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module t ();
+           ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_display.v:11:39: Syntax error: mismatched input '"Only Verilator supports PLI-ish DPI calls and sformat conversion."' expecting <EOF>,
    SURELOG_MACRO_NOT_DEFINED:error!!!  "Only Verilator supports PLI-ish DPI calls and sformat conversion."
                                        ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_display.v:11: Unknown macro "error".
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 2
 [WARNING] : 0
 [   NOTE] : 0
@@ -640,6 +649,12 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_flag_language.v:10:11: Syntax error: no viable alternative at input 'module t (/*AUTOARG*/);\n\n   // See also t_preproc_kwd.v\n\n   integer bit',
    integer bit; initial bit = 1;
            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_flag_language.v:6:21: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module t (/*AUTOARG*/);
+                     ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_flag_language.v:6:22: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module t (/*AUTOARG*/);
+                      ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_flag_language.v:10:11: Syntax error: mismatched input 'bit' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
    integer bit; initial bit = 1;
            ^--.
@@ -647,7 +662,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
    integer bit; initial bit = 1;
                 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 3
+[ SYNTAX] : 5
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1242,11 +1257,20 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_interface_modportlist.v:10:15: Syntax error: no viable alternative at input '(.',
    my_module m(.clk(clk), iface);
                ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_interface_modportlist.v:10:23: Syntax error: extraneous input ')' expecting ',',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_interface_modportlist.v:10:15: Syntax error: extraneous input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
    my_module m(.clk(clk), iface);
-                       ^--.
+               ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_interface_modportlist.v:10:19: Syntax error: no viable alternative at input '(',
+   my_module m(.clk(clk), iface);
+                   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_interface_modportlist.v:10:24: Syntax error: extraneous input ',' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   my_module m(.clk(clk), iface);
+                        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_interface_modportlist.v:10:31: Syntax error: extraneous input ')' expecting ';',
+   my_module m(.clk(clk), iface);
+                               ^--.
 [  FATAL] : 0
-[ SYNTAX] : 3
+[ SYNTAX] : 6
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1355,6 +1379,12 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_const_dec_mixed_bad.v:8:35: Syntax error: no viable alternative at input 'module t (/*AUTOARG*/);\n\n   parameter [200:0] MIXED = 32'dx_1',
    parameter [200:0] MIXED = 32'dx_1;
                                    ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_const_dec_mixed_bad.v:6:21: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module t (/*AUTOARG*/);
+                     ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_const_dec_mixed_bad.v:6:22: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module t (/*AUTOARG*/);
+                      ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_const_dec_mixed_bad.v:8:35: Syntax error: extraneous input '1' expecting ';',
    parameter [200:0] MIXED = 32'dx_1;
                                    ^--.
@@ -1362,7 +1392,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 endmodule
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 3
+[ SYNTAX] : 5
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1400,6 +1430,12 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_enum.v:33:16: Syntax error: no viable alternative at input 'module t (/*AUTOARG*/);\n\n   localparam FIVE = 5;\n\n   enum { e0,\n\t  e1,\n\t  e3=3,\n\t  e5=FIVE,\n\t  e10_[2] = 10,\n\t  e12,\n\t  e20_[5:7] = 25,\n\t  e20_z,\n\t  e30_[7:5] = 30,\n\t  e30_z\n\t  } EN;\n\n   enum {\n\t z5 = e5\n\t } ZN;\n\n   typedef enum [',
    typedef enum [2:0] { ONES=~0 } three_t;
                 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_enum.v:13:21: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module t (/*AUTOARG*/);
+                     ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_enum.v:13:22: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module t (/*AUTOARG*/);
+                      ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_enum.v:33:16: Syntax error: no viable alternative at input 'enum [',
    typedef enum [2:0] { ONES=~0 } three_t;
                 ^--.
@@ -1413,7 +1449,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
    initial begin
    ^--.
 [  FATAL] : 0
-[ SYNTAX] : 5
+[ SYNTAX] : 7
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1468,7 +1504,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_dpi_threads.v -l t_dpi_threads.v.log
 [ERR:PP0102] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_threads.v:19:4: Unknown macro "error".
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_threads.v:19:39: Syntax error: extraneous input '"Only Verilator supports PLI-ish DPI calls."' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_threads.v:19:39: Syntax error: extraneous input '"Only Verilator supports PLI-ish DPI calls."' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
    SURELOG_MACRO_NOT_DEFINED:error!!!  "Only Verilator supports PLI-ish DPI calls."
                                        ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_threads.v:19: Unknown macro "error".
@@ -1591,14 +1627,35 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:10:21: Syntax error: no viable alternative at input 'module t (/*AUTOARG*/);\n   wire ok = 1'b0;\n   // verilator lint_off PINNOCONNECT\n   // verilator lint_off PINCONNECTEMPTY\n   sub sub (.ok(ok), ,',
    sub sub (.ok(ok), , .nc());
                      ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:6:21: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module t (/*AUTOARG*/);
+                     ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:6:22: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module t (/*AUTOARG*/);
+                      ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:10:11: Syntax error: no viable alternative at input 'sub sub (',
    sub sub (.ok(ok), , .nc());
            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:13: Syntax error: mismatched input 'endmodule' expecting <EOF>,
-endmodule
-^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:10:12: Syntax error: extraneous input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   sub sub (.ok(ok), , .nc());
+            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:10:15: Syntax error: no viable alternative at input '(',
+   sub sub (.ok(ok), , .nc());
+               ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:10:19: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ',',
+   sub sub (.ok(ok), , .nc());
+                   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:10:21: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ',',
+   sub sub (.ok(ok), , .nc());
+                     ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:10:23: Syntax error: extraneous input '.' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   sub sub (.ok(ok), , .nc());
+                       ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing.v:10:26: Syntax error: missing ';' at '(',
+   sub sub (.ok(ok), , .nc());
+                          ^--.
 [  FATAL] : 0
-[ SYNTAX] : 3
+[ SYNTAX] : 10
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1708,7 +1765,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_lint_implicit_def_bad.v -l t_lint_implicit_def_bad.v.log
 [ERR:PP0120] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_implicit_def_bad.v:21: Illegal directive in design element "`resetall".
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_implicit_def_bad.v:14: Syntax error: extraneous input '`default_nettype' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_implicit_def_bad.v:14: Syntax error: extraneous input '`default_nettype' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
 `default_nettype none
 ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_implicit_def_bad.v:15:3: Syntax error: mismatched input 'assign' expecting <EOF>,
@@ -1761,14 +1818,35 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:8:21: Syntax error: no viable alternative at input 'module t (/*AUTOARG*/);\n   wire ok = 1'b0;\n   sub sub (.ok(ok), ,',
    sub sub (.ok(ok), , .nc());
                      ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:6:21: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module t (/*AUTOARG*/);
+                     ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:6:22: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module t (/*AUTOARG*/);
+                      ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:8:11: Syntax error: no viable alternative at input 'sub sub (',
    sub sub (.ok(ok), , .nc());
            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:9: Syntax error: mismatched input 'endmodule' expecting <EOF>,
-endmodule
-^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:8:12: Syntax error: extraneous input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   sub sub (.ok(ok), , .nc());
+            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:8:15: Syntax error: no viable alternative at input '(',
+   sub sub (.ok(ok), , .nc());
+               ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:8:19: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ',',
+   sub sub (.ok(ok), , .nc());
+                   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:8:21: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ',',
+   sub sub (.ok(ok), , .nc());
+                     ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:8:23: Syntax error: extraneous input '.' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   sub sub (.ok(ok), , .nc());
+                       ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_inst_missing_bad.v:8:26: Syntax error: missing ';' at '(',
+   sub sub (.ok(ok), , .nc());
+                          ^--.
 [  FATAL] : 0
-[ SYNTAX] : 3
+[ SYNTAX] : 10
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1830,6 +1908,9 @@ ${SURELOG_DIR}/third_party/tests/Verilator/t_pp_display.v:17:9: No default value
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_pp_display.v:39:14: Syntax error: mismatched input '(' expecting ';',
       $display(`"standalone`");
               ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_pp_display.v:39:15: Syntax error: mismatched input '`' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+      $display(`"standalone`");
+               ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_pp_display.v:39:16: Syntax error: mismatched input '"standalone`"' expecting Simple_identifier,
       $display(`"standalone`");
                 ^--.
@@ -1837,7 +1918,7 @@ ${SURELOG_DIR}/third_party/tests/Verilator/t_pp_display.v:17:9: No default value
       $display("Line %0d File \"%s\"",49,"${SURELOG_DIR}/third_party/tests/Verilator/t_pp_display.v");
       ^--.
 [  FATAL] : 0
-[ SYNTAX] : 4
+[ SYNTAX] : 5
 [  ERROR] : 1
 [WARNING] : 1
 [   NOTE] : 0
@@ -2021,11 +2102,17 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_mem_multi_ref_bad.v:18:18: Syntax error: no viable alternative at input 'module t (/*AUTOARG*/);\n   reg       dimn;\n   reg [1:0] dim0;\n   reg [1:0] dim1 [1:0];\n   reg [1:0] dim2 [1:0][1:0];\n   reg       dim0nv[1:0];\n\n   initial begin\n      dimn[1:0] = 0;            // Bad: Not ranged\n      dim0[1][1] = 0;           // Bad: Not arrayed\n      dim1[1][1][1] = 0;        // Bad: Not arrayed to right depth\n      dim2[1][1][1] = 0;        // OK\n      dim2[0 +: 1][',
       dim2[0 +: 1][1] = 0;      // Bad: Range on non-bits
                   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_mem_multi_ref_bad.v:6:21: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module t (/*AUTOARG*/);
+                     ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_mem_multi_ref_bad.v:6:22: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module t (/*AUTOARG*/);
+                      ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_mem_multi_ref_bad.v:13:3: Syntax error: mismatched input 'initial' expecting <EOF>,
    initial begin
    ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -2151,8 +2238,17 @@ module t(input do);
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_langext_order.v:11:28: Syntax error: no viable alternative at input '(.',
    t_langext_order_sub sub (.do(do));
                             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_langext_order.v:11:28: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   t_langext_order_sub sub (.do(do));
+                            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_langext_order.v:11:32: Syntax error: mismatched input 'do' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   t_langext_order_sub sub (.do(do));
+                                ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_langext_order.v:11:35: Syntax error: mismatched input ')' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   t_langext_order_sub sub (.do(do));
+                                   ^--.
 [  FATAL] : 0
-[ SYNTAX] : 3
+[ SYNTAX] : 6
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -2266,12 +2362,18 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_sys.v:15:39: Syntax error: no viable alternative at input 'module t ();\n\n\n   SURELOG_MACRO_NOT_DEFINED:error!!!  "Only Verilator supports PLI-ish DPI calls."',
    SURELOG_MACRO_NOT_DEFINED:error!!!  "Only Verilator supports PLI-ish DPI calls."
                                        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_sys.v:12:10: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module t ();
+          ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_sys.v:12:11: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module t ();
+           ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_sys.v:15:39: Syntax error: mismatched input '"Only Verilator supports PLI-ish DPI calls."' expecting <EOF>,
    SURELOG_MACRO_NOT_DEFINED:error!!!  "Only Verilator supports PLI-ish DPI calls."
                                        ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_sys.v:15: Unknown macro "error".
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 2
 [WARNING] : 0
 [   NOTE] : 0
@@ -2374,11 +2476,17 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_lint_mod_paren_bad.v -l t_lint_mod_paren_bad.v.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_mod_paren_bad.v:12:5: Syntax error: mismatched input '(' expecting ';',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_mod_paren_bad.v:12:5: Syntax error: missing ';' at '(',
    ) (
      ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_mod_paren_bad.v:13:6: Syntax error: extraneous input 'output' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+      output bar
+      ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_lint_mod_paren_bad.v:14:7: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+      );
+       ^--.
 [  FATAL] : 0
-[ SYNTAX] : 1
+[ SYNTAX] : 3
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -2407,7 +2515,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_clk_concat2.v -l t_clk_concat2.v.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_clk_concat2.v:85:3: Syntax error: extraneous input 'input' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_clk_concat2.v:85:3: Syntax error: extraneous input 'input' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
    input       clk;
    ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_clk_concat2.v:85:18: Syntax error: no viable alternative at input 'clk;',
@@ -2700,7 +2808,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_hierarchy_identifier.v:30:26: Syntax error: mismatched input '\' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
    if (cnt==SIZE) begin : \0escaped___name
                           ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_hierarchy_identifier.v:33:3: Syntax error: extraneous input 'end' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_hierarchy_identifier.v:33:3: Syntax error: extraneous input 'end' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
    end : \0escaped___name
    ^--.
 [  FATAL] : 0
@@ -3146,7 +3254,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_attr_parenstar.v:32:12: Syntax error: no viable alternative at input '@ (*',
    always @ (*
             ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_attr_parenstar.v:35:3: Syntax error: extraneous input 'end' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_attr_parenstar.v:35:3: Syntax error: extraneous input 'end' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
    end
    ^--.
 [  FATAL] : 0
@@ -3302,8 +3410,14 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_var_bad_sv.v:8:12: Syntax error: no viable alternative at input '(.',
    mod mod (.do(bar));
             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_var_bad_sv.v:8:12: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   mod mod (.do(bar));
+            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_var_bad_sv.v:8:20: Syntax error: mismatched input ')' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   mod mod (.do(bar));
+                    ^--.
 [  FATAL] : 0
-[ SYNTAX] : 3
+[ SYNTAX] : 5
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -3594,7 +3708,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_pp_lib_library.v:7:10: Syntax error: no viable alternative at input '[SURELOG_MACRO_NOT_DEFINED:WIDTH!!!',
    input [SURELOG_MACRO_NOT_DEFINED:WIDTH!!! -1:0] a;
           ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_pp_lib_library.v:7:45: Syntax error: extraneous input '-' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_pp_lib_library.v:7:45: Syntax error: extraneous input '-' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
    input [SURELOG_MACRO_NOT_DEFINED:WIDTH!!! -1:0] a;
                                              ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_pp_lib_library.v:7: Unknown macro "WIDTH".
@@ -3783,7 +3897,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_tri_gate.v -l t_tri_gate.v.log
 [ERR:PP0102] ${SURELOG_DIR}/third_party/tests/Verilator/t_tri_gate.v:36:2: Unknown macro "error".
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_tri_gate.v:36:37: Syntax error: extraneous input '"Unknown test name"' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_tri_gate.v:36:37: Syntax error: extraneous input '"Unknown test name"' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
  SURELOG_MACRO_NOT_DEFINED:error!!!  "Unknown test name"
                                      ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_tri_gate.v:36: Unknown macro "error".
@@ -3818,7 +3932,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_gen_missing.v -l t_gen_missing.v.log
 [ERR:PP0102] ${SURELOG_DIR}/third_party/tests/Verilator/t_gen_missing.v:13:2: Unknown macro "error".
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_gen_missing.v:13:37: Syntax error: extraneous input '"Bad Test"' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_gen_missing.v:13:37: Syntax error: extraneous input '"Bad Test"' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
  SURELOG_MACRO_NOT_DEFINED:error!!!  "Bad Test"
                                      ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_gen_missing.v:13: Unknown macro "error".
@@ -4099,11 +4213,32 @@ At file "${SURELOG_DIR}/third_party/tests/Verilator/t_preproc_inc2.vh"  line 4
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc.v:29:4: Syntax error: no viable alternative at input 'text.',
 text.
     ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc.v:75:2: Syntax error: mismatched input ',' expecting ')',
+(a,b)(a)
+  ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc.v:78: Syntax error: extraneous input '$' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+$display("left side: \"right side\"")
+^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc.v:78:8: Syntax error: missing ';' at '(',
+$display("left side: \"right side\"")
+        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc.v:78:9: Syntax error: mismatched input '"left side: \"right side\""' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+$display("left side: \"right side\"")
+         ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc.v:81:12: Syntax error: missing ';' at 'more',
+bar_suffix  more
+            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc.v:84:4: Syntax error: mismatched input '"Zap(\""' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+	$c("Zap(\"",bug1,"\");");
+    ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc.v:84:18: Syntax error: mismatched input '"\");"' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+	$c("Zap(\"",bug1,"\");");
+                  ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc.v:84:1: Syntax error: mismatched input '$' expecting <EOF>,
 	$c("Zap(\"","bug2","\");");
  ^--.
 [  FATAL] : 0
-[ SYNTAX] : 6
+[ SYNTAX] : 13
 [  ERROR] : 28
 [WARNING] : 22
 [   NOTE] : 0
@@ -4187,7 +4322,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_clk_concat6.v -l t_clk_concat6.v.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_clk_concat6.v:97:3: Syntax error: extraneous input 'input' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_clk_concat6.v:97:3: Syntax error: extraneous input 'input' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
    input       clk;
    ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_clk_concat6.v:97:18: Syntax error: no viable alternative at input 'clk;',
@@ -4777,7 +4912,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_clk_concat5.v -l t_clk_concat5.v.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_clk_concat5.v:84:3: Syntax error: extraneous input 'input' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_clk_concat5.v:84:3: Syntax error: extraneous input 'input' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
    input       clk;
    ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_clk_concat5.v:84:18: Syntax error: no viable alternative at input 'clk;',
@@ -4809,10 +4944,10 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -sverilog -timescale=1ns/1ns t_preproc_undefineall.v -l t_preproc_undefineall.v.log
 [ERR:PP0102] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc_undefineall.v:9:29: Unknown macro "error".
 [ERR:PP0102] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc_undefineall.v:14:29: Unknown macro "error".
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc_undefineall.v:9:37: Syntax error: extraneous input '"Test setup error, PREDEF_COMMAND_LINE pre-missing"' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc_undefineall.v:9:37: Syntax error: extraneous input '"Test setup error, PREDEF_COMMAND_LINE pre-missing"' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
  SURELOG_MACRO_NOT_DEFINED:error!!!  "Test setup error, PREDEF_COMMAND_LINE pre-missing" 
                                      ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc_undefineall.v:14:37: Syntax error: extraneous input '"Deleted too much, no PREDEF_COMMAND_LINE"' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc_undefineall.v:14:37: Syntax error: extraneous input '"Deleted too much, no PREDEF_COMMAND_LINE"' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
  SURELOG_MACRO_NOT_DEFINED:error!!!  "Deleted too much, no PREDEF_COMMAND_LINE" 
                                      ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_preproc_undefineall.v:9: Unknown macro "error".
@@ -5378,7 +5513,7 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [ERR:PP0102] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:52:2: Unknown macro "systemc_ctor".
 [ERR:PP0102] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:54:2: Unknown macro "systemc_dtor".
 [ERR:PP0102] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:56:2: Unknown macro "verilog".
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:49: Syntax error: extraneous input '#' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:49: Syntax error: extraneous input '#' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'input', 'output', 'inout', 'ref', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', DOLLAR_ROOT, 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
 #include "t_extend_class_c.h"	// Header for contained object
 ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:51:19: Syntax error: no viable alternative at input 't_extend_class_c*',
@@ -5393,13 +5528,19 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:53:34: Syntax error: missing '=' at '(',
    m_myobjp = new t_extend_class_c();	// Construct contained object
                                   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:53:35: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   m_myobjp = new t_extend_class_c();	// Construct contained object
+                                   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:53:36: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+   m_myobjp = new t_extend_class_c();	// Construct contained object
+                                    ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:48: Unknown macro "systemc_header".
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:50: Unknown macro "systemc_interface".
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:52: Unknown macro "systemc_ctor".
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:54: Unknown macro "systemc_dtor".
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_extend_class.v:56: Unknown macro "verilog".
 [  FATAL] : 0
-[ SYNTAX] : 5
+[ SYNTAX] : 7
 [  ERROR] : 10
 [WARNING] : 0
 [   NOTE] : 0
@@ -5415,12 +5556,15 @@ Processing: -cd . +incdir+. -parse -noelab -nocache -nobuiltin -nonote -noinfo -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_var.v:67:2: Syntax error: no viable alternative at input 'module sub (/*AUTOARG*/\n   // Outputs\n   fr_a, fr_b, fr_chk,\n   // Inputs\n   in\n   );\n\nSURELOG_MACRO_NOT_DEFINED:systemc_imp_header!!! \n  void',
   void mon_class_name(const char* namep);
   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_var.v:61:7: Syntax error: mismatched input ',' expecting ')',
+   fr_a, fr_b, fr_chk,
+       ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_var.v:67:2: Syntax error: mismatched input 'void' expecting <EOF>,
   void mon_class_name(const char* namep);
   ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Verilator/t_dpi_var.v:66: Unknown macro "systemc_imp_header".
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 3
 [  ERROR] : 3
 [WARNING] : 0
 [   NOTE] : 0
@@ -5629,7 +5773,7 @@ Processing: -cd t_sv_bus_mux_demux +incdir+. -parse -noelab -nocache -nobuiltin 
 [   NOTE] : 0
 Processed 837 tests.
 [  FATAL] : 0
-[ SYNTAX] : 133
+[ SYNTAX] : 181
 [  ERROR] : 154
 [WARNING] : 43
 [   NOTE] : 0

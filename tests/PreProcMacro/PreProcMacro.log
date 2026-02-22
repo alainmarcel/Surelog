@@ -5,245 +5,275 @@ AST_DEBUG_BEGIN
 LIB:  work
 FILE: ${SURELOG_DIR}/tests/PreProcMacro/dut.sv
 n<> u<0> t<_INVALID_> f<0> l<0:0>
-n<> u<1> t<Null_rule> p<210> s<209> l<14:1> el<1:14>
+n<> u<1> t<Null_rule> p<241> s<240> l<14:1> el<1:14>
 n<module> u<2> t<Module_keyword> p<4> s<3> l<14:1> el<14:7>
 n<top> u<3> t<StringConst> p<4> l<14:8> el<14:11>
-n<> u<4> t<Module_ansi_header> p<207> c<2> s<11> l<14:1> el<14:12>
+n<> u<4> t<Module_ansi_header> p<238> c<2> s<11> l<14:1> el<14:12>
 n<> u<5> t<Statement_item> p<6> l<4:13> el<4:13>
 n<> u<6> t<Statement> p<7> c<5> l<4:13> el<4:13>
 n<> u<7> t<Statement_or_null> p<8> c<6> l<4:13> el<4:13>
 n<> u<8> t<Initial_construct> p<9> c<7> l<4:5> el<4:12>
 n<> u<9> t<Module_common_item> p<10> c<8> l<4:5> el<4:12>
 n<> u<10> t<Module_or_generate_item> p<11> c<9> l<4:5> el<4:12>
-n<> u<11> t<Non_port_module_item> p<207> c<10> s<12> l<4:5> el<4:12>
-n<> u<12> t<Non_port_module_item> p<207> s<13> l<4:13> el<4:13>
-n<> u<13> t<Non_port_module_item> p<207> s<17> l<4:13> el<4:14>
-n<display> u<14> t<StringConst> p<15> l<4:14> el<4:21>
-n<> u<15> t<Udp_instantiation> p<16> c<14> l<4:14> el<4:22>
-n<> u<16> t<Module_or_generate_item> p<17> c<15> l<4:14> el<4:22>
-n<> u<17> t<Non_port_module_item> p<207> c<16> s<19> l<4:14> el<4:22>
-n<> u<18> t<Surelog_macro_not_defined> p<19> l<5:5> el<5:40>
-n<> u<19> t<Non_port_module_item> p<207> c<18> s<21> l<5:5> el<5:40>
-n<> u<20> t<Module_or_generate_item> p<21> l<5:42> el<5:42>
-n<> u<21> t<Non_port_module_item> p<207> c<20> s<23> l<5:42> el<5:42>
-n<> u<22> t<Module_or_generate_item> p<23> l<5:42> el<6:19>
-n<> u<23> t<Non_port_module_item> p<207> c<22> s<25> l<5:42> el<6:19>
-n<> u<24> t<Surelog_macro_not_defined> p<25> l<7:5> el<7:40>
-n<> u<25> t<Non_port_module_item> p<207> c<24> s<30> l<7:5> el<7:40>
-n<> u<26> t<Package_or_generate_item_declaration> p<27> l<10:6> el<10:7>
-n<> u<27> t<Module_or_generate_item_declaration> p<28> c<26> l<10:6> el<10:7>
-n<> u<28> t<Module_common_item> p<29> c<27> l<10:6> el<10:7>
-n<> u<29> t<Module_or_generate_item> p<30> c<28> l<10:6> el<10:7>
-n<> u<30> t<Non_port_module_item> p<207> c<29> s<37> l<10:6> el<10:7>
-n<> u<31> t<Statement_item> p<32> l<4:13> el<4:13>
-n<> u<32> t<Statement> p<33> c<31> l<4:13> el<4:13>
-n<> u<33> t<Statement_or_null> p<34> c<32> l<4:13> el<4:13>
-n<> u<34> t<Initial_construct> p<35> c<33> l<4:5> el<4:12>
-n<> u<35> t<Module_common_item> p<36> c<34> l<4:5> el<4:12>
-n<> u<36> t<Module_or_generate_item> p<37> c<35> l<4:5> el<4:12>
-n<> u<37> t<Non_port_module_item> p<207> c<36> s<38> l<4:5> el<4:12>
-n<> u<38> t<Non_port_module_item> p<207> s<42> l<4:13> el<4:14>
-n<display> u<39> t<StringConst> p<40> l<4:14> el<4:21>
-n<> u<40> t<Udp_instantiation> p<41> c<39> l<4:14> el<4:22>
-n<> u<41> t<Module_or_generate_item> p<42> c<40> l<4:14> el<4:22>
-n<> u<42> t<Non_port_module_item> p<207> c<41> s<44> l<4:14> el<4:22>
-n<> u<43> t<Surelog_macro_not_defined> p<44> l<5:5> el<5:40>
-n<> u<44> t<Non_port_module_item> p<207> c<43> s<46> l<5:5> el<5:40>
-n<> u<45> t<Module_or_generate_item> p<46> l<5:42> el<5:42>
-n<> u<46> t<Non_port_module_item> p<207> c<45> s<48> l<5:42> el<5:42>
-n<> u<47> t<Module_or_generate_item> p<48> l<5:42> el<6:19>
-n<> u<48> t<Non_port_module_item> p<207> c<47> s<50> l<5:42> el<6:19>
-n<> u<49> t<Surelog_macro_not_defined> p<50> l<7:5> el<7:40>
-n<> u<50> t<Non_port_module_item> p<207> c<49> s<55> l<7:5> el<7:40>
-n<> u<51> t<Package_or_generate_item_declaration> p<52> l<10:6> el<10:7>
-n<> u<52> t<Module_or_generate_item_declaration> p<53> c<51> l<10:6> el<10:7>
-n<> u<53> t<Module_common_item> p<54> c<52> l<10:6> el<10:7>
-n<> u<54> t<Module_or_generate_item> p<55> c<53> l<10:6> el<10:7>
-n<> u<55> t<Non_port_module_item> p<207> c<54> s<62> l<10:6> el<10:7>
-n<> u<56> t<Statement_item> p<57> l<4:13> el<4:13>
-n<> u<57> t<Statement> p<58> c<56> l<4:13> el<4:13>
-n<> u<58> t<Statement_or_null> p<59> c<57> l<4:13> el<4:13>
-n<> u<59> t<Initial_construct> p<60> c<58> l<4:5> el<4:12>
-n<> u<60> t<Module_common_item> p<61> c<59> l<4:5> el<4:12>
-n<> u<61> t<Module_or_generate_item> p<62> c<60> l<4:5> el<4:12>
-n<> u<62> t<Non_port_module_item> p<207> c<61> s<63> l<4:5> el<4:12>
-n<> u<63> t<Non_port_module_item> p<207> s<67> l<4:13> el<4:14>
-n<display> u<64> t<StringConst> p<65> l<4:14> el<4:21>
-n<> u<65> t<Udp_instantiation> p<66> c<64> l<4:14> el<4:22>
-n<> u<66> t<Module_or_generate_item> p<67> c<65> l<4:14> el<4:22>
-n<> u<67> t<Non_port_module_item> p<207> c<66> s<69> l<4:14> el<4:22>
-n<> u<68> t<Surelog_macro_not_defined> p<69> l<5:5> el<5:40>
-n<> u<69> t<Non_port_module_item> p<207> c<68> s<71> l<5:5> el<5:40>
-n<> u<70> t<Module_or_generate_item> p<71> l<5:42> el<5:42>
-n<> u<71> t<Non_port_module_item> p<207> c<70> s<73> l<5:42> el<5:42>
-n<> u<72> t<Module_or_generate_item> p<73> l<5:42> el<6:20>
-n<> u<73> t<Non_port_module_item> p<207> c<72> s<75> l<5:42> el<6:20>
-n<> u<74> t<Surelog_macro_not_defined> p<75> l<7:5> el<7:40>
-n<> u<75> t<Non_port_module_item> p<207> c<74> s<80> l<7:5> el<7:40>
-n<> u<76> t<Package_or_generate_item_declaration> p<77> l<10:6> el<10:7>
-n<> u<77> t<Module_or_generate_item_declaration> p<78> c<76> l<10:6> el<10:7>
-n<> u<78> t<Module_common_item> p<79> c<77> l<10:6> el<10:7>
-n<> u<79> t<Module_or_generate_item> p<80> c<78> l<10:6> el<10:7>
-n<> u<80> t<Non_port_module_item> p<207> c<79> s<87> l<10:6> el<10:7>
-n<> u<81> t<Statement_item> p<82> l<4:13> el<4:13>
-n<> u<82> t<Statement> p<83> c<81> l<4:13> el<4:13>
-n<> u<83> t<Statement_or_null> p<84> c<82> l<4:13> el<4:13>
-n<> u<84> t<Initial_construct> p<85> c<83> l<4:5> el<4:12>
-n<> u<85> t<Module_common_item> p<86> c<84> l<4:5> el<4:12>
-n<> u<86> t<Module_or_generate_item> p<87> c<85> l<4:5> el<4:12>
-n<> u<87> t<Non_port_module_item> p<207> c<86> s<88> l<4:5> el<4:12>
-n<> u<88> t<Non_port_module_item> p<207> s<92> l<4:13> el<4:14>
-n<display> u<89> t<StringConst> p<90> l<4:14> el<4:21>
-n<> u<90> t<Udp_instantiation> p<91> c<89> l<4:14> el<4:22>
-n<> u<91> t<Module_or_generate_item> p<92> c<90> l<4:14> el<4:22>
-n<> u<92> t<Non_port_module_item> p<207> c<91> s<94> l<4:14> el<4:22>
-n<> u<93> t<Surelog_macro_not_defined> p<94> l<5:5> el<5:40>
-n<> u<94> t<Non_port_module_item> p<207> c<93> s<96> l<5:5> el<5:40>
-n<> u<95> t<Module_or_generate_item> p<96> l<5:42> el<5:42>
-n<> u<96> t<Non_port_module_item> p<207> c<95> s<98> l<5:42> el<5:42>
-n<> u<97> t<Module_or_generate_item> p<98> l<5:42> el<6:20>
-n<> u<98> t<Non_port_module_item> p<207> c<97> s<100> l<5:42> el<6:20>
-n<> u<99> t<Surelog_macro_not_defined> p<100> l<7:5> el<7:40>
-n<> u<100> t<Non_port_module_item> p<207> c<99> s<105> l<7:5> el<7:40>
-n<> u<101> t<Package_or_generate_item_declaration> p<102> l<10:6> el<10:7>
-n<> u<102> t<Module_or_generate_item_declaration> p<103> c<101> l<10:6> el<10:7>
-n<> u<103> t<Module_common_item> p<104> c<102> l<10:6> el<10:7>
-n<> u<104> t<Module_or_generate_item> p<105> c<103> l<10:6> el<10:7>
-n<> u<105> t<Non_port_module_item> p<207> c<104> s<112> l<10:6> el<10:7>
-n<> u<106> t<Statement_item> p<107> l<4:13> el<4:13>
-n<> u<107> t<Statement> p<108> c<106> l<4:13> el<4:13>
-n<> u<108> t<Statement_or_null> p<109> c<107> l<4:13> el<4:13>
-n<> u<109> t<Initial_construct> p<110> c<108> l<4:5> el<4:12>
-n<> u<110> t<Module_common_item> p<111> c<109> l<4:5> el<4:12>
-n<> u<111> t<Module_or_generate_item> p<112> c<110> l<4:5> el<4:12>
-n<> u<112> t<Non_port_module_item> p<207> c<111> s<113> l<4:5> el<4:12>
-n<> u<113> t<Non_port_module_item> p<207> s<117> l<4:13> el<4:14>
-n<display> u<114> t<StringConst> p<115> l<4:14> el<4:21>
-n<> u<115> t<Udp_instantiation> p<116> c<114> l<4:14> el<4:22>
-n<> u<116> t<Module_or_generate_item> p<117> c<115> l<4:14> el<4:22>
-n<> u<117> t<Non_port_module_item> p<207> c<116> s<119> l<4:14> el<4:22>
-n<> u<118> t<Surelog_macro_not_defined> p<119> l<5:5> el<5:40>
-n<> u<119> t<Non_port_module_item> p<207> c<118> s<121> l<5:5> el<5:40>
-n<> u<120> t<Module_or_generate_item> p<121> l<5:42> el<5:42>
-n<> u<121> t<Non_port_module_item> p<207> c<120> s<123> l<5:42> el<5:42>
-n<> u<122> t<Module_or_generate_item> p<123> l<5:42> el<6:19>
-n<> u<123> t<Non_port_module_item> p<207> c<122> s<125> l<5:42> el<6:19>
-n<> u<124> t<Surelog_macro_not_defined> p<125> l<7:5> el<7:40>
-n<> u<125> t<Non_port_module_item> p<207> c<124> s<130> l<7:5> el<7:40>
-n<> u<126> t<Package_or_generate_item_declaration> p<127> l<10:6> el<10:7>
-n<> u<127> t<Module_or_generate_item_declaration> p<128> c<126> l<10:6> el<10:7>
-n<> u<128> t<Module_common_item> p<129> c<127> l<10:6> el<10:7>
-n<> u<129> t<Module_or_generate_item> p<130> c<128> l<10:6> el<10:7>
-n<> u<130> t<Non_port_module_item> p<207> c<129> s<137> l<10:6> el<10:7>
-n<> u<131> t<Statement_item> p<132> l<4:13> el<4:13>
-n<> u<132> t<Statement> p<133> c<131> l<4:13> el<4:13>
-n<> u<133> t<Statement_or_null> p<134> c<132> l<4:13> el<4:13>
-n<> u<134> t<Initial_construct> p<135> c<133> l<4:5> el<4:12>
-n<> u<135> t<Module_common_item> p<136> c<134> l<4:5> el<4:12>
-n<> u<136> t<Module_or_generate_item> p<137> c<135> l<4:5> el<4:12>
-n<> u<137> t<Non_port_module_item> p<207> c<136> s<138> l<4:5> el<4:12>
-n<> u<138> t<Non_port_module_item> p<207> s<142> l<4:13> el<4:14>
-n<display> u<139> t<StringConst> p<140> l<4:14> el<4:21>
-n<> u<140> t<Udp_instantiation> p<141> c<139> l<4:14> el<4:22>
-n<> u<141> t<Module_or_generate_item> p<142> c<140> l<4:14> el<4:22>
-n<> u<142> t<Non_port_module_item> p<207> c<141> s<144> l<4:14> el<4:22>
-n<> u<143> t<Surelog_macro_not_defined> p<144> l<5:5> el<5:40>
-n<> u<144> t<Non_port_module_item> p<207> c<143> s<146> l<5:5> el<5:40>
-n<> u<145> t<Module_or_generate_item> p<146> l<5:42> el<5:42>
-n<> u<146> t<Non_port_module_item> p<207> c<145> s<148> l<5:42> el<5:42>
-n<> u<147> t<Module_or_generate_item> p<148> l<5:42> el<6:19>
-n<> u<148> t<Non_port_module_item> p<207> c<147> s<150> l<5:42> el<6:19>
-n<> u<149> t<Surelog_macro_not_defined> p<150> l<7:5> el<7:40>
-n<> u<150> t<Non_port_module_item> p<207> c<149> s<155> l<7:5> el<7:40>
-n<> u<151> t<Package_or_generate_item_declaration> p<152> l<10:6> el<10:7>
-n<> u<152> t<Module_or_generate_item_declaration> p<153> c<151> l<10:6> el<10:7>
-n<> u<153> t<Module_common_item> p<154> c<152> l<10:6> el<10:7>
-n<> u<154> t<Module_or_generate_item> p<155> c<153> l<10:6> el<10:7>
-n<> u<155> t<Non_port_module_item> p<207> c<154> s<162> l<10:6> el<10:7>
-n<> u<156> t<Statement_item> p<157> l<4:13> el<4:13>
-n<> u<157> t<Statement> p<158> c<156> l<4:13> el<4:13>
-n<> u<158> t<Statement_or_null> p<159> c<157> l<4:13> el<4:13>
-n<> u<159> t<Initial_construct> p<160> c<158> l<4:5> el<4:12>
-n<> u<160> t<Module_common_item> p<161> c<159> l<4:5> el<4:12>
-n<> u<161> t<Module_or_generate_item> p<162> c<160> l<4:5> el<4:12>
-n<> u<162> t<Non_port_module_item> p<207> c<161> s<163> l<4:5> el<4:12>
-n<> u<163> t<Non_port_module_item> p<207> s<167> l<4:13> el<4:14>
-n<display> u<164> t<StringConst> p<165> l<4:14> el<4:21>
-n<> u<165> t<Udp_instantiation> p<166> c<164> l<4:14> el<4:22>
-n<> u<166> t<Module_or_generate_item> p<167> c<165> l<4:14> el<4:22>
-n<> u<167> t<Non_port_module_item> p<207> c<166> s<169> l<4:14> el<4:22>
-n<> u<168> t<Surelog_macro_not_defined> p<169> l<5:5> el<5:40>
-n<> u<169> t<Non_port_module_item> p<207> c<168> s<171> l<5:5> el<5:40>
-n<> u<170> t<Module_or_generate_item> p<171> l<5:42> el<5:42>
-n<> u<171> t<Non_port_module_item> p<207> c<170> s<173> l<5:42> el<5:42>
-n<> u<172> t<Module_or_generate_item> p<173> l<5:42> el<6:20>
-n<> u<173> t<Non_port_module_item> p<207> c<172> s<175> l<5:42> el<6:20>
-n<> u<174> t<Surelog_macro_not_defined> p<175> l<7:5> el<7:40>
-n<> u<175> t<Non_port_module_item> p<207> c<174> s<180> l<7:5> el<7:40>
-n<> u<176> t<Package_or_generate_item_declaration> p<177> l<10:6> el<10:7>
-n<> u<177> t<Module_or_generate_item_declaration> p<178> c<176> l<10:6> el<10:7>
-n<> u<178> t<Module_common_item> p<179> c<177> l<10:6> el<10:7>
-n<> u<179> t<Module_or_generate_item> p<180> c<178> l<10:6> el<10:7>
-n<> u<180> t<Non_port_module_item> p<207> c<179> s<187> l<10:6> el<10:7>
-n<> u<181> t<Statement_item> p<182> l<4:13> el<4:13>
-n<> u<182> t<Statement> p<183> c<181> l<4:13> el<4:13>
-n<> u<183> t<Statement_or_null> p<184> c<182> l<4:13> el<4:13>
-n<> u<184> t<Initial_construct> p<185> c<183> l<4:5> el<4:12>
-n<> u<185> t<Module_common_item> p<186> c<184> l<4:5> el<4:12>
-n<> u<186> t<Module_or_generate_item> p<187> c<185> l<4:5> el<4:12>
-n<> u<187> t<Non_port_module_item> p<207> c<186> s<188> l<4:5> el<4:12>
-n<> u<188> t<Non_port_module_item> p<207> s<192> l<4:13> el<4:14>
-n<display> u<189> t<StringConst> p<190> l<4:14> el<4:21>
-n<> u<190> t<Udp_instantiation> p<191> c<189> l<4:14> el<4:22>
-n<> u<191> t<Module_or_generate_item> p<192> c<190> l<4:14> el<4:22>
-n<> u<192> t<Non_port_module_item> p<207> c<191> s<194> l<4:14> el<4:22>
-n<> u<193> t<Surelog_macro_not_defined> p<194> l<5:5> el<5:40>
-n<> u<194> t<Non_port_module_item> p<207> c<193> s<196> l<5:5> el<5:40>
-n<> u<195> t<Module_or_generate_item> p<196> l<5:42> el<5:42>
-n<> u<196> t<Non_port_module_item> p<207> c<195> s<198> l<5:42> el<5:42>
-n<> u<197> t<Module_or_generate_item> p<198> l<5:42> el<6:20>
-n<> u<198> t<Non_port_module_item> p<207> c<197> s<200> l<5:42> el<6:20>
-n<> u<199> t<Surelog_macro_not_defined> p<200> l<7:5> el<7:40>
-n<> u<200> t<Non_port_module_item> p<207> c<199> s<205> l<7:5> el<7:40>
-n<> u<201> t<Package_or_generate_item_declaration> p<202> l<10:6> el<10:7>
-n<> u<202> t<Module_or_generate_item_declaration> p<203> c<201> l<10:6> el<10:7>
-n<> u<203> t<Module_common_item> p<204> c<202> l<10:6> el<10:7>
-n<> u<204> t<Module_or_generate_item> p<205> c<203> l<10:6> el<10:7>
-n<> u<205> t<Non_port_module_item> p<207> c<204> s<206> l<10:6> el<10:7>
-n<> u<206> t<ENDMODULE> p<207> l<23:1> el<23:10>
-n<> u<207> t<Module_declaration> p<208> c<4> l<14:1> el<23:10>
-n<> u<208> t<Description> p<209> c<207> l<14:1> el<23:10>
-n<> u<209> t<Source_text> p<210> c<208> l<14:1> el<23:10>
-n<> u<210> t<Top_level_rule> c<1> l<14:1> el<24:1>
+n<> u<11> t<Non_port_module_item> p<238> c<10> s<17> l<4:5> el<4:12>
+n<$display> u<12> t<StringConst> p<13> l<4:14> el<4:21>
+n<> u<13> t<System_task_names> p<14> c<12> l<4:13> el<4:21>
+n<> u<14> t<System_task> p<15> c<13> l<4:13> el<4:21>
+n<> u<15> t<Module_common_item> p<16> c<14> l<4:13> el<4:21>
+n<> u<16> t<Module_or_generate_item> p<17> c<15> l<4:13> el<4:21>
+n<> u<17> t<Non_port_module_item> p<238> c<16> s<26> l<4:13> el<4:21>
+n<A> u<18> t<StringConst> p<19> l<5:42> el<5:43>
+n<> u<19> t<Data_type> p<20> c<18> l<5:5> el<6:19>
+n<> u<20> t<Variable_declaration> p<21> c<19> l<4:21> el<6:19>
+n<> u<21> t<Data_declaration> p<22> c<20> l<4:21> el<6:19>
+n<> u<22> t<Package_or_generate_item_declaration> p<23> c<21> l<4:21> el<6:19>
+n<> u<23> t<Module_or_generate_item_declaration> p<24> c<22> l<4:21> el<6:19>
+n<> u<24> t<Module_common_item> p<25> c<23> l<4:21> el<6:19>
+n<> u<25> t<Module_or_generate_item> p<26> c<24> l<4:21> el<6:19>
+n<> u<26> t<Non_port_module_item> p<238> c<25> s<28> l<4:21> el<6:19>
+n<> u<27> t<Surelog_macro_not_defined> p<28> l<7:5> el<7:40>
+n<> u<28> t<Non_port_module_item> p<238> c<27> s<33> l<7:5> el<7:40>
+n<> u<29> t<Package_or_generate_item_declaration> p<30> l<10:6> el<10:7>
+n<> u<30> t<Module_or_generate_item_declaration> p<31> c<29> l<10:6> el<10:7>
+n<> u<31> t<Module_common_item> p<32> c<30> l<10:6> el<10:7>
+n<> u<32> t<Module_or_generate_item> p<33> c<31> l<10:6> el<10:7>
+n<> u<33> t<Non_port_module_item> p<238> c<32> s<40> l<10:6> el<10:7>
+n<> u<34> t<Statement_item> p<35> l<4:13> el<4:13>
+n<> u<35> t<Statement> p<36> c<34> l<4:13> el<4:13>
+n<> u<36> t<Statement_or_null> p<37> c<35> l<4:13> el<4:13>
+n<> u<37> t<Initial_construct> p<38> c<36> l<4:5> el<4:12>
+n<> u<38> t<Module_common_item> p<39> c<37> l<4:5> el<4:12>
+n<> u<39> t<Module_or_generate_item> p<40> c<38> l<4:5> el<4:12>
+n<> u<40> t<Non_port_module_item> p<238> c<39> s<46> l<4:5> el<4:12>
+n<$display> u<41> t<StringConst> p<42> l<4:14> el<4:21>
+n<> u<42> t<System_task_names> p<43> c<41> l<4:13> el<4:21>
+n<> u<43> t<System_task> p<44> c<42> l<4:13> el<4:21>
+n<> u<44> t<Module_common_item> p<45> c<43> l<4:13> el<4:21>
+n<> u<45> t<Module_or_generate_item> p<46> c<44> l<4:13> el<4:21>
+n<> u<46> t<Non_port_module_item> p<238> c<45> s<55> l<4:13> el<4:21>
+n<B> u<47> t<StringConst> p<48> l<5:42> el<5:43>
+n<> u<48> t<Data_type> p<49> c<47> l<5:5> el<6:19>
+n<> u<49> t<Variable_declaration> p<50> c<48> l<4:21> el<6:19>
+n<> u<50> t<Data_declaration> p<51> c<49> l<4:21> el<6:19>
+n<> u<51> t<Package_or_generate_item_declaration> p<52> c<50> l<4:21> el<6:19>
+n<> u<52> t<Module_or_generate_item_declaration> p<53> c<51> l<4:21> el<6:19>
+n<> u<53> t<Module_common_item> p<54> c<52> l<4:21> el<6:19>
+n<> u<54> t<Module_or_generate_item> p<55> c<53> l<4:21> el<6:19>
+n<> u<55> t<Non_port_module_item> p<238> c<54> s<57> l<4:21> el<6:19>
+n<> u<56> t<Surelog_macro_not_defined> p<57> l<7:5> el<7:40>
+n<> u<57> t<Non_port_module_item> p<238> c<56> s<62> l<7:5> el<7:40>
+n<> u<58> t<Package_or_generate_item_declaration> p<59> l<10:6> el<10:7>
+n<> u<59> t<Module_or_generate_item_declaration> p<60> c<58> l<10:6> el<10:7>
+n<> u<60> t<Module_common_item> p<61> c<59> l<10:6> el<10:7>
+n<> u<61> t<Module_or_generate_item> p<62> c<60> l<10:6> el<10:7>
+n<> u<62> t<Non_port_module_item> p<238> c<61> s<69> l<10:6> el<10:7>
+n<> u<63> t<Statement_item> p<64> l<4:13> el<4:13>
+n<> u<64> t<Statement> p<65> c<63> l<4:13> el<4:13>
+n<> u<65> t<Statement_or_null> p<66> c<64> l<4:13> el<4:13>
+n<> u<66> t<Initial_construct> p<67> c<65> l<4:5> el<4:12>
+n<> u<67> t<Module_common_item> p<68> c<66> l<4:5> el<4:12>
+n<> u<68> t<Module_or_generate_item> p<69> c<67> l<4:5> el<4:12>
+n<> u<69> t<Non_port_module_item> p<238> c<68> s<75> l<4:5> el<4:12>
+n<$display> u<70> t<StringConst> p<71> l<4:14> el<4:21>
+n<> u<71> t<System_task_names> p<72> c<70> l<4:13> el<4:21>
+n<> u<72> t<System_task> p<73> c<71> l<4:13> el<4:21>
+n<> u<73> t<Module_common_item> p<74> c<72> l<4:13> el<4:21>
+n<> u<74> t<Module_or_generate_item> p<75> c<73> l<4:13> el<4:21>
+n<> u<75> t<Non_port_module_item> p<238> c<74> s<84> l<4:13> el<4:21>
+n<A> u<76> t<StringConst> p<77> l<5:42> el<5:43>
+n<> u<77> t<Data_type> p<78> c<76> l<5:5> el<6:20>
+n<> u<78> t<Variable_declaration> p<79> c<77> l<4:21> el<6:20>
+n<> u<79> t<Data_declaration> p<80> c<78> l<4:21> el<6:20>
+n<> u<80> t<Package_or_generate_item_declaration> p<81> c<79> l<4:21> el<6:20>
+n<> u<81> t<Module_or_generate_item_declaration> p<82> c<80> l<4:21> el<6:20>
+n<> u<82> t<Module_common_item> p<83> c<81> l<4:21> el<6:20>
+n<> u<83> t<Module_or_generate_item> p<84> c<82> l<4:21> el<6:20>
+n<> u<84> t<Non_port_module_item> p<238> c<83> s<86> l<4:21> el<6:20>
+n<> u<85> t<Surelog_macro_not_defined> p<86> l<7:5> el<7:40>
+n<> u<86> t<Non_port_module_item> p<238> c<85> s<91> l<7:5> el<7:40>
+n<> u<87> t<Package_or_generate_item_declaration> p<88> l<10:6> el<10:7>
+n<> u<88> t<Module_or_generate_item_declaration> p<89> c<87> l<10:6> el<10:7>
+n<> u<89> t<Module_common_item> p<90> c<88> l<10:6> el<10:7>
+n<> u<90> t<Module_or_generate_item> p<91> c<89> l<10:6> el<10:7>
+n<> u<91> t<Non_port_module_item> p<238> c<90> s<98> l<10:6> el<10:7>
+n<> u<92> t<Statement_item> p<93> l<4:13> el<4:13>
+n<> u<93> t<Statement> p<94> c<92> l<4:13> el<4:13>
+n<> u<94> t<Statement_or_null> p<95> c<93> l<4:13> el<4:13>
+n<> u<95> t<Initial_construct> p<96> c<94> l<4:5> el<4:12>
+n<> u<96> t<Module_common_item> p<97> c<95> l<4:5> el<4:12>
+n<> u<97> t<Module_or_generate_item> p<98> c<96> l<4:5> el<4:12>
+n<> u<98> t<Non_port_module_item> p<238> c<97> s<104> l<4:5> el<4:12>
+n<$display> u<99> t<StringConst> p<100> l<4:14> el<4:21>
+n<> u<100> t<System_task_names> p<101> c<99> l<4:13> el<4:21>
+n<> u<101> t<System_task> p<102> c<100> l<4:13> el<4:21>
+n<> u<102> t<Module_common_item> p<103> c<101> l<4:13> el<4:21>
+n<> u<103> t<Module_or_generate_item> p<104> c<102> l<4:13> el<4:21>
+n<> u<104> t<Non_port_module_item> p<238> c<103> s<113> l<4:13> el<4:21>
+n<B> u<105> t<StringConst> p<106> l<5:42> el<5:43>
+n<> u<106> t<Data_type> p<107> c<105> l<5:5> el<6:20>
+n<> u<107> t<Variable_declaration> p<108> c<106> l<4:21> el<6:20>
+n<> u<108> t<Data_declaration> p<109> c<107> l<4:21> el<6:20>
+n<> u<109> t<Package_or_generate_item_declaration> p<110> c<108> l<4:21> el<6:20>
+n<> u<110> t<Module_or_generate_item_declaration> p<111> c<109> l<4:21> el<6:20>
+n<> u<111> t<Module_common_item> p<112> c<110> l<4:21> el<6:20>
+n<> u<112> t<Module_or_generate_item> p<113> c<111> l<4:21> el<6:20>
+n<> u<113> t<Non_port_module_item> p<238> c<112> s<115> l<4:21> el<6:20>
+n<> u<114> t<Surelog_macro_not_defined> p<115> l<7:5> el<7:40>
+n<> u<115> t<Non_port_module_item> p<238> c<114> s<120> l<7:5> el<7:40>
+n<> u<116> t<Package_or_generate_item_declaration> p<117> l<10:6> el<10:7>
+n<> u<117> t<Module_or_generate_item_declaration> p<118> c<116> l<10:6> el<10:7>
+n<> u<118> t<Module_common_item> p<119> c<117> l<10:6> el<10:7>
+n<> u<119> t<Module_or_generate_item> p<120> c<118> l<10:6> el<10:7>
+n<> u<120> t<Non_port_module_item> p<238> c<119> s<127> l<10:6> el<10:7>
+n<> u<121> t<Statement_item> p<122> l<4:13> el<4:13>
+n<> u<122> t<Statement> p<123> c<121> l<4:13> el<4:13>
+n<> u<123> t<Statement_or_null> p<124> c<122> l<4:13> el<4:13>
+n<> u<124> t<Initial_construct> p<125> c<123> l<4:5> el<4:12>
+n<> u<125> t<Module_common_item> p<126> c<124> l<4:5> el<4:12>
+n<> u<126> t<Module_or_generate_item> p<127> c<125> l<4:5> el<4:12>
+n<> u<127> t<Non_port_module_item> p<238> c<126> s<133> l<4:5> el<4:12>
+n<$display> u<128> t<StringConst> p<129> l<4:14> el<4:21>
+n<> u<129> t<System_task_names> p<130> c<128> l<4:13> el<4:21>
+n<> u<130> t<System_task> p<131> c<129> l<4:13> el<4:21>
+n<> u<131> t<Module_common_item> p<132> c<130> l<4:13> el<4:21>
+n<> u<132> t<Module_or_generate_item> p<133> c<131> l<4:13> el<4:21>
+n<> u<133> t<Non_port_module_item> p<238> c<132> s<142> l<4:13> el<4:21>
+n<A> u<134> t<StringConst> p<135> l<5:42> el<5:43>
+n<> u<135> t<Data_type> p<136> c<134> l<5:5> el<6:19>
+n<> u<136> t<Variable_declaration> p<137> c<135> l<4:21> el<6:19>
+n<> u<137> t<Data_declaration> p<138> c<136> l<4:21> el<6:19>
+n<> u<138> t<Package_or_generate_item_declaration> p<139> c<137> l<4:21> el<6:19>
+n<> u<139> t<Module_or_generate_item_declaration> p<140> c<138> l<4:21> el<6:19>
+n<> u<140> t<Module_common_item> p<141> c<139> l<4:21> el<6:19>
+n<> u<141> t<Module_or_generate_item> p<142> c<140> l<4:21> el<6:19>
+n<> u<142> t<Non_port_module_item> p<238> c<141> s<144> l<4:21> el<6:19>
+n<> u<143> t<Surelog_macro_not_defined> p<144> l<7:5> el<7:40>
+n<> u<144> t<Non_port_module_item> p<238> c<143> s<149> l<7:5> el<7:40>
+n<> u<145> t<Package_or_generate_item_declaration> p<146> l<10:6> el<10:7>
+n<> u<146> t<Module_or_generate_item_declaration> p<147> c<145> l<10:6> el<10:7>
+n<> u<147> t<Module_common_item> p<148> c<146> l<10:6> el<10:7>
+n<> u<148> t<Module_or_generate_item> p<149> c<147> l<10:6> el<10:7>
+n<> u<149> t<Non_port_module_item> p<238> c<148> s<156> l<10:6> el<10:7>
+n<> u<150> t<Statement_item> p<151> l<4:13> el<4:13>
+n<> u<151> t<Statement> p<152> c<150> l<4:13> el<4:13>
+n<> u<152> t<Statement_or_null> p<153> c<151> l<4:13> el<4:13>
+n<> u<153> t<Initial_construct> p<154> c<152> l<4:5> el<4:12>
+n<> u<154> t<Module_common_item> p<155> c<153> l<4:5> el<4:12>
+n<> u<155> t<Module_or_generate_item> p<156> c<154> l<4:5> el<4:12>
+n<> u<156> t<Non_port_module_item> p<238> c<155> s<162> l<4:5> el<4:12>
+n<$display> u<157> t<StringConst> p<158> l<4:14> el<4:21>
+n<> u<158> t<System_task_names> p<159> c<157> l<4:13> el<4:21>
+n<> u<159> t<System_task> p<160> c<158> l<4:13> el<4:21>
+n<> u<160> t<Module_common_item> p<161> c<159> l<4:13> el<4:21>
+n<> u<161> t<Module_or_generate_item> p<162> c<160> l<4:13> el<4:21>
+n<> u<162> t<Non_port_module_item> p<238> c<161> s<171> l<4:13> el<4:21>
+n<B> u<163> t<StringConst> p<164> l<5:42> el<5:43>
+n<> u<164> t<Data_type> p<165> c<163> l<5:5> el<6:19>
+n<> u<165> t<Variable_declaration> p<166> c<164> l<4:21> el<6:19>
+n<> u<166> t<Data_declaration> p<167> c<165> l<4:21> el<6:19>
+n<> u<167> t<Package_or_generate_item_declaration> p<168> c<166> l<4:21> el<6:19>
+n<> u<168> t<Module_or_generate_item_declaration> p<169> c<167> l<4:21> el<6:19>
+n<> u<169> t<Module_common_item> p<170> c<168> l<4:21> el<6:19>
+n<> u<170> t<Module_or_generate_item> p<171> c<169> l<4:21> el<6:19>
+n<> u<171> t<Non_port_module_item> p<238> c<170> s<173> l<4:21> el<6:19>
+n<> u<172> t<Surelog_macro_not_defined> p<173> l<7:5> el<7:40>
+n<> u<173> t<Non_port_module_item> p<238> c<172> s<178> l<7:5> el<7:40>
+n<> u<174> t<Package_or_generate_item_declaration> p<175> l<10:6> el<10:7>
+n<> u<175> t<Module_or_generate_item_declaration> p<176> c<174> l<10:6> el<10:7>
+n<> u<176> t<Module_common_item> p<177> c<175> l<10:6> el<10:7>
+n<> u<177> t<Module_or_generate_item> p<178> c<176> l<10:6> el<10:7>
+n<> u<178> t<Non_port_module_item> p<238> c<177> s<185> l<10:6> el<10:7>
+n<> u<179> t<Statement_item> p<180> l<4:13> el<4:13>
+n<> u<180> t<Statement> p<181> c<179> l<4:13> el<4:13>
+n<> u<181> t<Statement_or_null> p<182> c<180> l<4:13> el<4:13>
+n<> u<182> t<Initial_construct> p<183> c<181> l<4:5> el<4:12>
+n<> u<183> t<Module_common_item> p<184> c<182> l<4:5> el<4:12>
+n<> u<184> t<Module_or_generate_item> p<185> c<183> l<4:5> el<4:12>
+n<> u<185> t<Non_port_module_item> p<238> c<184> s<191> l<4:5> el<4:12>
+n<$display> u<186> t<StringConst> p<187> l<4:14> el<4:21>
+n<> u<187> t<System_task_names> p<188> c<186> l<4:13> el<4:21>
+n<> u<188> t<System_task> p<189> c<187> l<4:13> el<4:21>
+n<> u<189> t<Module_common_item> p<190> c<188> l<4:13> el<4:21>
+n<> u<190> t<Module_or_generate_item> p<191> c<189> l<4:13> el<4:21>
+n<> u<191> t<Non_port_module_item> p<238> c<190> s<200> l<4:13> el<4:21>
+n<A> u<192> t<StringConst> p<193> l<5:42> el<5:43>
+n<> u<193> t<Data_type> p<194> c<192> l<5:5> el<6:20>
+n<> u<194> t<Variable_declaration> p<195> c<193> l<4:21> el<6:20>
+n<> u<195> t<Data_declaration> p<196> c<194> l<4:21> el<6:20>
+n<> u<196> t<Package_or_generate_item_declaration> p<197> c<195> l<4:21> el<6:20>
+n<> u<197> t<Module_or_generate_item_declaration> p<198> c<196> l<4:21> el<6:20>
+n<> u<198> t<Module_common_item> p<199> c<197> l<4:21> el<6:20>
+n<> u<199> t<Module_or_generate_item> p<200> c<198> l<4:21> el<6:20>
+n<> u<200> t<Non_port_module_item> p<238> c<199> s<202> l<4:21> el<6:20>
+n<> u<201> t<Surelog_macro_not_defined> p<202> l<7:5> el<7:40>
+n<> u<202> t<Non_port_module_item> p<238> c<201> s<207> l<7:5> el<7:40>
+n<> u<203> t<Package_or_generate_item_declaration> p<204> l<10:6> el<10:7>
+n<> u<204> t<Module_or_generate_item_declaration> p<205> c<203> l<10:6> el<10:7>
+n<> u<205> t<Module_common_item> p<206> c<204> l<10:6> el<10:7>
+n<> u<206> t<Module_or_generate_item> p<207> c<205> l<10:6> el<10:7>
+n<> u<207> t<Non_port_module_item> p<238> c<206> s<214> l<10:6> el<10:7>
+n<> u<208> t<Statement_item> p<209> l<4:13> el<4:13>
+n<> u<209> t<Statement> p<210> c<208> l<4:13> el<4:13>
+n<> u<210> t<Statement_or_null> p<211> c<209> l<4:13> el<4:13>
+n<> u<211> t<Initial_construct> p<212> c<210> l<4:5> el<4:12>
+n<> u<212> t<Module_common_item> p<213> c<211> l<4:5> el<4:12>
+n<> u<213> t<Module_or_generate_item> p<214> c<212> l<4:5> el<4:12>
+n<> u<214> t<Non_port_module_item> p<238> c<213> s<220> l<4:5> el<4:12>
+n<$display> u<215> t<StringConst> p<216> l<4:14> el<4:21>
+n<> u<216> t<System_task_names> p<217> c<215> l<4:13> el<4:21>
+n<> u<217> t<System_task> p<218> c<216> l<4:13> el<4:21>
+n<> u<218> t<Module_common_item> p<219> c<217> l<4:13> el<4:21>
+n<> u<219> t<Module_or_generate_item> p<220> c<218> l<4:13> el<4:21>
+n<> u<220> t<Non_port_module_item> p<238> c<219> s<229> l<4:13> el<4:21>
+n<B> u<221> t<StringConst> p<222> l<5:42> el<5:43>
+n<> u<222> t<Data_type> p<223> c<221> l<5:5> el<6:20>
+n<> u<223> t<Variable_declaration> p<224> c<222> l<4:21> el<6:20>
+n<> u<224> t<Data_declaration> p<225> c<223> l<4:21> el<6:20>
+n<> u<225> t<Package_or_generate_item_declaration> p<226> c<224> l<4:21> el<6:20>
+n<> u<226> t<Module_or_generate_item_declaration> p<227> c<225> l<4:21> el<6:20>
+n<> u<227> t<Module_common_item> p<228> c<226> l<4:21> el<6:20>
+n<> u<228> t<Module_or_generate_item> p<229> c<227> l<4:21> el<6:20>
+n<> u<229> t<Non_port_module_item> p<238> c<228> s<231> l<4:21> el<6:20>
+n<> u<230> t<Surelog_macro_not_defined> p<231> l<7:5> el<7:40>
+n<> u<231> t<Non_port_module_item> p<238> c<230> s<236> l<7:5> el<7:40>
+n<> u<232> t<Package_or_generate_item_declaration> p<233> l<10:6> el<10:7>
+n<> u<233> t<Module_or_generate_item_declaration> p<234> c<232> l<10:6> el<10:7>
+n<> u<234> t<Module_common_item> p<235> c<233> l<10:6> el<10:7>
+n<> u<235> t<Module_or_generate_item> p<236> c<234> l<10:6> el<10:7>
+n<> u<236> t<Non_port_module_item> p<238> c<235> s<237> l<10:6> el<10:7>
+n<> u<237> t<ENDMODULE> p<238> l<23:1> el<23:10>
+n<> u<238> t<Module_declaration> p<239> c<4> l<14:1> el<23:10>
+n<> u<239> t<Description> p<240> c<238> l<14:1> el<23:10>
+n<> u<240> t<Source_text> p<241> c<239> l<14:1> el<23:10>
+n<> u<241> t<Top_level_rule> c<1> l<14:1> el<24:1>
 AST_DEBUG_END
 [SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:5:4: Syntax error: no viable alternative at input '$display( \n    SURELOG_MACRO_NOT_DEFINED:check1!!!',
     SURELOG_MACRO_NOT_DEFINED:check1!!!  A 
     ^--.
-[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:5:4: Syntax error: no viable alternative at input '( \n    SURELOG_MACRO_NOT_DEFINED:check1!!!',
+[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:5:4: Syntax error: extraneous input 'SURELOG_MACRO_NOT_DEFINED:check1!!!' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
     SURELOG_MACRO_NOT_DEFINED:check1!!!  A 
     ^--.
-[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:6:4: Syntax error: no viable alternative at input 'A \n    "A is ifdef'd"',
+[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:6:4: Syntax error: no viable alternative at input '"A is ifdef'd"',
     "A is ifdef'd" 
     ^--.
-[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:8:4: Syntax error: extraneous input '"A is not ifdef'd"' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:8:4: Syntax error: extraneous input '"A is not ifdef'd"' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
     "A is not ifdef'd" 
     ^--.
 [SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:5:4: Syntax error: no viable alternative at input '$display( \n    SURELOG_MACRO_NOT_DEFINED:check1!!!',
     SURELOG_MACRO_NOT_DEFINED:check1!!!  B 
     ^--.
-[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:5:4: Syntax error: no viable alternative at input '( \n    SURELOG_MACRO_NOT_DEFINED:check1!!!',
+[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:5:4: Syntax error: extraneous input 'SURELOG_MACRO_NOT_DEFINED:check1!!!' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
     SURELOG_MACRO_NOT_DEFINED:check1!!!  B 
     ^--.
-[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:6:4: Syntax error: no viable alternative at input 'B \n    "B is ifdef'd"',
+[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:6:4: Syntax error: no viable alternative at input '"B is ifdef'd"',
     "B is ifdef'd" 
     ^--.
-[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:8:4: Syntax error: extraneous input '"B is not ifdef'd"' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:8:4: Syntax error: extraneous input '"B is not ifdef'd"' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
     "B is not ifdef'd" 
     ^--.
-[ERR:PA0203] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:5: Unknown macro "check1".
 [ERR:PA0203] ${SURELOG_DIR}/tests/PreProcMacro/dut.sv:7: Unknown macro "check2".
 [  FATAL] : 0
 [ SYNTAX] : 8
-[  ERROR] : 4
+[  ERROR] : 3
 [WARNING] : 0
 [   NOTE] : 0

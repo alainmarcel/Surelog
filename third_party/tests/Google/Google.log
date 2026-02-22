@@ -11,11 +11,17 @@ Processing: -cd chapter-5 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -n
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.7.2-real-constants-illegal.sv:20:8: Syntax error: no viable alternative at input 'module top();\n  logic [31:0] a;\n\n  initial begin;\n    a = .',
     a = .12;
         ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.7.2-real-constants-illegal.sv:16:11: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top();
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.7.2-real-constants-illegal.sv:16:12: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top();
+            ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.7.2-real-constants-illegal.sv:19:2: Syntax error: mismatched input 'initial' expecting <EOF>,
   initial begin;
   ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -218,6 +224,12 @@ Processing: -cd chapter-5 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -n
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.6--wrong-identifiers.sv:17:6: Syntax error: no viable alternative at input 'module identifiers();\n  reg $',
   reg $dollar;
       ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.6--wrong-identifiers.sv:16:19: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module identifiers();
+                   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.6--wrong-identifiers.sv:16:20: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module identifiers();
+                    ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.6--wrong-identifiers.sv:17:6: Syntax error: extraneous input '$' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
   reg $dollar;
       ^--.
@@ -228,7 +240,7 @@ Processing: -cd chapter-5 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -n
 endmodule
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 4
+[ SYNTAX] : 6
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -279,11 +291,17 @@ Processing: -cd chapter-5 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -n
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.7.1--integers-signed-illegal.sv:20:10: Syntax error: no viable alternative at input 'module top();\n  logic  [7:0] a;\n\n  initial begin\n    a = 8'd',
     a = 8'd-6;
           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.7.1--integers-signed-illegal.sv:16:11: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top();
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.7.1--integers-signed-illegal.sv:16:12: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top();
+            ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.7.1--integers-signed-illegal.sv:19:2: Syntax error: mismatched input 'initial' expecting <EOF>,
   initial begin
   ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -312,6 +330,12 @@ Processing: -cd chapter-5 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -n
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.6.4--compiler-directives-preprocessor-macro_1.sv:18:8: Syntax error: no viable alternative at input 'module top();\nint a = SURELOG_MACRO_NOT_DEFINED:VAR_1!!!',
 int a = SURELOG_MACRO_NOT_DEFINED:VAR_1!!!  + SURELOG_MACRO_NOT_DEFINED:VAR_2!!! ;
         ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.6.4--compiler-directives-preprocessor-macro_1.sv:17:11: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top();
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.6.4--compiler-directives-preprocessor-macro_1.sv:17:12: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top();
+            ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.6.4--compiler-directives-preprocessor-macro_1.sv:18:8: Syntax error: no viable alternative at input '= SURELOG_MACRO_NOT_DEFINED:VAR_1!!!',
 int a = SURELOG_MACRO_NOT_DEFINED:VAR_1!!!  + SURELOG_MACRO_NOT_DEFINED:VAR_2!!! ;
         ^--.
@@ -320,7 +344,7 @@ int a = SURELOG_MACRO_NOT_DEFINED:VAR_1!!!  + SURELOG_MACRO_NOT_DEFINED:VAR_2!!!
                                             ^--.
 [ERR:PA0203] ${SURELOG_DIR}/third_party/tests/Google/chapter-5/5.6.4--compiler-directives-preprocessor-macro_1.sv:18: Unknown macro "VAR_1".
 [  FATAL] : 0
-[ SYNTAX] : 3
+[ SYNTAX] : 5
 [  ERROR] : 3
 [WARNING] : 0
 [   NOTE] : 0
@@ -573,11 +597,20 @@ Processing: -cd chapter-15 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-blocking.sv:21:1: Syntax error: no viable alternative at input 'module top();\n\nmailbox m;\n\ninitial begin\n\tm = new();\n\tstring',
 	string msg = "abc";
  ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-blocking.sv:15:11: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top();
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-blocking.sv:15:12: Syntax error: extraneous input ';' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top();
+            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-blocking.sv:17:8: Syntax error: extraneous input 'm' expecting ';',
+mailbox m;
+        ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-blocking.sv:19: Syntax error: mismatched input 'initial' expecting <EOF>,
 initial begin
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 5
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -585,11 +618,20 @@ Processing: -cd chapter-15 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-non-blocking.sv:21:1: Syntax error: no viable alternative at input 'module top();\n\nmailbox m;\n\ninitial begin\n\tm = new();\n\tstring',
 	string msg = "abc";
  ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-non-blocking.sv:15:11: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top();
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-non-blocking.sv:15:12: Syntax error: extraneous input ';' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top();
+            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-non-blocking.sv:17:8: Syntax error: extraneous input 'm' expecting ';',
+mailbox m;
+        ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-15/15.4--mailbox-non-blocking.sv:19: Syntax error: mismatched input 'initial' expecting <EOF>,
 initial begin
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 5
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -771,11 +813,17 @@ Processing: -cd chapter-11 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-11/11.3.6--assign_in_expr_inv.sv:23:7: Syntax error: no viable alternative at input 'module top();\n\nint a;\nint b;\nint c;\n\ninitial begin\n\ta = b =',
 	a = b = c = 5;	
        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-11/11.3.6--assign_in_expr_inv.sv:16:11: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top();
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-11/11.3.6--assign_in_expr_inv.sv:16:12: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top();
+            ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-11/11.3.6--assign_in_expr_inv.sv:22: Syntax error: mismatched input 'initial' expecting <EOF>,
 initial begin
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -2032,11 +2080,17 @@ ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_12.s
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_12.sv:19: Syntax error: no viable alternative at input 'module top ();\n`',
 `MACRO1 // ILLEGAL: b and c omitted, no default for c
 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_12.sv:18:12: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top ();
+            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_12.sv:18:13: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top ();
+             ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_12.sv:20: Syntax error: extraneous input 'endmodule' expecting <EOF>,
 endmodule
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 1
 [WARNING] : 0
 [   NOTE] : 0
@@ -2163,11 +2217,17 @@ ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_6.sv
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_6.sv:19: Syntax error: no viable alternative at input 'module top ();\n`',
 `D
 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_6.sv:18:12: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top ();
+            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_6.sv:18:13: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top ();
+             ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.5.1--define-expansion_6.sv:20: Syntax error: extraneous input 'endmodule' expecting <EOF>,
 endmodule
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 1
 [WARNING] : 0
 [   NOTE] : 0
@@ -2354,11 +2414,17 @@ Processing: -cd chapter-22 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.3--resetall_illegal.sv:19: Syntax error: no viable alternative at input 'module top ();\n`',
 `resetall
 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.3--resetall_illegal.sv:18:12: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top ();
+            ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.3--resetall_illegal.sv:18:13: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top ();
+             ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-22/22.3--resetall_illegal.sv:20: Syntax error: extraneous input 'endmodule' expecting <EOF>,
 endmodule
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 1
 [WARNING] : 0
 [   NOTE] : 0
@@ -4502,14 +4568,29 @@ Processing: -cd chapter-6 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -n
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.23--type_op_compare.sv:18:19: Syntax error: no viable alternative at input 'module top #( parameter type T = type(logic[11:0]) )\n   ();\n   initial begin\n      case (type(T))',
       case (type(T))
                    ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.23--type_op_compare.sv:15:51: Syntax error: mismatched input ')' expecting ';',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.23--type_op_compare.sv:15:14: Syntax error: extraneous input 'parameter' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top #( parameter type T = type(logic[11:0]) )
+              ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.23--type_op_compare.sv:15:29: Syntax error: missing '(' at 'T',
+module top #( parameter type T = type(logic[11:0]) )
+                             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.23--type_op_compare.sv:15:51: Syntax error: no viable alternative at input 'type(logic[11:0]) )',
 module top #( parameter type T = type(logic[11:0]) )
                                                    ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.23--type_op_compare.sv:15:51: Syntax error: mismatched input ')' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top #( parameter type T = type(logic[11:0]) )
+                                                   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.23--type_op_compare.sv:16:4: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+   ();
+    ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.23--type_op_compare.sv:16:5: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+   ();
+     ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.23--type_op_compare.sv:17:3: Syntax error: mismatched input 'initial' expecting <EOF>,
    initial begin
    ^--.
 [  FATAL] : 0
-[ SYNTAX] : 3
+[ SYNTAX] : 8
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -4829,6 +4910,12 @@ Processing: -cd chapter-6 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -n
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.9.2--vector_vectored_inv.sv:17:7: Syntax error: no viable alternative at input 'module top();\n\tlogic vectored',
 	logic vectored [15:0] a = 0;
        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.9.2--vector_vectored_inv.sv:16:11: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top();
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.9.2--vector_vectored_inv.sv:16:12: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top();
+            ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/chapter-6/6.9.2--vector_vectored_inv.sv:17:7: Syntax error: mismatched input 'vectored' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
 	logic vectored [15:0] a = 0;
        ^--.
@@ -4839,7 +4926,7 @@ Processing: -cd chapter-6 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -n
 	assign a[1] = 1;
  ^--.
 [  FATAL] : 0
-[ SYNTAX] : 4
+[ SYNTAX] : 6
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -5059,8 +5146,14 @@ Processing: -cd generic/preproc -I../../../../UVM/1800.2-2017-1.0/src/  -parse -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/generic/preproc/preproc_test_13.sv:8:1: Syntax error: no viable alternative at input 'a,',
 a, b="(3,2)", c=(3,2)) \
  ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/generic/preproc/preproc_test_13.sv:8:17: Syntax error: mismatched input '3' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+a, b="(3,2)", c=(3,2)) \
+                 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/Google/generic/preproc/preproc_test_13.sv:8:21: Syntax error: mismatched input ')' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+a, b="(3,2)", c=(3,2)) \
+                     ^--.
 [  FATAL] : 0
-[ SYNTAX] : 1
+[ SYNTAX] : 3
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -8946,7 +9039,7 @@ Processing: -cd chapter-25 -I../../../UVM/1800.2-2017-1.0/src/  -parse -nonote -
 [   NOTE] : 0
 Processed 1134 tests.
 [  FATAL] : 0
-[ SYNTAX] : 75
+[ SYNTAX] : 106
 [  ERROR] : 143
 [WARNING] : 1762
 [   NOTE] : 0

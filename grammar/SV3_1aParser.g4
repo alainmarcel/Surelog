@@ -761,7 +761,7 @@ variable_impl_declaration
   ;
 
 variable_declaration
-  : (data_type | signing packed_dimension* | packed_dimension+) list_of_variable_decl_assignments
+  : (data_type | OPEN_PARENS data_type CLOSE_PARENS | signing packed_dimension* | packed_dimension+) list_of_variable_decl_assignments
       SEMICOLON
   ;
 
