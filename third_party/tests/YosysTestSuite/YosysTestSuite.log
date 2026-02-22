@@ -153,11 +153,17 @@ Processing: -cd asicworld code_verilog_tutorial_first_counter_tb.v -writepp -par
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_first_counter_tb.v:9:16: Syntax error: no viable alternative at input 'module testbench();\n// Declare inputs as regs and outputs as wires\nreg clock = 1, reset = 0, enable = 0;\nwire [3:0] counter_out;\ninteger file;\n\n// Initialize all variables\ninitial begin        \n  file = $fopen(SURELOG_MACRO_NOT_DEFINED:outfile!!!',
   file = $fopen(SURELOG_MACRO_NOT_DEFINED:outfile!!! );
                 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_first_counter_tb.v:1:17: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module testbench();
+                 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_first_counter_tb.v:1:18: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module testbench();
+                  ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_first_counter_tb.v:8: Syntax error: mismatched input 'initial' expecting <EOF>,
 initial begin        
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 1
 [WARNING] : 0
 [   NOTE] : 0
@@ -220,11 +226,17 @@ Processing: -cd asicworld code_verilog_tutorial_fsm_full_tb.v -writepp -parse -n
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_fsm_full_tb.v:10:16: Syntax error: no viable alternative at input 'module testbench();\nreg clock = 0 , reset ;\nreg req_0 , req_1 ,  req_2 , req_3; \nwire gnt_0 , gnt_1 , gnt_2 , gnt_3 ;\ninteger file;\n\ninitial begin\n  // $dumpfile("testbench.vcd");\n  // $dumpvars(0, testbench);\n  file = $fopen(SURELOG_MACRO_NOT_DEFINED:outfile!!!',
   file = $fopen(SURELOG_MACRO_NOT_DEFINED:outfile!!! );
                 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_fsm_full_tb.v:1:17: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module testbench();
+                 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_fsm_full_tb.v:1:18: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module testbench();
+                  ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_fsm_full_tb.v:7: Syntax error: mismatched input 'initial' expecting <EOF>,
 initial begin
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 1
 [WARNING] : 0
 [   NOTE] : 0
@@ -356,16 +368,18 @@ Processing: -cd asicworld code_verilog_tutorial_bus_con.v -writepp -parse -nocac
 [   NOTE] : 0
 Processing: -cd asicworld code_verilog_tutorial_counter_tb.v -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l code_verilog_tutorial_counter_tb.v.log
 [ERR:PP0102] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_counter_tb.v:34:16: Unknown macro "outfile".
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_counter_tb.v:34:14: Syntax error: mismatched input '(' expecting ';',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_counter_tb.v:34:14: Syntax error: missing ';' at '(',
  file = $fopen(SURELOG_MACRO_NOT_DEFINED:outfile!!! );
               ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_counter_tb.v:34:52: Syntax error: extraneous input ')' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_counter_tb.v:34:15: Syntax error: mismatched input 'SURELOG_MACRO_NOT_DEFINED:outfile!!!' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
  file = $fopen(SURELOG_MACRO_NOT_DEFINED:outfile!!! );
-                                                    ^--.
-[ERR:PA0203] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_counter_tb.v:34: Unknown macro "outfile".
+               ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_verilog_tutorial_counter_tb.v:34:53: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+ file = $fopen(SURELOG_MACRO_NOT_DEFINED:outfile!!! );
+                                                     ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
-[  ERROR] : 2
+[ SYNTAX] : 3
+[  ERROR] : 1
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd asicworld code_specman_switch_fabric.v -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l code_specman_switch_fabric.v.log
@@ -535,11 +549,17 @@ Processing: -cd asicworld code_hdl_models_arbiter_tb.v -writepp -parse -nocache 
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_hdl_models_arbiter_tb.v:22:16: Syntax error: no viable alternative at input 'module testbench ();\n\nreg             clk = 0;\nreg             rst = 1;\nreg             req3 = 0;\nreg             req2 = 0;\nreg             req1 = 0;\nreg             req0 = 0;\nwire            gnt3;   \nwire            gnt2;   \nwire            gnt1;   \nwire            gnt0;  \n\n// Clock generator\nalways #1 clk = ~clk;\ninteger file;\n\nalways @(posedge clk)\n  $fdisplay(file, "%b", {gnt3, gnt2, gnt1, gnt0});\n\ninitial begin\n  file = $fopen(SURELOG_MACRO_NOT_DEFINED:outfile!!!',
   file = $fopen(SURELOG_MACRO_NOT_DEFINED:outfile!!! );
                 ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_hdl_models_arbiter_tb.v:1:18: Syntax error: mismatched input ')' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module testbench ();
+                  ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_hdl_models_arbiter_tb.v:1:19: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module testbench ();
+                   ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/asicworld/code_hdl_models_arbiter_tb.v:15: Syntax error: mismatched input 'always' expecting <EOF>,
 always #1 clk = ~clk;
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 1
 [WARNING] : 0
 [   NOTE] : 0
@@ -586,11 +606,17 @@ Processing: -cd opt opt_expr_cmp.v -writepp -parse -nocache -nobuiltin -nonote -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/opt/opt_expr_cmp.v:1:12: Syntax error: no viable alternative at input 'module top(..',
 module top(...);
             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/opt/opt_expr_cmp.v:1:11: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top(...);
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/opt/opt_expr_cmp.v:1:15: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top(...);
+               ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/opt/opt_expr_cmp.v:2:2: Syntax error: mismatched input 'input' expecting <EOF>,
   input [3:0] a;
   ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -900,7 +926,7 @@ parameter integer [2:0]x=0;
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd errors syntax_err05.v -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l syntax_err05.v.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/errors/syntax_err05.v:2: Syntax error: extraneous input 'input' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/errors/syntax_err05.v:2: Syntax error: extraneous input 'input' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
 input x[2:0];
 ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/errors/syntax_err05.v:2:12: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
@@ -1019,26 +1045,26 @@ Processing: -cd svinterfaces svinterface_at_top_wrapper.v -writepp -parse -nocac
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:20:4: Syntax error: no viable alternative at input '(\n    .',
     .clk(clk),
     ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:20:12: Syntax error: extraneous input ')' expecting ',',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:20:4: Syntax error: extraneous input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
     .clk(clk),
-            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:21:4: Syntax error: extraneous input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
+    ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:20:8: Syntax error: no viable alternative at input '(',
+    .clk(clk),
+        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:20:13: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ',',
+    .clk(clk),
+             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:21:4: Syntax error: extraneous input '.' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
     .rst(rst),
     ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:22:4: Syntax error: extraneous input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:21:8: Syntax error: missing ';' at '(',
+    .rst(rst),
+        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:21:13: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ',',
+    .rst(rst),
+             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:22:4: Syntax error: extraneous input '.' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
     .outOther(outOther),
-    ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:23:4: Syntax error: extraneous input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
-    .sig(sig),
-    ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:24:4: Syntax error: extraneous input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
-    .flip(flip),
-    ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:25:4: Syntax error: extraneous input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
-    .passThrough(passThrough),
-    ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svinterfaces/svinterface_at_top_wrapper.v:26:4: Syntax error: mismatched input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
-    .\interfaceInstanceAtTop.setting(interfaceInstanceAtTop_setting),
     ^--.
 [  FATAL] : 0
 [ SYNTAX] : 10
@@ -1055,11 +1081,17 @@ Processing: -cd various shregmap.v -writepp -parse -nocache -nobuiltin -nonote -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/various/shregmap.v:15:7: Syntax error: no viable alternative at input 'module $',
 module $__SHREG_DFF_P_(input C, D, output Q);
        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/various/shregmap.v:15:23: Syntax error: extraneous input 'input' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module $__SHREG_DFF_P_(input C, D, output Q);
+                       ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/various/shregmap.v:15:30: Syntax error: mismatched input ',' expecting ')',
+module $__SHREG_DFF_P_(input C, D, output Q);
+                              ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/various/shregmap.v:19: Syntax error: mismatched input 'always' expecting <EOF>,
 always @(posedge C) 
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1115,11 +1147,17 @@ Processing: -cd various constmsk_testmap.v -writepp -parse -nocache -nobuiltin -
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/various/constmsk_testmap.v:2:25: Syntax error: no viable alternative at input '(* techmap_celltype = "$reduce_or" *)\nmodule my_opt_reduce_or(..',
 module my_opt_reduce_or(...);
                          ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/various/constmsk_testmap.v:2:24: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module my_opt_reduce_or(...);
+                        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/various/constmsk_testmap.v:2:28: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module my_opt_reduce_or(...);
+                            ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/various/constmsk_testmap.v:7:4: Syntax error: mismatched input 'input' expecting <EOF>,
     input [A_WIDTH-1:0] A;
     ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1223,10 +1261,10 @@ Processing: -cd arch/xilinx macc.v -writepp -parse -nocache -nobuiltin -nonote -
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd arch/xilinx macc_tb.v -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l macc_tb.v.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/arch/xilinx/macc_tb.v:8:1: Syntax error: extraneous input 'output' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/arch/xilinx/macc_tb.v:8:1: Syntax error: extraneous input 'output' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
 	output signed [SIZEOUT-1:0] REF_accum_out, accum_out;
  ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/arch/xilinx/macc_tb.v:9:1: Syntax error: extraneous input 'output' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/arch/xilinx/macc_tb.v:9:1: Syntax error: extraneous input 'output' expecting {';', 'default', 'module', 'endmodule', '(', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
 	output REF_overflow, overflow;
  ^--.
 [  FATAL] : 0
@@ -1238,6 +1276,12 @@ Processing: -cd arch/xilinx xilinx_srl.v -writepp -parse -nocache -nobuiltin -no
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/arch/xilinx/xilinx_srl.v:29:7: Syntax error: no viable alternative at input 'module $',
 module $__XILINX_SHREG_(input C, D, E, input [1:0] L, output Q);
        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/arch/xilinx/xilinx_srl.v:29:24: Syntax error: extraneous input 'input' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module $__XILINX_SHREG_(input C, D, E, input [1:0] L, output Q);
+                        ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/arch/xilinx/xilinx_srl.v:29:31: Syntax error: mismatched input ',' expecting ')',
+module $__XILINX_SHREG_(input C, D, E, input [1:0] L, output Q);
+                               ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/arch/xilinx/xilinx_srl.v:29:54: Syntax error: extraneous input 'output' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
 module $__XILINX_SHREG_(input C, D, E, input [1:0] L, output Q);
                                                       ^--.
@@ -1248,7 +1292,7 @@ module $__XILINX_SHREG_(input C, D, E, input [1:0] L, output Q);
 always @(posedge C)
 ^--.
 [  FATAL] : 0
-[ SYNTAX] : 4
+[ SYNTAX] : 6
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1454,23 +1498,35 @@ Processing: -cd rpc design.v -writepp -parse -nocache -nobuiltin -nonote -noinfo
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:7:1: Syntax error: no viable alternative at input 'python_inv #(\n\t  .width(4)\n\t) inv (\n\t\t.i(i),\n\t\t.o(o),\n\t)',
 	);
  ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:3:10: Syntax error: no viable alternative at input '(4',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:3:3: Syntax error: extraneous input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+	  .width(4)
+   ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:3:9: Syntax error: no viable alternative at input '(',
+	  .width(4)
+         ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:3:10: Syntax error: mismatched input '4' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
 	  .width(4)
           ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:5:2: Syntax error: no viable alternative at input '(\n\t\t.',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:4:1: Syntax error: extraneous input ')' expecting {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+	) inv (
+ ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:4:7: Syntax error: missing ';' at '(',
+	) inv (
+       ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:5:2: Syntax error: extraneous input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
 		.i(i),
   ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:5:6: Syntax error: extraneous input ')' expecting ',',
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:5:4: Syntax error: no viable alternative at input '(',
 		.i(i),
-      ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:6:2: Syntax error: extraneous input '.' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
+    ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:6:6: Syntax error: extraneous input ')' expecting ',',
 		.o(o),
-  ^--.
+      ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/rpc/design.v:7:1: Syntax error: mismatched input ')' expecting {''b0', ''b1', ''B0', ''B1', ''0', ''1', '1'b0', '1'b1', '1'bx', '1'bX', '1'B0', '1'B1', '1'Bx', '1'BX', Integral_number, Real_number, String, '(', 'type', 'const', 'local', 'super', '{', 'string', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'signed', 'unsigned', '$', '++', '+', '--', '-', DOLLAR_UNIT, '!', 'tagged', ''', 'null', 'this', DOLLAR_ROOT, 'randomize', 'sample', '&', '|', '~|', '~&', '^~', Escaped_identifier, '~', '^', '~^', Simple_identifier},
 	);
  ^--.
 [  FATAL] : 0
-[ SYNTAX] : 6
+[ SYNTAX] : 10
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1478,11 +1534,17 @@ Processing: -cd lut map_not.v -writepp -parse -nocache -nobuiltin -nonote -noinf
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_not.v:1:12: Syntax error: no viable alternative at input 'module top(..',
 module top(...);
             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_not.v:1:11: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top(...);
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_not.v:1:15: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top(...);
+               ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_not.v:2:4: Syntax error: mismatched input 'input' expecting <EOF>,
     input a;
     ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1490,11 +1552,17 @@ Processing: -cd lut map_xor.v -writepp -parse -nocache -nobuiltin -nonote -noinf
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_xor.v:1:12: Syntax error: no viable alternative at input 'module top(..',
 module top(...);
             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_xor.v:1:11: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top(...);
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_xor.v:1:15: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top(...);
+               ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_xor.v:2:4: Syntax error: mismatched input 'input' expecting <EOF>,
     input a, b;
     ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1502,11 +1570,17 @@ Processing: -cd lut map_cmp.v -writepp -parse -nocache -nobuiltin -nonote -noinf
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_cmp.v:1:12: Syntax error: no viable alternative at input 'module top(..',
 module top(...);
             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_cmp.v:1:11: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top(...);
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_cmp.v:1:15: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top(...);
+               ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_cmp.v:3:1: Syntax error: mismatched input 'input' expecting <EOF>,
 	input [LUT_WIDTH-1:0] a;
  ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1514,11 +1588,17 @@ Processing: -cd lut map_mux.v -writepp -parse -nocache -nobuiltin -nonote -noinf
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_mux.v:1:12: Syntax error: no viable alternative at input 'module top(..',
 module top(...);
             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_mux.v:1:11: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top(...);
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_mux.v:1:15: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top(...);
+               ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_mux.v:2:4: Syntax error: mismatched input 'input' expecting <EOF>,
     input a, b, s;
     ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1526,11 +1606,17 @@ Processing: -cd lut map_and.v -writepp -parse -nocache -nobuiltin -nonote -noinf
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_and.v:1:12: Syntax error: no viable alternative at input 'module top(..',
 module top(...);
             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_and.v:1:11: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top(...);
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_and.v:1:15: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top(...);
+               ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_and.v:2:4: Syntax error: mismatched input 'input' expecting <EOF>,
     input a, b;
     ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -1538,11 +1624,17 @@ Processing: -cd lut map_or.v -writepp -parse -nocache -nobuiltin -nonote -noinfo
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_or.v:1:12: Syntax error: no viable alternative at input 'module top(..',
 module top(...);
             ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_or.v:1:11: Syntax error: mismatched input '.' expecting {'virtual', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
+module top(...);
+           ^--.
+[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_or.v:1:15: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
+module top(...);
+               ^--.
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/lut/map_or.v:2:4: Syntax error: mismatched input 'input' expecting <EOF>,
     input a, b;
     ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 4
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -2028,14 +2120,8 @@ Processing: -cd sva basic03.sv -writepp -parse -nocache -nobuiltin -nonote -noin
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd svtypes typedef_memory_2.sv -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l typedef_memory_2.sv.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_memory_2.sv:4:1: Syntax error: extraneous input '(' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
-	(nibble) mem[0:15];
- ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_memory_2.sv:4:19: Syntax error: missing {'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier} at ';',
-	(nibble) mem[0:15];
-                   ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 0
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -2076,37 +2162,12 @@ Processing: -cd svtypes typedef_param.sv -writepp -parse -nocache -nobuiltin -no
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd svtypes typedef_scopes.sv -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l typedef_scopes.sv.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:6:1: Syntax error: extraneous input '(' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
-	(outer_uint4_t) u4_i = 8'hA5;
- ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:6:15: Syntax error: no viable alternative at input 'outer_uint4_t)',
-	(outer_uint4_t) u4_i = 8'hA5;
-               ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:6:24: Syntax error: mismatched input '8'hA5' expecting {Pound_Pound_delay, Pound_delay, 'type', 'local', 'super', '{', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', DOLLAR_UNIT, '#', ''', 'this', DOLLAR_ROOT, 'randomize', 'sample', Escaped_identifier, Simple_identifier},
-	(outer_uint4_t) u4_i = 8'hA5;
-                        ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:10:1: Syntax error: extraneous input '(' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
-	(inner_type) inner_i1 = 8'h5A;
- ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:10:25: Syntax error: mismatched input '8'h5A' expecting {Pound_Pound_delay, Pound_delay, 'type', 'local', 'super', '{', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', DOLLAR_UNIT, '#', ''', 'this', DOLLAR_ROOT, 'randomize', 'sample', Escaped_identifier, Simple_identifier},
-	(inner_type) inner_i1 = 8'h5A;
-                         ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:15:2: Syntax error: extraneous input '(' expecting {';', 'default', 'extern', 'interface', 'virtual', 'class', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'rand', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', 'modport', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'begin', 'end', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, SURELOG_MACRO_NOT_DEFINED},
-		(inner_type) inner_gb_i = 8'hA5;
-  ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:15:28: Syntax error: mismatched input '8'hA5' expecting {Pound_Pound_delay, Pound_delay, 'type', 'local', 'super', '{', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', DOLLAR_UNIT, '#', ''', 'this', DOLLAR_ROOT, 'randomize', 'sample', Escaped_identifier, Simple_identifier},
-		(inner_type) inner_gb_i = 8'hA5;
-                            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:19:1: Syntax error: extraneous input '(' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
-	(inner_type) inner_i2 = 8'h42;
- ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:19:25: Syntax error: mismatched input '8'h42' expecting {Pound_Pound_delay, Pound_delay, 'type', 'local', 'super', '{', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', DOLLAR_UNIT, '#', ''', 'this', DOLLAR_ROOT, 'randomize', 'sample', Escaped_identifier, Simple_identifier},
-	(inner_type) inner_i2 = 8'h42;
-                         ^--.
+[WRN:CP0323] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:14:11: Multiply defined typedef "inner_type",
+             ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_scopes.sv:9:2: previous definition.
 [  FATAL] : 0
-[ SYNTAX] : 9
+[ SYNTAX] : 0
 [  ERROR] : 0
-[WARNING] : 0
+[WARNING] : 1
 [   NOTE] : 0
 Processing: -cd svtypes typedef_simple.sv -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l typedef_simple.sv.log
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:6:9: Syntax error: extraneous input '(' expecting {'interface', 'virtual', 'class', 'type', 'enum', 'struct', 'union', 'string', 'chandle', 'event', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', DOLLAR_UNIT, 'this', 'randomize', 'sample', Escaped_identifier, Simple_identifier},
@@ -2115,53 +2176,20 @@ Processing: -cd svtypes typedef_simple.sv -writepp -parse -nocache -nobuiltin -n
 [SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:6:16: Syntax error: no viable alternative at input 'int8_t)',
 	typedef (int8_t) char_t;
                 ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:8:12: Syntax error: no viable alternative at input '(* keep *) (',
-	(* keep *) (uint2_t) int2 = 2'b10;
-            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:8:29: Syntax error: mismatched input '2'b10' expecting {Pound_Pound_delay, Pound_delay, 'type', 'local', 'super', '{', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', DOLLAR_UNIT, '#', ''', 'this', DOLLAR_ROOT, 'randomize', 'sample', Escaped_identifier, Simple_identifier},
-	(* keep *) (uint2_t) int2 = 2'b10;
-                             ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:9:12: Syntax error: no viable alternative at input '(* keep *) (',
-	(* keep *) (int4_t) int4 = -1;
-            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:9:28: Syntax error: mismatched input '-' expecting {Pound_Pound_delay, Pound_delay, 'type', 'local', 'super', '{', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', DOLLAR_UNIT, '#', ''', 'this', DOLLAR_ROOT, 'randomize', 'sample', Escaped_identifier, Simple_identifier},
-	(* keep *) (int4_t) int4 = -1;
-                            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:10:12: Syntax error: no viable alternative at input '(* keep *) (',
-	(* keep *) (int8_t) int8 = int4;
-            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:10:32: Syntax error: mismatched input ';' expecting '=',
-	(* keep *) (int8_t) int8 = int4;
-                                ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:11:12: Syntax error: no viable alternative at input '(* keep *) (',
-	(* keep *) (char_t) ch = int8;
-            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_simple.sv:11:30: Syntax error: mismatched input ';' expecting '=',
-	(* keep *) (char_t) ch = int8;
-                              ^--.
 [  FATAL] : 0
-[ SYNTAX] : 10
+[ SYNTAX] : 2
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd svtypes typedef_memory.sv -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l typedef_memory.sv.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_memory.sv:4:1: Syntax error: extraneous input '(' expecting {';', 'default', 'module', 'endmodule', 'extern', 'macromodule', 'interface', 'program', 'virtual', 'class', 'timeunit', 'timeprecision', 'checker', 'type', 'clocking', 'defparam', 'bind', 'const', 'function', 'static', 'constraint', 'if', 'automatic', 'localparam', 'parameter', 'specparam', 'import', 'genvar', 'typedef', 'enum', 'struct', 'union', 'string', 'chandle', 'event', '[', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', 'bit', 'logic', 'reg', 'shortreal', 'real', 'realtime', 'supply0', 'supply1', 'tri', 'triand', 'trior', 'tri0', 'tri1', 'wire', 'uwire', 'wand', 'wor', 'trireg', 'signed', 'unsigned', 'interconnect', 'var', '$', 'export', DOLLAR_UNIT, '(*', 'assert', 'property', 'assume', 'cover', 'not', 'or', 'and', 'sequence', 'covergroup', 'pulldown', 'pullup', 'cmos', 'rcmos', 'bufif0', 'bufif1', 'notif0', 'notif1', 'nmos', 'pmos', 'rnmos', 'rpmos', 'nand', 'nor', 'xor', 'xnor', 'buf', 'tranif0', 'tranif1', 'rtranif1', 'rtranif0', 'tran', 'rtran', 'generate', 'case', 'for', 'global', 'initial', 'assign', 'alias', 'always', 'always_comb', 'always_latch', 'always_ff', 'restrict', 'let', 'this', 'randomize', 'final', 'task', 'specify', 'sample', '=', 'nettype', Escaped_identifier, Simple_identifier, '`pragma', SURELOG_MACRO_NOT_DEFINED},
-	(ram16x4_t) mem;
- ^--.
 [  FATAL] : 0
-[ SYNTAX] : 1
+[ SYNTAX] : 0
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
 Processing: -cd svtypes typedef_package.sv -writepp -parse -nocache -nobuiltin -nonote -noinfo -timescale=1ns/1ns -l typedef_package.sv.log
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_package.sv:7:12: Syntax error: no viable alternative at input '(* keep *) (',
-	(* keep *) (pkg::uint8_t) a = 8'hAA;
-            ^--.
-[SNT:PA0207] ${SURELOG_DIR}/third_party/tests/YosysTestSuite/svtypes/typedef_package.sv:7:31: Syntax error: mismatched input '8'hAA' expecting {Pound_Pound_delay, Pound_delay, 'type', 'local', 'super', '{', 'byte', 'shortint', 'int', 'longint', 'integer', 'time', DOLLAR_UNIT, '#', ''', 'this', DOLLAR_ROOT, 'randomize', 'sample', Escaped_identifier, Simple_identifier},
-	(* keep *) (pkg::uint8_t) a = 8'hAA;
-                               ^--.
 [  FATAL] : 0
-[ SYNTAX] : 2
+[ SYNTAX] : 0
 [  ERROR] : 0
 [WARNING] : 0
 [   NOTE] : 0
@@ -2211,7 +2239,7 @@ Processing: -cd simple defvalue.sv -writepp -parse -nocache -nobuiltin -nonote -
 [   NOTE] : 0
 Processed 281 tests.
 [  FATAL] : 0
-[ SYNTAX] : 100
-[  ERROR] : 8
-[WARNING] : 216
+[ SYNTAX] : 109
+[  ERROR] : 7
+[WARNING] : 217
 [   NOTE] : 0
