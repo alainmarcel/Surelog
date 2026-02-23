@@ -4508,7 +4508,7 @@ design: (work@tnoc_vc_splitter)
         \_operation: , line:70:28, endln:70:31
           |vpiParent:
           \_for_stmt: (tnoc_pkg::tnoc_clog2), line:70:5, endln:70:8
-          |vpiOpType:64
+          |vpiOpType:65
           |vpiOperand:
           \_ref_obj: (tnoc_pkg::tnoc_clog2::i), line:70:30, endln:70:31
             |vpiParent:
@@ -10312,7 +10312,7 @@ design: (work@tnoc_vc_splitter)
         \_operation: , line:70:28, endln:70:31
           |vpiParent:
           \_for_stmt: (tnoc_pkg::tnoc_clog2), line:70:5, endln:70:8
-          |vpiOpType:64
+          |vpiOpType:65
           |vpiOperand:
           \_ref_obj: (tnoc_pkg::tnoc_clog2::i), line:70:30, endln:70:31
             |vpiParent:
@@ -16011,7 +16011,7 @@ design: (work@tnoc_vc_splitter)
         \_operation: , line:70:28, endln:70:31
           |vpiParent:
           \_for_stmt: (tnoc_pkg::tnoc_clog2), line:70:5, endln:70:8
-          |vpiOpType:64
+          |vpiOpType:65
           |vpiOperand:
           \_ref_obj: (tnoc_pkg::tnoc_clog2::i), line:70:30, endln:70:31
             |vpiParent:
@@ -20353,7 +20353,7 @@ design: (work@tnoc_vc_splitter)
     \_operation: , line:415:34, endln:415:37
       |vpiParent:
       \_gen_for: 
-      |vpiOpType:62
+      |vpiOpType:63
       |vpiOperand:
       \_ref_obj: (work@tnoc_vc_splitter.i), line:415:36, endln:415:37
         |vpiParent:
@@ -21176,7 +21176,7 @@ design: (work@tnoc_vc_splitter)
         \_operation: , line:70:28, endln:70:31
           |vpiParent:
           \_for_stmt: (work@tnoc_vc_splitter.tnoc_clog2), line:70:5, endln:70:8
-          |vpiOpType:64
+          |vpiOpType:65
           |vpiOperand:
           \_ref_obj: (work@tnoc_vc_splitter.tnoc_clog2.i), line:70:30, endln:70:31
             |vpiParent:
@@ -26904,7 +26904,7 @@ design: (work@tnoc_vc_splitter)
       \_operation: , line:70:28, endln:70:31
         |vpiParent:
         \_for_stmt: (tnoc_pkg::tnoc_clog2), line:70:5, endln:70:8
-        |vpiOpType:64
+        |vpiOpType:65
         |vpiOperand:
         \_ref_obj: (tnoc_pkg::tnoc_clog2::i), line:70:30, endln:70:31
           |vpiParent:

@@ -1821,7 +1821,7 @@ design: (work@rggen_or_reducer)
         \_operation: , line:42:26, endln:42:29
           |vpiParent:
           \_for_stmt: (work@rggen_or_reducer.get_offset_list), line:42:5, endln:42:8
-          |vpiOpType:62
+          |vpiOpType:63
           |vpiOperand:
           \_ref_obj: (work@rggen_or_reducer.get_offset_list.i), line:42:28, endln:42:29
             |vpiParent:
@@ -2126,7 +2126,7 @@ design: (work@rggen_or_reducer)
         \_operation: , line:58:26, endln:58:29
           |vpiParent:
           \_for_stmt: (work@rggen_or_reducer.get_next_n), line:58:5, endln:58:8
-          |vpiOpType:62
+          |vpiOpType:63
           |vpiOperand:
           \_ref_obj: (work@rggen_or_reducer.get_next_n.i), line:58:28, endln:58:29
             |vpiParent:
@@ -3024,7 +3024,7 @@ design: (work@rggen_or_reducer)
         \_operation: , line:42:26, endln:42:29
           |vpiParent:
           \_for_stmt: (work@rggen_or_reducer.get_offset_list), line:42:5, endln:42:8
-          |vpiOpType:62
+          |vpiOpType:63
           |vpiOperand:
           \_ref_obj: (work@rggen_or_reducer.get_offset_list.i), line:42:28, endln:42:29
             |vpiParent:
@@ -3300,7 +3300,7 @@ design: (work@rggen_or_reducer)
         \_operation: , line:58:26, endln:58:29
           |vpiParent:
           \_for_stmt: (work@rggen_or_reducer.get_next_n), line:58:5, endln:58:8
-          |vpiOpType:62
+          |vpiOpType:63
           |vpiOperand:
           \_ref_obj: (work@rggen_or_reducer.get_next_n.i), line:58:28, endln:58:29
             |vpiParent:

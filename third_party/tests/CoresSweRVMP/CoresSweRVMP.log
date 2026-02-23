@@ -64,11 +64,11 @@ Running: cd ${SURELOG_DIR}/build/regression/CoresSweRVMP/slpp_all/mp_preprocess;
 -- Configuring done
 -- Generating done
 -- Build files have been written to: ${SURELOG_DIR}/build/regression/CoresSweRVMP/slpp_all/mp_preprocess
-[  6%] Generating 11_ifu_bp_ctl.sv
-[ 12%] Generating 10_lsu_bus_intf.sv
+[  6%] Generating 10_lsu_bus_intf.sv
 [ 18%] Generating 12_beh_lib.sv
-[ 25%] Generating 13_ifu_mem_ctl.sv
-[ 31%] Generating 14_mem_lib.sv
+[ 18%] Generating 11_ifu_bp_ctl.sv
+[ 25%] Generating 14_mem_lib.sv
+[ 31%] Generating 13_ifu_mem_ctl.sv
 [ 37%] Generating 15_exu.sv
 [ 43%] Generating 16_dec_decode_ctl.sv
 [ 50%] Generating 1_lsu_stbuf.sv
@@ -77,9 +77,9 @@ Running: cd ${SURELOG_DIR}/build/regression/CoresSweRVMP/slpp_all/mp_preprocess;
 [ 68%] Generating 4_dec_tlu_ctl.sv
 [ 75%] Generating 5_lsu_bus_buffer.sv
 [ 81%] Generating 6_dbg.sv
-[ 87%] Generating 7_axi4_to_ahb.sv
-[ 93%] Generating 8_ifu_aln_ctl.sv
-[100%] Generating 9_tb_top.sv
+[ 93%] Generating 7_axi4_to_ahb.sv
+[ 93%] Generating 9_tb_top.sv
+[100%] Generating 8_ifu_aln_ctl.sv
 [100%] Built target Parse
 Surelog parsing status: 0
 [INF:PA0201] Parsing source file "${SURELOG_DIR}/third_party/UVM/1800.2-2017-1.0/src/uvm_pkg.sv".
