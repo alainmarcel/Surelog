@@ -472,7 +472,7 @@ design: (work@mod_m)
       \_operation: , line:10:31, endln:10:34
         |vpiParent:
         \_for_stmt: (work@mod_m.myFunc1), line:10:4, endln:10:7
-        |vpiOpType:62
+        |vpiOpType:63
         |vpiOperand:
         \_ref_obj: (work@mod_m.myFunc1.i), line:10:33, endln:10:34
           |vpiParent:
@@ -598,7 +598,7 @@ design: (work@mod_m)
       \_operation: , line:18:40, endln:18:43
         |vpiParent:
         \_for_stmt: (work@mod_m.myFunc2), line:18:4, endln:18:7
-        |vpiOpType:62
+        |vpiOpType:63
         |vpiOperand:
         \_ref_obj: (work@mod_m.myFunc2.i), line:18:42, endln:18:43
           |vpiParent:
@@ -829,7 +829,7 @@ design: (work@mod_m)
       \_operation: , line:10:31, endln:10:34
         |vpiParent:
         \_for_stmt: (work@mod_m.myFunc1), line:10:4, endln:10:7
-        |vpiOpType:62
+        |vpiOpType:63
         |vpiOperand:
         \_ref_obj: (work@mod_m.myFunc1.i), line:10:33, endln:10:34
           |vpiParent:
@@ -939,7 +939,7 @@ design: (work@mod_m)
       \_operation: , line:18:40, endln:18:43
         |vpiParent:
         \_for_stmt: (work@mod_m.myFunc2), line:18:4, endln:18:7
-        |vpiOpType:62
+        |vpiOpType:63
         |vpiOperand:
         \_ref_obj: (work@mod_m.myFunc2.i), line:18:42, endln:18:43
           |vpiParent:

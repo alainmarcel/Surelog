@@ -158,7 +158,7 @@ design: (work@alert_handler_reg_wrap)
     \_operation: , line:2:38, endln:2:46
       |vpiParent:
       \_gen_for: 
-      |vpiOpType:62
+      |vpiOpType:63
       |vpiOperand:
       \_ref_obj: (work@alert_handler_reg_wrap.i_word), line:2:40, endln:2:46
         |vpiParent:

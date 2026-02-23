@@ -1748,6 +1748,10 @@ UHDM::any *CompileHelper::compileExpression(
         case VObjectType::paUnary_ReductXnor1:
         case VObjectType::paUnary_ReductXnor2: {
           uint32_t vopType = UhdmWriter::getVpiOpType(childType);
+          // This is the PREFIX (pre-increment/pre-decrement) case:
+          // operator comes before operand. Map to vpiPreIncOp/vpiPreDecOp.
+          if (vopType == vpiPostIncOp) vopType = vpiPreIncOp;
+          else if (vopType == vpiPostDecOp) vopType = vpiPreDecOp;
           if (vopType) {
             UHDM::operation *op = s.MakeOperation();
             op->VpiOpType(vopType);
@@ -3243,6 +3247,10 @@ UHDM::any *CompileHelper::compileExpression(
         case VObjectType::paUnary_ReductXnor1:
         case VObjectType::paUnary_ReductXnor2: {
           uint32_t vopType = UhdmWriter::getVpiOpType(type);
+          // This is the PREFIX (pre-increment/pre-decrement) case:
+          // operator comes before operand. Map to vpiPreIncOp/vpiPreDecOp.
+          if (vopType == vpiPostIncOp) vopType = vpiPreIncOp;
+          else if (vopType == vpiPostDecOp) vopType = vpiPreDecOp;
           if (vopType) {
             UHDM::operation *op = s.MakeOperation();
             if (attributes != nullptr) {
