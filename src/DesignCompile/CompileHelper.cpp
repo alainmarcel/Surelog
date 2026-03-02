@@ -2187,6 +2187,9 @@ bool CompileHelper::compileNetDeclaration(DesignComponent* component,
       sig->setTypespecId(NetType);
       sig->attributes(attributes);
       if (isSigned) sig->setSigned();
+      // Preserve the original net keyword (e.g. wand/wor) for typed net decls
+      // like "wand typename". ElaborationStep may later overwrite m_type.
+      if (subnettype != VObjectType::slNoType) sig->setSubNetType(subnettype);
       component->getSignals().push_back(sig);
     } else {
       Signal* sig =
@@ -2197,6 +2200,9 @@ bool CompileHelper::compileNetDeclaration(DesignComponent* component,
       sig->setStatic();
       sig->attributes(attributes);
       if (isSigned) sig->setSigned();
+      // Preserve the original net keyword (e.g. wand/wor) for typed net decls
+      // like "wand integer" where nettype was overwritten by the data type.
+      if (subnettype != VObjectType::slNoType) sig->setSubNetType(subnettype);
       component->getSignals().push_back(sig);
     }
 
