@@ -69,6 +69,10 @@ class Signal final {
   void setModPort(ModPort* modport) { m_modPort = modport; }
   void setDirection(VObjectType direction) { m_direction = direction; }
   void setType(VObjectType type) { m_type = type; }
+  // For typed net declarations (e.g. "wand integer"), stores the original net
+  // keyword (paNetType_Wand/Wor/Wire) separate from the data type in m_type.
+  VObjectType getSubNetType() const { return m_subNetType; }
+  void setSubNetType(VObjectType t) { m_subNetType = t; }
   void setDataType(const DataType* dtype) { m_dataType = dtype; }
   void setPackedDimension(NodeId id) { m_packedDimension = id; }
   void setUnpackedDimension(NodeId id) { m_unpackedDimension = id; }
@@ -116,6 +120,10 @@ class Signal final {
   const FileContent* m_fileContent = nullptr;
   NodeId m_nodeId;
   VObjectType m_type = VObjectType::slNoType;
+  // Preserved original net keyword for typed net declarations (e.g., "wand integer").
+  // When set, m_type holds the data type (e.g., paIntegerAtomType_Integer) and
+  // m_subNetType holds the net keyword (e.g., paNetType_Wand).
+  VObjectType m_subNetType = VObjectType::slNoType;
   VObjectType m_direction = VObjectType::slNoType;
   ModuleDefinition* m_interfaceDef = nullptr;
   ModPort* m_modPort = nullptr;
