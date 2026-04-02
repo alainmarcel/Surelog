@@ -288,7 +288,7 @@ unsupported_typespec                                   7
 === UHDM Object Stats Begin (Elaborated Model) ===
 array_typespec                                         4
 class_defn                                             1
-constant                                              18
+constant                                              19
 design                                                 1
 int_typespec                                           1
 logic_net                                              3
@@ -352,20 +352,8 @@ design: (work@top)
     |vpiParent:
     \_class_defn: (work@C), file:${SURELOG_DIR}/tests/VirtualClass/dut.sv, line:1:9, endln:8:9
     |vpiRhs:
-    \_constant: , line:1:61, endln:1:62
-      |vpiParent:
-      \_param_assign: , line:1:54, endln:1:62
-      |vpiDecompile:1
-      |vpiSize:64
+    \_constant: 
       |UINT:1
-      |vpiTypespec:
-      \_ref_typespec: (work@C)
-        |vpiParent:
-        \_constant: , line:1:61, endln:1:62
-        |vpiFullName:work@C
-        |vpiActual:
-        \_int_typespec: , line:1:44, endln:1:62
-      |vpiConstType:9
     |vpiLhs:
     \_parameter: (work@C::SIZE), line:1:54, endln:1:58
   |vpiTypedef:
@@ -591,13 +579,6 @@ design: (work@top)
 \_logic_typespec: , line:1:37, endln:1:42
   |vpiParent:
   \_type_parameter: (work@C::T), line:1:33, endln:1:34
-\_param_assign: , line:1:54, endln:1:62
-  |vpiParent:
-  \_class_defn: (work@C), file:${SURELOG_DIR}/tests/VirtualClass/dut.sv, line:1:9, endln:8:9
-  |vpiRhs:
-  \_constant: , line:1:61, endln:1:62
-  |vpiLhs:
-  \_parameter: (work@C::SIZE), line:1:54, endln:1:58
 \_int_typespec: , line:1:44, endln:1:62
 \_range: , line:2:19, endln:2:29
   |vpiParent:

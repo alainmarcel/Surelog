@@ -287,12 +287,12 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 assignment                                             1
-constant                                              53
+constant                                              56
 cont_assign                                            5
 design                                                 1
 func_call                                              4
 function                                               1
-int_typespec                                           6
+int_typespec                                           9
 io_decl                                                1
 logic_net                                             10
 logic_typespec                                        14
@@ -303,18 +303,18 @@ param_assign                                           8
 parameter                                              8
 port                                                   6
 range                                                 15
-ref_obj                                               19
-ref_typespec                                          31
+ref_obj                                               16
+ref_typespec                                          34
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 assignment                                             2
-constant                                              53
+constant                                              56
 cont_assign                                            9
 design                                                 1
 func_call                                              5
 function                                               2
-int_typespec                                           6
+int_typespec                                           9
 io_decl                                                2
 logic_net                                             10
 logic_typespec                                        14
@@ -325,8 +325,8 @@ param_assign                                           8
 parameter                                              8
 port                                                   9
 range                                                 15
-ref_obj                                               31
-ref_typespec                                          36
+ref_obj                                               28
+ref_typespec                                          39
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/FuncReturnRange/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/FuncReturnRange/slpp_all/checker/surelog.chk.html ...
@@ -1002,12 +1002,19 @@ design: (work@func_width_scope_top)
       \_range: , line:5:24, endln:5:37
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (WIDTH_A), line:5:25, endln:5:32
+      \_constant: , line:5:25, endln:5:32
         |vpiParent:
         \_operation: , line:5:25, endln:5:34
-        |vpiName:WIDTH_A
-        |vpiActual:
-        \_parameter: (work@func_width_scope_top.WIDTH_A), line:4:16, endln:4:23
+        |vpiDecompile:5
+        |vpiSize:64
+        |UINT:5
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:5:25, endln:5:32
+          |vpiActual:
+          \_int_typespec: , line:4:5, endln:4:27
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:5:33, endln:5:34
         |vpiParent:
@@ -1024,6 +1031,9 @@ design: (work@func_width_scope_top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:4:5, endln:4:27
+  |vpiParent:
+  \_ref_typespec: 
 \_logic_typespec: , line:6:15, endln:6:32
   |vpiRange:
   \_range: , line:6:19, endln:6:32
@@ -1229,10 +1239,19 @@ design: (work@func_width_scope_top)
       \_range: , line:13:10, endln:13:23
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (WIDTH_A), line:13:11, endln:13:18
+      \_constant: , line:13:11, endln:13:18
         |vpiParent:
         \_operation: , line:13:11, endln:13:20
-        |vpiName:WIDTH_A
+        |vpiDecompile:5
+        |vpiSize:64
+        |UINT:5
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:13:11, endln:13:18
+          |vpiActual:
+          \_int_typespec: , line:4:5, endln:4:27
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:13:19, endln:13:20
         |vpiParent:
@@ -1249,6 +1268,9 @@ design: (work@func_width_scope_top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:4:5, endln:4:27
+  |vpiParent:
+  \_ref_typespec: 
 \_int_typespec: , line:4:5, endln:4:27
   |vpiParent:
   \_ref_typespec: (work@func_width_scope_top.WIDTH_A)

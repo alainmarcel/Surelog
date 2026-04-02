@@ -242,10 +242,10 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 1.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-constant                                              89
+constant                                              93
 design                                                 1
 import_typespec                                        1
-int_typespec                                          54
+int_typespec                                          58
 logic_typespec                                        11
 module_inst                                            9
 operation                                             15
@@ -254,16 +254,16 @@ param_assign                                          44
 parameter                                             51
 range                                                 20
 ref_module                                             1
-ref_obj                                               30
-ref_typespec                                          93
+ref_obj                                               26
+ref_typespec                                          97
 sys_func_call                                          4
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-constant                                              89
+constant                                              93
 design                                                 1
 import_typespec                                        1
-int_typespec                                          54
+int_typespec                                          58
 logic_typespec                                        11
 module_inst                                            9
 operation                                             15
@@ -272,8 +272,8 @@ param_assign                                          44
 parameter                                             51
 range                                                 20
 ref_module                                             1
-ref_obj                                               30
-ref_typespec                                          93
+ref_obj                                               26
+ref_typespec                                          97
 sys_func_call                                          4
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/IntegerConcat/slpp_all/surelog.uhdm ...
@@ -310,6 +310,7 @@ design: (work@dut)
   \_parameter: (pkg::InfosPerBank), line:3:15, endln:3:27
     |vpiParent:
     \_package: pkg (pkg::), file:${SURELOG_DIR}/tests/IntegerConcat/dut.sv, line:1:1, endln:14:11
+    |UINT:4
     |vpiTypespec:
     \_ref_typespec: (pkg::InfosPerBank)
       |vpiParent:
@@ -418,13 +419,20 @@ design: (work@dut)
     |vpiParent:
     \_package: pkg (pkg::), file:${SURELOG_DIR}/tests/IntegerConcat/dut.sv, line:1:1, endln:14:11
     |vpiRhs:
-    \_ref_obj: (pkg::FLASH_INFO_PER_BANK), line:3:33, endln:3:52
+    \_constant: , line:3:33, endln:3:52
       |vpiParent:
       \_param_assign: , line:3:15, endln:3:52
-      |vpiName:FLASH_INFO_PER_BANK
-      |vpiFullName:pkg::FLASH_INFO_PER_BANK
-      |vpiActual:
-      \_parameter: (pkg::FLASH_INFO_PER_BANK), line:2:16, endln:2:35
+      |vpiDecompile:4
+      |vpiSize:64
+      |UINT:4
+      |vpiTypespec:
+      \_ref_typespec: (pkg)
+        |vpiParent:
+        \_constant: , line:3:33, endln:3:52
+        |vpiFullName:pkg
+        |vpiActual:
+        \_int_typespec: , line:3:11, endln:3:14
+      |vpiConstType:9
     |vpiLhs:
     \_parameter: (pkg::InfosPerBank), line:3:15, endln:3:27
   |vpiParamAssign:

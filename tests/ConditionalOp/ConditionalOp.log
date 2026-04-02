@@ -663,13 +663,13 @@ bit_typespec                                           2
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              99
+constant                                             104
 design                                                 1
 enum_const                                             5
 enum_typespec                                          1
 enum_var                                               1
 function                                               9
-int_typespec                                          25
+int_typespec                                          30
 int_var                                                4
 io_decl                                               11
 logic_net                                              3
@@ -681,8 +681,8 @@ package                                                2
 param_assign                                          18
 parameter                                             18
 range                                                 15
-ref_obj                                               12
-ref_typespec                                          59
+ref_obj                                                7
+ref_typespec                                          64
 sys_func_call                                          2
 task                                                   9
 === UHDM Object Stats End ===
@@ -692,13 +692,13 @@ bit_typespec                                           2
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              99
+constant                                             104
 design                                                 1
 enum_const                                            10
 enum_typespec                                          2
 enum_var                                               1
 function                                              18
-int_typespec                                          25
+int_typespec                                          30
 int_var                                                4
 io_decl                                               22
 logic_net                                              3
@@ -710,8 +710,8 @@ package                                                2
 param_assign                                          18
 parameter                                             18
 range                                                 15
-ref_obj                                               12
-ref_typespec                                          64
+ref_obj                                                7
+ref_typespec                                          69
 sys_func_call                                          2
 task                                                  18
 === UHDM Object Stats End ===
@@ -1544,11 +1544,20 @@ design: (work@top)
         \_operation: , line:6:40, endln:6:76
         |vpiOpType:14
         |vpiOperand:
-        \_ref_obj: (work@top.NrHarts), line:6:41, endln:6:48
+        \_constant: , line:6:41, endln:6:48
           |vpiParent:
           \_operation: , line:6:41, endln:6:53
-          |vpiName:NrHarts
-          |vpiFullName:work@top.NrHarts
+          |vpiDecompile:1
+          |vpiSize:64
+          |UINT:1
+          |vpiTypespec:
+          \_ref_typespec: (work@top)
+            |vpiParent:
+            \_constant: , line:6:41, endln:6:48
+            |vpiFullName:work@top
+            |vpiActual:
+            \_int_typespec: , line:2:20, endln:2:32
+          |vpiConstType:9
         |vpiOperand:
         \_constant: , line:6:52, endln:6:53
           |vpiParent:
@@ -1570,11 +1579,20 @@ design: (work@top)
         |vpiParent:
         \_operation: , line:6:40, endln:6:76
         |vpiArgument:
-        \_ref_obj: (work@top.NrHarts), line:6:68, endln:6:75
+        \_constant: , line:6:68, endln:6:75
           |vpiParent:
-          \_sys_func_call: ($clog2), line:6:61, endln:6:76
-          |vpiName:NrHarts
-          |vpiFullName:work@top.NrHarts
+          \_param_assign: , line:2:33, endln:2:44
+          |vpiDecompile:1
+          |vpiSize:64
+          |UINT:1
+          |vpiTypespec:
+          \_ref_typespec: (work@top)
+            |vpiParent:
+            \_constant: , line:6:68, endln:6:75
+            |vpiFullName:work@top
+            |vpiActual:
+            \_int_typespec: , line:2:20, endln:2:32
+          |vpiConstType:9
         |vpiName:$clog2
     |vpiLhs:
     \_parameter: (work@top.HartSelLen1), line:6:26, endln:6:37
@@ -1593,11 +1611,20 @@ design: (work@top)
         \_operation: , line:8:40, endln:8:62
         |vpiOpType:14
         |vpiOperand:
-        \_ref_obj: (work@top.NrHarts), line:8:41, endln:8:48
+        \_constant: , line:8:41, endln:8:48
           |vpiParent:
           \_operation: , line:8:41, endln:8:53
-          |vpiName:NrHarts
-          |vpiFullName:work@top.NrHarts
+          |vpiDecompile:1
+          |vpiSize:64
+          |UINT:1
+          |vpiTypespec:
+          \_ref_typespec: (work@top)
+            |vpiParent:
+            \_constant: , line:8:41, endln:8:48
+            |vpiFullName:work@top
+            |vpiActual:
+            \_int_typespec: , line:2:20, endln:2:32
+          |vpiConstType:9
         |vpiOperand:
         \_constant: , line:8:52, endln:8:53
           |vpiParent:
@@ -1639,11 +1666,20 @@ design: (work@top)
         \_operation: , line:10:40, endln:10:77
         |vpiOpType:14
         |vpiOperand:
-        \_ref_obj: (work@top.NrHarts), line:10:41, endln:10:48
+        \_constant: , line:10:41, endln:10:48
           |vpiParent:
           \_operation: , line:10:41, endln:10:53
-          |vpiName:NrHarts
-          |vpiFullName:work@top.NrHarts
+          |vpiDecompile:1
+          |vpiSize:64
+          |UINT:1
+          |vpiTypespec:
+          \_ref_typespec: (work@top)
+            |vpiParent:
+            \_constant: , line:10:41, endln:10:48
+            |vpiFullName:work@top
+            |vpiActual:
+            \_int_typespec: , line:2:20, endln:2:32
+          |vpiConstType:9
         |vpiOperand:
         \_constant: , line:10:52, endln:10:53
           |vpiParent:
@@ -1665,11 +1701,20 @@ design: (work@top)
         |vpiParent:
         \_operation: , line:10:40, endln:10:77
         |vpiArgument:
-        \_ref_obj: (work@top.NrHarts2), line:10:68, endln:10:76
+        \_constant: , line:10:68, endln:10:76
           |vpiParent:
-          \_sys_func_call: ($clog2), line:10:61, endln:10:77
-          |vpiName:NrHarts2
-          |vpiFullName:work@top.NrHarts2
+          \_param_assign: , line:4:26, endln:4:38
+          |vpiDecompile:8
+          |vpiSize:64
+          |UINT:8
+          |vpiTypespec:
+          \_ref_typespec: (work@top)
+            |vpiParent:
+            \_constant: , line:10:68, endln:10:76
+            |vpiFullName:work@top
+            |vpiActual:
+            \_int_typespec: , line:4:13, endln:4:25
+          |vpiConstType:9
         |vpiName:$clog2
     |vpiLhs:
     \_parameter: (work@top.HartSelLen3), line:10:26, endln:10:37
@@ -2071,12 +2116,27 @@ design: (work@top)
 \_int_typespec: , line:6:13, endln:6:25
   |vpiParent:
   \_parameter: (work@top.HartSelLen1), line:6:26, endln:6:37
+\_int_typespec: , line:2:20, endln:2:32
+  |vpiParent:
+  \_ref_typespec: (work@top)
+\_int_typespec: , line:2:20, endln:2:32
+  |vpiParent:
+  \_ref_typespec: (work@top)
 \_int_typespec: , line:8:13, endln:8:25
   |vpiParent:
   \_parameter: (work@top.HartSelLen2), line:8:26, endln:8:37
+\_int_typespec: , line:2:20, endln:2:32
+  |vpiParent:
+  \_ref_typespec: (work@top)
 \_int_typespec: , line:10:13, endln:10:25
   |vpiParent:
   \_parameter: (work@top.HartSelLen3), line:10:26, endln:10:37
+\_int_typespec: , line:2:20, endln:2:32
+  |vpiParent:
+  \_ref_typespec: (work@top)
+\_int_typespec: , line:4:13, endln:4:25
+  |vpiParent:
+  \_ref_typespec: (work@top)
 \_function: (work@mailbox::new), line:3:5, endln:4:16
   |vpiParent:
   \_class_defn: (work@mailbox), file:${SURELOG_DIR}/tests/ConditionalOp/builtin.sv, line:1:3, endln:27:11

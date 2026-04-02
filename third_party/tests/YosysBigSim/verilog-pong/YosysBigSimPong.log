@@ -30,7 +30,7 @@ begin                                                 52
 bit_select                                            18
 case_item                                           2075
 case_stmt                                              4
-constant                                            4960
+constant                                            5077
 cont_assign                                           62
 delay_control                                          2
 design                                                 1
@@ -40,7 +40,7 @@ forever_stmt                                           1
 if_else                                               28
 if_stmt                                               18
 initial                                                4
-int_typespec                                          42
+int_typespec                                         145
 integer_typespec                                       6
 integer_var                                            5
 logic_net                                            271
@@ -51,10 +51,10 @@ param_assign                                          46
 parameter                                             46
 part_select                                           37
 port                                                 131
-range                                                227
+range                                                234
 ref_module                                             4
-ref_obj                                             2795
-ref_typespec                                         432
+ref_obj                                             2692
+ref_typespec                                         535
 ref_var                                                3
 repeat                                                 2
 sys_func_call                                          7

@@ -123,38 +123,38 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 begin                                                  1
-constant                                              17
+constant                                              18
 design                                                 1
 gen_if                                                 1
 gen_scope                                              2
 gen_scope_array                                        2
-int_typespec                                           7
+int_typespec                                           8
 module_inst                                            6
 operation                                              5
 param_assign                                           6
 parameter                                              6
 range                                                  2
 ref_module                                             2
-ref_obj                                                4
-ref_typespec                                          11
+ref_obj                                                3
+ref_typespec                                          12
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 begin                                                  1
-constant                                              17
+constant                                              18
 design                                                 1
 gen_if                                                 1
 gen_scope                                              3
 gen_scope_array                                        3
-int_typespec                                           7
+int_typespec                                           8
 module_inst                                            7
 operation                                              5
 param_assign                                           6
 parameter                                              6
 range                                                  2
 ref_module                                             2
-ref_obj                                                4
-ref_typespec                                          11
+ref_obj                                                3
+ref_typespec                                          12
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/FileLocalParam/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/FileLocalParam/slpp_all/checker/surelog.chk.html ...

@@ -165,42 +165,42 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 1.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-constant                                              17
+constant                                              13
 design                                                 1
 import_typespec                                        1
 logic_net                                              1
-logic_typespec                                        14
+logic_typespec                                        12
 module_inst                                            4
-operation                                              4
+operation                                              3
 package                                                2
 param_assign                                           2
 parameter                                              3
-ref_obj                                                4
-ref_typespec                                          40
-string_typespec                                       20
-struct_typespec                                        6
-tagged_pattern                                        20
-typespec_member                                       15
+ref_obj                                                3
+ref_typespec                                          32
+string_typespec                                       15
+struct_typespec                                        5
+tagged_pattern                                        15
+typespec_member                                       13
 unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-constant                                              17
+constant                                              13
 design                                                 1
 import_typespec                                        1
 logic_net                                              1
-logic_typespec                                        14
+logic_typespec                                        12
 module_inst                                            4
-operation                                              4
+operation                                              3
 package                                                2
 param_assign                                           2
 parameter                                              3
-ref_obj                                                4
-ref_typespec                                          40
-string_typespec                                       20
-struct_typespec                                        6
-tagged_pattern                                        20
-typespec_member                                       15
+ref_obj                                                3
+ref_typespec                                          32
+string_typespec                                       15
+struct_typespec                                        5
+tagged_pattern                                        15
+typespec_member                                       13
 unsupported_typespec                                   1
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/BadScope/slpp_all/surelog.uhdm ...
@@ -466,13 +466,6 @@ design: (work@top3)
     \_operation: , line:21:40, endln:25:54
       |vpiParent:
       \_param_assign: , line:21:22, endln:25:54
-      |vpiTypespec:
-      \_ref_typespec: (work@top3)
-        |vpiParent:
-        \_operation: , line:21:40, endln:25:54
-        |vpiFullName:work@top3
-        |vpiActual:
-        \_struct_typespec: (pack::status_t), line:4:10, endln:7:4
       |vpiOpType:75
       |vpiOperand:
       \_tagged_pattern: , line:21:48, endln:21:52
@@ -617,57 +610,6 @@ design: (work@top3)
   |vpiParent:
   \_tagged_pattern: , line:25:49, endln:25:53
   |vpiName:tw
-\_struct_typespec: (pack::status_t), line:4:10, endln:7:4
-  |vpiParent:
-  \_ref_typespec: (work@top3)
-  |vpiName:pack::status_t
-  |vpiInstance:
-  \_package: pack (pack::), file:${SURELOG_DIR}/tests/BadScope/dut.sv, line:2:1, endln:9:11
-  |vpiPacked:1
-  |vpiTypespecMember:
-  \_typespec_member: (A), line:5:16, endln:5:17
-    |vpiParent:
-    \_struct_typespec: (pack::status_t), line:4:10, endln:7:4
-    |vpiName:A
-    |vpiTypespec:
-    \_ref_typespec: (work@top3.pack::status_t.A)
-      |vpiParent:
-      \_typespec_member: (A), line:5:16, endln:5:17
-      |vpiFullName:work@top3.pack::status_t.A
-      |vpiActual:
-      \_logic_typespec: , line:5:5, endln:5:10
-    |vpiRefFile:${SURELOG_DIR}/tests/BadScope/dut.sv
-    |vpiRefLineNo:5
-    |vpiRefColumnNo:5
-    |vpiRefEndLineNo:5
-    |vpiRefEndColumnNo:10
-  |vpiTypespecMember:
-  \_typespec_member: (B), line:6:16, endln:6:17
-    |vpiParent:
-    \_struct_typespec: (pack::status_t), line:4:10, endln:7:4
-    |vpiName:B
-    |vpiTypespec:
-    \_ref_typespec: (work@top3.pack::status_t.B)
-      |vpiParent:
-      \_typespec_member: (B), line:6:16, endln:6:17
-      |vpiFullName:work@top3.pack::status_t.B
-      |vpiActual:
-      \_logic_typespec: , line:6:5, endln:6:10
-    |vpiRefFile:${SURELOG_DIR}/tests/BadScope/dut.sv
-    |vpiRefLineNo:6
-    |vpiRefColumnNo:5
-    |vpiRefEndLineNo:6
-    |vpiRefEndColumnNo:10
-\_logic_typespec: , line:5:5, endln:5:10
-  |vpiParent:
-  \_ref_typespec: (work@top3.pack::status_t.A)
-  |vpiInstance:
-  \_package: pack (pack::), file:${SURELOG_DIR}/tests/BadScope/dut.sv, line:2:1, endln:9:11
-\_logic_typespec: , line:6:5, endln:6:10
-  |vpiParent:
-  \_ref_typespec: (work@top3.pack::status_t.B)
-  |vpiInstance:
-  \_package: pack (pack::), file:${SURELOG_DIR}/tests/BadScope/dut.sv, line:2:1, endln:9:11
 \_string_typespec: (mie), line:21:42, endln:21:45
   |vpiParent:
   \_ref_typespec: (work@top3)

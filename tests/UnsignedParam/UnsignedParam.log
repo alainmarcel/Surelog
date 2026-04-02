@@ -191,38 +191,38 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 begin                                                  1
-constant                                              36
+constant                                              42
 design                                                 1
 gen_if                                                 1
 gen_scope                                              2
 gen_scope_array                                        2
-int_typespec                                          11
+int_typespec                                          13
 module_inst                                            6
 operation                                              6
 param_assign                                           8
 parameter                                              8
-range                                                  8
+range                                                 10
 ref_module                                             2
-ref_obj                                                3
-ref_typespec                                          21
+ref_obj                                                1
+ref_typespec                                          23
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 begin                                                  1
-constant                                              36
+constant                                              42
 design                                                 1
 gen_if                                                 1
 gen_scope                                              3
 gen_scope_array                                        3
-int_typespec                                          11
+int_typespec                                          13
 module_inst                                            7
 operation                                              6
 param_assign                                           8
 parameter                                              8
-range                                                  8
+range                                                 10
 ref_module                                             2
-ref_obj                                                3
-ref_typespec                                          21
+ref_obj                                                1
+ref_typespec                                          23
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/UnsignedParam/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/UnsignedParam/slpp_all/checker/surelog.chk.html ...
@@ -332,11 +332,20 @@ design: (work@top)
       \_param_assign: , line:6:28, endln:6:41
       |vpiOpType:24
       |vpiOperand:
-      \_ref_obj: (work@top.n), line:6:33, endln:6:34
+      \_constant: , line:6:33, endln:6:34
         |vpiParent:
         \_operation: , line:6:33, endln:6:41
-        |vpiName:n
-        |vpiFullName:work@top.n
+        |vpiDecompile:32'h80000000
+        |vpiSize:32
+        |HEX:80000000
+        |vpiTypespec:
+        \_ref_typespec: (work@top)
+          |vpiParent:
+          \_constant: , line:6:33, endln:6:34
+          |vpiFullName:work@top
+          |vpiActual:
+          \_int_typespec: , line:5:14, endln:5:20
+        |vpiConstType:5
       |vpiOperand:
       \_constant: , line:6:37, endln:6:41
         |vpiParent:
@@ -378,11 +387,20 @@ design: (work@top)
       \_param_assign: , line:8:28, endln:8:61
       |vpiOpType:24
       |vpiOperand:
-      \_ref_obj: (work@top.n3), line:8:33, endln:8:35
+      \_constant: , line:8:33, endln:8:35
         |vpiParent:
         \_operation: , line:8:33, endln:8:61
-        |vpiName:n3
-        |vpiFullName:work@top.n3
+        |vpiDecompile:64'h8FFFFFFFFFFF0000
+        |vpiSize:64
+        |HEX:8FFFFFFFFFFF0000
+        |vpiTypespec:
+        \_ref_typespec: (work@top)
+          |vpiParent:
+          \_constant: , line:8:33, endln:8:35
+          |vpiFullName:work@top
+          |vpiActual:
+          \_int_typespec: , line:7:14, endln:7:20
+        |vpiConstType:5
       |vpiOperand:
       \_constant: , line:8:38, endln:8:61
         |vpiParent:
@@ -499,7 +517,7 @@ design: (work@top)
     \_constant: , line:5:32, endln:5:45
       |vpiParent:
       \_param_assign: , line:5:28, endln:5:45
-      |vpiDecompile:64'h80000000
+      |vpiDecompile:32'h80000000
       |vpiSize:64
       |HEX:80000000
       |vpiTypespec:
@@ -647,6 +665,30 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:5:14, endln:5:20
+  |vpiParent:
+  \_ref_typespec: (work@top)
+  |vpiSigned:1
+  |vpiRange:
+  \_range: , line:5:21, endln:5:27
+    |vpiParent:
+    \_int_typespec: , line:5:14, endln:5:20
+    |vpiLeftRange:
+    \_constant: , line:5:22, endln:5:24
+      |vpiParent:
+      \_range: , line:5:21, endln:5:27
+      |vpiDecompile:63
+      |vpiSize:64
+      |UINT:63
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:5:25, endln:5:26
+      |vpiParent:
+      \_range: , line:5:21, endln:5:27
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
 \_int_typespec: , line:7:14, endln:7:20
   |vpiParent:
   \_parameter: (work@top.n3), line:7:28, endln:7:30
@@ -691,6 +733,30 @@ design: (work@top)
     \_constant: , line:8:25, endln:8:26
       |vpiParent:
       \_range: , line:8:21, endln:8:27
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_int_typespec: , line:7:14, endln:7:20
+  |vpiParent:
+  \_ref_typespec: (work@top)
+  |vpiSigned:1
+  |vpiRange:
+  \_range: , line:7:21, endln:7:27
+    |vpiParent:
+    \_int_typespec: , line:7:14, endln:7:20
+    |vpiLeftRange:
+    \_constant: , line:7:22, endln:7:24
+      |vpiParent:
+      \_range: , line:7:21, endln:7:27
+      |vpiDecompile:63
+      |vpiSize:64
+      |UINT:63
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:7:25, endln:7:26
+      |vpiParent:
+      \_range: , line:7:21, endln:7:27
       |vpiDecompile:0
       |vpiSize:64
       |UINT:0

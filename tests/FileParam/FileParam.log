@@ -88,31 +88,29 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 1.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-constant                                              18
+constant                                              19
 design                                                 1
 enum_const                                             2
 enum_typespec                                          1
-int_typespec                                           7
+int_typespec                                           8
 module_inst                                            3
 operation                                              5
 param_assign                                           4
 parameter                                              4
-ref_obj                                                1
-ref_typespec                                          11
+ref_typespec                                          12
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-constant                                              18
+constant                                              19
 design                                                 1
 enum_const                                             2
 enum_typespec                                          1
-int_typespec                                           7
+int_typespec                                           8
 module_inst                                            3
 operation                                              5
 param_assign                                           4
 parameter                                              4
-ref_obj                                                1
-ref_typespec                                          11
+ref_typespec                                          12
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/FileParam/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/FileParam/slpp_all/checker/surelog.chk.html ...

@@ -7414,7 +7414,7 @@ begin                                                 18
 bit_select                                            23
 bit_typespec                                         348
 bit_var                                               22
-constant                                            2025
+constant                                            2045
 cont_assign                                            8
 design                                                 1
 enum_const                                            51
@@ -7427,7 +7427,7 @@ gen_scope                                              2
 gen_scope_array                                        2
 hier_path                                            457
 immediate_assert                                      14
-int_typespec                                         802
+int_typespec                                         854
 int_var                                               16
 integer_typespec                                      58
 io_decl                                               22
@@ -7444,8 +7444,8 @@ part_select                                            3
 port                                                   8
 range                                                187
 ref_module                                             3
-ref_obj                                             1132
-ref_typespec                                        2164
+ref_obj                                             1082
+ref_typespec                                        2216
 return_stmt                                           10
 string_typespec                                      580
 struct_typespec                                        7
@@ -7463,7 +7463,7 @@ begin                                                 35
 bit_select                                            43
 bit_typespec                                         348
 bit_var                                               88
-constant                                            2032
+constant                                            2052
 cont_assign                                           11
 design                                                 1
 enum_const                                            51
@@ -7476,7 +7476,7 @@ gen_scope                                              3
 gen_scope_array                                        3
 hier_path                                            911
 immediate_assert                                      28
-int_typespec                                         802
+int_typespec                                         854
 int_var                                               52
 integer_typespec                                      58
 io_decl                                               44
@@ -7493,8 +7493,8 @@ part_select                                            4
 port                                                  10
 range                                                187
 ref_module                                             3
-ref_obj                                             2170
-ref_typespec                                        2326
+ref_obj                                             2114
+ref_typespec                                        2378
 return_stmt                                           20
 string_typespec                                      580
 struct_typespec                                        7
@@ -7792,6 +7792,14 @@ design: (work@top)
   \_parameter: (cva6_config_pkg::CVA6ConfigFetchUserWidth), line:25:14, endln:25:38
     |vpiParent:
     \_package: cva6_config_pkg (cva6_config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:2:1, endln:133:11
+    |UINT:32
+    |vpiTypespec:
+    \_ref_typespec: (cva6_config_pkg::CVA6ConfigFetchUserWidth)
+      |vpiParent:
+      \_parameter: (cva6_config_pkg::CVA6ConfigFetchUserWidth), line:25:14, endln:25:38
+      |vpiFullName:cva6_config_pkg::CVA6ConfigFetchUserWidth
+      |vpiActual:
+      \_int_typespec: , line:25:3, endln:25:55
     |vpiLocalParam:1
     |vpiName:CVA6ConfigFetchUserWidth
     |vpiFullName:cva6_config_pkg::CVA6ConfigFetchUserWidth
@@ -7814,6 +7822,14 @@ design: (work@top)
   \_parameter: (cva6_config_pkg::CVA6ConfigDataUserWidth), line:27:14, endln:27:37
     |vpiParent:
     \_package: cva6_config_pkg (cva6_config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:2:1, endln:133:11
+    |UINT:32
+    |vpiTypespec:
+    \_ref_typespec: (cva6_config_pkg::CVA6ConfigDataUserWidth)
+      |vpiParent:
+      \_parameter: (cva6_config_pkg::CVA6ConfigDataUserWidth), line:27:14, endln:27:37
+      |vpiFullName:cva6_config_pkg::CVA6ConfigDataUserWidth
+      |vpiActual:
+      \_int_typespec: , line:27:3, endln:27:54
     |vpiLocalParam:1
     |vpiName:CVA6ConfigDataUserWidth
     |vpiFullName:cva6_config_pkg::CVA6ConfigDataUserWidth
@@ -8603,13 +8619,20 @@ design: (work@top)
     |vpiParent:
     \_package: cva6_config_pkg (cva6_config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:2:1, endln:133:11
     |vpiRhs:
-    \_ref_obj: (cva6_config_pkg::CVA6ConfigXlen), line:25:41, endln:25:55
+    \_constant: , line:25:41, endln:25:55
       |vpiParent:
       \_param_assign: , line:25:14, endln:25:55
-      |vpiName:CVA6ConfigXlen
-      |vpiFullName:cva6_config_pkg::CVA6ConfigXlen
-      |vpiActual:
-      \_parameter: (cva6_config_pkg::CVA6ConfigXlen), line:4:14, endln:4:28
+      |vpiDecompile:32
+      |vpiSize:64
+      |UINT:32
+      |vpiTypespec:
+      \_ref_typespec: (cva6_config_pkg)
+        |vpiParent:
+        \_constant: , line:25:41, endln:25:55
+        |vpiFullName:cva6_config_pkg
+        |vpiActual:
+        \_int_typespec: , line:25:3, endln:25:55
+      |vpiConstType:9
     |vpiLhs:
     \_parameter: (cva6_config_pkg::CVA6ConfigFetchUserWidth), line:25:14, endln:25:38
   |vpiParamAssign:
@@ -8638,13 +8661,20 @@ design: (work@top)
     |vpiParent:
     \_package: cva6_config_pkg (cva6_config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:2:1, endln:133:11
     |vpiRhs:
-    \_ref_obj: (cva6_config_pkg::CVA6ConfigXlen), line:27:40, endln:27:54
+    \_constant: , line:27:40, endln:27:54
       |vpiParent:
       \_param_assign: , line:27:14, endln:27:54
-      |vpiName:CVA6ConfigXlen
-      |vpiFullName:cva6_config_pkg::CVA6ConfigXlen
-      |vpiActual:
-      \_parameter: (cva6_config_pkg::CVA6ConfigXlen), line:4:14, endln:4:28
+      |vpiDecompile:32
+      |vpiSize:64
+      |UINT:32
+      |vpiTypespec:
+      \_ref_typespec: (cva6_config_pkg)
+        |vpiParent:
+        \_constant: , line:27:40, endln:27:54
+        |vpiFullName:cva6_config_pkg
+        |vpiActual:
+        \_int_typespec: , line:27:3, endln:27:54
+      |vpiConstType:9
     |vpiLhs:
     \_parameter: (cva6_config_pkg::CVA6ConfigDataUserWidth), line:27:14, endln:27:37
   |vpiParamAssign:
@@ -9350,6 +9380,13 @@ design: (work@top)
           |vpiDecompile:32
           |vpiSize:64
           |UINT:32
+          |vpiTypespec:
+          \_ref_typespec: (cva6_config_pkg)
+            |vpiParent:
+            \_constant: , line:76:31, endln:76:54
+            |vpiFullName:cva6_config_pkg
+            |vpiActual:
+            \_int_typespec: , line:27:3, endln:27:54
           |vpiConstType:9
         |vpiTypespec:
         \_ref_typespec: (cva6_config_pkg)
@@ -10390,6 +10427,13 @@ design: (work@top)
           |vpiDecompile:32
           |vpiSize:64
           |UINT:32
+          |vpiTypespec:
+          \_ref_typespec: (cva6_config_pkg)
+            |vpiParent:
+            \_constant: , line:130:33, endln:130:57
+            |vpiFullName:cva6_config_pkg
+            |vpiActual:
+            \_int_typespec: , line:25:3, endln:25:55
           |vpiConstType:9
         |vpiTypespec:
         \_ref_typespec: (cva6_config_pkg)
@@ -13587,13 +13631,20 @@ design: (work@top)
               \_typespec_member: (NrNonIdempotentRules), line:361:34, endln:361:54
             |vpiName:Cfg.NrNonIdempotentRules
           |vpiOperand:
-          \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:421:41, endln:421:51
+          \_constant: , line:421:41, endln:421:51
             |vpiParent:
             \_operation: , line:421:13, endln:421:51
-            |vpiName:NrMaxRules
-            |vpiFullName:config_pkg::check_cfg::NrMaxRules
-            |vpiActual:
-            \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+            |vpiDecompile:16
+            |vpiSize:64
+            |UINT:16
+            |vpiTypespec:
+            \_ref_typespec: (config_pkg::check_cfg)
+              |vpiParent:
+              \_constant: , line:421:41, endln:421:51
+              |vpiFullName:config_pkg::check_cfg
+              |vpiActual:
+              \_int_typespec: , line:174:3, endln:174:29
+            |vpiConstType:9
       |vpiStmt:
       \_immediate_assert: , line:422:5, endln:422:53
         |vpiParent:
@@ -13624,13 +13675,20 @@ design: (work@top)
               \_typespec_member: (NrExecuteRegionRules), line:364:34, endln:364:54
             |vpiName:Cfg.NrExecuteRegionRules
           |vpiOperand:
-          \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:422:41, endln:422:51
+          \_constant: , line:422:41, endln:422:51
             |vpiParent:
             \_operation: , line:422:13, endln:422:51
-            |vpiName:NrMaxRules
-            |vpiFullName:config_pkg::check_cfg::NrMaxRules
-            |vpiActual:
-            \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+            |vpiDecompile:16
+            |vpiSize:64
+            |UINT:16
+            |vpiTypespec:
+            \_ref_typespec: (config_pkg::check_cfg)
+              |vpiParent:
+              \_constant: , line:422:41, endln:422:51
+              |vpiFullName:config_pkg::check_cfg
+              |vpiActual:
+              \_int_typespec: , line:174:3, endln:174:29
+            |vpiConstType:9
       |vpiStmt:
       \_immediate_assert: , line:423:5, endln:423:52
         |vpiParent:
@@ -13661,13 +13719,20 @@ design: (work@top)
               \_typespec_member: (NrCachedRegionRules), line:367:34, endln:367:53
             |vpiName:Cfg.NrCachedRegionRules
           |vpiOperand:
-          \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:423:40, endln:423:50
+          \_constant: , line:423:40, endln:423:50
             |vpiParent:
             \_operation: , line:423:13, endln:423:50
-            |vpiName:NrMaxRules
-            |vpiFullName:config_pkg::check_cfg::NrMaxRules
-            |vpiActual:
-            \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+            |vpiDecompile:16
+            |vpiSize:64
+            |UINT:16
+            |vpiTypespec:
+            \_ref_typespec: (config_pkg::check_cfg)
+              |vpiParent:
+              \_constant: , line:423:40, endln:423:50
+              |vpiFullName:config_pkg::check_cfg
+              |vpiActual:
+              \_int_typespec: , line:174:3, endln:174:29
+            |vpiConstType:9
       |vpiStmt:
       \_immediate_assert: , line:424:5, endln:424:37
         |vpiParent:
@@ -28717,13 +28782,20 @@ design: (work@top)
               \_typespec_member: (NrNonIdempotentRules), line:361:34, endln:361:54
             |vpiName:Cfg.NrNonIdempotentRules
           |vpiOperand:
-          \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:421:41, endln:421:51
+          \_constant: , line:421:41, endln:421:51
             |vpiParent:
             \_operation: , line:421:13, endln:421:51
-            |vpiName:NrMaxRules
-            |vpiFullName:config_pkg::check_cfg::NrMaxRules
-            |vpiActual:
-            \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+            |vpiDecompile:16
+            |vpiSize:32
+            |UINT:16
+            |vpiTypespec:
+            \_ref_typespec: (config_pkg::check_cfg)
+              |vpiParent:
+              \_constant: , line:421:41, endln:421:51
+              |vpiFullName:config_pkg::check_cfg
+              |vpiActual:
+              \_int_typespec: , line:174:3, endln:174:29
+            |vpiConstType:9
       |vpiStmt:
       \_immediate_assert: , line:422:5, endln:422:53
         |vpiParent:
@@ -28754,13 +28826,20 @@ design: (work@top)
               \_typespec_member: (NrExecuteRegionRules), line:364:34, endln:364:54
             |vpiName:Cfg.NrExecuteRegionRules
           |vpiOperand:
-          \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:422:41, endln:422:51
+          \_constant: , line:422:41, endln:422:51
             |vpiParent:
             \_operation: , line:422:13, endln:422:51
-            |vpiName:NrMaxRules
-            |vpiFullName:config_pkg::check_cfg::NrMaxRules
-            |vpiActual:
-            \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+            |vpiDecompile:16
+            |vpiSize:32
+            |UINT:16
+            |vpiTypespec:
+            \_ref_typespec: (config_pkg::check_cfg)
+              |vpiParent:
+              \_constant: , line:422:41, endln:422:51
+              |vpiFullName:config_pkg::check_cfg
+              |vpiActual:
+              \_int_typespec: , line:174:3, endln:174:29
+            |vpiConstType:9
       |vpiStmt:
       \_immediate_assert: , line:423:5, endln:423:52
         |vpiParent:
@@ -28791,13 +28870,20 @@ design: (work@top)
               \_typespec_member: (NrCachedRegionRules), line:367:34, endln:367:53
             |vpiName:Cfg.NrCachedRegionRules
           |vpiOperand:
-          \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:423:40, endln:423:50
+          \_constant: , line:423:40, endln:423:50
             |vpiParent:
             \_operation: , line:423:13, endln:423:50
-            |vpiName:NrMaxRules
-            |vpiFullName:config_pkg::check_cfg::NrMaxRules
-            |vpiActual:
-            \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+            |vpiDecompile:16
+            |vpiSize:32
+            |UINT:16
+            |vpiTypespec:
+            \_ref_typespec: (config_pkg::check_cfg)
+              |vpiParent:
+              \_constant: , line:423:40, endln:423:50
+              |vpiFullName:config_pkg::check_cfg
+              |vpiActual:
+              \_int_typespec: , line:174:3, endln:174:29
+            |vpiConstType:9
       |vpiStmt:
       \_immediate_assert: , line:424:5, endln:424:37
         |vpiParent:
@@ -38018,7 +38104,9 @@ design: (work@top)
 \_int_typespec: , line:22:3, endln:22:41
 \_int_typespec: , line:23:3, endln:23:41
 \_int_typespec: , line:24:3, endln:24:39
+\_int_typespec: , line:25:3, endln:25:55
 \_int_typespec: , line:26:3, endln:26:38
+\_int_typespec: , line:27:3, endln:27:54
 \_int_typespec: , line:29:3, endln:29:46
 \_int_typespec: , line:30:3, endln:30:42
 \_int_typespec: , line:31:3, endln:31:45
@@ -38113,6 +38201,9 @@ design: (work@top)
   |vpiParent:
   \_tagged_pattern: , line:75:19, endln:75:50
   |vpiName:AxiIdWidth
+\_int_typespec: , line:27:3, endln:27:54
+  |vpiParent:
+  \_ref_typespec: (cva6_config_pkg)
 \_sys_func_call: ($unsigned)
   |vpiParent:
   \_operation: , line:69:53, endln:132:4
@@ -38498,6 +38589,9 @@ design: (work@top)
   |vpiParent:
   \_tagged_pattern: , line:129:19, endln:129:50
   |vpiName:DataUserEn
+\_int_typespec: , line:25:3, endln:25:55
+  |vpiParent:
+  \_ref_typespec: (cva6_config_pkg)
 \_sys_func_call: ($unsigned)
   |vpiParent:
   \_operation: , line:69:53, endln:132:4
@@ -41237,13 +41331,7 @@ design: (work@top)
             |vpiFullName:config_pkg::check_cfg::NrNonIdempotentRules
           |vpiName:Cfg.NrNonIdempotentRules
         |vpiOperand:
-        \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:421:41, endln:421:51
-          |vpiParent:
-          \_operation: , line:421:13, endln:421:51
-          |vpiName:NrMaxRules
-          |vpiFullName:config_pkg::check_cfg::NrMaxRules
-          |vpiActual:
-          \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        \_constant: , line:421:41, endln:421:51
     |vpiStmt:
     \_immediate_assert: , line:422:5, endln:422:53
       |vpiParent:
@@ -41272,13 +41360,7 @@ design: (work@top)
             |vpiFullName:config_pkg::check_cfg::NrExecuteRegionRules
           |vpiName:Cfg.NrExecuteRegionRules
         |vpiOperand:
-        \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:422:41, endln:422:51
-          |vpiParent:
-          \_operation: , line:422:13, endln:422:51
-          |vpiName:NrMaxRules
-          |vpiFullName:config_pkg::check_cfg::NrMaxRules
-          |vpiActual:
-          \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        \_constant: , line:422:41, endln:422:51
     |vpiStmt:
     \_immediate_assert: , line:423:5, endln:423:52
       |vpiParent:
@@ -41307,13 +41389,7 @@ design: (work@top)
             |vpiFullName:config_pkg::check_cfg::NrCachedRegionRules
           |vpiName:Cfg.NrCachedRegionRules
         |vpiOperand:
-        \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:423:40, endln:423:50
-          |vpiParent:
-          \_operation: , line:423:13, endln:423:50
-          |vpiName:NrMaxRules
-          |vpiFullName:config_pkg::check_cfg::NrMaxRules
-          |vpiActual:
-          \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        \_constant: , line:423:40, endln:423:50
     |vpiStmt:
     \_immediate_assert: , line:424:5, endln:424:37
       |vpiParent:
@@ -41345,6 +41421,15 @@ design: (work@top)
         \_constant: , line:424:33, endln:424:35
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::check_cfg)
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::check_cfg)
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::check_cfg)
 \_logic_typespec: , line:429:22, endln:429:27
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
@@ -41460,12 +41545,19 @@ design: (work@top)
       \_range: , line:437:11, endln:437:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (NrMaxRules), line:437:12, endln:437:22
+      \_constant: , line:437:12, endln:437:22
         |vpiParent:
         \_operation: , line:437:12, endln:437:24
-        |vpiName:NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:32
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:437:12, endln:437:22
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:437:23, endln:437:24
         |vpiParent:
@@ -41482,6 +41574,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: 
 \_int_typespec: , line:439:10, endln:439:22
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
@@ -41524,12 +41619,19 @@ design: (work@top)
       \_range: , line:447:11, endln:447:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (NrMaxRules), line:447:12, endln:447:22
+      \_constant: , line:447:12, endln:447:22
         |vpiParent:
         \_operation: , line:447:12, endln:447:24
-        |vpiName:NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:32
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:447:12, endln:447:22
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:447:23, endln:447:24
         |vpiParent:
@@ -41546,6 +41648,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: 
 \_int_typespec: , line:449:10, endln:449:22
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
@@ -41588,12 +41693,19 @@ design: (work@top)
       \_range: , line:456:21, endln:456:37
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (NrMaxRules), line:456:22, endln:456:32
+      \_constant: , line:456:22, endln:456:32
         |vpiParent:
         \_operation: , line:456:22, endln:456:34
-        |vpiName:NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:32
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:456:22, endln:456:32
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:456:33, endln:456:34
         |vpiParent:
@@ -41610,6 +41722,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: 
 \_int_typespec: , line:458:10, endln:458:22
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
@@ -42932,13 +43047,20 @@ design: (work@top)
       \_range: , line:254:11, endln:254:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentAddrBase::NrMaxRules), line:254:12, endln:254:22
+      \_constant: , line:254:12, endln:254:22
         |vpiParent:
         \_operation: , line:254:12, endln:254:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentAddrBase::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentAddrBase)
+          |vpiParent:
+          \_constant: , line:254:12, endln:254:22
+          |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentAddrBase
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:254:23, endln:254:24
         |vpiParent:
@@ -42975,6 +43097,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentAddrBase)
 \_logic_typespec: , line:256:5, endln:256:33
   |vpiParent:
   \_typespec_member: (NonIdempotentLength), line:256:34, endln:256:53
@@ -42990,13 +43115,20 @@ design: (work@top)
       \_range: , line:256:11, endln:256:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentLength::NrMaxRules), line:256:12, endln:256:22
+      \_constant: , line:256:12, endln:256:22
         |vpiParent:
         \_operation: , line:256:12, endln:256:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentLength::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentLength)
+          |vpiParent:
+          \_constant: , line:256:12, endln:256:22
+          |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentLength
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:256:23, endln:256:24
         |vpiParent:
@@ -43033,6 +43165,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::NonIdempotentLength)
 \_int_typespec: , line:258:5, endln:258:17
   |vpiParent:
   \_typespec_member: (NrExecuteRegionRules), line:258:34, endln:258:54
@@ -43053,13 +43188,20 @@ design: (work@top)
       \_range: , line:260:11, endln:260:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionAddrBase::NrMaxRules), line:260:12, endln:260:22
+      \_constant: , line:260:12, endln:260:22
         |vpiParent:
         \_operation: , line:260:12, endln:260:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionAddrBase::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionAddrBase)
+          |vpiParent:
+          \_constant: , line:260:12, endln:260:22
+          |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionAddrBase
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:260:23, endln:260:24
         |vpiParent:
@@ -43096,6 +43238,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionAddrBase)
 \_logic_typespec: , line:262:5, endln:262:33
   |vpiParent:
   \_typespec_member: (ExecuteRegionLength), line:262:34, endln:262:53
@@ -43111,13 +43256,20 @@ design: (work@top)
       \_range: , line:262:11, endln:262:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionLength::NrMaxRules), line:262:12, endln:262:22
+      \_constant: , line:262:12, endln:262:22
         |vpiParent:
         \_operation: , line:262:12, endln:262:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionLength::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionLength)
+          |vpiParent:
+          \_constant: , line:262:12, endln:262:22
+          |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionLength
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:262:23, endln:262:24
         |vpiParent:
@@ -43154,6 +43306,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::ExecuteRegionLength)
 \_int_typespec: , line:264:5, endln:264:17
   |vpiParent:
   \_typespec_member: (NrCachedRegionRules), line:264:34, endln:264:53
@@ -43174,13 +43329,20 @@ design: (work@top)
       \_range: , line:266:11, endln:266:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionAddrBase::NrMaxRules), line:266:12, endln:266:22
+      \_constant: , line:266:12, endln:266:22
         |vpiParent:
         \_operation: , line:266:12, endln:266:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionAddrBase::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionAddrBase)
+          |vpiParent:
+          \_constant: , line:266:12, endln:266:22
+          |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionAddrBase
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:266:23, endln:266:24
         |vpiParent:
@@ -43217,6 +43379,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionAddrBase)
 \_logic_typespec: , line:268:5, endln:268:33
   |vpiParent:
   \_typespec_member: (CachedRegionLength), line:268:34, endln:268:52
@@ -43232,13 +43397,20 @@ design: (work@top)
       \_range: , line:268:11, endln:268:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionLength::NrMaxRules), line:268:12, endln:268:22
+      \_constant: , line:268:12, endln:268:22
         |vpiParent:
         \_operation: , line:268:12, endln:268:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionLength::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionLength)
+          |vpiParent:
+          \_constant: , line:268:12, endln:268:22
+          |vpiFullName:config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionLength
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:268:23, endln:268:24
         |vpiParent:
@@ -43275,6 +43447,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_user_cfg_t::CachedRegionLength)
 \_int_typespec: , line:270:5, endln:270:17
   |vpiParent:
   \_typespec_member: (MaxOutstandingStores), line:270:34, endln:270:54
@@ -43790,13 +43965,20 @@ design: (work@top)
       \_range: , line:362:11, endln:362:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_cfg_t::NonIdempotentAddrBase::NrMaxRules), line:362:12, endln:362:22
+      \_constant: , line:362:12, endln:362:22
         |vpiParent:
         \_operation: , line:362:12, endln:362:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::NonIdempotentAddrBase::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::NonIdempotentAddrBase)
+          |vpiParent:
+          \_constant: , line:362:12, endln:362:22
+          |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::NonIdempotentAddrBase
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:362:23, endln:362:24
         |vpiParent:
@@ -43833,6 +44015,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::NonIdempotentAddrBase)
 \_logic_typespec: , line:363:5, endln:363:33
   |vpiParent:
   \_typespec_member: (NonIdempotentLength), line:363:34, endln:363:53
@@ -43848,13 +44033,20 @@ design: (work@top)
       \_range: , line:363:11, endln:363:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_cfg_t::NonIdempotentLength::NrMaxRules), line:363:12, endln:363:22
+      \_constant: , line:363:12, endln:363:22
         |vpiParent:
         \_operation: , line:363:12, endln:363:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::NonIdempotentLength::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::NonIdempotentLength)
+          |vpiParent:
+          \_constant: , line:363:12, endln:363:22
+          |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::NonIdempotentLength
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:363:23, endln:363:24
         |vpiParent:
@@ -43891,6 +44083,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::NonIdempotentLength)
 \_int_typespec: , line:364:5, endln:364:17
   |vpiParent:
   \_typespec_member: (NrExecuteRegionRules), line:364:34, endln:364:54
@@ -43911,13 +44106,20 @@ design: (work@top)
       \_range: , line:365:11, endln:365:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionAddrBase::NrMaxRules), line:365:12, endln:365:22
+      \_constant: , line:365:12, endln:365:22
         |vpiParent:
         \_operation: , line:365:12, endln:365:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionAddrBase::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionAddrBase)
+          |vpiParent:
+          \_constant: , line:365:12, endln:365:22
+          |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionAddrBase
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:365:23, endln:365:24
         |vpiParent:
@@ -43954,6 +44156,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionAddrBase)
 \_logic_typespec: , line:366:5, endln:366:33
   |vpiParent:
   \_typespec_member: (ExecuteRegionLength), line:366:34, endln:366:53
@@ -43969,13 +44174,20 @@ design: (work@top)
       \_range: , line:366:11, endln:366:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionLength::NrMaxRules), line:366:12, endln:366:22
+      \_constant: , line:366:12, endln:366:22
         |vpiParent:
         \_operation: , line:366:12, endln:366:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionLength::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionLength)
+          |vpiParent:
+          \_constant: , line:366:12, endln:366:22
+          |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionLength
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:366:23, endln:366:24
         |vpiParent:
@@ -44012,6 +44224,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::ExecuteRegionLength)
 \_int_typespec: , line:367:5, endln:367:17
   |vpiParent:
   \_typespec_member: (NrCachedRegionRules), line:367:34, endln:367:53
@@ -44032,13 +44247,20 @@ design: (work@top)
       \_range: , line:368:11, endln:368:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_cfg_t::CachedRegionAddrBase::NrMaxRules), line:368:12, endln:368:22
+      \_constant: , line:368:12, endln:368:22
         |vpiParent:
         \_operation: , line:368:12, endln:368:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::CachedRegionAddrBase::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::CachedRegionAddrBase)
+          |vpiParent:
+          \_constant: , line:368:12, endln:368:22
+          |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::CachedRegionAddrBase
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:368:23, endln:368:24
         |vpiParent:
@@ -44075,6 +44297,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::CachedRegionAddrBase)
 \_logic_typespec: , line:369:5, endln:369:33
   |vpiParent:
   \_typespec_member: (CachedRegionLength), line:369:34, endln:369:52
@@ -44090,13 +44315,20 @@ design: (work@top)
       \_range: , line:369:11, endln:369:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (config_pkg::config_pkg::cva6_cfg_t::CachedRegionLength::NrMaxRules), line:369:12, endln:369:22
+      \_constant: , line:369:12, endln:369:22
         |vpiParent:
         \_operation: , line:369:12, endln:369:24
-        |vpiName:NrMaxRules
-        |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::CachedRegionLength::NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::CachedRegionLength)
+          |vpiParent:
+          \_constant: , line:369:12, endln:369:22
+          |vpiFullName:config_pkg::config_pkg::cva6_cfg_t::CachedRegionLength
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:369:23, endln:369:24
         |vpiParent:
@@ -44133,6 +44365,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::config_pkg::cva6_cfg_t::CachedRegionLength)
 \_int_typespec: , line:370:5, endln:370:17
   |vpiParent:
   \_typespec_member: (MaxOutstandingStores), line:370:34, endln:370:54
@@ -44485,13 +44720,7 @@ design: (work@top)
             |vpiFullName:config_pkg::check_cfg::NrNonIdempotentRules
           |vpiName:Cfg.NrNonIdempotentRules
         |vpiOperand:
-        \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:421:41, endln:421:51
-          |vpiParent:
-          \_operation: , line:421:13, endln:421:51
-          |vpiName:NrMaxRules
-          |vpiFullName:config_pkg::check_cfg::NrMaxRules
-          |vpiActual:
-          \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        \_constant: , line:421:41, endln:421:51
     |vpiStmt:
     \_immediate_assert: , line:422:5, endln:422:53
       |vpiParent:
@@ -44520,13 +44749,7 @@ design: (work@top)
             |vpiFullName:config_pkg::check_cfg::NrExecuteRegionRules
           |vpiName:Cfg.NrExecuteRegionRules
         |vpiOperand:
-        \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:422:41, endln:422:51
-          |vpiParent:
-          \_operation: , line:422:13, endln:422:51
-          |vpiName:NrMaxRules
-          |vpiFullName:config_pkg::check_cfg::NrMaxRules
-          |vpiActual:
-          \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        \_constant: , line:422:41, endln:422:51
     |vpiStmt:
     \_immediate_assert: , line:423:5, endln:423:52
       |vpiParent:
@@ -44555,13 +44778,7 @@ design: (work@top)
             |vpiFullName:config_pkg::check_cfg::NrCachedRegionRules
           |vpiName:Cfg.NrCachedRegionRules
         |vpiOperand:
-        \_ref_obj: (config_pkg::check_cfg::NrMaxRules), line:423:40, endln:423:50
-          |vpiParent:
-          \_operation: , line:423:13, endln:423:50
-          |vpiName:NrMaxRules
-          |vpiFullName:config_pkg::check_cfg::NrMaxRules
-          |vpiActual:
-          \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        \_constant: , line:423:40, endln:423:50
     |vpiStmt:
     \_immediate_assert: , line:424:5, endln:424:37
       |vpiParent:
@@ -44593,6 +44810,15 @@ design: (work@top)
         \_constant: , line:424:33, endln:424:35
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::check_cfg)
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::check_cfg)
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: (config_pkg::check_cfg)
 \_logic_typespec: , line:429:22, endln:429:27
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
@@ -44708,12 +44934,19 @@ design: (work@top)
       \_range: , line:437:11, endln:437:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (NrMaxRules), line:437:12, endln:437:22
+      \_constant: , line:437:12, endln:437:22
         |vpiParent:
         \_operation: , line:437:12, endln:437:24
-        |vpiName:NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:437:12, endln:437:22
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:437:23, endln:437:24
         |vpiParent:
@@ -44730,6 +44963,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: 
 \_int_typespec: , line:439:10, endln:439:22
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
@@ -44772,12 +45008,19 @@ design: (work@top)
       \_range: , line:447:11, endln:447:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (NrMaxRules), line:447:12, endln:447:22
+      \_constant: , line:447:12, endln:447:22
         |vpiParent:
         \_operation: , line:447:12, endln:447:24
-        |vpiName:NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:447:12, endln:447:22
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:447:23, endln:447:24
         |vpiParent:
@@ -44794,6 +45037,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: 
 \_int_typespec: , line:449:10, endln:449:22
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11
@@ -44836,12 +45082,19 @@ design: (work@top)
       \_range: , line:456:21, endln:456:37
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (NrMaxRules), line:456:22, endln:456:32
+      \_constant: , line:456:22, endln:456:32
         |vpiParent:
         \_operation: , line:456:22, endln:456:34
-        |vpiName:NrMaxRules
-        |vpiActual:
-        \_parameter: (config_pkg::NrMaxRules), line:174:14, endln:174:24
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:456:22, endln:456:32
+          |vpiActual:
+          \_int_typespec: , line:174:3, endln:174:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:456:33, endln:456:34
         |vpiParent:
@@ -44858,6 +45111,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:174:3, endln:174:29
+  |vpiParent:
+  \_ref_typespec: 
 \_int_typespec: , line:458:10, endln:458:22
   |vpiInstance:
   \_package: config_pkg (config_pkg::), file:${SURELOG_DIR}/tests/FuncStructVal/dut.sv, line:138:1, endln:464:11

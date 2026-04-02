@@ -2631,9 +2631,31 @@ UHDM::any *CompileHelper::compileExpression(
 
           if (sval == nullptr || (sval && !sval->isValid())) {
             expr *complexValue = nullptr;
+            // Check if the component being compiled defines this parameter
+            // locally. If so, its own definition should take precedence over
+            // the parent instance's netlist (e.g., generate block's localparam
+            // shadowing an outer module's localparam of the same name).
+            bool componentOwnsParam = false;
+            if (component) {
+              if (UHDM::VectorOfparam_assign *cpas =
+                      component->getParam_assigns()) {
+                for (param_assign *cp : *cpas) {
+                  if (cp && cp->Lhs() &&
+                      cp->Lhs()->VpiName() == name &&
+                      cp->Lhs()->UhdmType() == uhdmparameter &&
+                      ((const UHDM::parameter *)cp->Lhs())->VpiLocalParam()) {
+                    componentOwnsParam = true;
+                    break;
+                  }
+                }
+              }
+            }
+            DesignComponent *instDefinition = nullptr;
             if (instance) {
               if (ModuleInstance *inst =
                       valuedcomponenti_cast<ModuleInstance *>(instance)) {
+                instDefinition = inst->getDefinition();
+                if (!componentOwnsParam || component == instDefinition) {
                 if (Netlist *netlist = inst->getNetlist()) {
                   if (UHDM::VectorOfparam_assign *param_assigns =
                           netlist->param_assigns()) {
@@ -2684,6 +2706,7 @@ UHDM::any *CompileHelper::compileExpression(
                     }
                   }
                 }
+                }  // !componentOwnsParam
                 if (expr *complex = inst->getComplexValue(name)) {
                   complexValue = complex;
                 }
@@ -2710,10 +2733,17 @@ UHDM::any *CompileHelper::compileExpression(
                     if (param_name == name) {
                       if ((reduce == Reduce::Yes) ||
                           (paramFromPackage &&
+                           (param_ass->Rhs()->UhdmType() == uhdmconstant)) ||
+                          (componentOwnsParam && param_ass->Rhs() &&
                            (param_ass->Rhs()->UhdmType() == uhdmconstant))) {
                         if (substituteAssignedValue(param_ass->Rhs(),
                                                     compileDesign)) {
-                          if (complexValue) {
+                          // When component is a sub-scope (e.g., generate
+                          // block) that owns this localparam, skip the
+                          // instance's complexValue (which comes from the outer
+                          // module scope). But when component IS the instance's
+                          // own definition, complexValue is correct.
+                          if (complexValue && !componentOwnsParam) {
                             result = complexValue;
                           } else {
                             ElaboratorContext elaboratorContext(&s, false,

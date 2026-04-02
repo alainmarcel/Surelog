@@ -197,7 +197,7 @@ ref_typespec                                          16
 === UHDM Object Stats Begin (Elaborated Model) ===
 assignment                                             1
 bit_select                                             3
-constant                                              40
+constant                                              42
 cont_assign                                            3
 design                                                 1
 gen_for                                                1
@@ -511,20 +511,8 @@ design: (work@gate)
         |vpiParent:
         \_gen_scope: (work@gate.blk[0]), line:5:36, endln:10:8
         |vpiRhs:
-        \_constant: , line:6:24, endln:6:25
-          |vpiParent:
-          \_param_assign: , line:6:20, endln:6:25
-          |vpiDecompile:0
-          |vpiSize:32
+        \_constant: 
           |UINT:0
-          |vpiTypespec:
-          \_ref_typespec: (work@gate.blk[0])
-            |vpiParent:
-            \_constant: , line:6:24, endln:6:25
-            |vpiFullName:work@gate.blk[0]
-            |vpiActual:
-            \_int_typespec: , line:6:9, endln:6:25
-          |vpiConstType:9
         |vpiLhs:
         \_parameter: (work@gate.blk[0].w), line:6:20, endln:6:21
       |vpiGenScopeArray:
@@ -598,20 +586,8 @@ design: (work@gate)
         |vpiParent:
         \_gen_scope: (work@gate.blk[1]), line:5:36, endln:10:8
         |vpiRhs:
-        \_constant: , line:6:24, endln:6:25
-          |vpiParent:
-          \_param_assign: , line:6:20, endln:6:25
-          |vpiDecompile:1
-          |vpiSize:32
+        \_constant: 
           |UINT:1
-          |vpiTypespec:
-          \_ref_typespec: (work@gate.blk[1])
-            |vpiParent:
-            \_constant: , line:6:24, endln:6:25
-            |vpiFullName:work@gate.blk[1]
-            |vpiActual:
-            \_int_typespec: , line:6:9, endln:6:25
-          |vpiConstType:9
         |vpiLhs:
         \_parameter: (work@gate.blk[1].w), line:6:20, endln:6:21
   |vpiContAssign:
@@ -687,14 +663,6 @@ design: (work@gate)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
-\_int_typespec: , line:6:9, endln:6:25
-\_param_assign: , line:6:20, endln:6:25
-  |vpiParent:
-  \_gen_scope: (work@gate.blk[0]), line:5:36, endln:10:8
-  |vpiRhs:
-  \_constant: , line:6:24, endln:6:25
-  |vpiLhs:
-  \_parameter: (work@gate.blk[0].w), line:6:20, endln:6:21
 \_logic_typespec: , line:8:13, endln:8:23
   |vpiParent:
   \_logic_net: (work@gate.blk[0].sub.x), line:8:24, endln:8:25
@@ -718,14 +686,6 @@ design: (work@gate)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
-\_int_typespec: , line:6:9, endln:6:25
-\_param_assign: , line:6:20, endln:6:25
-  |vpiParent:
-  \_gen_scope: (work@gate.blk[1]), line:5:36, endln:10:8
-  |vpiRhs:
-  \_constant: , line:6:24, endln:6:25
-  |vpiLhs:
-  \_parameter: (work@gate.blk[1].w), line:6:20, endln:6:21
 \_logic_typespec: , line:4:5, endln:4:15
   |vpiRange:
   \_range: , line:4:10, endln:4:15
@@ -786,6 +746,25 @@ design: (work@gate)
   \_parameter: (work@gate.blk[0].x), line:5:0
   |vpiParamAssign:
   \_param_assign: , line:6:20, endln:6:25
+    |vpiParent:
+    \_gen_scope: (work@gate.blk[0]), line:5:36, endln:10:8
+    |vpiRhs:
+    \_constant: , line:6:24, endln:6:25
+      |vpiParent:
+      \_param_assign: , line:6:20, endln:6:25
+      |vpiDecompile:0
+      |vpiSize:32
+      |UINT:0
+      |vpiTypespec:
+      \_ref_typespec: (work@gate.blk[0])
+        |vpiParent:
+        \_constant: , line:6:24, endln:6:25
+        |vpiFullName:work@gate.blk[0]
+        |vpiActual:
+        \_int_typespec: , line:6:9, endln:6:25
+      |vpiConstType:9
+    |vpiLhs:
+    \_parameter: (work@gate.blk[0].w), line:6:20, endln:6:21
   |vpiGenScopeArray:
   \_gen_scope_array: (work@gate.blk[0].sub), line:7:21, endln:9:12
     |vpiParent:
@@ -799,6 +778,7 @@ design: (work@gate)
       |vpiFullName:work@gate.blk[0].sub
       |vpiNet:
       \_logic_net: (work@gate.blk[0].sub.x), line:8:24, endln:8:25
+\_int_typespec: , line:6:9, endln:6:25
 \_gen_scope_array: (work@gate.blk[0]), line:5:36, endln:10:8
   |vpiParent:
   \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenScopeShadow/dut.sv, line:3:1, endln:15:10
@@ -816,23 +796,6 @@ design: (work@gate)
   |vpiActual:
   \_int_typespec: , line:6:9, endln:6:25
 \_int_typespec: 
-\_gen_scope: (work@gate.blk[1]), line:5:36, endln:10:8
-  |vpiParent:
-  \_gen_scope_array: (work@gate.blk[1]), line:5:36, endln:10:8
-  |vpiFullName:work@gate.blk[1]
-  |vpiParameter:
-  \_parameter: (work@gate.blk[1].w), line:6:20, endln:6:21
-  |vpiParameter:
-  \_parameter: (work@gate.blk[1].x), line:5:0
-  |vpiParamAssign:
-  \_param_assign: , line:6:20, endln:6:25
-\_gen_scope_array: (work@gate.blk[1]), line:5:36, endln:10:8
-  |vpiParent:
-  \_module_inst: work@gate (work@gate), file:${SURELOG_DIR}/tests/GenScopeShadow/dut.sv, line:3:1, endln:15:10
-  |vpiName:blk[1]
-  |vpiFullName:work@gate.blk[1]
-  |vpiGenScope:
-  \_gen_scope: (work@gate.blk[1]), line:5:36, endln:10:8
 \_int_typespec: , line:6:9, endln:6:25
   |vpiParent:
   \_ref_typespec: (work@gate.blk[1].w)

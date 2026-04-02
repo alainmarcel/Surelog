@@ -139,6 +139,7 @@ Value* ModuleInstance::getValue(std::string_view name,
   }
 
   ModuleInstance* instance = (ModuleInstance*)this;
+  bool firstInstance = true;
   while (instance) {
     if (instance->m_netlist) {
       UHDM::VectorOfparam_assign* param_assigns =
@@ -151,6 +152,19 @@ Value* ModuleInstance::getValue(std::string_view name,
           sval = exprBuilder.fromVpiValue(res->VpiValue(), res->VpiSize());
           break;
         }
+      }
+    }
+
+    // For the current instance, check its own mapped values and component
+    // definition BEFORE walking up to parent's netlist - ensures locally-defined
+    // params (e.g., in generate blocks) shadow parent scope params.
+    if (firstInstance) {
+      firstInstance = false;
+      const ParamMap& mappedVals = getMappedValues();
+      auto itr = mappedVals.find(name);
+      if (itr != mappedVals.end()) {
+        sval = (*itr).second.first;
+        break;
       }
     }
 

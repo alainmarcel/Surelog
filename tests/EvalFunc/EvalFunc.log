@@ -737,14 +737,14 @@ AST_DEBUG_END
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 assignment                                            20
 begin                                                  8
-constant                                             104
+constant                                             108
 design                                                 1
 for_stmt                                               4
 func_call                                             11
 function                                               8
 if_else                                                1
 if_stmt                                                1
-int_typespec                                           2
+int_typespec                                           6
 integer_typespec                                      27
 integer_var                                           16
 io_decl                                                8
@@ -756,8 +756,8 @@ package                                                2
 param_assign                                          64
 parameter                                             64
 range                                                  3
-ref_obj                                               52
-ref_typespec                                          45
+ref_obj                                               48
+ref_typespec                                          49
 ref_var                                                3
 return_stmt                                            6
 sys_func_call                                          1
@@ -766,14 +766,14 @@ sys_func_call                                          1
 === UHDM Object Stats Begin (Elaborated Model) ===
 assignment                                            38
 begin                                                 16
-constant                                             104
+constant                                             108
 design                                                 1
 for_stmt                                               8
 func_call                                             14
 function                                              16
 if_else                                                2
 if_stmt                                                2
-int_typespec                                           2
+int_typespec                                           6
 integer_typespec                                      27
 integer_var                                           21
 io_decl                                               16
@@ -785,8 +785,8 @@ package                                                2
 param_assign                                          64
 parameter                                             64
 range                                                  3
-ref_obj                                               96
-ref_typespec                                          60
+ref_obj                                               92
+ref_typespec                                          64
 ref_var                                                6
 return_stmt                                           12
 sys_func_call                                          2
@@ -1551,11 +1551,20 @@ design: (work@top)
       |vpiParent:
       \_param_assign: , line:64:12, endln:64:36
       |vpiArgument:
-      \_ref_obj: (work@top.RATIO), line:64:30, endln:64:35
+      \_constant: , line:64:30, endln:64:35
         |vpiParent:
-        \_func_call: (log2), line:64:25, endln:64:29
-        |vpiName:RATIO
-        |vpiFullName:work@top.RATIO
+        \_param_assign: , line:63:12, endln:63:22
+        |vpiDecompile:30
+        |vpiSize:64
+        |UINT:30
+        |vpiTypespec:
+        \_ref_typespec: (work@top)
+          |vpiParent:
+          \_constant: , line:64:30, endln:64:35
+          |vpiFullName:work@top
+          |vpiActual:
+          \_int_typespec: , line:63:1, endln:63:22
+        |vpiConstType:9
       |vpiName:log2
       |vpiFunction:
       \_function: (work@top.log2), line:33:1, endln:48:12
@@ -1570,11 +1579,20 @@ design: (work@top)
       |vpiParent:
       \_param_assign: , line:65:12, endln:65:37
       |vpiArgument:
-      \_ref_obj: (work@top.RATIO), line:65:31, endln:65:36
+      \_constant: , line:65:31, endln:65:36
         |vpiParent:
-        \_func_call: (vbits), line:65:25, endln:65:30
-        |vpiName:RATIO
-        |vpiFullName:work@top.RATIO
+        \_param_assign: , line:63:12, endln:63:22
+        |vpiDecompile:30
+        |vpiSize:64
+        |UINT:30
+        |vpiTypespec:
+        \_ref_typespec: (work@top)
+          |vpiParent:
+          \_constant: , line:65:31, endln:65:36
+          |vpiFullName:work@top
+          |vpiActual:
+          \_int_typespec: , line:63:1, endln:63:22
+        |vpiConstType:9
       |vpiName:vbits
       |vpiFunction:
       \_function: (work@top.vbits), line:24:1, endln:26:12
@@ -1589,11 +1607,20 @@ design: (work@top)
       |vpiParent:
       \_param_assign: , line:66:12, endln:66:38
       |vpiArgument:
-      \_ref_obj: (work@top.RATIO), line:66:32, endln:66:37
+      \_constant: , line:66:32, endln:66:37
         |vpiParent:
-        \_func_call: (log2_2), line:66:25, endln:66:31
-        |vpiName:RATIO
-        |vpiFullName:work@top.RATIO
+        \_param_assign: , line:63:12, endln:63:22
+        |vpiDecompile:30
+        |vpiSize:64
+        |UINT:30
+        |vpiTypespec:
+        \_ref_typespec: (work@top)
+          |vpiParent:
+          \_constant: , line:66:32, endln:66:37
+          |vpiFullName:work@top
+          |vpiActual:
+          \_int_typespec: , line:63:1, endln:63:22
+        |vpiConstType:9
       |vpiName:log2_2
       |vpiFunction:
       \_function: (work@top.log2_2), line:51:1, endln:61:12
@@ -1608,11 +1635,20 @@ design: (work@top)
       |vpiParent:
       \_param_assign: , line:67:12, endln:67:52
       |vpiArgument:
-      \_ref_obj: (work@top.RATIO), line:67:46, endln:67:51
+      \_constant: , line:67:46, endln:67:51
         |vpiParent:
-        \_func_call: (prim_util_pkg::vbits), line:67:25, endln:67:40
-        |vpiName:RATIO
-        |vpiFullName:work@top.RATIO
+        \_param_assign: , line:63:12, endln:63:22
+        |vpiDecompile:30
+        |vpiSize:64
+        |UINT:30
+        |vpiTypespec:
+        \_ref_typespec: (work@top)
+          |vpiParent:
+          \_constant: , line:67:46, endln:67:51
+          |vpiFullName:work@top
+          |vpiActual:
+          \_int_typespec: , line:63:1, endln:63:22
+        |vpiConstType:9
       |vpiName:prim_util_pkg::vbits
       |vpiFunction:
       \_function: (prim_util_pkg::vbits), line:12:3, endln:16:14
@@ -3498,6 +3534,18 @@ design: (work@top)
 \_integer_typespec: , line:52:7, endln:52:14
   |vpiSigned:1
 \_int_typespec: , line:63:1, endln:63:22
+\_int_typespec: , line:63:1, endln:63:22
+  |vpiParent:
+  \_ref_typespec: (work@top)
+\_int_typespec: , line:63:1, endln:63:22
+  |vpiParent:
+  \_ref_typespec: (work@top)
+\_int_typespec: , line:63:1, endln:63:22
+  |vpiParent:
+  \_ref_typespec: (work@top)
+\_int_typespec: , line:63:1, endln:63:22
+  |vpiParent:
+  \_ref_typespec: (work@top)
 \_int_typespec: , line:63:1, endln:63:22
   |vpiParent:
   \_ref_typespec: (work@top.RATIO)

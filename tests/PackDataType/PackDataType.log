@@ -464,7 +464,7 @@ begin                                                  1
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              37
+constant                                              39
 design                                                 1
 enum_const                                             5
 enum_typespec                                          1
@@ -474,7 +474,7 @@ gen_if                                                 1
 gen_scope                                              2
 gen_scope_array                                        2
 hier_path                                              2
-int_typespec                                          19
+int_typespec                                          21
 int_var                                                4
 io_decl                                               11
 logic_net                                              2
@@ -488,8 +488,8 @@ parameter                                              6
 port                                                   2
 range                                                  6
 ref_module                                             2
-ref_obj                                                9
-ref_typespec                                          42
+ref_obj                                                7
+ref_typespec                                          44
 struct_net                                             1
 struct_typespec                                        2
 task                                                   9
@@ -503,7 +503,7 @@ begin                                                  1
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              37
+constant                                              39
 design                                                 1
 enum_const                                            10
 enum_typespec                                          2
@@ -513,7 +513,7 @@ gen_if                                                 1
 gen_scope                                              3
 gen_scope_array                                        3
 hier_path                                              2
-int_typespec                                          19
+int_typespec                                          21
 int_var                                                4
 io_decl                                               22
 logic_net                                              2
@@ -527,8 +527,8 @@ parameter                                              6
 port                                                   3
 range                                                  6
 ref_module                                             2
-ref_obj                                               10
-ref_typespec                                          48
+ref_obj                                                8
+ref_typespec                                          50
 struct_net                                             1
 struct_typespec                                        2
 task                                                  18
@@ -1331,11 +1331,20 @@ design: (work@kmac_keymgr)
       \_gen_if: , line:19:2, endln:19:4
       |vpiOpType:14
       |vpiOperand:
-      \_ref_obj: (work@kmac_keymgr.KeyMgrDigestW), line:19:6, endln:19:19
+      \_constant: , line:19:6, endln:19:19
         |vpiParent:
         \_operation: , line:19:6, endln:19:26
-        |vpiName:KeyMgrDigestW
-        |vpiFullName:work@kmac_keymgr.KeyMgrDigestW
+        |vpiDecompile:247
+        |vpiSize:64
+        |UINT:247
+        |vpiTypespec:
+        \_ref_typespec: (work@kmac_keymgr)
+          |vpiParent:
+          \_constant: , line:19:6, endln:19:19
+          |vpiFullName:work@kmac_keymgr
+          |vpiActual:
+          \_int_typespec: , line:18:13, endln:18:16
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:19:23, endln:19:26
         |vpiParent:
@@ -1616,6 +1625,10 @@ design: (work@kmac_keymgr)
   |vpiParent:
   \_parameter: (work@kmac_keymgr.KeyMgrDigestW), line:18:17, endln:18:30
   |vpiSigned:1
+\_int_typespec: , line:18:13, endln:18:16
+  |vpiParent:
+  \_ref_typespec: (work@kmac_keymgr)
+  |vpiSigned:1
 \_function: (work@mailbox::new), line:3:5, endln:4:16
   |vpiParent:
   \_class_defn: (work@mailbox), file:${SURELOG_DIR}/tests/PackDataType/builtin.sv, line:1:3, endln:27:11
@@ -1864,10 +1877,19 @@ design: (work@kmac_keymgr)
       \_range: , line:22:8, endln:22:27
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (KeyMgrDigestW), line:22:9, endln:22:22
+      \_constant: , line:22:9, endln:22:22
         |vpiParent:
         \_operation: , line:22:9, endln:22:24
-        |vpiName:KeyMgrDigestW
+        |vpiDecompile:247
+        |vpiSize:64
+        |UINT:247
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:22:9, endln:22:22
+          |vpiActual:
+          \_int_typespec: , line:18:13, endln:18:16
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:22:23, endln:22:24
         |vpiParent:
@@ -1884,6 +1906,10 @@ design: (work@kmac_keymgr)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:18:13, endln:18:16
+  |vpiParent:
+  \_ref_typespec: 
+  |vpiSigned:1
 \_int_typespec: , line:18:13, endln:18:16
   |vpiParent:
   \_ref_typespec: (work@kmac_keymgr.KeyMgrDigestW)

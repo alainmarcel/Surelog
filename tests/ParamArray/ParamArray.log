@@ -522,12 +522,12 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 1.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-array_typespec                                        10
+array_typespec                                         9
 bit_select                                             1
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                             142
+constant                                             135
 design                                                 1
 enum_const                                             9
 enum_typespec                                          3
@@ -535,35 +535,35 @@ enum_var                                               1
 function                                               9
 hier_path                                              2
 import_typespec                                        4
-int_typespec                                          47
+int_typespec                                          46
 int_var                                                4
 io_decl                                               11
 logic_net                                              1
-logic_typespec                                        18
+logic_typespec                                        17
 logic_var                                              2
 module_inst                                           11
-operation                                             55
+operation                                             51
 package                                                6
 param_assign                                          20
 parameter                                             27
-range                                                 35
+range                                                 33
 ref_module                                             1
 ref_obj                                                5
-ref_typespec                                         130
-string_typespec                                       22
-struct_typespec                                       16
-tagged_pattern                                        22
+ref_typespec                                         124
+string_typespec                                       20
+struct_typespec                                       15
+tagged_pattern                                        20
 task                                                   9
-typespec_member                                       16
+typespec_member                                       15
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-array_typespec                                        10
+array_typespec                                         9
 bit_select                                             1
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                             142
+constant                                             135
 design                                                 1
 enum_const                                            14
 enum_typespec                                          4
@@ -571,26 +571,26 @@ enum_var                                               1
 function                                              18
 hier_path                                              2
 import_typespec                                        4
-int_typespec                                          47
+int_typespec                                          46
 int_var                                                4
 io_decl                                               22
 logic_net                                              1
-logic_typespec                                        18
+logic_typespec                                        17
 logic_var                                              2
 module_inst                                           11
-operation                                             55
+operation                                             51
 package                                                6
 param_assign                                          20
 parameter                                             27
-range                                                 35
+range                                                 33
 ref_module                                             1
 ref_obj                                                5
-ref_typespec                                         135
-string_typespec                                       22
-struct_typespec                                       16
-tagged_pattern                                        22
+ref_typespec                                         129
+string_typespec                                       20
+struct_typespec                                       15
+tagged_pattern                                        20
 task                                                  18
-typespec_member                                       16
+typespec_member                                       15
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ParamArray/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ParamArray/slpp_all/checker/surelog.chk.html ...
@@ -2111,13 +2111,6 @@ design: (work@top)
     \_operation: , line:11:47, endln:20:4
       |vpiParent:
       \_param_assign: , line:11:26, endln:20:4
-      |vpiTypespec:
-      \_ref_typespec: (work@top)
-        |vpiParent:
-        \_operation: , line:11:47, endln:20:4
-        |vpiFullName:work@top
-        |vpiActual:
-        \_array_typespec: , line:11:14, endln:11:44
       |vpiOpType:75
       |vpiOperand:
       \_operation: , line:13:5, endln:15:6
@@ -2950,110 +2943,6 @@ design: (work@top)
   |vpiSigned:1
 \_int_typespec: , line:66:26, endln:66:29
   |vpiSigned:1
-\_array_typespec: , line:11:14, endln:11:44
-  |vpiParent:
-  \_ref_typespec: (work@top)
-  |vpiRange:
-  \_range: , line:11:36, endln:11:43
-    |vpiParent:
-    \_array_typespec: , line:11:14, endln:11:44
-    |vpiLeftRange:
-    \_constant: 
-      |vpiParent:
-      \_range: , line:11:36, endln:11:43
-      |vpiDecompile:0
-      |vpiSize:64
-      |UINT:0
-      |vpiConstType:9
-    |vpiRightRange:
-    \_operation: , line:11:36, endln:11:43
-      |vpiParent:
-      \_range: , line:11:36, endln:11:43
-      |vpiOpType:11
-      |vpiOperand:
-      \_constant: , line:11:36, endln:11:43
-        |vpiParent:
-        \_operation: , line:11:36, endln:11:43
-        |vpiDecompile:7
-        |vpiSize:32
-        |UINT:7
-        |vpiTypespec:
-        \_ref_typespec: (work@top)
-          |vpiParent:
-          \_constant: , line:11:36, endln:11:43
-          |vpiFullName:work@top
-          |vpiActual:
-          \_int_typespec: , line:5:13, endln:5:16
-        |vpiConstType:9
-      |vpiOperand:
-      \_constant: 
-        |vpiParent:
-        \_operation: , line:11:36, endln:11:43
-        |vpiSize:64
-        |INT:1
-        |vpiConstType:7
-  |vpiElemTypespec:
-  \_ref_typespec: (work@top)
-    |vpiParent:
-    \_array_typespec: , line:11:14, endln:11:44
-    |vpiFullName:work@top
-    |vpiActual:
-    \_struct_typespec: (otp_ctrl_pkg::part_info_t), line:2:11, endln:4:4
-\_int_typespec: , line:5:13, endln:5:16
-  |vpiParent:
-  \_ref_typespec: (work@top)
-  |vpiInstance:
-  \_package: otp_ctrl_pkg (otp_ctrl_pkg::), file:${SURELOG_DIR}/tests/ParamArray/dut.sv, line:1:1, endln:6:11
-  |vpiSigned:1
-\_struct_typespec: (otp_ctrl_pkg::part_info_t), line:2:11, endln:4:4
-  |vpiParent:
-  \_ref_typespec: (work@top)
-  |vpiName:otp_ctrl_pkg::part_info_t
-  |vpiInstance:
-  \_package: otp_ctrl_pkg (otp_ctrl_pkg::), file:${SURELOG_DIR}/tests/ParamArray/dut.sv, line:1:1, endln:6:11
-  |vpiPacked:1
-  |vpiTypespecMember:
-  \_typespec_member: (size), line:3:18, endln:3:22
-    |vpiParent:
-    \_struct_typespec: (otp_ctrl_pkg::part_info_t), line:2:11, endln:4:4
-    |vpiName:size
-    |vpiTypespec:
-    \_ref_typespec: (work@top.otp_ctrl_pkg::part_info_t.size)
-      |vpiParent:
-      \_typespec_member: (size), line:3:18, endln:3:22
-      |vpiFullName:work@top.otp_ctrl_pkg::part_info_t.size
-      |vpiActual:
-      \_logic_typespec: , line:3:5, endln:3:17
-    |vpiRefFile:${SURELOG_DIR}/tests/ParamArray/dut.sv
-    |vpiRefLineNo:3
-    |vpiRefColumnNo:5
-    |vpiRefEndLineNo:3
-    |vpiRefEndColumnNo:17
-\_logic_typespec: , line:3:5, endln:3:17
-  |vpiParent:
-  \_ref_typespec: (work@top.otp_ctrl_pkg::part_info_t.size)
-  |vpiInstance:
-  \_package: otp_ctrl_pkg (otp_ctrl_pkg::), file:${SURELOG_DIR}/tests/ParamArray/dut.sv, line:1:1, endln:6:11
-  |vpiRange:
-  \_range: , line:3:11, endln:3:17
-    |vpiParent:
-    \_logic_typespec: , line:3:5, endln:3:17
-    |vpiLeftRange:
-    \_constant: , line:3:12, endln:3:14
-      |vpiParent:
-      \_range: , line:3:11, endln:3:17
-      |vpiDecompile:10
-      |vpiSize:64
-      |UINT:10
-      |vpiConstType:9
-    |vpiRightRange:
-    \_constant: , line:3:15, endln:3:16
-      |vpiParent:
-      \_range: , line:3:11, endln:3:17
-      |vpiDecompile:0
-      |vpiSize:64
-      |UINT:0
-      |vpiConstType:9
 \_string_typespec: (size), line:14:7, endln:14:11
   |vpiParent:
   \_ref_typespec: (work@top)

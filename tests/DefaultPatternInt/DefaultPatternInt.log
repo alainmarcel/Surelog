@@ -391,7 +391,7 @@ array_var                                              1
 assignment                                             2
 begin                                                  4
 bit_select                                             8
-constant                                             124
+constant                                             123
 design                                                 1
 for_stmt                                               1
 func_call                                              3
@@ -400,7 +400,7 @@ gen_if                                                 3
 gen_scope                                              2
 gen_scope_array                                        2
 import_typespec                                        1
-int_typespec                                          35
+int_typespec                                          38
 int_var                                                1
 logic_var                                              3
 module_inst                                           11
@@ -410,8 +410,8 @@ param_assign                                          29
 parameter                                             31
 range                                                 17
 ref_module                                             1
-ref_obj                                                7
-ref_typespec                                          66
+ref_obj                                                4
+ref_typespec                                          69
 string_typespec                                        6
 sys_task_call                                          1
 tagged_pattern                                         6
@@ -424,7 +424,7 @@ array_var                                              1
 assignment                                             4
 begin                                                  5
 bit_select                                            10
-constant                                             124
+constant                                             123
 design                                                 1
 for_stmt                                               2
 func_call                                              3
@@ -433,7 +433,7 @@ gen_if                                                 3
 gen_scope                                              3
 gen_scope_array                                        3
 import_typespec                                        1
-int_typespec                                          35
+int_typespec                                          38
 int_var                                                2
 logic_var                                              3
 module_inst                                           11
@@ -443,8 +443,8 @@ param_assign                                          29
 parameter                                             31
 range                                                 17
 ref_module                                             1
-ref_obj                                               11
-ref_typespec                                          67
+ref_obj                                                8
+ref_typespec                                          70
 string_typespec                                        6
 sys_task_call                                          2
 tagged_pattern                                         6
@@ -508,13 +508,20 @@ design: (work@main)
         \_range: , line:4:27, endln:4:30
         |vpiOpType:11
         |vpiOperand:
-        \_ref_obj: (pack::V::CNT), line:4:27, endln:4:30
+        \_constant: , line:4:27, endln:4:30
           |vpiParent:
           \_operation: , line:4:27, endln:4:30
-          |vpiName:CNT
-          |vpiFullName:pack::V::CNT
-          |vpiActual:
-          \_parameter: (pack::CNT), line:2:25, endln:2:28
+          |vpiDecompile:2
+          |vpiSize:64
+          |UINT:2
+          |vpiTypespec:
+          \_ref_typespec: (pack::V)
+            |vpiParent:
+            \_constant: , line:4:27, endln:4:30
+            |vpiFullName:pack::V
+            |vpiActual:
+            \_int_typespec: , line:2:12, endln:2:24
+          |vpiConstType:9
         |vpiOperand:
         \_constant: 
           |vpiSize:64
@@ -1617,6 +1624,11 @@ design: (work@main)
 \_int_typespec: , line:2:12, endln:2:24
   |vpiParent:
   \_parameter: (pack::CNT), line:2:25, endln:2:28
+  |vpiInstance:
+  \_package: pack (pack::), file:${SURELOG_DIR}/tests/DefaultPatternInt/dut.sv, line:1:1, endln:6:11
+\_int_typespec: , line:2:12, endln:2:24
+  |vpiParent:
+  \_ref_typespec: (pack::V)
   |vpiInstance:
   \_package: pack (pack::), file:${SURELOG_DIR}/tests/DefaultPatternInt/dut.sv, line:1:1, endln:6:11
 \_array_typespec: , line:4:12, endln:4:31

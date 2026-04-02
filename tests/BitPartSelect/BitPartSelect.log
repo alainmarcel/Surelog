@@ -230,10 +230,10 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 bit_select                                             1
-constant                                              51
+constant                                              53
 cont_assign                                            1
 design                                                 1
-int_typespec                                           6
+int_typespec                                           8
 logic_net                                              3
 logic_typespec                                         6
 logic_var                                              3
@@ -243,16 +243,16 @@ param_assign                                           6
 parameter                                              6
 part_select                                            1
 range                                                 12
-ref_obj                                                6
-ref_typespec                                          21
+ref_obj                                                4
+ref_typespec                                          23
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 bit_select                                             2
-constant                                              51
+constant                                              53
 cont_assign                                            2
 design                                                 1
-int_typespec                                           6
+int_typespec                                           8
 logic_net                                              3
 logic_typespec                                         6
 logic_var                                              3
@@ -262,8 +262,8 @@ param_assign                                           6
 parameter                                              6
 part_select                                            2
 range                                                 12
-ref_obj                                                8
-ref_typespec                                          21
+ref_obj                                                5
+ref_typespec                                          23
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/BitPartSelect/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/BitPartSelect/slpp_all/checker/surelog.chk.html ...
@@ -451,11 +451,20 @@ design: (work@top)
           \_part_select: fifo_rptr (work@top.storage.fifo_rptr), line:9:35, endln:9:59
           |vpiOpType:11
           |vpiOperand:
-          \_ref_obj: (work@top.storage.fifo_rptr.PTR_WIDTH), line:9:45, endln:9:54
+          \_constant: , line:9:45, endln:9:54
             |vpiParent:
             \_operation: , line:9:45, endln:9:56
-            |vpiName:PTR_WIDTH
-            |vpiFullName:work@top.storage.fifo_rptr.PTR_WIDTH
+            |vpiDecompile:2
+            |vpiSize:64
+            |UINT:2
+            |vpiTypespec:
+            \_ref_typespec: (work@top.storage.fifo_rptr)
+              |vpiParent:
+              \_constant: , line:9:45, endln:9:54
+              |vpiFullName:work@top.storage.fifo_rptr
+              |vpiActual:
+              \_int_typespec: , line:4:15, endln:4:27
+            |vpiConstType:9
           |vpiOperand:
           \_constant: , line:9:55, endln:9:56
             |vpiParent:
@@ -682,6 +691,9 @@ design: (work@top)
 \_int_typespec: , line:4:15, endln:4:27
   |vpiParent:
   \_parameter: (work@top.PTR_WIDTH), line:4:28, endln:4:37
+\_int_typespec: , line:4:15, endln:4:27
+  |vpiParent:
+  \_ref_typespec: (work@top.storage.fifo_rptr)
 \_logic_typespec: , line:5:4, endln:5:32
   |vpiParent:
   \_logic_var: (work@top.storage), line:5:33, endln:5:40
@@ -872,10 +884,19 @@ design: (work@top)
       \_range: , line:7:9, endln:7:24
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (PTR_WIDTH), line:7:10, endln:7:19
+      \_constant: , line:7:10, endln:7:19
         |vpiParent:
         \_operation: , line:7:10, endln:7:21
-        |vpiName:PTR_WIDTH
+        |vpiDecompile:2
+        |vpiSize:64
+        |UINT:2
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:7:10, endln:7:19
+          |vpiActual:
+          \_int_typespec: , line:4:15, endln:4:27
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:7:20, endln:7:21
         |vpiParent:
@@ -892,6 +913,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:4:15, endln:4:27
+  |vpiParent:
+  \_ref_typespec: 
 \_int_typespec: , line:2:14, endln:2:26
   |vpiParent:
   \_ref_typespec: (work@top.Width)
@@ -909,5 +933,5 @@ design: (work@top)
 [   NOTE] : 5
 
 ============================== Begin RoundTrip Results ==============================
-[roundtrip]: ${SURELOG_DIR}/tests/BitPartSelect/dut.sv | ${SURELOG_DIR}/build/regression/BitPartSelect/roundtrip/dut_000.sv | 1 | 10 |
+[roundtrip]: ${SURELOG_DIR}/tests/BitPartSelect/dut.sv | ${SURELOG_DIR}/build/regression/BitPartSelect/roundtrip/dut_000.sv | 2 | 10 |
 ============================== End RoundTrip Results ==============================

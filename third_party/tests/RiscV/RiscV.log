@@ -68,7 +68,7 @@ case_stmt                                             24
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                            4582
+constant                                            4619
 cont_assign                                          265
 delay_control                                          2
 design                                                 1
@@ -85,7 +85,7 @@ if_stmt                                               41
 include_file_info                                     40
 indexed_part_select                                   35
 initial                                                3
-int_typespec                                          31
+int_typespec                                          68
 int_var                                                4
 integer_typespec                                       8
 integer_var                                            4
@@ -102,8 +102,8 @@ part_select                                           55
 port                                                 740
 range                                               1012
 ref_module                                            15
-ref_obj                                             2415
-ref_typespec                                        1408
+ref_obj                                             2378
+ref_typespec                                        1445
 ref_var                                                3
 sys_func_call                                         22
 task                                                   9

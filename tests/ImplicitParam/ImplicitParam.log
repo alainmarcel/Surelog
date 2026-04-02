@@ -297,7 +297,7 @@ design: (work@top)
     \_constant: , line:3:33, endln:3:46
       |vpiParent:
       \_param_assign: , line:3:29, endln:3:46
-      |vpiDecompile:64'h80000000
+      |vpiDecompile:32'h80000000
       |vpiSize:64
       |HEX:80000000
       |vpiTypespec:

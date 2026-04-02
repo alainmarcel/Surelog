@@ -262,7 +262,7 @@ begin                                                246
 bit_select                                          1789
 case_item                                            395
 case_stmt                                             26
-constant                                           15497
+constant                                           17173
 cont_assign                                          685
 delay_control                                          3
 design                                                 1
@@ -283,12 +283,12 @@ if_else                                               48
 if_stmt                                              187
 include_file_info                                     21
 initial                                               67
-int_typespec                                        1363
+int_typespec                                        1960
 integer_typespec                                      44
 integer_var                                           25
 io_decl                                               75
 logic_net                                           1793
-logic_typespec                                      2371
+logic_typespec                                      2367
 logic_var                                            230
 module_inst                                          100
 named_begin                                           18
@@ -298,10 +298,10 @@ param_assign                                        1234
 parameter                                           1407
 part_select                                         1027
 port                                                 939
-range                                               3200
+range                                               3745
 ref_module                                            18
-ref_obj                                             7308
-ref_typespec                                        5498
+ref_obj                                             6711
+ref_typespec                                        6091
 ref_var                                               15
 repeat                                                 4
 sys_func_call                                         28

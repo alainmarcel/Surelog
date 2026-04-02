@@ -4500,19 +4500,19 @@
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 always                                               342
-array_typespec                                       203
+array_typespec                                       187
 array_var                                            137
 assignment                                           768
 begin                                                990
 bit_select                                          5350
-bit_typespec                                        3204
+bit_typespec                                        3189
 bit_var                                                8
 case_item                                             16
 case_stmt                                              3
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                          139366
+constant                                          139229
 cont_assign                                         7919
 design                                                 1
 enum_const                                          8809
@@ -4532,7 +4532,7 @@ if_else                                              296
 if_stmt                                              264
 import_typespec                                       12
 indexed_part_select                                 1186
-int_typespec                                        7623
+int_typespec                                        7627
 int_var                                               28
 integer_typespec                                     141
 interface_array                                        6
@@ -4547,16 +4547,16 @@ module_array                                           3
 module_inst                                         3411
 module_typespec                                        3
 named_begin                                          127
-operation                                          34102
+operation                                          34070
 package                                                4
 param_assign                                       14185
 parameter                                          16354
 part_select                                          184
 port                                                9957
-range                                              21032
+range                                              21001
 ref_module                                           861
-ref_obj                                            33002
-ref_typespec                                       44228
+ref_obj                                            32997
+ref_typespec                                       44201
 return_stmt                                           20
 sys_func_call                                          2
 task                                                   9
@@ -4567,19 +4567,19 @@ while_stmt                                             1
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 always                                              1459
-array_typespec                                       203
+array_typespec                                       187
 array_var                                           4895
 assignment                                         29841
 begin                                              15959
 bit_select                                         48633
-bit_typespec                                        3204
+bit_typespec                                        3189
 bit_var                                             1448
 case_item                                          12352
 case_stmt                                           2316
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                          153428
+constant                                          158090
 cont_assign                                        24866
 design                                                 1
 enum_const                                          8814
@@ -4599,7 +4599,7 @@ if_else                                             4726
 if_stmt                                             1050
 import_typespec                                       12
 indexed_part_select                                 2325
-int_typespec                                        7623
+int_typespec                                        7627
 int_var                                              908
 integer_typespec                                     141
 interface_array                                        6
@@ -4614,16 +4614,16 @@ module_array                                           3
 module_inst                                         4566
 module_typespec                                        3
 named_begin                                          127
-operation                                          92511
+operation                                          92479
 package                                                4
 param_assign                                       23132
 parameter                                          18084
 part_select                                         2510
 port                                               24314
-range                                              21196
+range                                              21165
 ref_module                                           861
-ref_obj                                           190337
-ref_typespec                                      144267
+ref_obj                                           190330
+ref_typespec                                      144224
 return_stmt                                         7523
 sys_func_call                                          2
 task                                                  18
@@ -4631,3 +4631,9 @@ unsupported_typespec                                   1
 var_select                                          2484
 while_stmt                                            84
 === UHDM Object Stats End ===
+[INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/Rggen/slpp_all/surelog.uhdm ...
+[  FATAL] : 0
+[ SYNTAX] : 0
+[  ERROR] : 0
+[WARNING] : 20
+[   NOTE] : 5

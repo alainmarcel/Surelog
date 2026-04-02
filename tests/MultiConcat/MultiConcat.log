@@ -1673,11 +1673,11 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 0.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-constant                                             897
+constant                                             896
 design                                                 1
 enum_const                                            58
 enum_typespec                                          8
-int_typespec                                          33
+int_typespec                                          34
 logic_typespec                                        32
 module_inst                                            2
 operation                                           1038
@@ -1686,16 +1686,16 @@ packed_array_typespec                                 10
 param_assign                                          36
 parameter                                             36
 range                                                 46
-ref_obj                                              615
-ref_typespec                                         107
+ref_obj                                              614
+ref_typespec                                         108
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-constant                                             897
+constant                                             896
 design                                                 1
 enum_const                                            58
 enum_typespec                                          8
-int_typespec                                          33
+int_typespec                                          34
 logic_typespec                                        32
 module_inst                                            2
 operation                                           1038
@@ -1704,8 +1704,8 @@ packed_array_typespec                                 10
 param_assign                                          36
 parameter                                             36
 range                                                 46
-ref_obj                                              615
-ref_typespec                                         107
+ref_obj                                              614
+ref_typespec                                         108
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/MultiConcat/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/MultiConcat/slpp_all/checker/surelog.chk.html ...
@@ -7664,12 +7664,19 @@ design: (unnamed)
       \_range: , line:77:22, endln:77:41
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (FsmStateWidth), line:77:23, endln:77:36
+      \_constant: , line:77:23, endln:77:36
         |vpiParent:
         \_operation: , line:77:23, endln:77:38
-        |vpiName:FsmStateWidth
-        |vpiActual:
-        \_parameter: (lc_ctrl_pkg::FsmStateWidth), line:76:18, endln:76:31
+        |vpiDecompile:16
+        |vpiSize:64
+        |UINT:16
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:77:23, endln:77:36
+          |vpiActual:
+          \_int_typespec: , line:76:14, endln:76:17
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:77:37, endln:77:38
         |vpiParent:
@@ -7686,6 +7693,12 @@ design: (unnamed)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:76:14, endln:76:17
+  |vpiParent:
+  \_ref_typespec: 
+  |vpiInstance:
+  \_package: lc_ctrl_pkg (lc_ctrl_pkg::), file:${SURELOG_DIR}/tests/MultiConcat/dut.sv, line:2:1, endln:172:25
+  |vpiSigned:1
 \_packed_array_typespec: , line:132:13, endln:132:59
   |vpiParent:
   \_parameter: (lc_ctrl_pkg::TransTokenIdxMatrix), line:132:60, endln:132:79

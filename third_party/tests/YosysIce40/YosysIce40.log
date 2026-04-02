@@ -348,7 +348,7 @@ case_stmt                                            117
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                           19083
+constant                                           19420
 cont_assign                                          825
 design                                                 1
 enum_const                                             5
@@ -365,9 +365,9 @@ if_else                                              182
 if_stmt                                              445
 indexed_part_select                                    4
 initial                                               12
-int_typespec                                         345
+int_typespec                                         453
 int_var                                                4
-integer_typespec                                      33
+integer_typespec                                      46
 integer_var                                            2
 io_decl                                               11
 logic_net                                           4341
@@ -382,10 +382,10 @@ param_assign                                         346
 parameter                                            346
 part_select                                         1050
 port                                                2253
-range                                               3398
+range                                               3506
 ref_module                                            54
-ref_obj                                             9375
-ref_typespec                                        5865
+ref_obj                                             9254
+ref_typespec                                        5986
 ref_var                                                2
 sys_func_call                                        101
 task                                                  10

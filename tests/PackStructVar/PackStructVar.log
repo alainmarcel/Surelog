@@ -16,11 +16,11 @@
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 array_typespec                                         1
 array_var                                              1
-constant                                             127
+constant                                             132
 design                                                 1
 enum_const                                             4
 enum_typespec                                          2
-int_typespec                                          53
+int_typespec                                          58
 logic_net                                              1
 logic_typespec                                        20
 module_inst                                            7
@@ -29,8 +29,8 @@ package                                                4
 param_assign                                          44
 parameter                                             44
 range                                                 15
-ref_obj                                               13
-ref_typespec                                         120
+ref_obj                                                8
+ref_typespec                                         125
 struct_typespec                                        2
 struct_var                                             1
 sys_func_call                                          8
@@ -40,11 +40,11 @@ typespec_member                                       20
 === UHDM Object Stats Begin (Elaborated Model) ===
 array_typespec                                         1
 array_var                                              1
-constant                                             127
+constant                                             132
 design                                                 1
 enum_const                                             4
 enum_typespec                                          2
-int_typespec                                          53
+int_typespec                                          58
 logic_net                                              1
 logic_typespec                                        20
 module_inst                                            7
@@ -53,8 +53,8 @@ package                                                4
 param_assign                                          44
 parameter                                             44
 range                                                 15
-ref_obj                                               13
-ref_typespec                                         120
+ref_obj                                                8
+ref_typespec                                         125
 struct_typespec                                        2
 struct_var                                             1
 sys_func_call                                          8
@@ -363,13 +363,20 @@ design: (work@flash_ctrl)
       \_param_assign: , line:7:17, endln:7:34
       |vpiOpType:23
       |vpiOperand:
-      \_ref_obj: (top_pkg::TL_DW), line:7:25, endln:7:30
+      \_constant: , line:7:25, endln:7:30
         |vpiParent:
         \_operation: , line:7:25, endln:7:33
-        |vpiName:TL_DW
-        |vpiFullName:top_pkg::TL_DW
-        |vpiActual:
-        \_parameter: (top_pkg::TL_DW), line:3:17, endln:3:22
+        |vpiDecompile:32
+        |vpiSize:64
+        |UINT:32
+        |vpiTypespec:
+        \_ref_typespec: (top_pkg)
+          |vpiParent:
+          \_constant: , line:7:25, endln:7:30
+          |vpiFullName:top_pkg
+          |vpiActual:
+          \_int_typespec: , line:3:13, endln:3:16
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:7:32, endln:7:33
         |vpiParent:
@@ -1534,6 +1541,12 @@ design: (work@flash_ctrl)
 \_int_typespec: , line:7:13, endln:7:16
   |vpiParent:
   \_parameter: (top_pkg::TL_DBW), line:7:17, endln:7:23
+  |vpiInstance:
+  \_package: top_pkg (top_pkg::), file:${SURELOG_DIR}/tests/PackStructVar/dut.sv, line:1:1, endln:13:11
+  |vpiSigned:1
+\_int_typespec: , line:3:13, endln:3:16
+  |vpiParent:
+  \_ref_typespec: (top_pkg)
   |vpiInstance:
   \_package: top_pkg (top_pkg::), file:${SURELOG_DIR}/tests/PackStructVar/dut.sv, line:1:1, endln:13:11
   |vpiSigned:1

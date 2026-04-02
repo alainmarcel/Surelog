@@ -640,12 +640,12 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 begin                                                  1
-bit_select                                             3
+bit_select                                             2
 bit_typespec                                           3
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                             142
+constant                                             143
 design                                                 1
 enum_const                                             8
 enum_typespec                                          4
@@ -656,38 +656,38 @@ gen_scope                                              2
 gen_scope_array                                        2
 hier_path                                             26
 import_typespec                                        1
-int_typespec                                          23
+int_typespec                                          26
 int_var                                                4
-integer_typespec                                      78
+integer_typespec                                      76
 io_decl                                               11
 logic_net                                              1
 logic_typespec                                         2
 logic_var                                              2
 module_inst                                            7
-operation                                             96
+operation                                             95
 package                                                4
 packed_array_typespec                                  8
 param_assign                                          48
-parameter                                             61
+parameter                                             60
 range                                                 14
 ref_module                                             2
-ref_obj                                               78
-ref_typespec                                         268
+ref_obj                                               74
+ref_typespec                                         267
 string_typespec                                       35
-struct_typespec                                       78
+struct_typespec                                       76
 tagged_pattern                                        35
 task                                                   9
-typespec_member                                       78
+typespec_member                                       76
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 begin                                                  1
-bit_select                                             3
+bit_select                                             2
 bit_typespec                                           3
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                             142
+constant                                             143
 design                                                 1
 enum_const                                            13
 enum_typespec                                          5
@@ -698,28 +698,28 @@ gen_scope                                              3
 gen_scope_array                                        3
 hier_path                                             26
 import_typespec                                        1
-int_typespec                                          23
+int_typespec                                          26
 int_var                                                4
-integer_typespec                                      78
+integer_typespec                                      76
 io_decl                                               22
 logic_net                                              1
 logic_typespec                                         2
 logic_var                                              2
 module_inst                                            8
-operation                                             96
+operation                                             95
 package                                                4
 packed_array_typespec                                  8
 param_assign                                          48
-parameter                                             61
+parameter                                             60
 range                                                 14
 ref_module                                             2
-ref_obj                                               78
-ref_typespec                                         273
+ref_obj                                               74
+ref_typespec                                         272
 string_typespec                                       35
-struct_typespec                                       78
+struct_typespec                                       76
 tagged_pattern                                        35
 task                                                  18
-typespec_member                                       78
+typespec_member                                       76
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/BlackParrotStructParam/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/BlackParrotStructParam/slpp_all/checker/surelog.chk.html ...
@@ -992,6 +992,7 @@ design: (work@top)
       |vpiParent:
       \_param_assign: , line:42:41, endln:46:4
       |vpiOpType:33
+      |vpiReordered:1
       |vpiOperand:
       \_ref_obj: (bp_common_aviary_pkg::bp_multicore_cce_ucode_half_cfg_p), line:45:5, endln:45:38
         |vpiParent:
@@ -2546,7 +2547,7 @@ design: (work@top)
     |vpiRhs:
     \_operation: , line:33:7, endln:40:10
       |vpiParent:
-      \_param_assign: , line:57:30, endln:57:70
+      \_param_assign: , line:32:28, endln:40:10
       |vpiTypespec:
       \_ref_typespec: (work@top)
         |vpiParent:
@@ -2947,13 +2948,20 @@ design: (work@top)
     |vpiParent:
     \_packed_array_typespec: , line:42:12, endln:42:40
     |vpiLeftRange:
-    \_ref_obj: (bp_common_aviary_pkg::all_cfgs_gp::max_cfgs), line:42:29, endln:42:37
+    \_constant: , line:42:29, endln:42:37
       |vpiParent:
       \_range: , line:42:28, endln:42:40
-      |vpiName:max_cfgs
-      |vpiFullName:bp_common_aviary_pkg::all_cfgs_gp::max_cfgs
-      |vpiActual:
-      \_parameter: (bp_common_aviary_pkg::max_cfgs), line:3:14, endln:3:22
+      |vpiDecompile:1
+      |vpiSize:64
+      |UINT:1
+      |vpiTypespec:
+      \_ref_typespec: (bp_common_aviary_pkg::all_cfgs_gp)
+        |vpiParent:
+        \_constant: , line:42:29, endln:42:37
+        |vpiFullName:bp_common_aviary_pkg::all_cfgs_gp
+        |vpiActual:
+        \_int_typespec: , line:3:3, endln:3:29
+      |vpiConstType:9
     |vpiRightRange:
     \_constant: , line:42:38, endln:42:39
       |vpiParent:
@@ -2969,6 +2977,9 @@ design: (work@top)
     |vpiFullName:bp_common_aviary_pkg::all_cfgs_gp
     |vpiActual:
     \_struct_typespec: (bp_common_aviary_pkg::bp_proc_param_s), line:5:9, endln:8:4
+\_int_typespec: , line:3:3, endln:3:29
+  |vpiParent:
+  \_ref_typespec: (bp_common_aviary_pkg::all_cfgs_gp)
 \_bit_typespec: , line:48:15, endln:48:31
   |vpiInstance:
   \_package: bp_common_aviary_pkg (bp_common_aviary_pkg::), file:${SURELOG_DIR}/tests/BlackParrotStructParam/dut.sv, line:1:1, endln:53:11
@@ -2977,12 +2988,19 @@ design: (work@top)
     |vpiParent:
     \_bit_typespec: , line:48:15, endln:48:31
     |vpiLeftRange:
-    \_ref_obj: (max_cfgs), line:48:20, endln:48:28
+    \_constant: , line:48:20, endln:48:28
       |vpiParent:
       \_range: , line:48:19, endln:48:31
-      |vpiName:max_cfgs
-      |vpiActual:
-      \_parameter: (bp_common_aviary_pkg::max_cfgs), line:3:14, endln:3:22
+      |vpiDecompile:1
+      |vpiSize:64
+      |UINT:1
+      |vpiTypespec:
+      \_ref_typespec: 
+        |vpiParent:
+        \_constant: , line:48:20, endln:48:28
+        |vpiActual:
+        \_int_typespec: , line:3:3, endln:3:29
+      |vpiConstType:9
     |vpiRightRange:
     \_constant: , line:48:29, endln:48:30
       |vpiParent:
@@ -2991,6 +3009,9 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:3:3, endln:3:29
+  |vpiParent:
+  \_ref_typespec: 
 \_packed_array_typespec: , line:42:12, endln:42:40
   |vpiParent:
   \_ref_typespec: (work@top.all_cfgs_gp)
@@ -3793,36 +3814,6 @@ design: (work@top)
 \_int_typespec: , line:3:3, endln:3:29
   |vpiParent:
   \_ref_typespec: (work@top)
-\_struct_typespec: (bp_common_aviary_pkg::bp_proc_param_s), line:5:9, endln:8:4
-  |vpiParent:
-  \_ref_typespec: (work@top)
-  |vpiName:bp_common_aviary_pkg::bp_proc_param_s
-  |vpiInstance:
-  \_package: bp_common_aviary_pkg (bp_common_aviary_pkg::), file:${SURELOG_DIR}/tests/BlackParrotStructParam/dut.sv, line:1:1, endln:53:11
-  |vpiPacked:1
-  |vpiTypespecMember:
-  \_typespec_member: (cc_x_dim), line:7:13, endln:7:21
-    |vpiParent:
-    \_struct_typespec: (bp_common_aviary_pkg::bp_proc_param_s), line:5:9, endln:8:4
-    |vpiName:cc_x_dim
-    |vpiTypespec:
-    \_ref_typespec: (work@top.bp_common_aviary_pkg::bp_proc_param_s.cc_x_dim)
-      |vpiParent:
-      \_typespec_member: (cc_x_dim), line:7:13, endln:7:21
-      |vpiFullName:work@top.bp_common_aviary_pkg::bp_proc_param_s.cc_x_dim
-      |vpiActual:
-      \_integer_typespec: , line:7:5, endln:7:12
-    |vpiRefFile:${SURELOG_DIR}/tests/BlackParrotStructParam/dut.sv
-    |vpiRefLineNo:7
-    |vpiRefColumnNo:5
-    |vpiRefEndLineNo:7
-    |vpiRefEndColumnNo:12
-\_integer_typespec: , line:7:5, endln:7:12
-  |vpiParent:
-  \_ref_typespec: (work@top.bp_common_aviary_pkg::bp_proc_param_s.cc_x_dim)
-  |vpiInstance:
-  \_package: bp_common_aviary_pkg (bp_common_aviary_pkg::), file:${SURELOG_DIR}/tests/BlackParrotStructParam/dut.sv, line:1:1, endln:53:11
-  |vpiSigned:1
 \_struct_typespec: (bp_common_aviary_pkg::bp_proc_param_s), line:5:9, endln:8:4
   |vpiParent:
   \_ref_typespec: (work@top)

@@ -1491,7 +1491,7 @@ bit_select                                         14968
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                           64872
+constant                                           66024
 cont_assign                                         3671
 design                                                 1
 enum_const                                            10

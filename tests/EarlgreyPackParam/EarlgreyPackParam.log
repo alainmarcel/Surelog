@@ -436,7 +436,7 @@ ref_typespec                                          59
 assignment                                             1
 bit_select                                             4
 bit_typespec                                          15
-constant                                             123
+constant                                             135
 design                                                 1
 gen_for                                                1
 gen_if                                                 2
@@ -1111,20 +1111,8 @@ design: (work@test)
             \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[0].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
             |vpiOverriden:1
             |vpiRhs:
-            \_constant: , line:15:27, endln:15:31
-              |vpiParent:
-              \_param_assign: , line:15:17, endln:15:31
-              |vpiDecompile:1'b1
-              |vpiSize:1
+            \_constant: 
               |BIN:1
-              |vpiTypespec:
-              \_ref_typespec: (work@top.u_aes.gen_alert_tx[0].alert_sender)
-                |vpiParent:
-                \_constant: , line:15:27, endln:15:31
-                |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender
-                |vpiActual:
-                \_bit_typespec: , line:15:13, endln:15:16
-              |vpiConstType:3
             |vpiLhs:
             \_parameter: (work@top.u_aes.gen_alert_tx[0].alert_sender.AsyncOn), line:15:17, endln:15:24
           |vpiParamAssign:
@@ -1133,20 +1121,8 @@ design: (work@test)
             \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[0].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
             |vpiOverriden:1
             |vpiRhs:
-            \_constant: , line:16:27, endln:16:31
-              |vpiParent:
-              \_param_assign: , line:16:17, endln:16:31
-              |vpiDecompile:0
-              |vpiSize:1
-              |UINT:0
-              |vpiTypespec:
-              \_ref_typespec: (work@top.u_aes.gen_alert_tx[0].alert_sender)
-                |vpiParent:
-                \_constant: , line:16:27, endln:16:31
-                |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender
-                |vpiActual:
-                \_bit_typespec: , line:16:13, endln:16:16
-              |vpiConstType:9
+            \_constant: 
+              |BIN:0
             |vpiLhs:
             \_parameter: (work@top.u_aes.gen_alert_tx[0].alert_sender.IsFatal), line:16:17, endln:16:24
           |vpiDefName:work@prim_alert_sender
@@ -1178,20 +1154,8 @@ design: (work@test)
               \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
               |vpiOverriden:1
               |vpiRhs:
-              \_constant: , line:32:27, endln:32:31
-                |vpiParent:
-                \_param_assign: , line:32:17, endln:32:31
-                |vpiDecompile:1'b1
-                |vpiSize:1
-                |BIN:1
-                |vpiTypespec:
-                \_ref_typespec: (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack)
-                  |vpiParent:
-                  \_constant: , line:32:27, endln:32:31
-                  |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack
-                  |vpiActual:
-                  \_bit_typespec: , line:32:13, endln:32:16
-                |vpiConstType:3
+              \_constant: 
+                |BIN:0
               |vpiLhs:
               \_parameter: (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
             |vpiDefName:work@prim_diff_decode
@@ -1296,20 +1260,8 @@ design: (work@test)
             \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[1].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
             |vpiOverriden:1
             |vpiRhs:
-            \_constant: , line:15:27, endln:15:31
-              |vpiParent:
-              \_param_assign: , line:15:17, endln:15:31
-              |vpiDecompile:1'b1
-              |vpiSize:1
+            \_constant: 
               |BIN:1
-              |vpiTypespec:
-              \_ref_typespec: (work@top.u_aes.gen_alert_tx[1].alert_sender)
-                |vpiParent:
-                \_constant: , line:15:27, endln:15:31
-                |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender
-                |vpiActual:
-                \_bit_typespec: , line:15:13, endln:15:16
-              |vpiConstType:3
             |vpiLhs:
             \_parameter: (work@top.u_aes.gen_alert_tx[1].alert_sender.AsyncOn), line:15:17, endln:15:24
           |vpiParamAssign:
@@ -1318,20 +1270,8 @@ design: (work@test)
             \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[1].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
             |vpiOverriden:1
             |vpiRhs:
-            \_constant: , line:16:27, endln:16:31
-              |vpiParent:
-              \_param_assign: , line:16:17, endln:16:31
-              |vpiDecompile:1
-              |vpiSize:1
-              |UINT:1
-              |vpiTypespec:
-              \_ref_typespec: (work@top.u_aes.gen_alert_tx[1].alert_sender)
-                |vpiParent:
-                \_constant: , line:16:27, endln:16:31
-                |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender
-                |vpiActual:
-                \_bit_typespec: , line:16:13, endln:16:16
-              |vpiConstType:9
+            \_constant: 
+              |BIN:0
             |vpiLhs:
             \_parameter: (work@top.u_aes.gen_alert_tx[1].alert_sender.IsFatal), line:16:17, endln:16:24
           |vpiDefName:work@prim_alert_sender
@@ -1363,20 +1303,8 @@ design: (work@test)
               \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
               |vpiOverriden:1
               |vpiRhs:
-              \_constant: , line:32:27, endln:32:31
-                |vpiParent:
-                \_param_assign: , line:32:17, endln:32:31
-                |vpiDecompile:1'b1
-                |vpiSize:1
-                |BIN:1
-                |vpiTypespec:
-                \_ref_typespec: (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack)
-                  |vpiParent:
-                  \_constant: , line:32:27, endln:32:31
-                  |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack
-                  |vpiActual:
-                  \_bit_typespec: , line:32:13, endln:32:16
-                |vpiConstType:3
+              \_constant: 
+                |BIN:0
               |vpiLhs:
               \_parameter: (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
             |vpiDefName:work@prim_diff_decode
@@ -1481,20 +1409,8 @@ design: (work@test)
             \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[2].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
             |vpiOverriden:1
             |vpiRhs:
-            \_constant: , line:15:27, endln:15:31
-              |vpiParent:
-              \_param_assign: , line:15:17, endln:15:31
-              |vpiDecompile:1'b0
-              |vpiSize:1
-              |BIN:0
-              |vpiTypespec:
-              \_ref_typespec: (work@top.u_aes.gen_alert_tx[2].alert_sender)
-                |vpiParent:
-                \_constant: , line:15:27, endln:15:31
-                |vpiFullName:work@top.u_aes.gen_alert_tx[2].alert_sender
-                |vpiActual:
-                \_bit_typespec: , line:15:13, endln:15:16
-              |vpiConstType:3
+            \_constant: 
+              |BIN:1
             |vpiLhs:
             \_parameter: (work@top.u_aes.gen_alert_tx[2].alert_sender.AsyncOn), line:15:17, endln:15:24
           |vpiParamAssign:
@@ -1503,20 +1419,8 @@ design: (work@test)
             \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[2].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
             |vpiOverriden:1
             |vpiRhs:
-            \_constant: , line:16:27, endln:16:31
-              |vpiParent:
-              \_param_assign: , line:16:17, endln:16:31
-              |vpiDecompile:0
-              |vpiSize:1
-              |UINT:0
-              |vpiTypespec:
-              \_ref_typespec: (work@top.u_aes.gen_alert_tx[2].alert_sender)
-                |vpiParent:
-                \_constant: , line:16:27, endln:16:31
-                |vpiFullName:work@top.u_aes.gen_alert_tx[2].alert_sender
-                |vpiActual:
-                \_bit_typespec: , line:16:13, endln:16:16
-              |vpiConstType:9
+            \_constant: 
+              |BIN:0
             |vpiLhs:
             \_parameter: (work@top.u_aes.gen_alert_tx[2].alert_sender.IsFatal), line:16:17, endln:16:24
           |vpiDefName:work@prim_alert_sender
@@ -1548,20 +1452,8 @@ design: (work@test)
               \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[2].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
               |vpiOverriden:1
               |vpiRhs:
-              \_constant: , line:32:27, endln:32:31
-                |vpiParent:
-                \_param_assign: , line:32:17, endln:32:31
-                |vpiDecompile:1'b0
-                |vpiSize:1
+              \_constant: 
                 |BIN:0
-                |vpiTypespec:
-                \_ref_typespec: (work@top.u_aes.gen_alert_tx[2].alert_sender.dec_ack)
-                  |vpiParent:
-                  \_constant: , line:32:27, endln:32:31
-                  |vpiFullName:work@top.u_aes.gen_alert_tx[2].alert_sender.dec_ack
-                  |vpiActual:
-                  \_bit_typespec: , line:32:13, endln:32:16
-                |vpiConstType:3
               |vpiLhs:
               \_parameter: (work@top.u_aes.gen_alert_tx[2].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
             |vpiDefName:work@prim_diff_decode
@@ -1635,20 +1527,8 @@ design: (work@test)
             \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[3].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
             |vpiOverriden:1
             |vpiRhs:
-            \_constant: , line:15:27, endln:15:31
-              |vpiParent:
-              \_param_assign: , line:15:17, endln:15:31
-              |vpiDecompile:1'b0
-              |vpiSize:1
-              |BIN:0
-              |vpiTypespec:
-              \_ref_typespec: (work@top.u_aes.gen_alert_tx[3].alert_sender)
-                |vpiParent:
-                \_constant: , line:15:27, endln:15:31
-                |vpiFullName:work@top.u_aes.gen_alert_tx[3].alert_sender
-                |vpiActual:
-                \_bit_typespec: , line:15:13, endln:15:16
-              |vpiConstType:3
+            \_constant: 
+              |BIN:1
             |vpiLhs:
             \_parameter: (work@top.u_aes.gen_alert_tx[3].alert_sender.AsyncOn), line:15:17, endln:15:24
           |vpiParamAssign:
@@ -1657,20 +1537,8 @@ design: (work@test)
             \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[3].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
             |vpiOverriden:1
             |vpiRhs:
-            \_constant: , line:16:27, endln:16:31
-              |vpiParent:
-              \_param_assign: , line:16:17, endln:16:31
-              |vpiDecompile:1
-              |vpiSize:1
-              |UINT:1
-              |vpiTypespec:
-              \_ref_typespec: (work@top.u_aes.gen_alert_tx[3].alert_sender)
-                |vpiParent:
-                \_constant: , line:16:27, endln:16:31
-                |vpiFullName:work@top.u_aes.gen_alert_tx[3].alert_sender
-                |vpiActual:
-                \_bit_typespec: , line:16:13, endln:16:16
-              |vpiConstType:9
+            \_constant: 
+              |BIN:0
             |vpiLhs:
             \_parameter: (work@top.u_aes.gen_alert_tx[3].alert_sender.IsFatal), line:16:17, endln:16:24
           |vpiDefName:work@prim_alert_sender
@@ -1702,20 +1570,8 @@ design: (work@test)
               \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
               |vpiOverriden:1
               |vpiRhs:
-              \_constant: , line:32:27, endln:32:31
-                |vpiParent:
-                \_param_assign: , line:32:17, endln:32:31
-                |vpiDecompile:1'b0
-                |vpiSize:1
+              \_constant: 
                 |BIN:0
-                |vpiTypespec:
-                \_ref_typespec: (work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack)
-                  |vpiParent:
-                  \_constant: , line:32:27, endln:32:31
-                  |vpiFullName:work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack
-                  |vpiActual:
-                  \_bit_typespec: , line:32:13, endln:32:16
-                |vpiConstType:3
               |vpiLhs:
               \_parameter: (work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
             |vpiDefName:work@prim_diff_decode
@@ -1845,102 +1701,6 @@ design: (work@test)
 \_bit_typespec: , line:32:13, endln:32:16
   |vpiParent:
   \_parameter: (work@prim_diff_decode.AsyncOn), line:32:17, endln:32:24
-\_param_assign: , line:15:17, endln:15:31
-  |vpiParent:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[0].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:15:27, endln:15:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[0].alert_sender.AsyncOn), line:15:17, endln:15:24
-\_param_assign: , line:16:17, endln:16:31
-  |vpiParent:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[0].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:16:27, endln:16:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[0].alert_sender.IsFatal), line:16:17, endln:16:24
-\_param_assign: , line:32:17, endln:32:31
-  |vpiParent:
-  \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:32:27, endln:32:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
-\_param_assign: , line:15:17, endln:15:31
-  |vpiParent:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[1].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:15:27, endln:15:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[1].alert_sender.AsyncOn), line:15:17, endln:15:24
-\_param_assign: , line:16:17, endln:16:31
-  |vpiParent:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[1].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:16:27, endln:16:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[1].alert_sender.IsFatal), line:16:17, endln:16:24
-\_param_assign: , line:32:17, endln:32:31
-  |vpiParent:
-  \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:32:27, endln:32:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
-\_param_assign: , line:15:17, endln:15:31
-  |vpiParent:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[2].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:15:27, endln:15:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[2].alert_sender.AsyncOn), line:15:17, endln:15:24
-\_param_assign: , line:16:17, endln:16:31
-  |vpiParent:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[2].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:16:27, endln:16:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[2].alert_sender.IsFatal), line:16:17, endln:16:24
-\_param_assign: , line:32:17, endln:32:31
-  |vpiParent:
-  \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[2].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:32:27, endln:32:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[2].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
-\_param_assign: , line:15:17, endln:15:31
-  |vpiParent:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[3].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:15:27, endln:15:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[3].alert_sender.AsyncOn), line:15:17, endln:15:24
-\_param_assign: , line:16:17, endln:16:31
-  |vpiParent:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[3].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:16:27, endln:16:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[3].alert_sender.IsFatal), line:16:17, endln:16:24
-\_param_assign: , line:32:17, endln:32:31
-  |vpiParent:
-  \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-  |vpiOverriden:1
-  |vpiRhs:
-  \_constant: , line:32:27, endln:32:31
-  |vpiLhs:
-  \_parameter: (work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
 \_logic_typespec: , line:50:14, endln:50:27
   |vpiParent:
   \_ref_typespec: (work@top.u_aes.AlertAsyncOn)
@@ -1978,83 +1738,6 @@ design: (work@test)
       |UINT:0
       |vpiConstType:9
 \_int_typespec: 
-\_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[0].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiParent:
-  \_gen_scope: (work@top.u_aes.gen_alert_tx[0]), line:52:35, endln:58:6
-  |vpiName:alert_sender
-  |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[0].alert_sender.AsyncOn), line:15:17, endln:15:24
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[0].alert_sender.IsFatal), line:16:17, endln:16:24
-  |vpiParamAssign:
-  \_param_assign: , line:15:17, endln:15:31
-  |vpiParamAssign:
-  \_param_assign: , line:16:17, endln:16:31
-  |vpiDefName:work@prim_alert_sender
-  |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-  |vpiDefLineNo:13
-  |vpiModule:
-  \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-    |vpiParent:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[0].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-    |vpiName:dec_ack
-    |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack
-    |vpiParameter:
-    \_parameter: (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
-    |vpiParamAssign:
-    \_param_assign: , line:32:17, endln:32:31
-    |vpiDefName:work@prim_diff_decode
-    |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-    |vpiDefLineNo:31
-    |vpiInstance:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[0].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-    |vpiGenScopeArray:
-    \_gen_scope_array: (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.gen_async), line:35:16, endln:37:6
-      |vpiParent:
-      \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-      |vpiName:gen_async
-      |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.gen_async
-      |vpiGenScope:
-      \_gen_scope: (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.gen_async), line:35:16, endln:37:6
-        |vpiParent:
-        \_gen_scope_array: (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.gen_async), line:35:16, endln:37:6
-        |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.gen_async
-        |vpiModule:
-        \_module_inst: work@GOOD (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.gen_async.good), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:36:6, endln:36:18
-          |vpiParent:
-          \_gen_scope: (work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.gen_async), line:35:16, endln:37:6
-          |vpiName:good
-          |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender.dec_ack.gen_async.good
-          |vpiDefName:work@GOOD
-          |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-          |vpiDefLineNo:28
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@top.u_aes.gen_alert_tx[0].alert_sender.gen_async_assert), line:23:18, endln:24:8
-    |vpiParent:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[0].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-    |vpiName:gen_async_assert
-    |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender.gen_async_assert
-    |vpiGenScope:
-    \_gen_scope: (work@top.u_aes.gen_alert_tx[0].alert_sender.gen_async_assert), line:23:18, endln:24:8
-      |vpiParent:
-      \_gen_scope_array: (work@top.u_aes.gen_alert_tx[0].alert_sender.gen_async_assert), line:23:18, endln:24:8
-      |vpiFullName:work@top.u_aes.gen_alert_tx[0].alert_sender.gen_async_assert
-\_gen_scope: (work@top.u_aes.gen_alert_tx[0]), line:52:35, endln:58:6
-  |vpiParent:
-  \_gen_scope_array: (work@top.u_aes.gen_alert_tx[0]), line:52:35, endln:58:6
-  |vpiFullName:work@top.u_aes.gen_alert_tx[0]
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[0].i), line:52:0
-  |vpiModule:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[0].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-\_gen_scope_array: (work@top.u_aes.gen_alert_tx[0]), line:52:35, endln:58:6
-  |vpiParent:
-  \_module_inst: work@aes (work@top.u_aes), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:43:3, endln:45:13
-  |vpiName:gen_alert_tx[0]
-  |vpiFullName:work@top.u_aes.gen_alert_tx[0]
-  |vpiGenScope:
-  \_gen_scope: (work@top.u_aes.gen_alert_tx[0]), line:52:35, endln:58:6
 \_bit_typespec: , line:15:13, endln:15:16
   |vpiParent:
   \_ref_typespec: (work@top.u_aes.gen_alert_tx[0].alert_sender.AsyncOn)
@@ -2083,83 +1766,6 @@ design: (work@test)
   |vpiActual:
   \_bit_typespec: , line:32:13, endln:32:16
 \_int_typespec: 
-\_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[1].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiParent:
-  \_gen_scope: (work@top.u_aes.gen_alert_tx[1]), line:52:35, endln:58:6
-  |vpiName:alert_sender
-  |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[1].alert_sender.AsyncOn), line:15:17, endln:15:24
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[1].alert_sender.IsFatal), line:16:17, endln:16:24
-  |vpiParamAssign:
-  \_param_assign: , line:15:17, endln:15:31
-  |vpiParamAssign:
-  \_param_assign: , line:16:17, endln:16:31
-  |vpiDefName:work@prim_alert_sender
-  |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-  |vpiDefLineNo:13
-  |vpiModule:
-  \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-    |vpiParent:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[1].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-    |vpiName:dec_ack
-    |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack
-    |vpiParameter:
-    \_parameter: (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
-    |vpiParamAssign:
-    \_param_assign: , line:32:17, endln:32:31
-    |vpiDefName:work@prim_diff_decode
-    |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-    |vpiDefLineNo:31
-    |vpiInstance:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[1].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-    |vpiGenScopeArray:
-    \_gen_scope_array: (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.gen_async), line:35:16, endln:37:6
-      |vpiParent:
-      \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-      |vpiName:gen_async
-      |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.gen_async
-      |vpiGenScope:
-      \_gen_scope: (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.gen_async), line:35:16, endln:37:6
-        |vpiParent:
-        \_gen_scope_array: (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.gen_async), line:35:16, endln:37:6
-        |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.gen_async
-        |vpiModule:
-        \_module_inst: work@GOOD (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.gen_async.good), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:36:6, endln:36:18
-          |vpiParent:
-          \_gen_scope: (work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.gen_async), line:35:16, endln:37:6
-          |vpiName:good
-          |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender.dec_ack.gen_async.good
-          |vpiDefName:work@GOOD
-          |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-          |vpiDefLineNo:28
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@top.u_aes.gen_alert_tx[1].alert_sender.gen_async_assert), line:23:18, endln:24:8
-    |vpiParent:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[1].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-    |vpiName:gen_async_assert
-    |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender.gen_async_assert
-    |vpiGenScope:
-    \_gen_scope: (work@top.u_aes.gen_alert_tx[1].alert_sender.gen_async_assert), line:23:18, endln:24:8
-      |vpiParent:
-      \_gen_scope_array: (work@top.u_aes.gen_alert_tx[1].alert_sender.gen_async_assert), line:23:18, endln:24:8
-      |vpiFullName:work@top.u_aes.gen_alert_tx[1].alert_sender.gen_async_assert
-\_gen_scope: (work@top.u_aes.gen_alert_tx[1]), line:52:35, endln:58:6
-  |vpiParent:
-  \_gen_scope_array: (work@top.u_aes.gen_alert_tx[1]), line:52:35, endln:58:6
-  |vpiFullName:work@top.u_aes.gen_alert_tx[1]
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[1].i), line:52:0
-  |vpiModule:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[1].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-\_gen_scope_array: (work@top.u_aes.gen_alert_tx[1]), line:52:35, endln:58:6
-  |vpiParent:
-  \_module_inst: work@aes (work@top.u_aes), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:43:3, endln:45:13
-  |vpiName:gen_alert_tx[1]
-  |vpiFullName:work@top.u_aes.gen_alert_tx[1]
-  |vpiGenScope:
-  \_gen_scope: (work@top.u_aes.gen_alert_tx[1]), line:52:35, endln:58:6
 \_bit_typespec: , line:15:13, endln:15:16
   |vpiParent:
   \_ref_typespec: (work@top.u_aes.gen_alert_tx[1].alert_sender.AsyncOn)
@@ -2188,52 +1794,6 @@ design: (work@test)
   |vpiActual:
   \_bit_typespec: , line:32:13, endln:32:16
 \_int_typespec: 
-\_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[2].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiParent:
-  \_gen_scope: (work@top.u_aes.gen_alert_tx[2]), line:52:35, endln:58:6
-  |vpiName:alert_sender
-  |vpiFullName:work@top.u_aes.gen_alert_tx[2].alert_sender
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[2].alert_sender.AsyncOn), line:15:17, endln:15:24
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[2].alert_sender.IsFatal), line:16:17, endln:16:24
-  |vpiParamAssign:
-  \_param_assign: , line:15:17, endln:15:31
-  |vpiParamAssign:
-  \_param_assign: , line:16:17, endln:16:31
-  |vpiDefName:work@prim_alert_sender
-  |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-  |vpiDefLineNo:13
-  |vpiModule:
-  \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[2].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-    |vpiParent:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[2].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-    |vpiName:dec_ack
-    |vpiFullName:work@top.u_aes.gen_alert_tx[2].alert_sender.dec_ack
-    |vpiParameter:
-    \_parameter: (work@top.u_aes.gen_alert_tx[2].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
-    |vpiParamAssign:
-    \_param_assign: , line:32:17, endln:32:31
-    |vpiDefName:work@prim_diff_decode
-    |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-    |vpiDefLineNo:31
-    |vpiInstance:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[2].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-\_gen_scope: (work@top.u_aes.gen_alert_tx[2]), line:52:35, endln:58:6
-  |vpiParent:
-  \_gen_scope_array: (work@top.u_aes.gen_alert_tx[2]), line:52:35, endln:58:6
-  |vpiFullName:work@top.u_aes.gen_alert_tx[2]
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[2].i), line:52:0
-  |vpiModule:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[2].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-\_gen_scope_array: (work@top.u_aes.gen_alert_tx[2]), line:52:35, endln:58:6
-  |vpiParent:
-  \_module_inst: work@aes (work@top.u_aes), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:43:3, endln:45:13
-  |vpiName:gen_alert_tx[2]
-  |vpiFullName:work@top.u_aes.gen_alert_tx[2]
-  |vpiGenScope:
-  \_gen_scope: (work@top.u_aes.gen_alert_tx[2]), line:52:35, endln:58:6
 \_bit_typespec: , line:15:13, endln:15:16
   |vpiParent:
   \_ref_typespec: (work@top.u_aes.gen_alert_tx[2].alert_sender.AsyncOn)
@@ -2262,52 +1822,6 @@ design: (work@test)
   |vpiActual:
   \_bit_typespec: , line:32:13, endln:32:16
 \_int_typespec: 
-\_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[3].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-  |vpiParent:
-  \_gen_scope: (work@top.u_aes.gen_alert_tx[3]), line:52:35, endln:58:6
-  |vpiName:alert_sender
-  |vpiFullName:work@top.u_aes.gen_alert_tx[3].alert_sender
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[3].alert_sender.AsyncOn), line:15:17, endln:15:24
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[3].alert_sender.IsFatal), line:16:17, endln:16:24
-  |vpiParamAssign:
-  \_param_assign: , line:15:17, endln:15:31
-  |vpiParamAssign:
-  \_param_assign: , line:16:17, endln:16:31
-  |vpiDefName:work@prim_alert_sender
-  |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-  |vpiDefLineNo:13
-  |vpiModule:
-  \_module_inst: work@prim_diff_decode (work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:19:3, endln:21:16
-    |vpiParent:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[3].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-    |vpiName:dec_ack
-    |vpiFullName:work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack
-    |vpiParameter:
-    \_parameter: (work@top.u_aes.gen_alert_tx[3].alert_sender.dec_ack.AsyncOn), line:32:17, endln:32:24
-    |vpiParamAssign:
-    \_param_assign: , line:32:17, endln:32:31
-    |vpiDefName:work@prim_diff_decode
-    |vpiDefFile:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv
-    |vpiDefLineNo:31
-    |vpiInstance:
-    \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[3].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-\_gen_scope: (work@top.u_aes.gen_alert_tx[3]), line:52:35, endln:58:6
-  |vpiParent:
-  \_gen_scope_array: (work@top.u_aes.gen_alert_tx[3]), line:52:35, endln:58:6
-  |vpiFullName:work@top.u_aes.gen_alert_tx[3]
-  |vpiParameter:
-  \_parameter: (work@top.u_aes.gen_alert_tx[3].i), line:52:0
-  |vpiModule:
-  \_module_inst: work@prim_alert_sender (work@top.u_aes.gen_alert_tx[3].alert_sender), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:53:5, endln:57:7
-\_gen_scope_array: (work@top.u_aes.gen_alert_tx[3]), line:52:35, endln:58:6
-  |vpiParent:
-  \_module_inst: work@aes (work@top.u_aes), file:${SURELOG_DIR}/tests/EarlgreyPackParam/dut.sv, line:43:3, endln:45:13
-  |vpiName:gen_alert_tx[3]
-  |vpiFullName:work@top.u_aes.gen_alert_tx[3]
-  |vpiGenScope:
-  \_gen_scope: (work@top.u_aes.gen_alert_tx[3]), line:52:35, endln:58:6
 \_bit_typespec: , line:15:13, endln:15:16
   |vpiParent:
   \_ref_typespec: (work@top.u_aes.gen_alert_tx[3].alert_sender.AsyncOn)

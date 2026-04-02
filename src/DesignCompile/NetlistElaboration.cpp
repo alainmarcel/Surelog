@@ -214,9 +214,21 @@ bool NetlistElaboration::elab_parameters_(ModuleInstance* instance,
     isMultidimensional = assign->isMultidimensional();
     const std::string_view paramName =
         assign->getFileContent()->SymName(assign->getParamId());
+    // Localparams cannot be overridden from outside their defining scope.
+    // Computed here (outside the if(mod_assign) block) so it's accessible
+    // when building inst_assign->Rhs below.
+    bool isLocalParam =
+        (mod_assign && mod_assign->Lhs() &&
+         mod_assign->Lhs()->UhdmType() == uhdmparameter &&
+         ((const parameter*)mod_assign->Lhs())->VpiLocalParam());
+    // Capture the definition-level Rhs (before any parent-scope override).
+    const any* defRhs = mod_assign ? mod_assign->Rhs() : nullptr;
     if (mod_assign) {
-      const any* rhs = mod_assign->Rhs();
-      expr* complexVal = instance->getComplexValue(paramName);
+      const any* rhs = defRhs;
+      // Skip getComplexValue() for localparams: it walks the parent netlist
+      // chain and would incorrectly inherit a same-named param from an ancestor.
+      expr* complexVal =
+          isLocalParam ? nullptr : instance->getComplexValue(paramName);
       if (complexVal) {
         rhs = complexVal;
       }
@@ -370,7 +382,15 @@ bool NetlistElaboration::elab_parameters_(ModuleInstance* instance,
       }
     }
     if ((overriden == false) && (!isMultidimensional)) {
-      Value* value = instance->getValue(paramName, m_exprBuilder);
+      // For localparams whose definition already reduced to a constant, use
+      // that constant directly rather than walking the parent instance chain
+      // (which would incorrectly inherit a same-named param from an ancestor).
+      Value* value = nullptr;
+      if (isLocalParam && defRhs && defRhs->UhdmType() == uhdmconstant) {
+        const constant* lc = (const constant*)defRhs;
+        value = m_exprBuilder.fromVpiValue(lc->VpiValue(), lc->VpiSize());
+      }
+      if (!value) value = instance->getValue(paramName, m_exprBuilder);
       if (value && value->isValid()) {
         constant* c = s.MakeConstant();
         const any* orig_p = mod_assign->Lhs();

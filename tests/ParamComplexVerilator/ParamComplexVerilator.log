@@ -459,7 +459,7 @@ bit_typespec                                           2
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              38
+constant                                              32
 design                                                 1
 enum_const                                             5
 enum_typespec                                          1
@@ -468,22 +468,22 @@ function                                               9
 int_typespec                                          11
 int_var                                                4
 io_decl                                               11
-logic_typespec                                        12
+logic_typespec                                         8
 logic_var                                              1
 module_inst                                            7
-operation                                              9
+operation                                              8
 package                                                4
 param_assign                                           6
 parameter                                              7
-range                                                  8
+range                                                  6
 ref_module                                             1
 ref_obj                                                5
-ref_typespec                                          49
-string_typespec                                       10
-struct_typespec                                        6
-tagged_pattern                                        10
+ref_typespec                                          41
+string_typespec                                        8
+struct_typespec                                        4
+tagged_pattern                                         8
 task                                                   9
-typespec_member                                       12
+typespec_member                                        8
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -491,7 +491,7 @@ bit_typespec                                           2
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              38
+constant                                              32
 design                                                 1
 enum_const                                            10
 enum_typespec                                          2
@@ -500,22 +500,22 @@ function                                              18
 int_typespec                                          11
 int_var                                                4
 io_decl                                               22
-logic_typespec                                        12
+logic_typespec                                         8
 logic_var                                              1
 module_inst                                            7
-operation                                              9
+operation                                              8
 package                                                4
 param_assign                                           6
 parameter                                              7
-range                                                  8
+range                                                  6
 ref_module                                             1
 ref_obj                                                5
-ref_typespec                                          54
-string_typespec                                       10
-struct_typespec                                        6
-tagged_pattern                                        10
+ref_typespec                                          46
+string_typespec                                        8
+struct_typespec                                        4
+tagged_pattern                                         8
 task                                                  18
-typespec_member                                       12
+typespec_member                                        8
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ParamComplexVerilator/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ParamComplexVerilator/slpp_all/checker/surelog.chk.html ...
@@ -1284,13 +1284,6 @@ design: (work@top)
     \_operation: , line:10:41, endln:10:58
       |vpiParent:
       \_param_assign: , line:10:30, endln:10:58
-      |vpiTypespec:
-      \_ref_typespec: (work@top)
-        |vpiParent:
-        \_operation: , line:10:41, endln:10:58
-        |vpiFullName:work@top
-        |vpiActual:
-        \_struct_typespec: (pkg::complex_t), line:2:11, endln:5:4
       |vpiOpType:75
       |vpiOperand:
       \_constant: , line:10:46, endln:10:50
@@ -1715,77 +1708,6 @@ design: (work@top)
   |vpiSigned:1
 \_int_typespec: , line:66:26, endln:66:29
   |vpiSigned:1
-\_struct_typespec: (pkg::complex_t), line:2:11, endln:5:4
-  |vpiParent:
-  \_ref_typespec: (work@top)
-  |vpiName:pkg::complex_t
-  |vpiInstance:
-  \_package: pkg (pkg::), file:${SURELOG_DIR}/tests/ParamComplexVerilator/dut.sv, line:1:1, endln:6:11
-  |vpiPacked:1
-  |vpiTypespecMember:
-  \_typespec_member: (a), line:3:11, endln:3:12
-    |vpiParent:
-    \_struct_typespec: (pkg::complex_t), line:2:11, endln:5:4
-    |vpiName:a
-    |vpiTypespec:
-    \_ref_typespec: (work@top.pkg::complex_t.a)
-      |vpiParent:
-      \_typespec_member: (a), line:3:11, endln:3:12
-      |vpiFullName:work@top.pkg::complex_t.a
-      |vpiActual:
-      \_logic_typespec: , line:3:5, endln:3:10
-    |vpiRefFile:${SURELOG_DIR}/tests/ParamComplexVerilator/dut.sv
-    |vpiRefLineNo:3
-    |vpiRefColumnNo:5
-    |vpiRefEndLineNo:3
-    |vpiRefEndColumnNo:10
-  |vpiTypespecMember:
-  \_typespec_member: (b), line:4:17, endln:4:18
-    |vpiParent:
-    \_struct_typespec: (pkg::complex_t), line:2:11, endln:5:4
-    |vpiName:b
-    |vpiTypespec:
-    \_ref_typespec: (work@top.pkg::complex_t.b)
-      |vpiParent:
-      \_typespec_member: (b), line:4:17, endln:4:18
-      |vpiFullName:work@top.pkg::complex_t.b
-      |vpiActual:
-      \_logic_typespec: , line:4:5, endln:4:16
-    |vpiRefFile:${SURELOG_DIR}/tests/ParamComplexVerilator/dut.sv
-    |vpiRefLineNo:4
-    |vpiRefColumnNo:5
-    |vpiRefEndLineNo:4
-    |vpiRefEndColumnNo:16
-\_logic_typespec: , line:3:5, endln:3:10
-  |vpiParent:
-  \_ref_typespec: (work@top.pkg::complex_t.a)
-  |vpiInstance:
-  \_package: pkg (pkg::), file:${SURELOG_DIR}/tests/ParamComplexVerilator/dut.sv, line:1:1, endln:6:11
-\_logic_typespec: , line:4:5, endln:4:16
-  |vpiParent:
-  \_ref_typespec: (work@top.pkg::complex_t.b)
-  |vpiInstance:
-  \_package: pkg (pkg::), file:${SURELOG_DIR}/tests/ParamComplexVerilator/dut.sv, line:1:1, endln:6:11
-  |vpiRange:
-  \_range: , line:4:11, endln:4:16
-    |vpiParent:
-    \_logic_typespec: , line:4:5, endln:4:16
-    |vpiLeftRange:
-    \_constant: , line:4:12, endln:4:13
-      |vpiParent:
-      \_range: , line:4:11, endln:4:16
-      |vpiDecompile:2
-      |vpiSize:64
-      |UINT:2
-      |vpiConstType:9
-    |vpiRightRange:
-    \_constant: , line:4:14, endln:4:15
-      |vpiParent:
-      \_range: , line:4:11, endln:4:16
-      |vpiDecompile:0
-      |vpiSize:64
-      |UINT:0
-      |vpiConstType:9
 \_operation: , line:10:41, endln:10:58
   |vpiParent:
   \_param_assign: , line:10:30, endln:10:58

@@ -283,7 +283,7 @@ assignment                                             1
 begin                                                  1
 bit_select                                            41
 bit_typespec                                           8
-constant                                             329
+constant                                             349
 design                                                 1
 gen_for                                                1
 gen_if                                                 1
@@ -977,20 +977,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[0]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b1
-          |vpiSize:1
+        \_constant: 
           |BIN:1
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[0])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[0]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[0].debug), line:26:16, endln:26:21
       |vpiGenScopeArray:
@@ -1059,20 +1047,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[1]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b1
-          |vpiSize:1
+        \_constant: 
           |BIN:1
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[1])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[1]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[1].debug), line:26:16, endln:26:21
       |vpiGenScopeArray:
@@ -1141,20 +1117,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[2]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b1
-          |vpiSize:1
+        \_constant: 
           |BIN:1
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[2])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[2]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[2].debug), line:26:16, endln:26:21
       |vpiGenScopeArray:
@@ -1223,20 +1187,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[3]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b1
-          |vpiSize:1
+        \_constant: 
           |BIN:1
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[3])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[3]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[3].debug), line:26:16, endln:26:21
       |vpiGenScopeArray:
@@ -1305,20 +1257,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[4]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[4])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[4]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[4].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -1367,20 +1307,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[5]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[5])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[5]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[5].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -1429,20 +1357,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[6]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[6])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[6]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[6].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -1491,20 +1407,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[7]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[7])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[7]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[7].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -1553,20 +1457,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[8]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[8])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[8]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[8].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -1615,20 +1507,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[9]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[9])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[9]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[9].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -1677,20 +1557,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[10]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[10])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[10]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[10].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -1739,20 +1607,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[11]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b1
-          |vpiSize:1
+        \_constant: 
           |BIN:1
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[11])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[11]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[11].debug), line:26:16, endln:26:21
       |vpiGenScopeArray:
@@ -1821,20 +1677,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[12]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b1
-          |vpiSize:1
+        \_constant: 
           |BIN:1
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[12])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[12]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[12].debug), line:26:16, endln:26:21
       |vpiGenScopeArray:
@@ -1903,20 +1747,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[13]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[13])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[13]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[13].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -1965,20 +1797,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[14]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[14])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[14]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[14].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -2027,20 +1847,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[15]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[15])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[15]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[15].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -2089,20 +1897,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[16]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[16])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[16]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[16].debug), line:26:16, endln:26:21
   |vpiGenScopeArray:
@@ -2151,20 +1947,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[17]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b1
-          |vpiSize:1
+        \_constant: 
           |BIN:1
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[17])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[17]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[17].debug), line:26:16, endln:26:21
       |vpiGenScopeArray:
@@ -2233,20 +2017,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[18]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b1
-          |vpiSize:1
+        \_constant: 
           |BIN:1
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[18])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[18]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[18].debug), line:26:16, endln:26:21
       |vpiGenScopeArray:
@@ -2315,20 +2087,8 @@ design: (work@alert_handler)
         |vpiParent:
         \_gen_scope: (work@alert_handler.gen_alerts[19]), line:25:42, endln:30:6
         |vpiRhs:
-        \_constant: , line:26:24, endln:26:34
-          |vpiParent:
-          \_param_assign: , line:26:16, endln:26:34
-          |vpiDecompile:1'b0
-          |vpiSize:1
+        \_constant: 
           |BIN:0
-          |vpiTypespec:
-          \_ref_typespec: (work@alert_handler.gen_alerts[19])
-            |vpiParent:
-            \_constant: , line:26:24, endln:26:34
-            |vpiFullName:work@alert_handler.gen_alerts[19]
-            |vpiActual:
-            \_int_typespec: , line:26:5, endln:26:34
-          |vpiConstType:3
         |vpiLhs:
         \_parameter: (work@alert_handler.gen_alerts[19].debug), line:26:16, endln:26:21
 \_weaklyReferenced:
@@ -2576,366 +2336,6 @@ design: (work@alert_handler)
   \_ref_typespec: (work@alert_handler)
   |vpiInstance:
   \_package: alert_pkg (alert_pkg::), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:9:1, endln:15:11
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[0]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[0].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[1]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[1].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[2]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[2].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[3]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[3].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[4]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[4].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[5]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[5].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[6]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[6].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[7]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[7].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[8]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[8].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[9]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[9].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[10]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[10].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[11]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[11].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[12]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[12].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[13]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[13].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[14]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[14].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[15]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[15].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[16]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[16].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[17]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[17].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[18]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[18].debug), line:26:16, endln:26:21
-\_int_typespec: , line:26:5, endln:26:34
-  |vpiRange:
-  \_range: 
-    |vpiParent:
-    \_int_typespec: , line:26:5, endln:26:34
-    |vpiLeftRange:
-    \_constant: 
-      |INT:0
-    |vpiRightRange:
-    \_constant: 
-      |INT:0
-\_param_assign: , line:26:16, endln:26:34
-  |vpiParent:
-  \_gen_scope: (work@alert_handler.gen_alerts[19]), line:25:42, endln:30:6
-  |vpiRhs:
-  \_constant: , line:26:24, endln:26:34
-  |vpiLhs:
-  \_parameter: (work@alert_handler.gen_alerts[19].debug), line:26:16, endln:26:21
 \_bit_typespec: , line:13:14, endln:13:31
   |vpiParent:
   \_ref_typespec: (work@alert_handler.AsyncOn)
@@ -2966,43 +2366,6 @@ design: (work@alert_handler)
   \_ref_typespec: (work@alert_handler.NAlerts)
   |vpiInstance:
   \_package: alert_pkg (alert_pkg::), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:9:1, endln:15:11
-\_gen_scope: (work@alert_handler.gen_alerts[0]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[0]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[0]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[0].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[0].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[0].genblk1), line:28:7, endln:28:13
-    |vpiParent:
-    \_gen_scope: (work@alert_handler.gen_alerts[0]), line:25:42, endln:30:6
-    |vpiName:genblk1
-    |vpiFullName:work@alert_handler.gen_alerts[0].genblk1
-    |vpiGenScope:
-    \_gen_scope: (work@alert_handler.gen_alerts[0].genblk1), line:28:7, endln:28:13
-      |vpiParent:
-      \_gen_scope_array: (work@alert_handler.gen_alerts[0].genblk1), line:28:7, endln:28:13
-      |vpiFullName:work@alert_handler.gen_alerts[0].genblk1
-      |vpiModule:
-      \_module_inst: work@M (work@alert_handler.gen_alerts[0].genblk1.u), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:28:7, endln:28:13
-        |vpiParent:
-        \_gen_scope: (work@alert_handler.gen_alerts[0].genblk1), line:28:7, endln:28:13
-        |vpiName:u
-        |vpiFullName:work@alert_handler.gen_alerts[0].genblk1.u
-        |vpiDefName:work@M
-        |vpiDefFile:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv
-        |vpiDefLineNo:17
-\_gen_scope_array: (work@alert_handler.gen_alerts[0]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[0]
-  |vpiFullName:work@alert_handler.gen_alerts[0]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[0]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[0].debug)
@@ -3027,43 +2390,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[1]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[1]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[1]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[1].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[1].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[1].genblk1), line:28:7, endln:28:13
-    |vpiParent:
-    \_gen_scope: (work@alert_handler.gen_alerts[1]), line:25:42, endln:30:6
-    |vpiName:genblk1
-    |vpiFullName:work@alert_handler.gen_alerts[1].genblk1
-    |vpiGenScope:
-    \_gen_scope: (work@alert_handler.gen_alerts[1].genblk1), line:28:7, endln:28:13
-      |vpiParent:
-      \_gen_scope_array: (work@alert_handler.gen_alerts[1].genblk1), line:28:7, endln:28:13
-      |vpiFullName:work@alert_handler.gen_alerts[1].genblk1
-      |vpiModule:
-      \_module_inst: work@M (work@alert_handler.gen_alerts[1].genblk1.u), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:28:7, endln:28:13
-        |vpiParent:
-        \_gen_scope: (work@alert_handler.gen_alerts[1].genblk1), line:28:7, endln:28:13
-        |vpiName:u
-        |vpiFullName:work@alert_handler.gen_alerts[1].genblk1.u
-        |vpiDefName:work@M
-        |vpiDefFile:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv
-        |vpiDefLineNo:17
-\_gen_scope_array: (work@alert_handler.gen_alerts[1]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[1]
-  |vpiFullName:work@alert_handler.gen_alerts[1]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[1]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[1].debug)
@@ -3088,43 +2414,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[2]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[2]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[2]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[2].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[2].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[2].genblk1), line:28:7, endln:28:13
-    |vpiParent:
-    \_gen_scope: (work@alert_handler.gen_alerts[2]), line:25:42, endln:30:6
-    |vpiName:genblk1
-    |vpiFullName:work@alert_handler.gen_alerts[2].genblk1
-    |vpiGenScope:
-    \_gen_scope: (work@alert_handler.gen_alerts[2].genblk1), line:28:7, endln:28:13
-      |vpiParent:
-      \_gen_scope_array: (work@alert_handler.gen_alerts[2].genblk1), line:28:7, endln:28:13
-      |vpiFullName:work@alert_handler.gen_alerts[2].genblk1
-      |vpiModule:
-      \_module_inst: work@M (work@alert_handler.gen_alerts[2].genblk1.u), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:28:7, endln:28:13
-        |vpiParent:
-        \_gen_scope: (work@alert_handler.gen_alerts[2].genblk1), line:28:7, endln:28:13
-        |vpiName:u
-        |vpiFullName:work@alert_handler.gen_alerts[2].genblk1.u
-        |vpiDefName:work@M
-        |vpiDefFile:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv
-        |vpiDefLineNo:17
-\_gen_scope_array: (work@alert_handler.gen_alerts[2]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[2]
-  |vpiFullName:work@alert_handler.gen_alerts[2]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[2]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[2].debug)
@@ -3149,43 +2438,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[3]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[3]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[3]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[3].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[3].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[3].genblk1), line:28:7, endln:28:13
-    |vpiParent:
-    \_gen_scope: (work@alert_handler.gen_alerts[3]), line:25:42, endln:30:6
-    |vpiName:genblk1
-    |vpiFullName:work@alert_handler.gen_alerts[3].genblk1
-    |vpiGenScope:
-    \_gen_scope: (work@alert_handler.gen_alerts[3].genblk1), line:28:7, endln:28:13
-      |vpiParent:
-      \_gen_scope_array: (work@alert_handler.gen_alerts[3].genblk1), line:28:7, endln:28:13
-      |vpiFullName:work@alert_handler.gen_alerts[3].genblk1
-      |vpiModule:
-      \_module_inst: work@M (work@alert_handler.gen_alerts[3].genblk1.u), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:28:7, endln:28:13
-        |vpiParent:
-        \_gen_scope: (work@alert_handler.gen_alerts[3].genblk1), line:28:7, endln:28:13
-        |vpiName:u
-        |vpiFullName:work@alert_handler.gen_alerts[3].genblk1.u
-        |vpiDefName:work@M
-        |vpiDefFile:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv
-        |vpiDefLineNo:17
-\_gen_scope_array: (work@alert_handler.gen_alerts[3]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[3]
-  |vpiFullName:work@alert_handler.gen_alerts[3]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[3]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[3].debug)
@@ -3210,23 +2462,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[4]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[4]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[4]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[4].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[4].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[4]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[4]
-  |vpiFullName:work@alert_handler.gen_alerts[4]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[4]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[4].debug)
@@ -3251,23 +2486,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[5]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[5]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[5]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[5].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[5].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[5]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[5]
-  |vpiFullName:work@alert_handler.gen_alerts[5]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[5]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[5].debug)
@@ -3292,23 +2510,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[6]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[6]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[6]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[6].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[6].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[6]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[6]
-  |vpiFullName:work@alert_handler.gen_alerts[6]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[6]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[6].debug)
@@ -3333,23 +2534,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[7]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[7]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[7]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[7].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[7].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[7]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[7]
-  |vpiFullName:work@alert_handler.gen_alerts[7]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[7]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[7].debug)
@@ -3374,23 +2558,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[8]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[8]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[8]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[8].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[8].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[8]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[8]
-  |vpiFullName:work@alert_handler.gen_alerts[8]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[8]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[8].debug)
@@ -3415,23 +2582,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[9]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[9]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[9]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[9].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[9].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[9]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[9]
-  |vpiFullName:work@alert_handler.gen_alerts[9]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[9]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[9].debug)
@@ -3456,23 +2606,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[10]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[10]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[10]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[10].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[10].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[10]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[10]
-  |vpiFullName:work@alert_handler.gen_alerts[10]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[10]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[10].debug)
@@ -3497,43 +2630,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[11]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[11]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[11]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[11].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[11].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[11].genblk1), line:28:7, endln:28:13
-    |vpiParent:
-    \_gen_scope: (work@alert_handler.gen_alerts[11]), line:25:42, endln:30:6
-    |vpiName:genblk1
-    |vpiFullName:work@alert_handler.gen_alerts[11].genblk1
-    |vpiGenScope:
-    \_gen_scope: (work@alert_handler.gen_alerts[11].genblk1), line:28:7, endln:28:13
-      |vpiParent:
-      \_gen_scope_array: (work@alert_handler.gen_alerts[11].genblk1), line:28:7, endln:28:13
-      |vpiFullName:work@alert_handler.gen_alerts[11].genblk1
-      |vpiModule:
-      \_module_inst: work@M (work@alert_handler.gen_alerts[11].genblk1.u), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:28:7, endln:28:13
-        |vpiParent:
-        \_gen_scope: (work@alert_handler.gen_alerts[11].genblk1), line:28:7, endln:28:13
-        |vpiName:u
-        |vpiFullName:work@alert_handler.gen_alerts[11].genblk1.u
-        |vpiDefName:work@M
-        |vpiDefFile:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv
-        |vpiDefLineNo:17
-\_gen_scope_array: (work@alert_handler.gen_alerts[11]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[11]
-  |vpiFullName:work@alert_handler.gen_alerts[11]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[11]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[11].debug)
@@ -3558,43 +2654,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[12]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[12]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[12]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[12].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[12].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[12].genblk1), line:28:7, endln:28:13
-    |vpiParent:
-    \_gen_scope: (work@alert_handler.gen_alerts[12]), line:25:42, endln:30:6
-    |vpiName:genblk1
-    |vpiFullName:work@alert_handler.gen_alerts[12].genblk1
-    |vpiGenScope:
-    \_gen_scope: (work@alert_handler.gen_alerts[12].genblk1), line:28:7, endln:28:13
-      |vpiParent:
-      \_gen_scope_array: (work@alert_handler.gen_alerts[12].genblk1), line:28:7, endln:28:13
-      |vpiFullName:work@alert_handler.gen_alerts[12].genblk1
-      |vpiModule:
-      \_module_inst: work@M (work@alert_handler.gen_alerts[12].genblk1.u), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:28:7, endln:28:13
-        |vpiParent:
-        \_gen_scope: (work@alert_handler.gen_alerts[12].genblk1), line:28:7, endln:28:13
-        |vpiName:u
-        |vpiFullName:work@alert_handler.gen_alerts[12].genblk1.u
-        |vpiDefName:work@M
-        |vpiDefFile:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv
-        |vpiDefLineNo:17
-\_gen_scope_array: (work@alert_handler.gen_alerts[12]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[12]
-  |vpiFullName:work@alert_handler.gen_alerts[12]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[12]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[12].debug)
@@ -3619,23 +2678,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[13]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[13]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[13]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[13].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[13].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[13]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[13]
-  |vpiFullName:work@alert_handler.gen_alerts[13]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[13]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[13].debug)
@@ -3660,23 +2702,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[14]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[14]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[14]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[14].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[14].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[14]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[14]
-  |vpiFullName:work@alert_handler.gen_alerts[14]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[14]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[14].debug)
@@ -3701,23 +2726,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[15]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[15]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[15]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[15].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[15].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[15]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[15]
-  |vpiFullName:work@alert_handler.gen_alerts[15]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[15]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[15].debug)
@@ -3742,23 +2750,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[16]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[16]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[16]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[16].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[16].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[16]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[16]
-  |vpiFullName:work@alert_handler.gen_alerts[16]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[16]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[16].debug)
@@ -3783,43 +2774,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[17]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[17]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[17]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[17].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[17].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[17].genblk1), line:28:7, endln:28:13
-    |vpiParent:
-    \_gen_scope: (work@alert_handler.gen_alerts[17]), line:25:42, endln:30:6
-    |vpiName:genblk1
-    |vpiFullName:work@alert_handler.gen_alerts[17].genblk1
-    |vpiGenScope:
-    \_gen_scope: (work@alert_handler.gen_alerts[17].genblk1), line:28:7, endln:28:13
-      |vpiParent:
-      \_gen_scope_array: (work@alert_handler.gen_alerts[17].genblk1), line:28:7, endln:28:13
-      |vpiFullName:work@alert_handler.gen_alerts[17].genblk1
-      |vpiModule:
-      \_module_inst: work@M (work@alert_handler.gen_alerts[17].genblk1.u), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:28:7, endln:28:13
-        |vpiParent:
-        \_gen_scope: (work@alert_handler.gen_alerts[17].genblk1), line:28:7, endln:28:13
-        |vpiName:u
-        |vpiFullName:work@alert_handler.gen_alerts[17].genblk1.u
-        |vpiDefName:work@M
-        |vpiDefFile:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv
-        |vpiDefLineNo:17
-\_gen_scope_array: (work@alert_handler.gen_alerts[17]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[17]
-  |vpiFullName:work@alert_handler.gen_alerts[17]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[17]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[17].debug)
@@ -3844,43 +2798,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[18]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[18]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[18]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[18].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[18].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[18].genblk1), line:28:7, endln:28:13
-    |vpiParent:
-    \_gen_scope: (work@alert_handler.gen_alerts[18]), line:25:42, endln:30:6
-    |vpiName:genblk1
-    |vpiFullName:work@alert_handler.gen_alerts[18].genblk1
-    |vpiGenScope:
-    \_gen_scope: (work@alert_handler.gen_alerts[18].genblk1), line:28:7, endln:28:13
-      |vpiParent:
-      \_gen_scope_array: (work@alert_handler.gen_alerts[18].genblk1), line:28:7, endln:28:13
-      |vpiFullName:work@alert_handler.gen_alerts[18].genblk1
-      |vpiModule:
-      \_module_inst: work@M (work@alert_handler.gen_alerts[18].genblk1.u), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:28:7, endln:28:13
-        |vpiParent:
-        \_gen_scope: (work@alert_handler.gen_alerts[18].genblk1), line:28:7, endln:28:13
-        |vpiName:u
-        |vpiFullName:work@alert_handler.gen_alerts[18].genblk1.u
-        |vpiDefName:work@M
-        |vpiDefFile:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv
-        |vpiDefLineNo:17
-\_gen_scope_array: (work@alert_handler.gen_alerts[18]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[18]
-  |vpiFullName:work@alert_handler.gen_alerts[18]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[18]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[18].debug)
@@ -3905,23 +2822,6 @@ design: (work@alert_handler)
   |vpiActual:
   \_int_typespec: , line:26:5, endln:26:34
 \_int_typespec: 
-\_gen_scope: (work@alert_handler.gen_alerts[19]), line:25:42, endln:30:6
-  |vpiParent:
-  \_gen_scope_array: (work@alert_handler.gen_alerts[19]), line:25:42, endln:30:6
-  |vpiFullName:work@alert_handler.gen_alerts[19]
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[19].debug), line:26:16, endln:26:21
-  |vpiParameter:
-  \_parameter: (work@alert_handler.gen_alerts[19].k), line:25:0
-  |vpiParamAssign:
-  \_param_assign: , line:26:16, endln:26:34
-\_gen_scope_array: (work@alert_handler.gen_alerts[19]), line:25:42, endln:30:6
-  |vpiParent:
-  \_module_inst: work@alert_handler (work@alert_handler), file:${SURELOG_DIR}/tests/LogicArrayParam/dut.sv, line:20:1, endln:32:10
-  |vpiName:gen_alerts[19]
-  |vpiFullName:work@alert_handler.gen_alerts[19]
-  |vpiGenScope:
-  \_gen_scope: (work@alert_handler.gen_alerts[19]), line:25:42, endln:30:6
 \_int_typespec: , line:26:5, endln:26:34
   |vpiParent:
   \_ref_typespec: (work@alert_handler.gen_alerts[19].debug)

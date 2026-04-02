@@ -128,33 +128,33 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 1.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-constant                                              64
+constant                                              76
 design                                                 1
 import_typespec                                        1
-logic_typespec                                        21
+logic_typespec                                        25
 module_inst                                            6
 operation                                              6
 package                                                4
 param_assign                                          14
 parameter                                             15
-range                                                 21
-ref_obj                                                7
-ref_typespec                                          29
+range                                                 25
+ref_obj                                                3
+ref_typespec                                          33
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-constant                                              64
+constant                                              76
 design                                                 1
 import_typespec                                        1
-logic_typespec                                        21
+logic_typespec                                        25
 module_inst                                            6
 operation                                              6
 package                                                4
 param_assign                                          14
 parameter                                             15
-range                                                 21
-ref_obj                                                7
-ref_typespec                                          29
+range                                                 25
+ref_obj                                                3
+ref_typespec                                          33
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ParamConstPush/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ParamConstPush/slpp_all/checker/surelog.chk.html ...
@@ -230,13 +230,20 @@ design: (work@top)
       \_param_assign: , line:3:25, endln:3:46
       |vpiOpType:29
       |vpiOperand:
-      \_ref_obj: (base_pkg::BASE), line:3:34, endln:3:38
+      \_constant: , line:3:34, endln:3:38
         |vpiParent:
         \_operation: , line:3:34, endln:3:46
-        |vpiName:BASE
-        |vpiFullName:base_pkg::BASE
-        |vpiActual:
-        \_parameter: (base_pkg::BASE), line:2:25, endln:2:29
+        |vpiDecompile:2'b00
+        |vpiSize:2
+        |BIN:00
+        |vpiTypespec:
+        \_ref_typespec: (base_pkg)
+          |vpiParent:
+          \_constant: , line:3:34, endln:3:38
+          |vpiFullName:base_pkg
+          |vpiActual:
+          \_logic_typespec: , line:2:12, endln:2:23
+        |vpiConstType:3
       |vpiOperand:
       \_constant: , line:3:41, endln:3:46
         |vpiParent:
@@ -610,6 +617,31 @@ design: (work@top)
     \_constant: , line:3:21, endln:3:22
       |vpiParent:
       \_range: , line:3:18, endln:3:23
+      |vpiDecompile:0
+      |vpiSize:64
+      |UINT:0
+      |vpiConstType:9
+\_logic_typespec: , line:2:12, endln:2:23
+  |vpiParent:
+  \_ref_typespec: (base_pkg)
+  |vpiInstance:
+  \_package: base_pkg (base_pkg::), file:${SURELOG_DIR}/tests/ParamConstPush/dut.sv, line:1:1, endln:4:11
+  |vpiRange:
+  \_range: , line:2:18, endln:2:23
+    |vpiParent:
+    \_logic_typespec: , line:2:12, endln:2:23
+    |vpiLeftRange:
+    \_constant: , line:2:19, endln:2:20
+      |vpiParent:
+      \_range: , line:2:18, endln:2:23
+      |vpiDecompile:1
+      |vpiSize:64
+      |UINT:1
+      |vpiConstType:9
+    |vpiRightRange:
+    \_constant: , line:2:21, endln:2:22
+      |vpiParent:
+      \_range: , line:2:18, endln:2:23
       |vpiDecompile:0
       |vpiSize:64
       |UINT:0

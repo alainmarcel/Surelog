@@ -48,7 +48,7 @@ bit_var                                                2
 class_defn                                             3
 class_typespec                                         1
 class_var                                              1
-constant                                              10
+constant                                              11
 design                                                 1
 function                                               4
 int_typespec                                           9
@@ -315,20 +315,8 @@ design: (unnamed)
       |vpiParent:
       \_class_defn: (pack::Vector), file:${SURELOG_DIR}/tests/ClassFuncTask/dut.sv, line:5:1, endln:7:9
       |vpiRhs:
-      \_constant: , line:5:32, endln:5:33
-        |vpiParent:
-        \_param_assign: , line:5:26, endln:5:33
-        |vpiDecompile:1
-        |vpiSize:64
+      \_constant: 
         |UINT:1
-        |vpiTypespec:
-        \_ref_typespec: (pack::Vector)
-          |vpiParent:
-          \_constant: , line:5:32, endln:5:33
-          |vpiFullName:pack::Vector
-          |vpiActual:
-          \_int_typespec: , line:5:16, endln:5:33
-        |vpiConstType:9
       |vpiLhs:
       \_parameter: (pack::Vector::WIDTH), line:5:26, endln:5:31
   |vpiClassDefn:
@@ -454,13 +442,6 @@ design: (unnamed)
       |vpiFullName:pack::C::get::x
 \_int_typespec: , line:22:12, endln:22:15
   |vpiSigned:1
-\_param_assign: , line:5:26, endln:5:33
-  |vpiParent:
-  \_class_defn: (pack::Vector), file:${SURELOG_DIR}/tests/ClassFuncTask/dut.sv, line:5:1, endln:7:9
-  |vpiRhs:
-  \_constant: , line:5:32, endln:5:33
-  |vpiLhs:
-  \_parameter: (pack::Vector::WIDTH), line:5:26, endln:5:31
 \_int_typespec: , line:5:16, endln:5:33
 \_int_typespec: , line:9:26, endln:9:29
   |vpiParent:

@@ -393,13 +393,13 @@ AST_DEBUG_END
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              31
+constant                                              37
 design                                                 1
 enum_const                                             5
 enum_typespec                                          1
 enum_var                                               1
 function                                               9
-int_typespec                                          15
+int_typespec                                          21
 int_var                                                4
 integer_typespec                                      12
 io_decl                                               11
@@ -411,8 +411,8 @@ packed_array_typespec                                  4
 param_assign                                          16
 parameter                                             16
 range                                                  4
-ref_obj                                               12
-ref_typespec                                          60
+ref_obj                                                6
+ref_typespec                                          66
 string_typespec                                        6
 struct_typespec                                        6
 sys_func_call                                          4
@@ -425,13 +425,13 @@ typespec_member                                       12
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              31
+constant                                              37
 design                                                 1
 enum_const                                            10
 enum_typespec                                          2
 enum_var                                               1
 function                                              18
-int_typespec                                          15
+int_typespec                                          21
 int_var                                                4
 integer_typespec                                      12
 io_decl                                               22
@@ -443,8 +443,8 @@ packed_array_typespec                                  4
 param_assign                                          16
 parameter                                             16
 range                                                  4
-ref_obj                                               12
-ref_typespec                                          65
+ref_obj                                                6
+ref_typespec                                          71
 string_typespec                                        6
 struct_typespec                                        6
 sys_func_call                                          4
@@ -552,13 +552,20 @@ design: (unnamed)
       |vpiParent:
       \_param_assign: , line:11:14, endln:11:44
       |vpiArgument:
-      \_ref_obj: (bp_common_aviary_pkg::max_cfgs), line:11:35, endln:11:43
+      \_constant: , line:11:35, endln:11:43
         |vpiParent:
-        \_sys_func_call: ($clog2), line:11:28, endln:11:44
-        |vpiName:max_cfgs
-        |vpiFullName:bp_common_aviary_pkg::max_cfgs
-        |vpiActual:
-        \_parameter: (bp_common_aviary_pkg::max_cfgs), line:10:14, endln:10:22
+        \_param_assign: , line:10:14, endln:10:31
+        |vpiDecompile:128
+        |vpiSize:64
+        |UINT:128
+        |vpiTypespec:
+        \_ref_typespec: (bp_common_aviary_pkg)
+          |vpiParent:
+          \_constant: , line:11:35, endln:11:43
+          |vpiFullName:bp_common_aviary_pkg
+          |vpiActual:
+          \_int_typespec: , line:10:3, endln:10:31
+        |vpiConstType:9
       |vpiName:$clog2
     |vpiLhs:
     \_parameter: (bp_common_aviary_pkg::lg_max_cfgs), line:11:14, endln:11:25
@@ -1389,6 +1396,9 @@ design: (unnamed)
   \_package: bp_common_aviary_pkg (bp_common_aviary_pkg::), file:${SURELOG_DIR}/tests/PackageType/dut.sv, line:1:1, endln:24:11
   |vpiSigned:1
 \_int_typespec: , line:10:3, endln:10:31
+\_int_typespec: , line:10:3, endln:10:31
+  |vpiParent:
+  \_ref_typespec: (bp_common_aviary_pkg)
 \_string_typespec: (default), line:14:7, endln:14:14
   |vpiParent:
   \_tagged_pattern: , line:14:16, endln:14:21
@@ -1408,13 +1418,20 @@ design: (unnamed)
       \_range: , line:18:29, endln:18:43
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (bp_common_aviary_pkg::all_cfgs_gp::max_cfgs), line:18:30, endln:18:38
+      \_constant: , line:18:30, endln:18:38
         |vpiParent:
         \_operation: , line:18:30, endln:18:40
-        |vpiName:max_cfgs
-        |vpiFullName:bp_common_aviary_pkg::all_cfgs_gp::max_cfgs
-        |vpiActual:
-        \_parameter: (bp_common_aviary_pkg::max_cfgs), line:10:14, endln:10:22
+        |vpiDecompile:128
+        |vpiSize:64
+        |UINT:128
+        |vpiTypespec:
+        \_ref_typespec: (bp_common_aviary_pkg::all_cfgs_gp)
+          |vpiParent:
+          \_constant: , line:18:30, endln:18:38
+          |vpiFullName:bp_common_aviary_pkg::all_cfgs_gp
+          |vpiActual:
+          \_int_typespec: , line:10:3, endln:10:31
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:18:39, endln:18:40
         |vpiParent:
@@ -1438,6 +1455,9 @@ design: (unnamed)
     |vpiFullName:bp_common_aviary_pkg::all_cfgs_gp
     |vpiActual:
     \_struct_typespec: (bp_common_aviary_pkg::bp_proc_param_s), line:3:9, endln:7:2
+\_int_typespec: , line:10:3, endln:10:31
+  |vpiParent:
+  \_ref_typespec: (bp_common_aviary_pkg::all_cfgs_gp)
 \_function: (work@mailbox::new), line:3:5, endln:4:16
   |vpiParent:
   \_class_defn: (work@mailbox), file:${SURELOG_DIR}/tests/PackageType/builtin.sv, line:1:3, endln:27:11

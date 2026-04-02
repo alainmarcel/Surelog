@@ -55,7 +55,7 @@ begin                                                  5
 class_defn                                             3
 class_typespec                                         5
 class_var                                              3
-constant                                               9
+constant                                              12
 design                                                 1
 extends                                                3
 func_call                                             11
@@ -233,20 +233,8 @@ design: (work@door_mod)
       |vpiParent:
       \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMethodCall/dut.sv, line:4:9, endln:18:9
       |vpiRhs:
-      \_constant: , line:9:27, endln:9:32
-        |vpiParent:
-        \_param_assign: , line:9:15, endln:9:32
-        |vpiDecompile:2'b00
-        |vpiSize:2
+      \_constant: 
         |BIN:00
-        |vpiTypespec:
-        \_ref_typespec: (pack::door)
-          |vpiParent:
-          \_constant: , line:9:27, endln:9:32
-          |vpiFullName:pack::door
-          |vpiActual:
-          \_int_typespec: , line:9:5, endln:11:25
-        |vpiConstType:3
       |vpiLhs:
       \_parameter: (pack::door::OPENED), line:9:15, endln:9:21
     |vpiParamAssign:
@@ -254,20 +242,8 @@ design: (work@door_mod)
       |vpiParent:
       \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMethodCall/dut.sv, line:4:9, endln:18:9
       |vpiRhs:
-      \_constant: , line:10:20, endln:10:25
-        |vpiParent:
-        \_param_assign: , line:10:8, endln:10:25
-        |vpiDecompile:2'b01
-        |vpiSize:2
+      \_constant: 
         |BIN:01
-        |vpiTypespec:
-        \_ref_typespec: (pack::door)
-          |vpiParent:
-          \_constant: , line:10:20, endln:10:25
-          |vpiFullName:pack::door
-          |vpiActual:
-          \_int_typespec: , line:9:5, endln:11:25
-        |vpiConstType:3
       |vpiLhs:
       \_parameter: (pack::door::CLOSED), line:10:8, endln:10:14
     |vpiParamAssign:
@@ -275,20 +251,8 @@ design: (work@door_mod)
       |vpiParent:
       \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMethodCall/dut.sv, line:4:9, endln:18:9
       |vpiRhs:
-      \_constant: , line:11:20, endln:11:25
-        |vpiParent:
-        \_param_assign: , line:11:8, endln:11:25
-        |vpiDecompile:2'b10
-        |vpiSize:2
+      \_constant: 
         |BIN:10
-        |vpiTypespec:
-        \_ref_typespec: (pack::door)
-          |vpiParent:
-          \_constant: , line:11:20, endln:11:25
-          |vpiFullName:pack::door
-          |vpiActual:
-          \_int_typespec: , line:9:5, endln:11:25
-        |vpiConstType:3
       |vpiLhs:
       \_parameter: (pack::door::LOCKED), line:11:8, endln:11:14
     |vpiVirtual:1
@@ -643,13 +607,6 @@ design: (work@door_mod)
   |vpiActual:
   \_ref_obj: (work@door_mod.open), line:47:9, endln:47:13
   |vpiName:open
-\_param_assign: , line:9:15, endln:9:32
-  |vpiParent:
-  \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMethodCall/dut.sv, line:4:9, endln:18:9
-  |vpiRhs:
-  \_constant: , line:9:27, endln:9:32
-  |vpiLhs:
-  \_parameter: (pack::door::OPENED), line:9:15, endln:9:21
 \_int_typespec: , line:9:5, endln:11:25
   |vpiRange:
   \_range: 
@@ -661,13 +618,6 @@ design: (work@door_mod)
     |vpiRightRange:
     \_constant: 
       |INT:0
-\_param_assign: , line:10:8, endln:10:25
-  |vpiParent:
-  \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMethodCall/dut.sv, line:4:9, endln:18:9
-  |vpiRhs:
-  \_constant: , line:10:20, endln:10:25
-  |vpiLhs:
-  \_parameter: (pack::door::CLOSED), line:10:8, endln:10:14
 \_int_typespec: , line:9:5, endln:11:25
   |vpiRange:
   \_range: 
@@ -679,13 +629,6 @@ design: (work@door_mod)
     |vpiRightRange:
     \_constant: 
       |INT:0
-\_param_assign: , line:11:8, endln:11:25
-  |vpiParent:
-  \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMethodCall/dut.sv, line:4:9, endln:18:9
-  |vpiRhs:
-  \_constant: , line:11:20, endln:11:25
-  |vpiLhs:
-  \_parameter: (pack::door::LOCKED), line:11:8, endln:11:14
 \_int_typespec: , line:9:5, endln:11:25
   |vpiRange:
   \_range: 

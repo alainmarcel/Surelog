@@ -38,7 +38,7 @@ break_stmt                                             2
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                             228
+constant                                             286
 cont_assign                                            4
 delay_control                                          1
 design                                                 1
@@ -57,7 +57,7 @@ if_else                                               13
 if_stmt                                               10
 import_typespec                                        2
 initial                                                2
-int_typespec                                          70
+int_typespec                                         118
 int_var                                               32
 io_decl                                               43
 logic_net                                             20
@@ -72,10 +72,10 @@ packed_array_typespec                                  1
 param_assign                                          24
 parameter                                             24
 port                                                   4
-range                                                 46
+range                                                 51
 ref_module                                             2
-ref_obj                                              581
-ref_typespec                                         227
+ref_obj                                              533
+ref_typespec                                         275
 ref_var                                                6
 repeat                                                 1
 return_stmt                                           11

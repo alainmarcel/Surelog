@@ -717,7 +717,7 @@ case_stmt                                              2
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                           20941
+constant                                           21075
 cont_assign                                         1447
 design                                                 1
 enum_const                                             5
@@ -736,7 +736,7 @@ if_stmt                                              515
 include_file_info                                      5
 indexed_part_select                                  577
 initial                                                2
-int_typespec                                         888
+int_typespec                                         954
 int_var                                                4
 integer_typespec                                      26
 integer_var                                           36
@@ -751,10 +751,10 @@ param_assign                                         374
 parameter                                            934
 part_select                                          634
 port                                                 944
-range                                               2918
+range                                               2952
 ref_module                                            86
-ref_obj                                             8772
-ref_typespec                                        3602
+ref_obj                                             8706
+ref_typespec                                        3668
 ref_var                                                6
 string_typespec                                       67
 sys_func_call                                          2

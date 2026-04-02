@@ -343,9 +343,9 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 begin                                                  2
-bit_select                                             3
+bit_select                                             2
 bit_typespec                                           3
-constant                                             117
+constant                                             120
 design                                                 1
 enum_const                                             6
 enum_typespec                                          3
@@ -354,30 +354,30 @@ gen_scope                                              2
 gen_scope_array                                        2
 hier_path                                              2
 import_typespec                                        1
-int_typespec                                          17
-integer_typespec                                      41
+int_typespec                                          27
+integer_typespec                                      39
 module_inst                                            8
-operation                                             56
+operation                                             55
 package                                                2
 packed_array_typespec                                  8
 param_assign                                          42
-parameter                                             52
+parameter                                             51
 range                                                 11
 ref_module                                             3
-ref_obj                                               39
-ref_typespec                                         162
+ref_obj                                               28
+ref_typespec                                         168
 string_typespec                                       21
-struct_typespec                                       41
+struct_typespec                                       39
 sys_func_call                                          4
 tagged_pattern                                        21
-typespec_member                                       41
+typespec_member                                       39
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 begin                                                  2
-bit_select                                             3
+bit_select                                             2
 bit_typespec                                           3
-constant                                             117
+constant                                             120
 design                                                 1
 enum_const                                             6
 enum_typespec                                          3
@@ -386,23 +386,23 @@ gen_scope                                              3
 gen_scope_array                                        3
 hier_path                                              2
 import_typespec                                        1
-int_typespec                                          17
-integer_typespec                                      41
+int_typespec                                          27
+integer_typespec                                      39
 module_inst                                            9
-operation                                             56
+operation                                             55
 package                                                2
 packed_array_typespec                                  8
 param_assign                                          42
-parameter                                             52
+parameter                                             51
 range                                                 11
 ref_module                                             3
-ref_obj                                               39
-ref_typespec                                         162
+ref_obj                                               28
+ref_typespec                                         168
 string_typespec                                       21
-struct_typespec                                       41
+struct_typespec                                       39
 sys_func_call                                          4
 tagged_pattern                                        21
-typespec_member                                       41
+typespec_member                                       39
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ConcatOrder/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ConcatOrder/slpp_all/checker/surelog.chk.html ...
@@ -531,13 +531,20 @@ design: (work@testbench)
         \_operation: , line:3:30, endln:3:70
         |vpiOpType:14
         |vpiOperand:
-        \_ref_obj: (bp_common_pkg::max_cfgs), line:3:32, endln:3:40
+        \_constant: , line:3:32, endln:3:40
           |vpiParent:
           \_operation: , line:3:31, endln:3:44
-          |vpiName:max_cfgs
-          |vpiFullName:bp_common_pkg::max_cfgs
-          |vpiActual:
-          \_parameter: (bp_common_pkg::max_cfgs), line:2:14, endln:2:22
+          |vpiDecompile:2
+          |vpiSize:64
+          |UINT:2
+          |vpiTypespec:
+          \_ref_typespec: (bp_common_pkg)
+            |vpiParent:
+            \_constant: , line:3:32, endln:3:40
+            |vpiFullName:bp_common_pkg
+            |vpiActual:
+            \_int_typespec: , line:2:3, endln:2:29
+          |vpiConstType:9
         |vpiOperand:
         \_constant: , line:3:43, endln:3:44
           |vpiParent:
@@ -559,13 +566,20 @@ design: (work@testbench)
         |vpiParent:
         \_operation: , line:3:30, endln:3:70
         |vpiArgument:
-        \_ref_obj: (bp_common_pkg::max_cfgs), line:3:60, endln:3:68
+        \_constant: , line:3:60, endln:3:68
           |vpiParent:
-          \_sys_func_call: ($clog2), line:3:52, endln:3:70
-          |vpiName:max_cfgs
-          |vpiFullName:bp_common_pkg::max_cfgs
-          |vpiActual:
-          \_parameter: (bp_common_pkg::max_cfgs), line:2:14, endln:2:22
+          \_param_assign: , line:2:14, endln:2:29
+          |vpiDecompile:2
+          |vpiSize:64
+          |UINT:2
+          |vpiTypespec:
+          \_ref_typespec: (bp_common_pkg)
+            |vpiParent:
+            \_constant: , line:3:60, endln:3:68
+            |vpiFullName:bp_common_pkg
+            |vpiActual:
+            \_int_typespec: , line:2:3, endln:2:29
+          |vpiConstType:9
         |vpiName:$clog2
     |vpiLhs:
     \_parameter: (bp_common_pkg::lg_max_cfgs), line:3:14, endln:3:25
@@ -1660,7 +1674,7 @@ design: (work@testbench)
     |vpiRhs:
     \_operation: , line:11:7, endln:11:27
       |vpiParent:
-      \_param_assign: , line:43:34, endln:43:74
+      \_param_assign: , line:10:31, endln:11:27
       |vpiTypespec:
       \_ref_typespec: (work@testbench)
         |vpiParent:
@@ -1950,6 +1964,12 @@ design: (work@testbench)
   \_ref_typespec: (bp_common_pkg)
   |vpiName:cce_ucode
 \_int_typespec: , line:2:3, endln:2:29
+\_int_typespec: , line:2:3, endln:2:29
+  |vpiParent:
+  \_ref_typespec: (bp_common_pkg)
+\_int_typespec: , line:2:3, endln:2:29
+  |vpiParent:
+  \_ref_typespec: (bp_common_pkg)
 \_integer_typespec: , line:7:5, endln:7:21
   |vpiParent:
   \_typespec_member: (cce_ucode), line:7:22, endln:7:31
@@ -1974,13 +1994,20 @@ design: (work@testbench)
       \_range: , line:13:27, endln:13:41
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (bp_common_pkg::all_cfgs_gp::max_cfgs), line:13:28, endln:13:36
+      \_constant: , line:13:28, endln:13:36
         |vpiParent:
         \_operation: , line:13:28, endln:13:38
-        |vpiName:max_cfgs
-        |vpiFullName:bp_common_pkg::all_cfgs_gp::max_cfgs
-        |vpiActual:
-        \_parameter: (bp_common_pkg::max_cfgs), line:2:14, endln:2:22
+        |vpiDecompile:2
+        |vpiSize:64
+        |UINT:2
+        |vpiTypespec:
+        \_ref_typespec: (bp_common_pkg::all_cfgs_gp)
+          |vpiParent:
+          \_constant: , line:13:28, endln:13:36
+          |vpiFullName:bp_common_pkg::all_cfgs_gp
+          |vpiActual:
+          \_int_typespec: , line:2:3, endln:2:29
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:13:37, endln:13:38
         |vpiParent:
@@ -2004,6 +2031,9 @@ design: (work@testbench)
     |vpiFullName:bp_common_pkg::all_cfgs_gp
     |vpiActual:
     \_struct_typespec: (bp_common_pkg::bp_proc_param_s), line:5:10, endln:8:4
+\_int_typespec: , line:2:3, endln:2:29
+  |vpiParent:
+  \_ref_typespec: (bp_common_pkg::all_cfgs_gp)
 \_bit_typespec: , line:19:16, endln:19:37
   |vpiInstance:
   \_package: bp_common_pkg (bp_common_pkg::), file:${SURELOG_DIR}/tests/ConcatOrder/dut.sv, line:1:1, endln:32:11
@@ -2422,35 +2452,6 @@ design: (work@testbench)
     |vpiFullName:work@testbench
     |vpiActual:
     \_struct_typespec: (bp_common_pkg::bp_proc_param_s), line:5:10, endln:8:4
-\_struct_typespec: (bp_common_pkg::bp_proc_param_s), line:5:10, endln:8:4
-  |vpiParent:
-  \_ref_typespec: (work@testbench)
-  |vpiName:bp_common_pkg::bp_proc_param_s
-  |vpiInstance:
-  \_package: bp_common_pkg (bp_common_pkg::), file:${SURELOG_DIR}/tests/ConcatOrder/dut.sv, line:1:1, endln:32:11
-  |vpiPacked:1
-  |vpiTypespecMember:
-  \_typespec_member: (cce_ucode), line:7:22, endln:7:31
-    |vpiParent:
-    \_struct_typespec: (bp_common_pkg::bp_proc_param_s), line:5:10, endln:8:4
-    |vpiName:cce_ucode
-    |vpiTypespec:
-    \_ref_typespec: (work@testbench.bp_common_pkg::bp_proc_param_s.cce_ucode)
-      |vpiParent:
-      \_typespec_member: (cce_ucode), line:7:22, endln:7:31
-      |vpiFullName:work@testbench.bp_common_pkg::bp_proc_param_s.cce_ucode
-      |vpiActual:
-      \_integer_typespec: , line:7:5, endln:7:21
-    |vpiRefFile:${SURELOG_DIR}/tests/ConcatOrder/dut.sv
-    |vpiRefLineNo:7
-    |vpiRefColumnNo:5
-    |vpiRefEndLineNo:7
-    |vpiRefEndColumnNo:21
-\_integer_typespec: , line:7:5, endln:7:21
-  |vpiParent:
-  \_ref_typespec: (work@testbench.bp_common_pkg::bp_proc_param_s.cce_ucode)
-  |vpiInstance:
-  \_package: bp_common_pkg (bp_common_pkg::), file:${SURELOG_DIR}/tests/ConcatOrder/dut.sv, line:1:1, endln:32:11
 \_struct_typespec: (bp_common_pkg::bp_proc_param_s), line:5:10, endln:8:4
   |vpiParent:
   \_ref_typespec: (work@testbench)

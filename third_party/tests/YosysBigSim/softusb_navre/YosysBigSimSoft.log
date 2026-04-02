@@ -22,7 +22,7 @@ begin                                                119
 bit_select                                           215
 case_item                                            187
 case_stmt                                             20
-constant                                            1489
+constant                                            1643
 cont_assign                                           34
 delay_control                                          6
 design                                                 1
@@ -35,7 +35,7 @@ if_else                                               21
 if_stmt                                               21
 include_file_info                                      1
 initial                                                3
-int_typespec                                          10
+int_typespec                                          11
 integer_typespec                                       8
 integer_var                                            4
 logic_net                                            228
@@ -47,9 +47,9 @@ param_assign                                          96
 parameter                                             96
 part_select                                           89
 port                                                  34
-range                                                207
-ref_obj                                              917
-ref_typespec                                         315
+range                                                208
+ref_obj                                              765
+ref_typespec                                         467
 ref_var                                                4
 sys_func_call                                         12
 while_stmt                                             1

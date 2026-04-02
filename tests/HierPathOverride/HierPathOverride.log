@@ -394,7 +394,7 @@ typespec_member                                       14
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 bit_select                                             1
-constant                                             137
+constant                                             138
 cont_assign                                            6
 design                                                 1
 enum_const                                            32
@@ -1532,20 +1532,8 @@ design: (work@top)
             |vpiParent:
             \_module_inst: work@prim_generic_pad_attr (work@top.u_prim_pad_attr.gen_generic.u_impl_generic), file:${SURELOG_DIR}/tests/HierPathOverride/dut.sv, line:37:7, endln:39:26
             |vpiRhs:
-            \_constant: , line:2:29, endln:2:31
-              |vpiParent:
-              \_param_assign: , line:2:18, endln:2:31
-              |vpiDecompile:24
-              |vpiSize:32
+            \_constant: 
               |UINT:24
-              |vpiTypespec:
-              \_ref_typespec: (work@top.u_prim_pad_attr.gen_generic.u_impl_generic)
-                |vpiParent:
-                \_constant: , line:2:29, endln:2:31
-                |vpiFullName:work@top.u_prim_pad_attr.gen_generic.u_impl_generic
-                |vpiActual:
-                \_int_typespec: , line:2:14, endln:2:17
-              |vpiConstType:9
             |vpiLhs:
             \_parameter: (work@top.u_prim_pad_attr.gen_generic.u_impl_generic.NDioPads), line:2:18, endln:2:26
           |vpiParamAssign:
@@ -2470,13 +2458,6 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
-\_param_assign: , line:2:18, endln:2:31
-  |vpiParent:
-  \_module_inst: work@prim_generic_pad_attr (work@top.u_prim_pad_attr.gen_generic.u_impl_generic), file:${SURELOG_DIR}/tests/HierPathOverride/dut.sv, line:37:7, endln:39:26
-  |vpiRhs:
-  \_constant: , line:2:29, endln:2:31
-  |vpiLhs:
-  \_parameter: (work@top.u_prim_pad_attr.gen_generic.u_impl_generic.NDioPads), line:2:18, endln:2:26
 \_param_assign: , line:25:25, endln:25:36
   |vpiParent:
   \_module_inst: work@prim_generic_pad_attr (work@top.u_prim_pad_attr.gen_generic.u_impl_generic), file:${SURELOG_DIR}/tests/HierPathOverride/dut.sv, line:37:7, endln:39:26
@@ -2782,6 +2763,25 @@ design: (work@top)
   \_parameter: (work@top.u_prim_pad_attr.gen_generic.u_impl_generic.PadType), line:25:25, endln:25:32
   |vpiParamAssign:
   \_param_assign: , line:2:18, endln:2:31
+    |vpiParent:
+    \_module_inst: work@prim_generic_pad_attr (work@top.u_prim_pad_attr.gen_generic.u_impl_generic), file:${SURELOG_DIR}/tests/HierPathOverride/dut.sv, line:37:7, endln:39:26
+    |vpiRhs:
+    \_constant: , line:2:29, endln:2:31
+      |vpiParent:
+      \_param_assign: , line:2:18, endln:2:31
+      |vpiDecompile:24
+      |vpiSize:32
+      |UINT:24
+      |vpiTypespec:
+      \_ref_typespec: (work@top.u_prim_pad_attr.gen_generic.u_impl_generic)
+        |vpiParent:
+        \_constant: , line:2:29, endln:2:31
+        |vpiFullName:work@top.u_prim_pad_attr.gen_generic.u_impl_generic
+        |vpiActual:
+        \_int_typespec: , line:2:14, endln:2:17
+      |vpiConstType:9
+    |vpiLhs:
+    \_parameter: (work@top.u_prim_pad_attr.gen_generic.u_impl_generic.NDioPads), line:2:18, endln:2:26
   |vpiParamAssign:
   \_param_assign: , line:25:25, endln:25:36
   |vpiTypedef:

@@ -643,7 +643,7 @@ AST_DEBUG_END
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 assignment                                             1
 bit_select                                             7
-constant                                             269
+constant                                             274
 cont_assign                                            3
 design                                                 1
 enum_const                                            10
@@ -655,7 +655,7 @@ gen_if_else                                            1
 gen_scope                                             20
 gen_scope_array                                       20
 hier_path                                             12
-int_typespec                                          54
+int_typespec                                          61
 int_var                                                3
 io_decl                                                2
 logic_typespec                                         2
@@ -668,8 +668,8 @@ packed_array_typespec                                  4
 param_assign                                          53
 parameter                                             59
 range                                                  6
-ref_obj                                               54
-ref_typespec                                         181
+ref_obj                                               47
+ref_typespec                                         188
 return_stmt                                            2
 string_typespec                                       50
 struct_typespec                                        4
@@ -682,7 +682,7 @@ unsupported_typespec                                   7
 === UHDM Object Stats Begin (Elaborated Model) ===
 assignment                                             1
 bit_select                                            12
-constant                                             270
+constant                                             280
 cont_assign                                            4
 design                                                 1
 enum_const                                            10
@@ -694,7 +694,7 @@ gen_if_else                                            1
 gen_scope                                             30
 gen_scope_array                                       30
 hier_path                                             16
-int_typespec                                          54
+int_typespec                                          61
 int_var                                                3
 io_decl                                                4
 logic_typespec                                         2
@@ -707,8 +707,8 @@ packed_array_typespec                                  4
 param_assign                                          58
 parameter                                             59
 range                                                  6
-ref_obj                                               63
-ref_typespec                                         198
+ref_obj                                               56
+ref_typespec                                         205
 return_stmt                                            4
 string_typespec                                       50
 struct_typespec                                        4
@@ -818,13 +818,20 @@ design: (work@top)
       |vpiParent:
       \_param_assign: , line:4:27, endln:4:66
       |vpiArgument:
-      \_ref_obj: (fpnew_pkg::NUM_FP_FORMATS), line:4:51, endln:4:65
+      \_constant: , line:4:51, endln:4:65
         |vpiParent:
-        \_sys_func_call: ($clog2), line:4:44, endln:4:66
-        |vpiName:NUM_FP_FORMATS
-        |vpiFullName:fpnew_pkg::NUM_FP_FORMATS
-        |vpiActual:
-        \_parameter: (fpnew_pkg::NUM_FP_FORMATS), line:3:27, endln:3:41
+        \_param_assign: , line:3:27, endln:3:45
+        |vpiDecompile:5
+        |vpiSize:64
+        |UINT:5
+        |vpiTypespec:
+        \_ref_typespec: (fpnew_pkg)
+          |vpiParent:
+          \_constant: , line:4:51, endln:4:65
+          |vpiFullName:fpnew_pkg
+          |vpiActual:
+          \_int_typespec: , line:3:14, endln:3:26
+        |vpiConstType:9
       |vpiName:$clog2
     |vpiLhs:
     \_parameter: (fpnew_pkg::FP_FORMAT_BITS), line:4:27, endln:4:41
@@ -1985,11 +1992,20 @@ design: (work@top)
           \_int_typespec: , line:49:30, endln:49:33
         |vpiOpType:67
         |vpiOperand:
-        \_ref_obj: (work@top.NUM_FORMATS), line:49:35, endln:49:46
+        \_constant: , line:49:35, endln:49:46
           |vpiParent:
           \_operation: , line:49:30, endln:49:47
-          |vpiName:NUM_FORMATS
-          |vpiFullName:work@top.NUM_FORMATS
+          |vpiDecompile:5
+          |vpiSize:32
+          |UINT:5
+          |vpiTypespec:
+          \_ref_typespec: (work@top)
+            |vpiParent:
+            \_constant: , line:49:35, endln:49:46
+            |vpiFullName:work@top
+            |vpiActual:
+            \_int_typespec: , line:44:15, endln:44:27
+          |vpiConstType:9
     |vpiForIncStmt:
     \_operation: , line:49:49, endln:49:52
       |vpiParent:
@@ -2185,7 +2201,7 @@ design: (work@top)
         \_constant: , line:44:43, endln:44:68
         |vpiFullName:work@top
         |vpiActual:
-        \_int_typespec: , line:3:14, endln:3:26
+        \_int_typespec: , line:44:15, endln:44:27
       |vpiConstType:9
     |vpiLhs:
     \_parameter: (work@top.NUM_FORMATS), line:44:28, endln:44:39
@@ -2358,20 +2374,8 @@ design: (work@top)
         |vpiParent:
         \_gen_scope: (work@top.gen_nanbox_check[0]), line:49:56, endln:62:6
         |vpiRhs:
-        \_constant: , line:50:40, endln:50:89
-          |vpiParent:
-          \_param_assign: , line:50:29, endln:50:89
-          |vpiDecompile:32
-          |vpiSize:32
+        \_constant: 
           |UINT:32
-          |vpiTypespec:
-          \_ref_typespec: (work@top.gen_nanbox_check[0])
-            |vpiParent:
-            \_constant: , line:50:40, endln:50:89
-            |vpiFullName:work@top.gen_nanbox_check[0]
-            |vpiActual:
-            \_int_typespec: , line:50:16, endln:50:28
-          |vpiConstType:9
         |vpiLhs:
         \_parameter: (work@top.gen_nanbox_check[0].FP_WIDTH), line:50:29, endln:50:37
       |vpiGenScopeArray:
@@ -2431,20 +2435,8 @@ design: (work@top)
         |vpiParent:
         \_gen_scope: (work@top.gen_nanbox_check[1]), line:49:56, endln:62:6
         |vpiRhs:
-        \_constant: , line:50:40, endln:50:89
-          |vpiParent:
-          \_param_assign: , line:50:29, endln:50:89
-          |vpiDecompile:64
-          |vpiSize:32
+        \_constant: 
           |UINT:64
-          |vpiTypespec:
-          \_ref_typespec: (work@top.gen_nanbox_check[1])
-            |vpiParent:
-            \_constant: , line:50:40, endln:50:89
-            |vpiFullName:work@top.gen_nanbox_check[1]
-            |vpiActual:
-            \_int_typespec: , line:50:16, endln:50:28
-          |vpiConstType:9
         |vpiLhs:
         \_parameter: (work@top.gen_nanbox_check[1].FP_WIDTH), line:50:29, endln:50:37
       |vpiGenScopeArray:
@@ -2530,20 +2522,8 @@ design: (work@top)
         |vpiParent:
         \_gen_scope: (work@top.gen_nanbox_check[2]), line:49:56, endln:62:6
         |vpiRhs:
-        \_constant: , line:50:40, endln:50:89
-          |vpiParent:
-          \_param_assign: , line:50:29, endln:50:89
-          |vpiDecompile:16
-          |vpiSize:32
+        \_constant: 
           |UINT:16
-          |vpiTypespec:
-          \_ref_typespec: (work@top.gen_nanbox_check[2])
-            |vpiParent:
-            \_constant: , line:50:40, endln:50:89
-            |vpiFullName:work@top.gen_nanbox_check[2]
-            |vpiActual:
-            \_int_typespec: , line:50:16, endln:50:28
-          |vpiConstType:9
         |vpiLhs:
         \_parameter: (work@top.gen_nanbox_check[2].FP_WIDTH), line:50:29, endln:50:37
       |vpiGenScopeArray:
@@ -2603,20 +2583,8 @@ design: (work@top)
         |vpiParent:
         \_gen_scope: (work@top.gen_nanbox_check[3]), line:49:56, endln:62:6
         |vpiRhs:
-        \_constant: , line:50:40, endln:50:89
-          |vpiParent:
-          \_param_assign: , line:50:29, endln:50:89
-          |vpiDecompile:8
-          |vpiSize:32
+        \_constant: 
           |UINT:8
-          |vpiTypespec:
-          \_ref_typespec: (work@top.gen_nanbox_check[3])
-            |vpiParent:
-            \_constant: , line:50:40, endln:50:89
-            |vpiFullName:work@top.gen_nanbox_check[3]
-            |vpiActual:
-            \_int_typespec: , line:50:16, endln:50:28
-          |vpiConstType:9
         |vpiLhs:
         \_parameter: (work@top.gen_nanbox_check[3].FP_WIDTH), line:50:29, endln:50:37
       |vpiGenScopeArray:
@@ -2676,20 +2644,8 @@ design: (work@top)
         |vpiParent:
         \_gen_scope: (work@top.gen_nanbox_check[4]), line:49:56, endln:62:6
         |vpiRhs:
-        \_constant: , line:50:40, endln:50:89
-          |vpiParent:
-          \_param_assign: , line:50:29, endln:50:89
-          |vpiDecompile:16
-          |vpiSize:32
+        \_constant: 
           |UINT:16
-          |vpiTypespec:
-          \_ref_typespec: (work@top.gen_nanbox_check[4])
-            |vpiParent:
-            \_constant: , line:50:40, endln:50:89
-            |vpiFullName:work@top.gen_nanbox_check[4]
-            |vpiActual:
-            \_int_typespec: , line:50:16, endln:50:28
-          |vpiConstType:9
         |vpiLhs:
         \_parameter: (work@top.gen_nanbox_check[4].FP_WIDTH), line:50:29, endln:50:37
       |vpiGenScopeArray:
@@ -3006,6 +2962,11 @@ design: (work@top)
   \_parameter: (fpnew_pkg::FP_FORMAT_BITS), line:4:27, endln:4:41
   |vpiInstance:
   \_package: fpnew_pkg (fpnew_pkg::), file:${SURELOG_DIR}/tests/ParamOverload3/dut.sv, line:1:1, endln:41:11
+\_int_typespec: , line:3:14, endln:3:26
+  |vpiParent:
+  \_ref_typespec: (fpnew_pkg)
+  |vpiInstance:
+  \_package: fpnew_pkg (fpnew_pkg::), file:${SURELOG_DIR}/tests/ParamOverload3/dut.sv, line:1:1, endln:41:11
 \_int_typespec: , line:7:5, endln:7:17
   |vpiParent:
   \_typespec_member: (exp_bits), line:7:18, endln:7:26
@@ -3074,13 +3035,20 @@ design: (work@top)
       \_range: , line:20:28, endln:20:48
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (fpnew_pkg::FP_ENCODINGS::NUM_FP_FORMATS), line:20:31, endln:20:45
+      \_constant: , line:20:31, endln:20:45
         |vpiParent:
         \_operation: , line:20:31, endln:20:47
-        |vpiName:NUM_FP_FORMATS
-        |vpiFullName:fpnew_pkg::FP_ENCODINGS::NUM_FP_FORMATS
-        |vpiActual:
-        \_parameter: (fpnew_pkg::NUM_FP_FORMATS), line:3:27, endln:3:41
+        |vpiDecompile:5
+        |vpiSize:64
+        |UINT:5
+        |vpiTypespec:
+        \_ref_typespec: (fpnew_pkg::FP_ENCODINGS)
+          |vpiParent:
+          \_constant: , line:20:31, endln:20:45
+          |vpiFullName:fpnew_pkg::FP_ENCODINGS
+          |vpiActual:
+          \_int_typespec: , line:3:14, endln:3:26
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:20:46, endln:20:47
         |vpiParent:
@@ -3096,6 +3064,11 @@ design: (work@top)
     |vpiFullName:fpnew_pkg::FP_ENCODINGS
     |vpiActual:
     \_struct_typespec: (fpnew_pkg::fp_encoding_t), line:6:10, endln:9:4
+\_int_typespec: , line:3:14, endln:3:26
+  |vpiParent:
+  \_ref_typespec: (fpnew_pkg::FP_ENCODINGS)
+  |vpiInstance:
+  \_package: fpnew_pkg (fpnew_pkg::), file:${SURELOG_DIR}/tests/ParamOverload3/dut.sv, line:1:1, endln:41:11
 \_unsupported_typespec: (fpu_features_t), line:29:14, endln:29:28
   |vpiParent:
   \_parameter: (fpnew_pkg::RV64D_Xsflt), line:29:29, endln:29:40
@@ -3153,26 +3126,12 @@ design: (work@top)
   \_ref_typespec: (work@top)
   |vpiName:IntFmtMask
 \_int_typespec: , line:49:15, endln:49:18
+\_int_typespec: , line:44:15, endln:44:27
+  |vpiParent:
+  \_ref_typespec: (work@top)
 \_int_typespec: , line:49:30, endln:49:33
   |vpiSigned:1
 \_int_typespec: , line:50:16, endln:50:28
-\_int_typespec: , line:3:14, endln:3:26
-  |vpiParent:
-  \_ref_typespec: 
-  |vpiInstance:
-  \_package: fpnew_pkg (fpnew_pkg::), file:${SURELOG_DIR}/tests/ParamOverload3/dut.sv, line:1:1, endln:41:11
-\_ref_typespec: 
-  |vpiParent:
-  \_constant: , line:44:43, endln:44:54
-  |vpiActual:
-  \_int_typespec: , line:3:14, endln:3:26
-\_constant: , line:44:43, endln:44:54
-  |vpiDecompile:5
-  |vpiSize:32
-  |UINT:5
-  |vpiTypespec:
-  \_ref_typespec: 
-  |vpiConstType:9
 \_string_typespec: (Width), line:30:5, endln:30:10
   |vpiParent:
   \_ref_typespec: (work@top)
@@ -3193,206 +3152,6 @@ design: (work@top)
   |vpiParent:
   \_ref_typespec: (work@top)
   |vpiName:IntFmtMask
-\_int_typespec: , line:50:16, endln:50:28
-  |vpiParent:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_parameter: (FP_WIDTH), line:50:29, endln:50:37
-  |vpiParent:
-  \_param_assign: , line:50:29, endln:50:89
-  |UINT:32
-  |vpiTypespec:
-  \_ref_typespec: (FP_WIDTH)
-    |vpiParent:
-    \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-    |vpiFullName:FP_WIDTH
-    |vpiActual:
-    \_int_typespec: , line:50:16, endln:50:28
-  |vpiLocalParam:1
-  |vpiName:FP_WIDTH
-\_param_assign: , line:50:29, endln:50:89
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-    |vpiParent:
-    \_param_assign: , line:50:29, endln:50:89
-    |vpiDecompile:32
-    |vpiSize:32
-    |UINT:32
-    |vpiTypespec:
-    \_ref_typespec: 
-      |vpiParent:
-      \_constant: , line:50:40, endln:50:89
-      |vpiActual:
-      \_int_typespec: , line:50:16, endln:50:28
-    |vpiConstType:9
-  |vpiLhs:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_param_assign: , line:50:29, endln:50:89
-  |vpiParent:
-  \_gen_scope: (work@top.gen_nanbox_check[0]), line:49:56, endln:62:6
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-  |vpiLhs:
-  \_parameter: (work@top.gen_nanbox_check[0].FP_WIDTH), line:50:29, endln:50:37
-\_int_typespec: , line:50:16, endln:50:28
-  |vpiParent:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_parameter: (FP_WIDTH), line:50:29, endln:50:37
-  |vpiParent:
-  \_param_assign: , line:50:29, endln:50:89
-  |UINT:64
-  |vpiTypespec:
-  \_ref_typespec: (FP_WIDTH)
-    |vpiParent:
-    \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-    |vpiFullName:FP_WIDTH
-    |vpiActual:
-    \_int_typespec: , line:50:16, endln:50:28
-  |vpiLocalParam:1
-  |vpiName:FP_WIDTH
-\_param_assign: , line:50:29, endln:50:89
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-    |vpiParent:
-    \_param_assign: , line:50:29, endln:50:89
-    |vpiDecompile:64
-    |vpiSize:32
-    |UINT:64
-    |vpiTypespec:
-    \_ref_typespec: 
-      |vpiParent:
-      \_constant: , line:50:40, endln:50:89
-      |vpiActual:
-      \_int_typespec: , line:50:16, endln:50:28
-    |vpiConstType:9
-  |vpiLhs:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_param_assign: , line:50:29, endln:50:89
-  |vpiParent:
-  \_gen_scope: (work@top.gen_nanbox_check[1]), line:49:56, endln:62:6
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-  |vpiLhs:
-  \_parameter: (work@top.gen_nanbox_check[1].FP_WIDTH), line:50:29, endln:50:37
-\_int_typespec: , line:50:16, endln:50:28
-  |vpiParent:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_parameter: (FP_WIDTH), line:50:29, endln:50:37
-  |vpiParent:
-  \_param_assign: , line:50:29, endln:50:89
-  |UINT:16
-  |vpiTypespec:
-  \_ref_typespec: (FP_WIDTH)
-    |vpiParent:
-    \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-    |vpiFullName:FP_WIDTH
-    |vpiActual:
-    \_int_typespec: , line:50:16, endln:50:28
-  |vpiLocalParam:1
-  |vpiName:FP_WIDTH
-\_param_assign: , line:50:29, endln:50:89
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-    |vpiParent:
-    \_param_assign: , line:50:29, endln:50:89
-    |vpiDecompile:16
-    |vpiSize:32
-    |UINT:16
-    |vpiTypespec:
-    \_ref_typespec: 
-      |vpiParent:
-      \_constant: , line:50:40, endln:50:89
-      |vpiActual:
-      \_int_typespec: , line:50:16, endln:50:28
-    |vpiConstType:9
-  |vpiLhs:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_param_assign: , line:50:29, endln:50:89
-  |vpiParent:
-  \_gen_scope: (work@top.gen_nanbox_check[2]), line:49:56, endln:62:6
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-  |vpiLhs:
-  \_parameter: (work@top.gen_nanbox_check[2].FP_WIDTH), line:50:29, endln:50:37
-\_int_typespec: , line:50:16, endln:50:28
-  |vpiParent:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_parameter: (FP_WIDTH), line:50:29, endln:50:37
-  |vpiParent:
-  \_param_assign: , line:50:29, endln:50:89
-  |UINT:8
-  |vpiTypespec:
-  \_ref_typespec: (FP_WIDTH)
-    |vpiParent:
-    \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-    |vpiFullName:FP_WIDTH
-    |vpiActual:
-    \_int_typespec: , line:50:16, endln:50:28
-  |vpiLocalParam:1
-  |vpiName:FP_WIDTH
-\_param_assign: , line:50:29, endln:50:89
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-    |vpiParent:
-    \_param_assign: , line:50:29, endln:50:89
-    |vpiDecompile:8
-    |vpiSize:32
-    |UINT:8
-    |vpiTypespec:
-    \_ref_typespec: 
-      |vpiParent:
-      \_constant: , line:50:40, endln:50:89
-      |vpiActual:
-      \_int_typespec: , line:50:16, endln:50:28
-    |vpiConstType:9
-  |vpiLhs:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_param_assign: , line:50:29, endln:50:89
-  |vpiParent:
-  \_gen_scope: (work@top.gen_nanbox_check[3]), line:49:56, endln:62:6
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-  |vpiLhs:
-  \_parameter: (work@top.gen_nanbox_check[3].FP_WIDTH), line:50:29, endln:50:37
-\_int_typespec: , line:50:16, endln:50:28
-  |vpiParent:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_parameter: (FP_WIDTH), line:50:29, endln:50:37
-  |vpiParent:
-  \_param_assign: , line:50:29, endln:50:89
-  |UINT:16
-  |vpiTypespec:
-  \_ref_typespec: (FP_WIDTH)
-    |vpiParent:
-    \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-    |vpiFullName:FP_WIDTH
-    |vpiActual:
-    \_int_typespec: , line:50:16, endln:50:28
-  |vpiLocalParam:1
-  |vpiName:FP_WIDTH
-\_param_assign: , line:50:29, endln:50:89
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-    |vpiParent:
-    \_param_assign: , line:50:29, endln:50:89
-    |vpiDecompile:16
-    |vpiSize:32
-    |UINT:16
-    |vpiTypespec:
-    \_ref_typespec: 
-      |vpiParent:
-      \_constant: , line:50:40, endln:50:89
-      |vpiActual:
-      \_int_typespec: , line:50:16, endln:50:28
-    |vpiConstType:9
-  |vpiLhs:
-  \_parameter: (FP_WIDTH), line:50:29, endln:50:37
-\_param_assign: , line:50:29, endln:50:89
-  |vpiParent:
-  \_gen_scope: (work@top.gen_nanbox_check[4]), line:49:56, endln:62:6
-  |vpiRhs:
-  \_constant: , line:50:40, endln:50:89
-  |vpiLhs:
-  \_parameter: (work@top.gen_nanbox_check[4].FP_WIDTH), line:50:29, endln:50:37
 \_operation: , line:52:9, endln:52:52
   |vpiOpType:26
   |vpiOperand:
@@ -3412,34 +3171,6 @@ design: (work@top)
   |vpiParent:
   \_ref_typespec: (work@top.Features)
   |vpiName:fpnew_pkg::fpu_features_t
-\_gen_scope: (work@top.gen_nanbox_check[0]), line:49:56, endln:62:6
-  |vpiParent:
-  \_gen_scope_array: (work@top.gen_nanbox_check[0]), line:49:56, endln:62:6
-  |vpiFullName:work@top.gen_nanbox_check[0]
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[0].FP_WIDTH), line:50:29, endln:50:37
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[0].fmt), line:49:0
-  |vpiParamAssign:
-  \_param_assign: , line:50:29, endln:50:89
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@top.gen_nanbox_check[0].check), line:52:54, endln:58:8
-    |vpiParent:
-    \_gen_scope: (work@top.gen_nanbox_check[0]), line:49:56, endln:62:6
-    |vpiName:check
-    |vpiFullName:work@top.gen_nanbox_check[0].check
-    |vpiGenScope:
-    \_gen_scope: (work@top.gen_nanbox_check[0].check), line:52:54, endln:58:8
-      |vpiParent:
-      \_gen_scope_array: (work@top.gen_nanbox_check[0].check), line:52:54, endln:58:8
-      |vpiFullName:work@top.gen_nanbox_check[0].check
-\_gen_scope_array: (work@top.gen_nanbox_check[0]), line:49:56, endln:62:6
-  |vpiParent:
-  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/ParamOverload3/dut.sv, line:43:1, endln:64:10
-  |vpiName:gen_nanbox_check[0]
-  |vpiFullName:work@top.gen_nanbox_check[0]
-  |vpiGenScope:
-  \_gen_scope: (work@top.gen_nanbox_check[0]), line:49:56, endln:62:6
 \_int_typespec: , line:50:16, endln:50:28
   |vpiParent:
   \_ref_typespec: (work@top.gen_nanbox_check[0].FP_WIDTH)
@@ -3450,58 +3181,6 @@ design: (work@top)
   |vpiActual:
   \_int_typespec: , line:50:16, endln:50:28
 \_int_typespec: 
-\_gen_scope: (work@top.gen_nanbox_check[1]), line:49:56, endln:62:6
-  |vpiParent:
-  \_gen_scope_array: (work@top.gen_nanbox_check[1]), line:49:56, endln:62:6
-  |vpiFullName:work@top.gen_nanbox_check[1]
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[1].FP_WIDTH), line:50:29, endln:50:37
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[1].fmt), line:49:0
-  |vpiParamAssign:
-  \_param_assign: , line:50:29, endln:50:89
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@top.gen_nanbox_check[1].no_check), line:58:14, endln:60:8
-    |vpiParent:
-    \_gen_scope: (work@top.gen_nanbox_check[1]), line:49:56, endln:62:6
-    |vpiName:no_check
-    |vpiFullName:work@top.gen_nanbox_check[1].no_check
-    |vpiGenScope:
-    \_gen_scope: (work@top.gen_nanbox_check[1].no_check), line:58:14, endln:60:8
-      |vpiParent:
-      \_gen_scope_array: (work@top.gen_nanbox_check[1].no_check), line:58:14, endln:60:8
-      |vpiFullName:work@top.gen_nanbox_check[1].no_check
-      |vpiContAssign:
-      \_cont_assign: , line:59:14, endln:59:32
-        |vpiParent:
-        \_gen_scope: (work@top.gen_nanbox_check[1].no_check), line:58:14, endln:60:8
-        |vpiRhs:
-        \_constant: , line:59:30, endln:59:32
-          |vpiParent:
-          \_cont_assign: , line:59:14, endln:59:32
-          |vpiDecompile:'1
-          |vpiSize:-1
-          |BIN:1
-          |vpiConstType:3
-        |vpiLhs:
-        \_bit_select: (work@top.gen_nanbox_check[1].no_check.is_boxed), line:59:14, endln:59:27
-          |vpiParent:
-          \_cont_assign: , line:59:14, endln:59:32
-          |vpiName:is_boxed
-          |vpiFullName:work@top.gen_nanbox_check[1].no_check.is_boxed
-          |vpiIndex:
-          \_ref_obj: (work@top.gen_nanbox_check[1].no_check.fmt), line:59:23, endln:59:26
-            |vpiParent:
-            \_bit_select: (work@top.gen_nanbox_check[1].no_check.is_boxed), line:59:14, endln:59:27
-            |vpiName:fmt
-            |vpiFullName:work@top.gen_nanbox_check[1].no_check.fmt
-\_gen_scope_array: (work@top.gen_nanbox_check[1]), line:49:56, endln:62:6
-  |vpiParent:
-  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/ParamOverload3/dut.sv, line:43:1, endln:64:10
-  |vpiName:gen_nanbox_check[1]
-  |vpiFullName:work@top.gen_nanbox_check[1]
-  |vpiGenScope:
-  \_gen_scope: (work@top.gen_nanbox_check[1]), line:49:56, endln:62:6
 \_int_typespec: , line:50:16, endln:50:28
   |vpiParent:
   \_ref_typespec: (work@top.gen_nanbox_check[1].FP_WIDTH)
@@ -3512,34 +3191,6 @@ design: (work@top)
   |vpiActual:
   \_int_typespec: , line:50:16, endln:50:28
 \_int_typespec: 
-\_gen_scope: (work@top.gen_nanbox_check[2]), line:49:56, endln:62:6
-  |vpiParent:
-  \_gen_scope_array: (work@top.gen_nanbox_check[2]), line:49:56, endln:62:6
-  |vpiFullName:work@top.gen_nanbox_check[2]
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[2].FP_WIDTH), line:50:29, endln:50:37
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[2].fmt), line:49:0
-  |vpiParamAssign:
-  \_param_assign: , line:50:29, endln:50:89
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@top.gen_nanbox_check[2].check), line:52:54, endln:58:8
-    |vpiParent:
-    \_gen_scope: (work@top.gen_nanbox_check[2]), line:49:56, endln:62:6
-    |vpiName:check
-    |vpiFullName:work@top.gen_nanbox_check[2].check
-    |vpiGenScope:
-    \_gen_scope: (work@top.gen_nanbox_check[2].check), line:52:54, endln:58:8
-      |vpiParent:
-      \_gen_scope_array: (work@top.gen_nanbox_check[2].check), line:52:54, endln:58:8
-      |vpiFullName:work@top.gen_nanbox_check[2].check
-\_gen_scope_array: (work@top.gen_nanbox_check[2]), line:49:56, endln:62:6
-  |vpiParent:
-  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/ParamOverload3/dut.sv, line:43:1, endln:64:10
-  |vpiName:gen_nanbox_check[2]
-  |vpiFullName:work@top.gen_nanbox_check[2]
-  |vpiGenScope:
-  \_gen_scope: (work@top.gen_nanbox_check[2]), line:49:56, endln:62:6
 \_int_typespec: , line:50:16, endln:50:28
   |vpiParent:
   \_ref_typespec: (work@top.gen_nanbox_check[2].FP_WIDTH)
@@ -3550,34 +3201,6 @@ design: (work@top)
   |vpiActual:
   \_int_typespec: , line:50:16, endln:50:28
 \_int_typespec: 
-\_gen_scope: (work@top.gen_nanbox_check[3]), line:49:56, endln:62:6
-  |vpiParent:
-  \_gen_scope_array: (work@top.gen_nanbox_check[3]), line:49:56, endln:62:6
-  |vpiFullName:work@top.gen_nanbox_check[3]
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[3].FP_WIDTH), line:50:29, endln:50:37
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[3].fmt), line:49:0
-  |vpiParamAssign:
-  \_param_assign: , line:50:29, endln:50:89
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@top.gen_nanbox_check[3].check), line:52:54, endln:58:8
-    |vpiParent:
-    \_gen_scope: (work@top.gen_nanbox_check[3]), line:49:56, endln:62:6
-    |vpiName:check
-    |vpiFullName:work@top.gen_nanbox_check[3].check
-    |vpiGenScope:
-    \_gen_scope: (work@top.gen_nanbox_check[3].check), line:52:54, endln:58:8
-      |vpiParent:
-      \_gen_scope_array: (work@top.gen_nanbox_check[3].check), line:52:54, endln:58:8
-      |vpiFullName:work@top.gen_nanbox_check[3].check
-\_gen_scope_array: (work@top.gen_nanbox_check[3]), line:49:56, endln:62:6
-  |vpiParent:
-  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/ParamOverload3/dut.sv, line:43:1, endln:64:10
-  |vpiName:gen_nanbox_check[3]
-  |vpiFullName:work@top.gen_nanbox_check[3]
-  |vpiGenScope:
-  \_gen_scope: (work@top.gen_nanbox_check[3]), line:49:56, endln:62:6
 \_int_typespec: , line:50:16, endln:50:28
   |vpiParent:
   \_ref_typespec: (work@top.gen_nanbox_check[3].FP_WIDTH)
@@ -3588,34 +3211,6 @@ design: (work@top)
   |vpiActual:
   \_int_typespec: , line:50:16, endln:50:28
 \_int_typespec: 
-\_gen_scope: (work@top.gen_nanbox_check[4]), line:49:56, endln:62:6
-  |vpiParent:
-  \_gen_scope_array: (work@top.gen_nanbox_check[4]), line:49:56, endln:62:6
-  |vpiFullName:work@top.gen_nanbox_check[4]
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[4].FP_WIDTH), line:50:29, endln:50:37
-  |vpiParameter:
-  \_parameter: (work@top.gen_nanbox_check[4].fmt), line:49:0
-  |vpiParamAssign:
-  \_param_assign: , line:50:29, endln:50:89
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@top.gen_nanbox_check[4].check), line:52:54, endln:58:8
-    |vpiParent:
-    \_gen_scope: (work@top.gen_nanbox_check[4]), line:49:56, endln:62:6
-    |vpiName:check
-    |vpiFullName:work@top.gen_nanbox_check[4].check
-    |vpiGenScope:
-    \_gen_scope: (work@top.gen_nanbox_check[4].check), line:52:54, endln:58:8
-      |vpiParent:
-      \_gen_scope_array: (work@top.gen_nanbox_check[4].check), line:52:54, endln:58:8
-      |vpiFullName:work@top.gen_nanbox_check[4].check
-\_gen_scope_array: (work@top.gen_nanbox_check[4]), line:49:56, endln:62:6
-  |vpiParent:
-  \_module_inst: work@top (work@top), file:${SURELOG_DIR}/tests/ParamOverload3/dut.sv, line:43:1, endln:64:10
-  |vpiName:gen_nanbox_check[4]
-  |vpiFullName:work@top.gen_nanbox_check[4]
-  |vpiGenScope:
-  \_gen_scope: (work@top.gen_nanbox_check[4]), line:49:56, endln:62:6
 \_int_typespec: , line:50:16, endln:50:28
   |vpiParent:
   \_ref_typespec: (work@top.gen_nanbox_check[4].FP_WIDTH)

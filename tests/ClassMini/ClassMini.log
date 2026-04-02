@@ -49,7 +49,7 @@ begin                                                  2
 class_defn                                             4
 class_typespec                                         3
 class_var                                              1
-constant                                               9
+constant                                              12
 design                                                 1
 extends                                                3
 hier_path                                              1
@@ -224,20 +224,8 @@ design: (work@door_mod)
       |vpiParent:
       \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMini/dut.sv, line:3:9, endln:11:9
       |vpiRhs:
-      \_constant: , line:7:27, endln:7:32
-        |vpiParent:
-        \_param_assign: , line:7:15, endln:7:32
-        |vpiDecompile:2'b00
-        |vpiSize:2
+      \_constant: 
         |BIN:00
-        |vpiTypespec:
-        \_ref_typespec: (pack::door)
-          |vpiParent:
-          \_constant: , line:7:27, endln:7:32
-          |vpiFullName:pack::door
-          |vpiActual:
-          \_int_typespec: , line:7:5, endln:9:25
-        |vpiConstType:3
       |vpiLhs:
       \_parameter: (pack::door::OPENED), line:7:15, endln:7:21
     |vpiParamAssign:
@@ -245,20 +233,8 @@ design: (work@door_mod)
       |vpiParent:
       \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMini/dut.sv, line:3:9, endln:11:9
       |vpiRhs:
-      \_constant: , line:8:20, endln:8:25
-        |vpiParent:
-        \_param_assign: , line:8:8, endln:8:25
-        |vpiDecompile:2'b01
-        |vpiSize:2
+      \_constant: 
         |BIN:01
-        |vpiTypespec:
-        \_ref_typespec: (pack::door)
-          |vpiParent:
-          \_constant: , line:8:20, endln:8:25
-          |vpiFullName:pack::door
-          |vpiActual:
-          \_int_typespec: , line:7:5, endln:9:25
-        |vpiConstType:3
       |vpiLhs:
       \_parameter: (pack::door::CLOSED), line:8:8, endln:8:14
     |vpiParamAssign:
@@ -266,20 +242,8 @@ design: (work@door_mod)
       |vpiParent:
       \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMini/dut.sv, line:3:9, endln:11:9
       |vpiRhs:
-      \_constant: , line:9:20, endln:9:25
-        |vpiParent:
-        \_param_assign: , line:9:8, endln:9:25
-        |vpiDecompile:2'b10
-        |vpiSize:2
+      \_constant: 
         |BIN:10
-        |vpiTypespec:
-        \_ref_typespec: (pack::door)
-          |vpiParent:
-          \_constant: , line:9:20, endln:9:25
-          |vpiFullName:pack::door
-          |vpiActual:
-          \_int_typespec: , line:7:5, endln:9:25
-        |vpiConstType:3
       |vpiLhs:
       \_parameter: (pack::door::LOCKED), line:9:8, endln:9:14
     |vpiVirtual:1
@@ -488,13 +452,6 @@ design: (work@door_mod)
   |vpiActual:
   \_ref_obj: (work@door_mod.open), line:24:9, endln:24:13
   |vpiName:open
-\_param_assign: , line:7:15, endln:7:32
-  |vpiParent:
-  \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMini/dut.sv, line:3:9, endln:11:9
-  |vpiRhs:
-  \_constant: , line:7:27, endln:7:32
-  |vpiLhs:
-  \_parameter: (pack::door::OPENED), line:7:15, endln:7:21
 \_int_typespec: , line:7:5, endln:9:25
   |vpiRange:
   \_range: 
@@ -506,13 +463,6 @@ design: (work@door_mod)
     |vpiRightRange:
     \_constant: 
       |INT:0
-\_param_assign: , line:8:8, endln:8:25
-  |vpiParent:
-  \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMini/dut.sv, line:3:9, endln:11:9
-  |vpiRhs:
-  \_constant: , line:8:20, endln:8:25
-  |vpiLhs:
-  \_parameter: (pack::door::CLOSED), line:8:8, endln:8:14
 \_int_typespec: , line:7:5, endln:9:25
   |vpiRange:
   \_range: 
@@ -524,13 +474,6 @@ design: (work@door_mod)
     |vpiRightRange:
     \_constant: 
       |INT:0
-\_param_assign: , line:9:8, endln:9:25
-  |vpiParent:
-  \_class_defn: (pack::door), file:${SURELOG_DIR}/tests/ClassMini/dut.sv, line:3:9, endln:11:9
-  |vpiRhs:
-  \_constant: , line:9:20, endln:9:25
-  |vpiLhs:
-  \_parameter: (pack::door::LOCKED), line:9:8, endln:9:14
 \_int_typespec: , line:7:5, endln:9:25
   |vpiRange:
   \_range: 

@@ -483,7 +483,7 @@ chandle_var                                            2
 class_defn                                           706
 class_typespec                                     17862
 class_var                                           9573
-constant                                           95429
+constant                                           95435
 constraint                                            40
 continue_stmt                                        133
 delay_control                                        129
@@ -510,7 +510,7 @@ import_typespec                                       10
 include_file_info                                    196
 indexed_part_select                                  126
 initial                                                1
-int_typespec                                        8285
+int_typespec                                        8291
 int_var                                             2943
 io_decl                                            13340
 logic_net                                            310
@@ -532,8 +532,8 @@ part_select                                          189
 range                                              16740
 real_typespec                                         41
 real_var                                               8
-ref_obj                                           110782
-ref_typespec                                       59063
+ref_obj                                           110776
+ref_typespec                                       59069
 ref_var                                             4642
 repeat                                                73
 return_stmt                                         7108

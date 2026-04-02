@@ -731,7 +731,7 @@ begin                                                  2
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              76
+constant                                              82
 cont_assign                                            1
 design                                                 1
 enum_const                                             5
@@ -741,7 +741,7 @@ function                                               9
 hier_path                                              1
 if_stmt                                                1
 initial                                                1
-int_typespec                                          56
+int_typespec                                          62
 int_var                                                7
 integer_typespec                                       1
 io_decl                                               11
@@ -754,8 +754,8 @@ package                                                4
 param_assign                                          30
 parameter                                             30
 range                                                  3
-ref_obj                                               20
-ref_typespec                                         100
+ref_obj                                               14
+ref_typespec                                         106
 string_typespec                                        2
 struct_typespec                                        3
 struct_var                                             2
@@ -774,7 +774,7 @@ begin                                                  4
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              76
+constant                                              82
 cont_assign                                            2
 design                                                 1
 enum_const                                            10
@@ -784,7 +784,7 @@ function                                              18
 hier_path                                              2
 if_stmt                                                2
 initial                                                2
-int_typespec                                          56
+int_typespec                                          62
 int_var                                                7
 integer_typespec                                       1
 io_decl                                               22
@@ -797,8 +797,8 @@ package                                                4
 param_assign                                          30
 parameter                                             30
 range                                                  3
-ref_obj                                               30
-ref_typespec                                         109
+ref_obj                                               24
+ref_typespec                                         115
 string_typespec                                        2
 struct_typespec                                        3
 struct_var                                             4
@@ -1055,13 +1055,20 @@ design: (work@tlul_adapter_host)
       \_param_assign: , line:9:18, endln:9:35
       |vpiOpType:23
       |vpiOperand:
-      \_ref_obj: (top_pkg::TL_DW), line:9:26, endln:9:31
+      \_constant: , line:9:26, endln:9:31
         |vpiParent:
         \_operation: , line:9:26, endln:9:34
-        |vpiName:TL_DW
-        |vpiFullName:top_pkg::TL_DW
-        |vpiActual:
-        \_parameter: (top_pkg::TL_DW), line:5:18, endln:5:23
+        |vpiDecompile:32
+        |vpiSize:64
+        |UINT:32
+        |vpiTypespec:
+        \_ref_typespec: (top_pkg)
+          |vpiParent:
+          \_constant: , line:9:26, endln:9:31
+          |vpiFullName:top_pkg
+          |vpiActual:
+          \_int_typespec: , line:5:14, endln:5:17
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:9:33, endln:9:34
         |vpiParent:
@@ -2749,6 +2756,12 @@ design: (work@tlul_adapter_host)
   |vpiInstance:
   \_package: top_pkg (top_pkg::), file:${SURELOG_DIR}/tests/CastTypespec/dut.sv, line:2:1, endln:12:13
   |vpiSigned:1
+\_int_typespec: , line:5:14, endln:5:17
+  |vpiParent:
+  \_ref_typespec: (top_pkg)
+  |vpiInstance:
+  \_package: top_pkg (top_pkg::), file:${SURELOG_DIR}/tests/CastTypespec/dut.sv, line:2:1, endln:12:13
+  |vpiSigned:1
 \_int_typespec: , line:10:14, endln:10:17
   |vpiParent:
   \_parameter: (top_pkg::TL_SZW), line:10:18, endln:10:24
@@ -2861,13 +2874,20 @@ design: (work@tlul_adapter_host)
     \_operation: , line:37:25, endln:37:49
     |vpiOpType:24
     |vpiOperand:
-    \_ref_obj: (work@top.p_outmux.HartSelLen), line:37:26, endln:37:36
+    \_constant: , line:37:26, endln:37:36
       |vpiParent:
       \_operation: , line:37:26, endln:37:38
-      |vpiName:HartSelLen
-      |vpiFullName:work@top.p_outmux.HartSelLen
-      |vpiActual:
-      \_parameter: (work@top.HartSelLen), line:35:14, endln:35:24
+      |vpiDecompile:2
+      |vpiSize:64
+      |UINT:2
+      |vpiTypespec:
+      \_ref_typespec: (work@top.p_outmux)
+        |vpiParent:
+        \_constant: , line:37:26, endln:37:36
+        |vpiFullName:work@top.p_outmux
+        |vpiActual:
+        \_int_typespec: , line:35:3, endln:35:28
+      |vpiConstType:9
     |vpiOperand:
     \_constant: , line:37:37, endln:37:38
       |vpiParent:
@@ -2876,6 +2896,9 @@ design: (work@tlul_adapter_host)
       |vpiSize:64
       |UINT:1
       |vpiConstType:9
+\_int_typespec: , line:35:3, endln:35:28
+  |vpiParent:
+  \_ref_typespec: (work@top.p_outmux)
 \_function: (work@mailbox::new), line:3:5, endln:4:16
   |vpiParent:
   \_class_defn: (work@mailbox), file:${SURELOG_DIR}/tests/CastTypespec/builtin.sv, line:1:3, endln:27:11

@@ -1,25 +1,18 @@
-module mod1
-(
-);
-typedef struct packed {
-    logic [63:0] f1;
-    logic [7:0] f2;
-} td1;
-typedef struct packed {
-    logic [63:0] f1;
-    logic [7:0] f2;
-} td2;
+module func_width_scope_top(inp, out1, out2);
+	input wire signed inp;
 
-td2 inst1;
-
-generate
-if(1) begin : GEN1
-    td1 [3:0] pipe;
-    assign inst1 = '{
-        f1 : pipe[3].f1[63:0],
-        f2 : pipe[3].f2[7:0]
-    };
-end : GEN1
-endgenerate
+	localparam WIDTH_A = 5;
+  
+	generate
+		if (1) begin : blk
+			localparam WIDTH_A = 6;
+			function automatic [WIDTH_A-1:0] func2;
+				input reg [WIDTH_A-1:0] inp;
+				func2 = ~inp;
+			endfunction
+			wire [func2(0)-1:0] yc;
+                  
+		end
+	endgenerate
 
 endmodule

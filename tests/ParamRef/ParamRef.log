@@ -212,10 +212,10 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 1.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-constant                                              41
+constant                                              45
 design                                                 1
 import_typespec                                        1
-int_typespec                                          18
+int_typespec                                          22
 logic_typespec                                         4
 module_inst                                           14
 operation                                              7
@@ -224,15 +224,14 @@ param_assign                                          18
 parameter                                             19
 range                                                  4
 ref_module                                             2
-ref_obj                                                4
-ref_typespec                                          38
+ref_typespec                                          42
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-constant                                              41
+constant                                              45
 design                                                 1
 import_typespec                                        1
-int_typespec                                          18
+int_typespec                                          22
 logic_typespec                                         4
 module_inst                                           14
 operation                                              7
@@ -241,8 +240,7 @@ param_assign                                          18
 parameter                                             19
 range                                                  4
 ref_module                                             2
-ref_obj                                                4
-ref_typespec                                          38
+ref_typespec                                          42
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ParamRef/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ParamRef/slpp_all/checker/surelog.chk.html ...
@@ -363,13 +361,20 @@ design: (work@top_earlgrey)
       \_param_assign: , line:7:28, endln:7:62
       |vpiOpType:24
       |vpiOperand:
-      \_ref_obj: (dm::HaltAddress), line:7:47, endln:7:58
+      \_constant: , line:7:47, endln:7:58
         |vpiParent:
         \_operation: , line:7:47, endln:7:62
-        |vpiName:HaltAddress
-        |vpiFullName:dm::HaltAddress
-        |vpiActual:
-        \_parameter: (dm::HaltAddress), line:6:19, endln:6:30
+        |vpiDecompile:10
+        |vpiSize:64
+        |UINT:10
+        |vpiTypespec:
+        \_ref_typespec: (dm)
+          |vpiParent:
+          \_constant: , line:7:47, endln:7:58
+          |vpiFullName:dm
+          |vpiActual:
+          \_int_typespec: , line:6:15, endln:6:18
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:7:61, endln:7:62
         |vpiParent:
@@ -885,6 +890,12 @@ design: (work@top_earlgrey)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:6:15, endln:6:18
+  |vpiParent:
+  \_ref_typespec: (dm)
+  |vpiInstance:
+  \_package: dm (dm::), file:${SURELOG_DIR}/tests/ParamRef/dut.sv, line:5:1, endln:8:16
+  |vpiSigned:1
 \_int_typespec: , line:26:14, endln:26:26
   |vpiParent:
   \_parameter: (work@ibex_core.DmExceptionAddr), line:26:27, endln:26:42

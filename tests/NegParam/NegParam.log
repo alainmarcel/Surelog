@@ -333,7 +333,7 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 begin                                                  1
-constant                                              75
+constant                                              74
 design                                                 1
 gen_if                                                 1
 int_typespec                                          31
@@ -341,22 +341,22 @@ logic_net                                              3
 logic_typespec                                         5
 logic_var                                              3
 module_inst                                            7
-operation                                             24
+operation                                             23
 param_assign                                          18
 parameter                                             19
 range                                                 12
 ref_module                                             1
-ref_obj                                               12
-ref_typespec                                          64
-string_typespec                                        4
+ref_obj                                               11
+ref_typespec                                          63
+string_typespec                                        3
 sys_func_call                                          3
-tagged_pattern                                         4
+tagged_pattern                                         3
 unsupported_typespec                                   3
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 begin                                                  1
-constant                                              75
+constant                                              74
 design                                                 1
 gen_if                                                 1
 int_typespec                                          31
@@ -364,16 +364,16 @@ logic_net                                              3
 logic_typespec                                         5
 logic_var                                              3
 module_inst                                            7
-operation                                             24
+operation                                             23
 param_assign                                          18
 parameter                                             19
 range                                                 12
 ref_module                                             1
-ref_obj                                               12
-ref_typespec                                          64
-string_typespec                                        4
+ref_obj                                               11
+ref_typespec                                          63
+string_typespec                                        3
 sys_func_call                                          3
-tagged_pattern                                         4
+tagged_pattern                                         3
 unsupported_typespec                                   3
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/NegParam/slpp_all/surelog.uhdm ...
@@ -817,7 +817,7 @@ design: (work@top)
         |vpiParent:
         \_operation: , line:5:5, endln:7:6
         |vpiPattern:
-        \_constant: , line:2:41, endln:2:57
+        \_constant: , line:6:23, endln:6:40
           |vpiParent:
           \_param_assign: , line:2:13, endln:2:57
           |vpiDecompile:40'h0080000000
@@ -826,7 +826,7 @@ design: (work@top)
           |vpiTypespec:
           \_ref_typespec: (work@top)
             |vpiParent:
-            \_constant: , line:2:41, endln:2:57
+            \_constant: , line:6:23, endln:6:40
             |vpiFullName:work@top
             |vpiActual:
             \_int_typespec: , line:2:2, endln:2:57
@@ -916,6 +916,13 @@ design: (work@top)
           |vpiDecompile:40'h0080000000
           |vpiSize:40
           |HEX:0080000000
+          |vpiTypespec:
+          \_ref_typespec: (work@top)
+            |vpiParent:
+            \_constant: , line:6:23, endln:6:40
+            |vpiFullName:work@top
+            |vpiActual:
+            \_int_typespec: , line:2:2, endln:2:57
           |vpiConstType:5
         |vpiTypespec:
         \_ref_typespec: (work@top)
@@ -1300,6 +1307,23 @@ design: (work@top)
   |vpiParent:
   \_ref_typespec: (work@top)
   |vpiName:boot_pc
+\_int_typespec: , line:2:2, endln:2:57
+  |vpiParent:
+  \_ref_typespec: (work@top)
+  |vpiRange:
+  \_range: 
+    |vpiParent:
+    \_int_typespec: , line:2:2, endln:2:57
+    |vpiLeftRange:
+    \_constant: 
+      |vpiParent:
+      \_range: 
+      |INT:39
+    |vpiRightRange:
+    \_constant: 
+      |vpiParent:
+      \_range: 
+      |INT:0
 \_logic_typespec: , line:22:3, endln:22:19
   |vpiParent:
   \_logic_var: (work@prim_packer.pos_next), line:22:34, endln:22:42

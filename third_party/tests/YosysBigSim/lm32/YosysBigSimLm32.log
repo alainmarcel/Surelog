@@ -95,7 +95,7 @@ begin                                                350
 bit_select                                           267
 case_item                                             89
 case_stmt                                             21
-constant                                            8201
+constant                                            8218
 cont_assign                                          492
 delay_control                                          1
 design                                                 1
@@ -112,7 +112,7 @@ if_else                                              145
 if_stmt                                              146
 include_file_info                                     43
 initial                                               12
-int_typespec                                         155
+int_typespec                                         172
 integer_typespec                                      12
 integer_var                                            6
 logic_net                                           1846
@@ -126,8 +126,8 @@ part_select                                          258
 port                                                1290
 range                                               1279
 ref_module                                            25
-ref_obj                                             5099
-ref_typespec                                        2572
+ref_obj                                             5082
+ref_typespec                                        2589
 ref_var                                                5
 repeat                                                 2
 string_typespec                                       11

@@ -3164,7 +3164,7 @@ bit_typespec                                           6
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                            1206
+constant                                            1272
 design                                                 1
 enum_const                                             5
 enum_typespec                                          1
@@ -3172,7 +3172,7 @@ enum_var                                               1
 function                                               9
 gen_if                                                 3
 initial                                                1
-int_typespec                                          19
+int_typespec                                          85
 int_var                                                4
 io_decl                                               11
 logic_var                                              1
@@ -3183,8 +3183,8 @@ param_assign                                          22
 parameter                                             23
 range                                                 27
 ref_module                                             3
-ref_obj                                               81
-ref_typespec                                          46
+ref_obj                                               15
+ref_typespec                                         112
 sys_func_call                                          2
 task                                                   9
 var_select                                           132
@@ -3198,7 +3198,7 @@ bit_typespec                                           6
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                            1206
+constant                                            1272
 design                                                 1
 enum_const                                            10
 enum_typespec                                          2
@@ -3206,7 +3206,7 @@ enum_var                                               1
 function                                              18
 gen_if                                                 3
 initial                                                2
-int_typespec                                          19
+int_typespec                                          85
 int_var                                                4
 io_decl                                               22
 logic_var                                              1
@@ -3217,8 +3217,8 @@ param_assign                                          22
 parameter                                             23
 range                                                 27
 ref_module                                             3
-ref_obj                                               82
-ref_typespec                                          51
+ref_obj                                               16
+ref_typespec                                         117
 sys_func_call                                          3
 task                                                  18
 var_select                                           132
@@ -4360,11 +4360,20 @@ design: (work@top)
                 |UINT:0
                 |vpiConstType:9
               |vpiIndex:
-              \_ref_obj: (work@top.routing_matrix_p.i), line:45:64, endln:45:65
+              \_constant: , line:45:64, endln:45:65
                 |vpiParent:
                 \_var_select: (work@top.routing_matrix_p), line:45:44, endln:45:66
-                |vpiName:i
-                |vpiFullName:work@top.routing_matrix_p.i
+                |vpiDecompile:0
+                |vpiSize:64
+                |UINT:0
+                |vpiTypespec:
+                \_ref_typespec: (work@top.routing_matrix_p)
+                  |vpiParent:
+                  \_constant: , line:45:64, endln:45:65
+                  |vpiFullName:work@top.routing_matrix_p
+                  |vpiActual:
+                  \_int_typespec: , line:4:2, endln:4:18
+                |vpiConstType:9
             |vpiName:$bits
           |vpiOperand:
           \_constant: , line:45:70, endln:45:72
@@ -4730,11 +4739,20 @@ design: (work@top)
                                                                                                                                             |UINT:0
                                                                                                                                             |vpiConstType:9
                                                                                                                                           |vpiIndex:
-                                                                                                                                          \_ref_obj: (work@top.routing_matrix_p.i), line:45:115, endln:45:116
+                                                                                                                                          \_constant: , line:45:115, endln:45:116
                                                                                                                                             |vpiParent:
                                                                                                                                             \_var_select: (work@top.routing_matrix_p), line:45:95, endln:45:117
-                                                                                                                                            |vpiName:i
-                                                                                                                                            |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                                            |vpiDecompile:0
+                                                                                                                                            |vpiSize:64
+                                                                                                                                            |UINT:0
+                                                                                                                                            |vpiTypespec:
+                                                                                                                                            \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                                              |vpiParent:
+                                                                                                                                              \_constant: , line:45:115, endln:45:116
+                                                                                                                                              |vpiFullName:work@top.routing_matrix_p
+                                                                                                                                              |vpiActual:
+                                                                                                                                              \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                                            |vpiConstType:9
                                                                                                                                         |vpiOperand:
                                                                                                                                         \_constant: , line:45:121, endln:45:122
                                                                                                                                           |vpiParent:
@@ -4776,11 +4794,20 @@ design: (work@top)
                                                                                                                                             |UINT:0
                                                                                                                                             |vpiConstType:9
                                                                                                                                           |vpiIndex:
-                                                                                                                                          \_ref_obj: (work@top.routing_matrix_p.i), line:45:155, endln:45:156
+                                                                                                                                          \_constant: , line:45:155, endln:45:156
                                                                                                                                             |vpiParent:
                                                                                                                                             \_var_select: (work@top.routing_matrix_p), line:45:135, endln:45:157
-                                                                                                                                            |vpiName:i
-                                                                                                                                            |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                                            |vpiDecompile:0
+                                                                                                                                            |vpiSize:64
+                                                                                                                                            |UINT:0
+                                                                                                                                            |vpiTypespec:
+                                                                                                                                            \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                                              |vpiParent:
+                                                                                                                                              \_constant: , line:45:155, endln:45:156
+                                                                                                                                              |vpiFullName:work@top.routing_matrix_p
+                                                                                                                                              |vpiActual:
+                                                                                                                                              \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                                            |vpiConstType:9
                                                                                                                                         |vpiOperand:
                                                                                                                                         \_constant: , line:45:161, endln:45:162
                                                                                                                                           |vpiParent:
@@ -4822,11 +4849,20 @@ design: (work@top)
                                                                                                                                           |UINT:0
                                                                                                                                           |vpiConstType:9
                                                                                                                                         |vpiIndex:
-                                                                                                                                        \_ref_obj: (work@top.routing_matrix_p.i), line:45:195, endln:45:196
+                                                                                                                                        \_constant: , line:45:195, endln:45:196
                                                                                                                                           |vpiParent:
                                                                                                                                           \_var_select: (work@top.routing_matrix_p), line:45:175, endln:45:197
-                                                                                                                                          |vpiName:i
-                                                                                                                                          |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                                          |vpiDecompile:0
+                                                                                                                                          |vpiSize:64
+                                                                                                                                          |UINT:0
+                                                                                                                                          |vpiTypespec:
+                                                                                                                                          \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                                            |vpiParent:
+                                                                                                                                            \_constant: , line:45:195, endln:45:196
+                                                                                                                                            |vpiFullName:work@top.routing_matrix_p
+                                                                                                                                            |vpiActual:
+                                                                                                                                            \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                                          |vpiConstType:9
                                                                                                                                       |vpiOperand:
                                                                                                                                       \_constant: , line:45:201, endln:45:202
                                                                                                                                         |vpiParent:
@@ -4868,11 +4904,20 @@ design: (work@top)
                                                                                                                                         |UINT:0
                                                                                                                                         |vpiConstType:9
                                                                                                                                       |vpiIndex:
-                                                                                                                                      \_ref_obj: (work@top.routing_matrix_p.i), line:45:235, endln:45:236
+                                                                                                                                      \_constant: , line:45:235, endln:45:236
                                                                                                                                         |vpiParent:
                                                                                                                                         \_var_select: (work@top.routing_matrix_p), line:45:215, endln:45:237
-                                                                                                                                        |vpiName:i
-                                                                                                                                        |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                                        |vpiDecompile:0
+                                                                                                                                        |vpiSize:64
+                                                                                                                                        |UINT:0
+                                                                                                                                        |vpiTypespec:
+                                                                                                                                        \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                                          |vpiParent:
+                                                                                                                                          \_constant: , line:45:235, endln:45:236
+                                                                                                                                          |vpiFullName:work@top.routing_matrix_p
+                                                                                                                                          |vpiActual:
+                                                                                                                                          \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                                        |vpiConstType:9
                                                                                                                                     |vpiOperand:
                                                                                                                                     \_constant: , line:45:241, endln:45:242
                                                                                                                                       |vpiParent:
@@ -4914,11 +4959,20 @@ design: (work@top)
                                                                                                                                       |UINT:0
                                                                                                                                       |vpiConstType:9
                                                                                                                                     |vpiIndex:
-                                                                                                                                    \_ref_obj: (work@top.routing_matrix_p.i), line:45:275, endln:45:276
+                                                                                                                                    \_constant: , line:45:275, endln:45:276
                                                                                                                                       |vpiParent:
                                                                                                                                       \_var_select: (work@top.routing_matrix_p), line:45:255, endln:45:277
-                                                                                                                                      |vpiName:i
-                                                                                                                                      |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                                      |vpiDecompile:0
+                                                                                                                                      |vpiSize:64
+                                                                                                                                      |UINT:0
+                                                                                                                                      |vpiTypespec:
+                                                                                                                                      \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                                        |vpiParent:
+                                                                                                                                        \_constant: , line:45:275, endln:45:276
+                                                                                                                                        |vpiFullName:work@top.routing_matrix_p
+                                                                                                                                        |vpiActual:
+                                                                                                                                        \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                                      |vpiConstType:9
                                                                                                                                   |vpiOperand:
                                                                                                                                   \_constant: , line:45:281, endln:45:282
                                                                                                                                     |vpiParent:
@@ -4960,11 +5014,20 @@ design: (work@top)
                                                                                                                                     |UINT:0
                                                                                                                                     |vpiConstType:9
                                                                                                                                   |vpiIndex:
-                                                                                                                                  \_ref_obj: (work@top.routing_matrix_p.i), line:45:315, endln:45:316
+                                                                                                                                  \_constant: , line:45:315, endln:45:316
                                                                                                                                     |vpiParent:
                                                                                                                                     \_var_select: (work@top.routing_matrix_p), line:45:295, endln:45:317
-                                                                                                                                    |vpiName:i
-                                                                                                                                    |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                                    |vpiDecompile:0
+                                                                                                                                    |vpiSize:64
+                                                                                                                                    |UINT:0
+                                                                                                                                    |vpiTypespec:
+                                                                                                                                    \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                                      |vpiParent:
+                                                                                                                                      \_constant: , line:45:315, endln:45:316
+                                                                                                                                      |vpiFullName:work@top.routing_matrix_p
+                                                                                                                                      |vpiActual:
+                                                                                                                                      \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                                    |vpiConstType:9
                                                                                                                                 |vpiOperand:
                                                                                                                                 \_constant: , line:45:321, endln:45:322
                                                                                                                                   |vpiParent:
@@ -5006,11 +5069,20 @@ design: (work@top)
                                                                                                                                   |UINT:0
                                                                                                                                   |vpiConstType:9
                                                                                                                                 |vpiIndex:
-                                                                                                                                \_ref_obj: (work@top.routing_matrix_p.i), line:45:355, endln:45:356
+                                                                                                                                \_constant: , line:45:355, endln:45:356
                                                                                                                                   |vpiParent:
                                                                                                                                   \_var_select: (work@top.routing_matrix_p), line:45:335, endln:45:357
-                                                                                                                                  |vpiName:i
-                                                                                                                                  |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                                  |vpiDecompile:0
+                                                                                                                                  |vpiSize:64
+                                                                                                                                  |UINT:0
+                                                                                                                                  |vpiTypespec:
+                                                                                                                                  \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                                    |vpiParent:
+                                                                                                                                    \_constant: , line:45:355, endln:45:356
+                                                                                                                                    |vpiFullName:work@top.routing_matrix_p
+                                                                                                                                    |vpiActual:
+                                                                                                                                    \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                                  |vpiConstType:9
                                                                                                                               |vpiOperand:
                                                                                                                               \_constant: , line:45:361, endln:45:362
                                                                                                                                 |vpiParent:
@@ -5052,11 +5124,20 @@ design: (work@top)
                                                                                                                                 |UINT:0
                                                                                                                                 |vpiConstType:9
                                                                                                                               |vpiIndex:
-                                                                                                                              \_ref_obj: (work@top.routing_matrix_p.i), line:45:394, endln:45:395
+                                                                                                                              \_constant: , line:45:394, endln:45:395
                                                                                                                                 |vpiParent:
                                                                                                                                 \_var_select: (work@top.routing_matrix_p), line:45:374, endln:45:396
-                                                                                                                                |vpiName:i
-                                                                                                                                |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                                |vpiDecompile:0
+                                                                                                                                |vpiSize:64
+                                                                                                                                |UINT:0
+                                                                                                                                |vpiTypespec:
+                                                                                                                                \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                                  |vpiParent:
+                                                                                                                                  \_constant: , line:45:394, endln:45:395
+                                                                                                                                  |vpiFullName:work@top.routing_matrix_p
+                                                                                                                                  |vpiActual:
+                                                                                                                                  \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                                |vpiConstType:9
                                                                                                                             |vpiOperand:
                                                                                                                             \_constant: , line:45:400, endln:45:401
                                                                                                                               |vpiParent:
@@ -5098,11 +5179,20 @@ design: (work@top)
                                                                                                                               |UINT:0
                                                                                                                               |vpiConstType:9
                                                                                                                             |vpiIndex:
-                                                                                                                            \_ref_obj: (work@top.routing_matrix_p.i), line:45:434, endln:45:435
+                                                                                                                            \_constant: , line:45:434, endln:45:435
                                                                                                                               |vpiParent:
                                                                                                                               \_var_select: (work@top.routing_matrix_p), line:45:414, endln:45:436
-                                                                                                                              |vpiName:i
-                                                                                                                              |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                              |vpiDecompile:0
+                                                                                                                              |vpiSize:64
+                                                                                                                              |UINT:0
+                                                                                                                              |vpiTypespec:
+                                                                                                                              \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                                |vpiParent:
+                                                                                                                                \_constant: , line:45:434, endln:45:435
+                                                                                                                                |vpiFullName:work@top.routing_matrix_p
+                                                                                                                                |vpiActual:
+                                                                                                                                \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                              |vpiConstType:9
                                                                                                                           |vpiOperand:
                                                                                                                           \_constant: , line:45:440, endln:45:441
                                                                                                                             |vpiParent:
@@ -5144,11 +5234,20 @@ design: (work@top)
                                                                                                                             |UINT:0
                                                                                                                             |vpiConstType:9
                                                                                                                           |vpiIndex:
-                                                                                                                          \_ref_obj: (work@top.routing_matrix_p.i), line:45:473, endln:45:474
+                                                                                                                          \_constant: , line:45:473, endln:45:474
                                                                                                                             |vpiParent:
                                                                                                                             \_var_select: (work@top.routing_matrix_p), line:45:453, endln:45:475
-                                                                                                                            |vpiName:i
-                                                                                                                            |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                            |vpiDecompile:0
+                                                                                                                            |vpiSize:64
+                                                                                                                            |UINT:0
+                                                                                                                            |vpiTypespec:
+                                                                                                                            \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                              |vpiParent:
+                                                                                                                              \_constant: , line:45:473, endln:45:474
+                                                                                                                              |vpiFullName:work@top.routing_matrix_p
+                                                                                                                              |vpiActual:
+                                                                                                                              \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                            |vpiConstType:9
                                                                                                                         |vpiOperand:
                                                                                                                         \_constant: , line:45:479, endln:45:480
                                                                                                                           |vpiParent:
@@ -5190,11 +5289,20 @@ design: (work@top)
                                                                                                                           |UINT:0
                                                                                                                           |vpiConstType:9
                                                                                                                         |vpiIndex:
-                                                                                                                        \_ref_obj: (work@top.routing_matrix_p.i), line:46:112, endln:46:113
+                                                                                                                        \_constant: , line:46:112, endln:46:113
                                                                                                                           |vpiParent:
                                                                                                                           \_var_select: (work@top.routing_matrix_p), line:46:92, endln:46:114
-                                                                                                                          |vpiName:i
-                                                                                                                          |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                          |vpiDecompile:0
+                                                                                                                          |vpiSize:64
+                                                                                                                          |UINT:0
+                                                                                                                          |vpiTypespec:
+                                                                                                                          \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                            |vpiParent:
+                                                                                                                            \_constant: , line:46:112, endln:46:113
+                                                                                                                            |vpiFullName:work@top.routing_matrix_p
+                                                                                                                            |vpiActual:
+                                                                                                                            \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                          |vpiConstType:9
                                                                                                                       |vpiOperand:
                                                                                                                       \_constant: , line:46:118, endln:46:120
                                                                                                                         |vpiParent:
@@ -5236,11 +5344,20 @@ design: (work@top)
                                                                                                                         |UINT:0
                                                                                                                         |vpiConstType:9
                                                                                                                       |vpiIndex:
-                                                                                                                      \_ref_obj: (work@top.routing_matrix_p.i), line:46:152, endln:46:153
+                                                                                                                      \_constant: , line:46:152, endln:46:153
                                                                                                                         |vpiParent:
                                                                                                                         \_var_select: (work@top.routing_matrix_p), line:46:132, endln:46:154
-                                                                                                                        |vpiName:i
-                                                                                                                        |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                        |vpiDecompile:0
+                                                                                                                        |vpiSize:64
+                                                                                                                        |UINT:0
+                                                                                                                        |vpiTypespec:
+                                                                                                                        \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                          |vpiParent:
+                                                                                                                          \_constant: , line:46:152, endln:46:153
+                                                                                                                          |vpiFullName:work@top.routing_matrix_p
+                                                                                                                          |vpiActual:
+                                                                                                                          \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                        |vpiConstType:9
                                                                                                                     |vpiOperand:
                                                                                                                     \_constant: , line:46:158, endln:46:160
                                                                                                                       |vpiParent:
@@ -5282,11 +5399,20 @@ design: (work@top)
                                                                                                                       |UINT:0
                                                                                                                       |vpiConstType:9
                                                                                                                     |vpiIndex:
-                                                                                                                    \_ref_obj: (work@top.routing_matrix_p.i), line:46:192, endln:46:193
+                                                                                                                    \_constant: , line:46:192, endln:46:193
                                                                                                                       |vpiParent:
                                                                                                                       \_var_select: (work@top.routing_matrix_p), line:46:172, endln:46:194
-                                                                                                                      |vpiName:i
-                                                                                                                      |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                      |vpiDecompile:0
+                                                                                                                      |vpiSize:64
+                                                                                                                      |UINT:0
+                                                                                                                      |vpiTypespec:
+                                                                                                                      \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                        |vpiParent:
+                                                                                                                        \_constant: , line:46:192, endln:46:193
+                                                                                                                        |vpiFullName:work@top.routing_matrix_p
+                                                                                                                        |vpiActual:
+                                                                                                                        \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                      |vpiConstType:9
                                                                                                                   |vpiOperand:
                                                                                                                   \_constant: , line:46:198, endln:46:200
                                                                                                                     |vpiParent:
@@ -5328,11 +5454,20 @@ design: (work@top)
                                                                                                                     |UINT:0
                                                                                                                     |vpiConstType:9
                                                                                                                   |vpiIndex:
-                                                                                                                  \_ref_obj: (work@top.routing_matrix_p.i), line:46:232, endln:46:233
+                                                                                                                  \_constant: , line:46:232, endln:46:233
                                                                                                                     |vpiParent:
                                                                                                                     \_var_select: (work@top.routing_matrix_p), line:46:212, endln:46:234
-                                                                                                                    |vpiName:i
-                                                                                                                    |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                    |vpiDecompile:0
+                                                                                                                    |vpiSize:64
+                                                                                                                    |UINT:0
+                                                                                                                    |vpiTypespec:
+                                                                                                                    \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                      |vpiParent:
+                                                                                                                      \_constant: , line:46:232, endln:46:233
+                                                                                                                      |vpiFullName:work@top.routing_matrix_p
+                                                                                                                      |vpiActual:
+                                                                                                                      \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                    |vpiConstType:9
                                                                                                                 |vpiOperand:
                                                                                                                 \_constant: , line:46:238, endln:46:240
                                                                                                                   |vpiParent:
@@ -5374,11 +5509,20 @@ design: (work@top)
                                                                                                                   |UINT:0
                                                                                                                   |vpiConstType:9
                                                                                                                 |vpiIndex:
-                                                                                                                \_ref_obj: (work@top.routing_matrix_p.i), line:46:272, endln:46:273
+                                                                                                                \_constant: , line:46:272, endln:46:273
                                                                                                                   |vpiParent:
                                                                                                                   \_var_select: (work@top.routing_matrix_p), line:46:252, endln:46:274
-                                                                                                                  |vpiName:i
-                                                                                                                  |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                  |vpiDecompile:0
+                                                                                                                  |vpiSize:64
+                                                                                                                  |UINT:0
+                                                                                                                  |vpiTypespec:
+                                                                                                                  \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                    |vpiParent:
+                                                                                                                    \_constant: , line:46:272, endln:46:273
+                                                                                                                    |vpiFullName:work@top.routing_matrix_p
+                                                                                                                    |vpiActual:
+                                                                                                                    \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                  |vpiConstType:9
                                                                                                               |vpiOperand:
                                                                                                               \_constant: , line:46:278, endln:46:280
                                                                                                                 |vpiParent:
@@ -5420,11 +5564,20 @@ design: (work@top)
                                                                                                                 |UINT:0
                                                                                                                 |vpiConstType:9
                                                                                                               |vpiIndex:
-                                                                                                              \_ref_obj: (work@top.routing_matrix_p.i), line:46:312, endln:46:313
+                                                                                                              \_constant: , line:46:312, endln:46:313
                                                                                                                 |vpiParent:
                                                                                                                 \_var_select: (work@top.routing_matrix_p), line:46:292, endln:46:314
-                                                                                                                |vpiName:i
-                                                                                                                |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                                |vpiDecompile:0
+                                                                                                                |vpiSize:64
+                                                                                                                |UINT:0
+                                                                                                                |vpiTypespec:
+                                                                                                                \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                  |vpiParent:
+                                                                                                                  \_constant: , line:46:312, endln:46:313
+                                                                                                                  |vpiFullName:work@top.routing_matrix_p
+                                                                                                                  |vpiActual:
+                                                                                                                  \_int_typespec: , line:4:2, endln:4:18
+                                                                                                                |vpiConstType:9
                                                                                                             |vpiOperand:
                                                                                                             \_constant: , line:46:318, endln:46:320
                                                                                                               |vpiParent:
@@ -5466,11 +5619,20 @@ design: (work@top)
                                                                                                               |UINT:0
                                                                                                               |vpiConstType:9
                                                                                                             |vpiIndex:
-                                                                                                            \_ref_obj: (work@top.routing_matrix_p.i), line:46:352, endln:46:353
+                                                                                                            \_constant: , line:46:352, endln:46:353
                                                                                                               |vpiParent:
                                                                                                               \_var_select: (work@top.routing_matrix_p), line:46:332, endln:46:354
-                                                                                                              |vpiName:i
-                                                                                                              |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                              |vpiDecompile:0
+                                                                                                              |vpiSize:64
+                                                                                                              |UINT:0
+                                                                                                              |vpiTypespec:
+                                                                                                              \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                                |vpiParent:
+                                                                                                                \_constant: , line:46:352, endln:46:353
+                                                                                                                |vpiFullName:work@top.routing_matrix_p
+                                                                                                                |vpiActual:
+                                                                                                                \_int_typespec: , line:4:2, endln:4:18
+                                                                                                              |vpiConstType:9
                                                                                                           |vpiOperand:
                                                                                                           \_constant: , line:46:358, endln:46:360
                                                                                                             |vpiParent:
@@ -5512,11 +5674,20 @@ design: (work@top)
                                                                                                             |UINT:0
                                                                                                             |vpiConstType:9
                                                                                                           |vpiIndex:
-                                                                                                          \_ref_obj: (work@top.routing_matrix_p.i), line:46:392, endln:46:393
+                                                                                                          \_constant: , line:46:392, endln:46:393
                                                                                                             |vpiParent:
                                                                                                             \_var_select: (work@top.routing_matrix_p), line:46:372, endln:46:394
-                                                                                                            |vpiName:i
-                                                                                                            |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                            |vpiDecompile:0
+                                                                                                            |vpiSize:64
+                                                                                                            |UINT:0
+                                                                                                            |vpiTypespec:
+                                                                                                            \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                              |vpiParent:
+                                                                                                              \_constant: , line:46:392, endln:46:393
+                                                                                                              |vpiFullName:work@top.routing_matrix_p
+                                                                                                              |vpiActual:
+                                                                                                              \_int_typespec: , line:4:2, endln:4:18
+                                                                                                            |vpiConstType:9
                                                                                                         |vpiOperand:
                                                                                                         \_constant: , line:46:398, endln:46:400
                                                                                                           |vpiParent:
@@ -5558,11 +5729,20 @@ design: (work@top)
                                                                                                           |UINT:0
                                                                                                           |vpiConstType:9
                                                                                                         |vpiIndex:
-                                                                                                        \_ref_obj: (work@top.routing_matrix_p.i), line:46:432, endln:46:433
+                                                                                                        \_constant: , line:46:432, endln:46:433
                                                                                                           |vpiParent:
                                                                                                           \_var_select: (work@top.routing_matrix_p), line:46:412, endln:46:434
-                                                                                                          |vpiName:i
-                                                                                                          |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                          |vpiDecompile:0
+                                                                                                          |vpiSize:64
+                                                                                                          |UINT:0
+                                                                                                          |vpiTypespec:
+                                                                                                          \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                            |vpiParent:
+                                                                                                            \_constant: , line:46:432, endln:46:433
+                                                                                                            |vpiFullName:work@top.routing_matrix_p
+                                                                                                            |vpiActual:
+                                                                                                            \_int_typespec: , line:4:2, endln:4:18
+                                                                                                          |vpiConstType:9
                                                                                                       |vpiOperand:
                                                                                                       \_constant: , line:46:438, endln:46:440
                                                                                                         |vpiParent:
@@ -5604,11 +5784,20 @@ design: (work@top)
                                                                                                         |UINT:0
                                                                                                         |vpiConstType:9
                                                                                                       |vpiIndex:
-                                                                                                      \_ref_obj: (work@top.routing_matrix_p.i), line:46:472, endln:46:473
+                                                                                                      \_constant: , line:46:472, endln:46:473
                                                                                                         |vpiParent:
                                                                                                         \_var_select: (work@top.routing_matrix_p), line:46:452, endln:46:474
-                                                                                                        |vpiName:i
-                                                                                                        |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                        |vpiDecompile:0
+                                                                                                        |vpiSize:64
+                                                                                                        |UINT:0
+                                                                                                        |vpiTypespec:
+                                                                                                        \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                          |vpiParent:
+                                                                                                          \_constant: , line:46:472, endln:46:473
+                                                                                                          |vpiFullName:work@top.routing_matrix_p
+                                                                                                          |vpiActual:
+                                                                                                          \_int_typespec: , line:4:2, endln:4:18
+                                                                                                        |vpiConstType:9
                                                                                                     |vpiOperand:
                                                                                                     \_constant: , line:46:478, endln:46:480
                                                                                                       |vpiParent:
@@ -5650,11 +5839,20 @@ design: (work@top)
                                                                                                       |UINT:0
                                                                                                       |vpiConstType:9
                                                                                                     |vpiIndex:
-                                                                                                    \_ref_obj: (work@top.routing_matrix_p.i), line:47:112, endln:47:113
+                                                                                                    \_constant: , line:47:112, endln:47:113
                                                                                                       |vpiParent:
                                                                                                       \_var_select: (work@top.routing_matrix_p), line:47:92, endln:47:114
-                                                                                                      |vpiName:i
-                                                                                                      |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                      |vpiDecompile:0
+                                                                                                      |vpiSize:64
+                                                                                                      |UINT:0
+                                                                                                      |vpiTypespec:
+                                                                                                      \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                        |vpiParent:
+                                                                                                        \_constant: , line:47:112, endln:47:113
+                                                                                                        |vpiFullName:work@top.routing_matrix_p
+                                                                                                        |vpiActual:
+                                                                                                        \_int_typespec: , line:4:2, endln:4:18
+                                                                                                      |vpiConstType:9
                                                                                                   |vpiOperand:
                                                                                                   \_constant: , line:47:118, endln:47:120
                                                                                                     |vpiParent:
@@ -5696,11 +5894,20 @@ design: (work@top)
                                                                                                     |UINT:0
                                                                                                     |vpiConstType:9
                                                                                                   |vpiIndex:
-                                                                                                  \_ref_obj: (work@top.routing_matrix_p.i), line:47:152, endln:47:153
+                                                                                                  \_constant: , line:47:152, endln:47:153
                                                                                                     |vpiParent:
                                                                                                     \_var_select: (work@top.routing_matrix_p), line:47:132, endln:47:154
-                                                                                                    |vpiName:i
-                                                                                                    |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                    |vpiDecompile:0
+                                                                                                    |vpiSize:64
+                                                                                                    |UINT:0
+                                                                                                    |vpiTypespec:
+                                                                                                    \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                      |vpiParent:
+                                                                                                      \_constant: , line:47:152, endln:47:153
+                                                                                                      |vpiFullName:work@top.routing_matrix_p
+                                                                                                      |vpiActual:
+                                                                                                      \_int_typespec: , line:4:2, endln:4:18
+                                                                                                    |vpiConstType:9
                                                                                                 |vpiOperand:
                                                                                                 \_constant: , line:47:158, endln:47:160
                                                                                                   |vpiParent:
@@ -5742,11 +5949,20 @@ design: (work@top)
                                                                                                   |UINT:0
                                                                                                   |vpiConstType:9
                                                                                                 |vpiIndex:
-                                                                                                \_ref_obj: (work@top.routing_matrix_p.i), line:47:192, endln:47:193
+                                                                                                \_constant: , line:47:192, endln:47:193
                                                                                                   |vpiParent:
                                                                                                   \_var_select: (work@top.routing_matrix_p), line:47:172, endln:47:194
-                                                                                                  |vpiName:i
-                                                                                                  |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                  |vpiDecompile:0
+                                                                                                  |vpiSize:64
+                                                                                                  |UINT:0
+                                                                                                  |vpiTypespec:
+                                                                                                  \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                    |vpiParent:
+                                                                                                    \_constant: , line:47:192, endln:47:193
+                                                                                                    |vpiFullName:work@top.routing_matrix_p
+                                                                                                    |vpiActual:
+                                                                                                    \_int_typespec: , line:4:2, endln:4:18
+                                                                                                  |vpiConstType:9
                                                                                               |vpiOperand:
                                                                                               \_constant: , line:47:198, endln:47:200
                                                                                                 |vpiParent:
@@ -5788,11 +6004,20 @@ design: (work@top)
                                                                                                 |UINT:0
                                                                                                 |vpiConstType:9
                                                                                               |vpiIndex:
-                                                                                              \_ref_obj: (work@top.routing_matrix_p.i), line:47:232, endln:47:233
+                                                                                              \_constant: , line:47:232, endln:47:233
                                                                                                 |vpiParent:
                                                                                                 \_var_select: (work@top.routing_matrix_p), line:47:212, endln:47:234
-                                                                                                |vpiName:i
-                                                                                                |vpiFullName:work@top.routing_matrix_p.i
+                                                                                                |vpiDecompile:0
+                                                                                                |vpiSize:64
+                                                                                                |UINT:0
+                                                                                                |vpiTypespec:
+                                                                                                \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                  |vpiParent:
+                                                                                                  \_constant: , line:47:232, endln:47:233
+                                                                                                  |vpiFullName:work@top.routing_matrix_p
+                                                                                                  |vpiActual:
+                                                                                                  \_int_typespec: , line:4:2, endln:4:18
+                                                                                                |vpiConstType:9
                                                                                             |vpiOperand:
                                                                                             \_constant: , line:47:238, endln:47:240
                                                                                               |vpiParent:
@@ -5834,11 +6059,20 @@ design: (work@top)
                                                                                               |UINT:0
                                                                                               |vpiConstType:9
                                                                                             |vpiIndex:
-                                                                                            \_ref_obj: (work@top.routing_matrix_p.i), line:47:272, endln:47:273
+                                                                                            \_constant: , line:47:272, endln:47:273
                                                                                               |vpiParent:
                                                                                               \_var_select: (work@top.routing_matrix_p), line:47:252, endln:47:274
-                                                                                              |vpiName:i
-                                                                                              |vpiFullName:work@top.routing_matrix_p.i
+                                                                                              |vpiDecompile:0
+                                                                                              |vpiSize:64
+                                                                                              |UINT:0
+                                                                                              |vpiTypespec:
+                                                                                              \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                                |vpiParent:
+                                                                                                \_constant: , line:47:272, endln:47:273
+                                                                                                |vpiFullName:work@top.routing_matrix_p
+                                                                                                |vpiActual:
+                                                                                                \_int_typespec: , line:4:2, endln:4:18
+                                                                                              |vpiConstType:9
                                                                                           |vpiOperand:
                                                                                           \_constant: , line:47:278, endln:47:280
                                                                                             |vpiParent:
@@ -5880,11 +6114,20 @@ design: (work@top)
                                                                                             |UINT:0
                                                                                             |vpiConstType:9
                                                                                           |vpiIndex:
-                                                                                          \_ref_obj: (work@top.routing_matrix_p.i), line:47:312, endln:47:313
+                                                                                          \_constant: , line:47:312, endln:47:313
                                                                                             |vpiParent:
                                                                                             \_var_select: (work@top.routing_matrix_p), line:47:292, endln:47:314
-                                                                                            |vpiName:i
-                                                                                            |vpiFullName:work@top.routing_matrix_p.i
+                                                                                            |vpiDecompile:0
+                                                                                            |vpiSize:64
+                                                                                            |UINT:0
+                                                                                            |vpiTypespec:
+                                                                                            \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                              |vpiParent:
+                                                                                              \_constant: , line:47:312, endln:47:313
+                                                                                              |vpiFullName:work@top.routing_matrix_p
+                                                                                              |vpiActual:
+                                                                                              \_int_typespec: , line:4:2, endln:4:18
+                                                                                            |vpiConstType:9
                                                                                         |vpiOperand:
                                                                                         \_constant: , line:47:318, endln:47:320
                                                                                           |vpiParent:
@@ -5926,11 +6169,20 @@ design: (work@top)
                                                                                           |UINT:0
                                                                                           |vpiConstType:9
                                                                                         |vpiIndex:
-                                                                                        \_ref_obj: (work@top.routing_matrix_p.i), line:47:352, endln:47:353
+                                                                                        \_constant: , line:47:352, endln:47:353
                                                                                           |vpiParent:
                                                                                           \_var_select: (work@top.routing_matrix_p), line:47:332, endln:47:354
-                                                                                          |vpiName:i
-                                                                                          |vpiFullName:work@top.routing_matrix_p.i
+                                                                                          |vpiDecompile:0
+                                                                                          |vpiSize:64
+                                                                                          |UINT:0
+                                                                                          |vpiTypespec:
+                                                                                          \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                            |vpiParent:
+                                                                                            \_constant: , line:47:352, endln:47:353
+                                                                                            |vpiFullName:work@top.routing_matrix_p
+                                                                                            |vpiActual:
+                                                                                            \_int_typespec: , line:4:2, endln:4:18
+                                                                                          |vpiConstType:9
                                                                                       |vpiOperand:
                                                                                       \_constant: , line:47:358, endln:47:360
                                                                                         |vpiParent:
@@ -5972,11 +6224,20 @@ design: (work@top)
                                                                                         |UINT:0
                                                                                         |vpiConstType:9
                                                                                       |vpiIndex:
-                                                                                      \_ref_obj: (work@top.routing_matrix_p.i), line:47:392, endln:47:393
+                                                                                      \_constant: , line:47:392, endln:47:393
                                                                                         |vpiParent:
                                                                                         \_var_select: (work@top.routing_matrix_p), line:47:372, endln:47:394
-                                                                                        |vpiName:i
-                                                                                        |vpiFullName:work@top.routing_matrix_p.i
+                                                                                        |vpiDecompile:0
+                                                                                        |vpiSize:64
+                                                                                        |UINT:0
+                                                                                        |vpiTypespec:
+                                                                                        \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                          |vpiParent:
+                                                                                          \_constant: , line:47:392, endln:47:393
+                                                                                          |vpiFullName:work@top.routing_matrix_p
+                                                                                          |vpiActual:
+                                                                                          \_int_typespec: , line:4:2, endln:4:18
+                                                                                        |vpiConstType:9
                                                                                     |vpiOperand:
                                                                                     \_constant: , line:47:398, endln:47:400
                                                                                       |vpiParent:
@@ -6018,11 +6279,20 @@ design: (work@top)
                                                                                       |UINT:0
                                                                                       |vpiConstType:9
                                                                                     |vpiIndex:
-                                                                                    \_ref_obj: (work@top.routing_matrix_p.i), line:47:432, endln:47:433
+                                                                                    \_constant: , line:47:432, endln:47:433
                                                                                       |vpiParent:
                                                                                       \_var_select: (work@top.routing_matrix_p), line:47:412, endln:47:434
-                                                                                      |vpiName:i
-                                                                                      |vpiFullName:work@top.routing_matrix_p.i
+                                                                                      |vpiDecompile:0
+                                                                                      |vpiSize:64
+                                                                                      |UINT:0
+                                                                                      |vpiTypespec:
+                                                                                      \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                        |vpiParent:
+                                                                                        \_constant: , line:47:432, endln:47:433
+                                                                                        |vpiFullName:work@top.routing_matrix_p
+                                                                                        |vpiActual:
+                                                                                        \_int_typespec: , line:4:2, endln:4:18
+                                                                                      |vpiConstType:9
                                                                                   |vpiOperand:
                                                                                   \_constant: , line:47:438, endln:47:440
                                                                                     |vpiParent:
@@ -6064,11 +6334,20 @@ design: (work@top)
                                                                                     |UINT:0
                                                                                     |vpiConstType:9
                                                                                   |vpiIndex:
-                                                                                  \_ref_obj: (work@top.routing_matrix_p.i), line:47:472, endln:47:473
+                                                                                  \_constant: , line:47:472, endln:47:473
                                                                                     |vpiParent:
                                                                                     \_var_select: (work@top.routing_matrix_p), line:47:452, endln:47:474
-                                                                                    |vpiName:i
-                                                                                    |vpiFullName:work@top.routing_matrix_p.i
+                                                                                    |vpiDecompile:0
+                                                                                    |vpiSize:64
+                                                                                    |UINT:0
+                                                                                    |vpiTypespec:
+                                                                                    \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                      |vpiParent:
+                                                                                      \_constant: , line:47:472, endln:47:473
+                                                                                      |vpiFullName:work@top.routing_matrix_p
+                                                                                      |vpiActual:
+                                                                                      \_int_typespec: , line:4:2, endln:4:18
+                                                                                    |vpiConstType:9
                                                                                 |vpiOperand:
                                                                                 \_constant: , line:47:478, endln:47:480
                                                                                   |vpiParent:
@@ -6110,11 +6389,20 @@ design: (work@top)
                                                                                   |UINT:0
                                                                                   |vpiConstType:9
                                                                                 |vpiIndex:
-                                                                                \_ref_obj: (work@top.routing_matrix_p.i), line:48:112, endln:48:113
+                                                                                \_constant: , line:48:112, endln:48:113
                                                                                   |vpiParent:
                                                                                   \_var_select: (work@top.routing_matrix_p), line:48:92, endln:48:114
-                                                                                  |vpiName:i
-                                                                                  |vpiFullName:work@top.routing_matrix_p.i
+                                                                                  |vpiDecompile:0
+                                                                                  |vpiSize:64
+                                                                                  |UINT:0
+                                                                                  |vpiTypespec:
+                                                                                  \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                    |vpiParent:
+                                                                                    \_constant: , line:48:112, endln:48:113
+                                                                                    |vpiFullName:work@top.routing_matrix_p
+                                                                                    |vpiActual:
+                                                                                    \_int_typespec: , line:4:2, endln:4:18
+                                                                                  |vpiConstType:9
                                                                               |vpiOperand:
                                                                               \_constant: , line:48:118, endln:48:120
                                                                                 |vpiParent:
@@ -6156,11 +6444,20 @@ design: (work@top)
                                                                                 |UINT:0
                                                                                 |vpiConstType:9
                                                                               |vpiIndex:
-                                                                              \_ref_obj: (work@top.routing_matrix_p.i), line:48:152, endln:48:153
+                                                                              \_constant: , line:48:152, endln:48:153
                                                                                 |vpiParent:
                                                                                 \_var_select: (work@top.routing_matrix_p), line:48:132, endln:48:154
-                                                                                |vpiName:i
-                                                                                |vpiFullName:work@top.routing_matrix_p.i
+                                                                                |vpiDecompile:0
+                                                                                |vpiSize:64
+                                                                                |UINT:0
+                                                                                |vpiTypespec:
+                                                                                \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                  |vpiParent:
+                                                                                  \_constant: , line:48:152, endln:48:153
+                                                                                  |vpiFullName:work@top.routing_matrix_p
+                                                                                  |vpiActual:
+                                                                                  \_int_typespec: , line:4:2, endln:4:18
+                                                                                |vpiConstType:9
                                                                             |vpiOperand:
                                                                             \_constant: , line:48:158, endln:48:160
                                                                               |vpiParent:
@@ -6202,11 +6499,20 @@ design: (work@top)
                                                                               |UINT:0
                                                                               |vpiConstType:9
                                                                             |vpiIndex:
-                                                                            \_ref_obj: (work@top.routing_matrix_p.i), line:48:192, endln:48:193
+                                                                            \_constant: , line:48:192, endln:48:193
                                                                               |vpiParent:
                                                                               \_var_select: (work@top.routing_matrix_p), line:48:172, endln:48:194
-                                                                              |vpiName:i
-                                                                              |vpiFullName:work@top.routing_matrix_p.i
+                                                                              |vpiDecompile:0
+                                                                              |vpiSize:64
+                                                                              |UINT:0
+                                                                              |vpiTypespec:
+                                                                              \_ref_typespec: (work@top.routing_matrix_p)
+                                                                                |vpiParent:
+                                                                                \_constant: , line:48:192, endln:48:193
+                                                                                |vpiFullName:work@top.routing_matrix_p
+                                                                                |vpiActual:
+                                                                                \_int_typespec: , line:4:2, endln:4:18
+                                                                              |vpiConstType:9
                                                                           |vpiOperand:
                                                                           \_constant: , line:48:198, endln:48:200
                                                                             |vpiParent:
@@ -6248,11 +6554,20 @@ design: (work@top)
                                                                             |UINT:0
                                                                             |vpiConstType:9
                                                                           |vpiIndex:
-                                                                          \_ref_obj: (work@top.routing_matrix_p.i), line:48:232, endln:48:233
+                                                                          \_constant: , line:48:232, endln:48:233
                                                                             |vpiParent:
                                                                             \_var_select: (work@top.routing_matrix_p), line:48:212, endln:48:234
-                                                                            |vpiName:i
-                                                                            |vpiFullName:work@top.routing_matrix_p.i
+                                                                            |vpiDecompile:0
+                                                                            |vpiSize:64
+                                                                            |UINT:0
+                                                                            |vpiTypespec:
+                                                                            \_ref_typespec: (work@top.routing_matrix_p)
+                                                                              |vpiParent:
+                                                                              \_constant: , line:48:232, endln:48:233
+                                                                              |vpiFullName:work@top.routing_matrix_p
+                                                                              |vpiActual:
+                                                                              \_int_typespec: , line:4:2, endln:4:18
+                                                                            |vpiConstType:9
                                                                         |vpiOperand:
                                                                         \_constant: , line:48:238, endln:48:240
                                                                           |vpiParent:
@@ -6294,11 +6609,20 @@ design: (work@top)
                                                                           |UINT:0
                                                                           |vpiConstType:9
                                                                         |vpiIndex:
-                                                                        \_ref_obj: (work@top.routing_matrix_p.i), line:48:272, endln:48:273
+                                                                        \_constant: , line:48:272, endln:48:273
                                                                           |vpiParent:
                                                                           \_var_select: (work@top.routing_matrix_p), line:48:252, endln:48:274
-                                                                          |vpiName:i
-                                                                          |vpiFullName:work@top.routing_matrix_p.i
+                                                                          |vpiDecompile:0
+                                                                          |vpiSize:64
+                                                                          |UINT:0
+                                                                          |vpiTypespec:
+                                                                          \_ref_typespec: (work@top.routing_matrix_p)
+                                                                            |vpiParent:
+                                                                            \_constant: , line:48:272, endln:48:273
+                                                                            |vpiFullName:work@top.routing_matrix_p
+                                                                            |vpiActual:
+                                                                            \_int_typespec: , line:4:2, endln:4:18
+                                                                          |vpiConstType:9
                                                                       |vpiOperand:
                                                                       \_constant: , line:48:278, endln:48:280
                                                                         |vpiParent:
@@ -6340,11 +6664,20 @@ design: (work@top)
                                                                         |UINT:0
                                                                         |vpiConstType:9
                                                                       |vpiIndex:
-                                                                      \_ref_obj: (work@top.routing_matrix_p.i), line:48:312, endln:48:313
+                                                                      \_constant: , line:48:312, endln:48:313
                                                                         |vpiParent:
                                                                         \_var_select: (work@top.routing_matrix_p), line:48:292, endln:48:314
-                                                                        |vpiName:i
-                                                                        |vpiFullName:work@top.routing_matrix_p.i
+                                                                        |vpiDecompile:0
+                                                                        |vpiSize:64
+                                                                        |UINT:0
+                                                                        |vpiTypespec:
+                                                                        \_ref_typespec: (work@top.routing_matrix_p)
+                                                                          |vpiParent:
+                                                                          \_constant: , line:48:312, endln:48:313
+                                                                          |vpiFullName:work@top.routing_matrix_p
+                                                                          |vpiActual:
+                                                                          \_int_typespec: , line:4:2, endln:4:18
+                                                                        |vpiConstType:9
                                                                     |vpiOperand:
                                                                     \_constant: , line:48:318, endln:48:320
                                                                       |vpiParent:
@@ -6386,11 +6719,20 @@ design: (work@top)
                                                                       |UINT:0
                                                                       |vpiConstType:9
                                                                     |vpiIndex:
-                                                                    \_ref_obj: (work@top.routing_matrix_p.i), line:48:352, endln:48:353
+                                                                    \_constant: , line:48:352, endln:48:353
                                                                       |vpiParent:
                                                                       \_var_select: (work@top.routing_matrix_p), line:48:332, endln:48:354
-                                                                      |vpiName:i
-                                                                      |vpiFullName:work@top.routing_matrix_p.i
+                                                                      |vpiDecompile:0
+                                                                      |vpiSize:64
+                                                                      |UINT:0
+                                                                      |vpiTypespec:
+                                                                      \_ref_typespec: (work@top.routing_matrix_p)
+                                                                        |vpiParent:
+                                                                        \_constant: , line:48:352, endln:48:353
+                                                                        |vpiFullName:work@top.routing_matrix_p
+                                                                        |vpiActual:
+                                                                        \_int_typespec: , line:4:2, endln:4:18
+                                                                      |vpiConstType:9
                                                                   |vpiOperand:
                                                                   \_constant: , line:48:358, endln:48:360
                                                                     |vpiParent:
@@ -6432,11 +6774,20 @@ design: (work@top)
                                                                     |UINT:0
                                                                     |vpiConstType:9
                                                                   |vpiIndex:
-                                                                  \_ref_obj: (work@top.routing_matrix_p.i), line:48:392, endln:48:393
+                                                                  \_constant: , line:48:392, endln:48:393
                                                                     |vpiParent:
                                                                     \_var_select: (work@top.routing_matrix_p), line:48:372, endln:48:394
-                                                                    |vpiName:i
-                                                                    |vpiFullName:work@top.routing_matrix_p.i
+                                                                    |vpiDecompile:0
+                                                                    |vpiSize:64
+                                                                    |UINT:0
+                                                                    |vpiTypespec:
+                                                                    \_ref_typespec: (work@top.routing_matrix_p)
+                                                                      |vpiParent:
+                                                                      \_constant: , line:48:392, endln:48:393
+                                                                      |vpiFullName:work@top.routing_matrix_p
+                                                                      |vpiActual:
+                                                                      \_int_typespec: , line:4:2, endln:4:18
+                                                                    |vpiConstType:9
                                                                 |vpiOperand:
                                                                 \_constant: , line:48:398, endln:48:400
                                                                   |vpiParent:
@@ -6478,11 +6829,20 @@ design: (work@top)
                                                                   |UINT:0
                                                                   |vpiConstType:9
                                                                 |vpiIndex:
-                                                                \_ref_obj: (work@top.routing_matrix_p.i), line:48:432, endln:48:433
+                                                                \_constant: , line:48:432, endln:48:433
                                                                   |vpiParent:
                                                                   \_var_select: (work@top.routing_matrix_p), line:48:412, endln:48:434
-                                                                  |vpiName:i
-                                                                  |vpiFullName:work@top.routing_matrix_p.i
+                                                                  |vpiDecompile:0
+                                                                  |vpiSize:64
+                                                                  |UINT:0
+                                                                  |vpiTypespec:
+                                                                  \_ref_typespec: (work@top.routing_matrix_p)
+                                                                    |vpiParent:
+                                                                    \_constant: , line:48:432, endln:48:433
+                                                                    |vpiFullName:work@top.routing_matrix_p
+                                                                    |vpiActual:
+                                                                    \_int_typespec: , line:4:2, endln:4:18
+                                                                  |vpiConstType:9
                                                               |vpiOperand:
                                                               \_constant: , line:48:438, endln:48:440
                                                                 |vpiParent:
@@ -6524,11 +6884,20 @@ design: (work@top)
                                                                 |UINT:0
                                                                 |vpiConstType:9
                                                               |vpiIndex:
-                                                              \_ref_obj: (work@top.routing_matrix_p.i), line:48:472, endln:48:473
+                                                              \_constant: , line:48:472, endln:48:473
                                                                 |vpiParent:
                                                                 \_var_select: (work@top.routing_matrix_p), line:48:452, endln:48:474
-                                                                |vpiName:i
-                                                                |vpiFullName:work@top.routing_matrix_p.i
+                                                                |vpiDecompile:0
+                                                                |vpiSize:64
+                                                                |UINT:0
+                                                                |vpiTypespec:
+                                                                \_ref_typespec: (work@top.routing_matrix_p)
+                                                                  |vpiParent:
+                                                                  \_constant: , line:48:472, endln:48:473
+                                                                  |vpiFullName:work@top.routing_matrix_p
+                                                                  |vpiActual:
+                                                                  \_int_typespec: , line:4:2, endln:4:18
+                                                                |vpiConstType:9
                                                             |vpiOperand:
                                                             \_constant: , line:48:478, endln:48:480
                                                               |vpiParent:
@@ -6570,11 +6939,20 @@ design: (work@top)
                                                               |UINT:0
                                                               |vpiConstType:9
                                                             |vpiIndex:
-                                                            \_ref_obj: (work@top.routing_matrix_p.i), line:49:112, endln:49:113
+                                                            \_constant: , line:49:112, endln:49:113
                                                               |vpiParent:
                                                               \_var_select: (work@top.routing_matrix_p), line:49:92, endln:49:114
-                                                              |vpiName:i
-                                                              |vpiFullName:work@top.routing_matrix_p.i
+                                                              |vpiDecompile:0
+                                                              |vpiSize:64
+                                                              |UINT:0
+                                                              |vpiTypespec:
+                                                              \_ref_typespec: (work@top.routing_matrix_p)
+                                                                |vpiParent:
+                                                                \_constant: , line:49:112, endln:49:113
+                                                                |vpiFullName:work@top.routing_matrix_p
+                                                                |vpiActual:
+                                                                \_int_typespec: , line:4:2, endln:4:18
+                                                              |vpiConstType:9
                                                           |vpiOperand:
                                                           \_constant: , line:49:118, endln:49:120
                                                             |vpiParent:
@@ -6616,11 +6994,20 @@ design: (work@top)
                                                             |UINT:0
                                                             |vpiConstType:9
                                                           |vpiIndex:
-                                                          \_ref_obj: (work@top.routing_matrix_p.i), line:49:152, endln:49:153
+                                                          \_constant: , line:49:152, endln:49:153
                                                             |vpiParent:
                                                             \_var_select: (work@top.routing_matrix_p), line:49:132, endln:49:154
-                                                            |vpiName:i
-                                                            |vpiFullName:work@top.routing_matrix_p.i
+                                                            |vpiDecompile:0
+                                                            |vpiSize:64
+                                                            |UINT:0
+                                                            |vpiTypespec:
+                                                            \_ref_typespec: (work@top.routing_matrix_p)
+                                                              |vpiParent:
+                                                              \_constant: , line:49:152, endln:49:153
+                                                              |vpiFullName:work@top.routing_matrix_p
+                                                              |vpiActual:
+                                                              \_int_typespec: , line:4:2, endln:4:18
+                                                            |vpiConstType:9
                                                         |vpiOperand:
                                                         \_constant: , line:49:158, endln:49:160
                                                           |vpiParent:
@@ -6662,11 +7049,20 @@ design: (work@top)
                                                           |UINT:0
                                                           |vpiConstType:9
                                                         |vpiIndex:
-                                                        \_ref_obj: (work@top.routing_matrix_p.i), line:49:192, endln:49:193
+                                                        \_constant: , line:49:192, endln:49:193
                                                           |vpiParent:
                                                           \_var_select: (work@top.routing_matrix_p), line:49:172, endln:49:194
-                                                          |vpiName:i
-                                                          |vpiFullName:work@top.routing_matrix_p.i
+                                                          |vpiDecompile:0
+                                                          |vpiSize:64
+                                                          |UINT:0
+                                                          |vpiTypespec:
+                                                          \_ref_typespec: (work@top.routing_matrix_p)
+                                                            |vpiParent:
+                                                            \_constant: , line:49:192, endln:49:193
+                                                            |vpiFullName:work@top.routing_matrix_p
+                                                            |vpiActual:
+                                                            \_int_typespec: , line:4:2, endln:4:18
+                                                          |vpiConstType:9
                                                       |vpiOperand:
                                                       \_constant: , line:49:198, endln:49:200
                                                         |vpiParent:
@@ -6708,11 +7104,20 @@ design: (work@top)
                                                         |UINT:0
                                                         |vpiConstType:9
                                                       |vpiIndex:
-                                                      \_ref_obj: (work@top.routing_matrix_p.i), line:49:232, endln:49:233
+                                                      \_constant: , line:49:232, endln:49:233
                                                         |vpiParent:
                                                         \_var_select: (work@top.routing_matrix_p), line:49:212, endln:49:234
-                                                        |vpiName:i
-                                                        |vpiFullName:work@top.routing_matrix_p.i
+                                                        |vpiDecompile:0
+                                                        |vpiSize:64
+                                                        |UINT:0
+                                                        |vpiTypespec:
+                                                        \_ref_typespec: (work@top.routing_matrix_p)
+                                                          |vpiParent:
+                                                          \_constant: , line:49:232, endln:49:233
+                                                          |vpiFullName:work@top.routing_matrix_p
+                                                          |vpiActual:
+                                                          \_int_typespec: , line:4:2, endln:4:18
+                                                        |vpiConstType:9
                                                     |vpiOperand:
                                                     \_constant: , line:49:238, endln:49:240
                                                       |vpiParent:
@@ -6754,11 +7159,20 @@ design: (work@top)
                                                       |UINT:0
                                                       |vpiConstType:9
                                                     |vpiIndex:
-                                                    \_ref_obj: (work@top.routing_matrix_p.i), line:49:272, endln:49:273
+                                                    \_constant: , line:49:272, endln:49:273
                                                       |vpiParent:
                                                       \_var_select: (work@top.routing_matrix_p), line:49:252, endln:49:274
-                                                      |vpiName:i
-                                                      |vpiFullName:work@top.routing_matrix_p.i
+                                                      |vpiDecompile:0
+                                                      |vpiSize:64
+                                                      |UINT:0
+                                                      |vpiTypespec:
+                                                      \_ref_typespec: (work@top.routing_matrix_p)
+                                                        |vpiParent:
+                                                        \_constant: , line:49:272, endln:49:273
+                                                        |vpiFullName:work@top.routing_matrix_p
+                                                        |vpiActual:
+                                                        \_int_typespec: , line:4:2, endln:4:18
+                                                      |vpiConstType:9
                                                   |vpiOperand:
                                                   \_constant: , line:49:278, endln:49:280
                                                     |vpiParent:
@@ -6800,11 +7214,20 @@ design: (work@top)
                                                     |UINT:0
                                                     |vpiConstType:9
                                                   |vpiIndex:
-                                                  \_ref_obj: (work@top.routing_matrix_p.i), line:49:312, endln:49:313
+                                                  \_constant: , line:49:312, endln:49:313
                                                     |vpiParent:
                                                     \_var_select: (work@top.routing_matrix_p), line:49:292, endln:49:314
-                                                    |vpiName:i
-                                                    |vpiFullName:work@top.routing_matrix_p.i
+                                                    |vpiDecompile:0
+                                                    |vpiSize:64
+                                                    |UINT:0
+                                                    |vpiTypespec:
+                                                    \_ref_typespec: (work@top.routing_matrix_p)
+                                                      |vpiParent:
+                                                      \_constant: , line:49:312, endln:49:313
+                                                      |vpiFullName:work@top.routing_matrix_p
+                                                      |vpiActual:
+                                                      \_int_typespec: , line:4:2, endln:4:18
+                                                    |vpiConstType:9
                                                 |vpiOperand:
                                                 \_constant: , line:49:318, endln:49:320
                                                   |vpiParent:
@@ -6846,11 +7269,20 @@ design: (work@top)
                                                   |UINT:0
                                                   |vpiConstType:9
                                                 |vpiIndex:
-                                                \_ref_obj: (work@top.routing_matrix_p.i), line:49:352, endln:49:353
+                                                \_constant: , line:49:352, endln:49:353
                                                   |vpiParent:
                                                   \_var_select: (work@top.routing_matrix_p), line:49:332, endln:49:354
-                                                  |vpiName:i
-                                                  |vpiFullName:work@top.routing_matrix_p.i
+                                                  |vpiDecompile:0
+                                                  |vpiSize:64
+                                                  |UINT:0
+                                                  |vpiTypespec:
+                                                  \_ref_typespec: (work@top.routing_matrix_p)
+                                                    |vpiParent:
+                                                    \_constant: , line:49:352, endln:49:353
+                                                    |vpiFullName:work@top.routing_matrix_p
+                                                    |vpiActual:
+                                                    \_int_typespec: , line:4:2, endln:4:18
+                                                  |vpiConstType:9
                                               |vpiOperand:
                                               \_constant: , line:49:358, endln:49:360
                                                 |vpiParent:
@@ -6892,11 +7324,20 @@ design: (work@top)
                                                 |UINT:0
                                                 |vpiConstType:9
                                               |vpiIndex:
-                                              \_ref_obj: (work@top.routing_matrix_p.i), line:49:392, endln:49:393
+                                              \_constant: , line:49:392, endln:49:393
                                                 |vpiParent:
                                                 \_var_select: (work@top.routing_matrix_p), line:49:372, endln:49:394
-                                                |vpiName:i
-                                                |vpiFullName:work@top.routing_matrix_p.i
+                                                |vpiDecompile:0
+                                                |vpiSize:64
+                                                |UINT:0
+                                                |vpiTypespec:
+                                                \_ref_typespec: (work@top.routing_matrix_p)
+                                                  |vpiParent:
+                                                  \_constant: , line:49:392, endln:49:393
+                                                  |vpiFullName:work@top.routing_matrix_p
+                                                  |vpiActual:
+                                                  \_int_typespec: , line:4:2, endln:4:18
+                                                |vpiConstType:9
                                             |vpiOperand:
                                             \_constant: , line:49:398, endln:49:400
                                               |vpiParent:
@@ -6938,11 +7379,20 @@ design: (work@top)
                                               |UINT:0
                                               |vpiConstType:9
                                             |vpiIndex:
-                                            \_ref_obj: (work@top.routing_matrix_p.i), line:49:432, endln:49:433
+                                            \_constant: , line:49:432, endln:49:433
                                               |vpiParent:
                                               \_var_select: (work@top.routing_matrix_p), line:49:412, endln:49:434
-                                              |vpiName:i
-                                              |vpiFullName:work@top.routing_matrix_p.i
+                                              |vpiDecompile:0
+                                              |vpiSize:64
+                                              |UINT:0
+                                              |vpiTypespec:
+                                              \_ref_typespec: (work@top.routing_matrix_p)
+                                                |vpiParent:
+                                                \_constant: , line:49:432, endln:49:433
+                                                |vpiFullName:work@top.routing_matrix_p
+                                                |vpiActual:
+                                                \_int_typespec: , line:4:2, endln:4:18
+                                              |vpiConstType:9
                                           |vpiOperand:
                                           \_constant: , line:49:438, endln:49:440
                                             |vpiParent:
@@ -6984,11 +7434,20 @@ design: (work@top)
                                             |UINT:0
                                             |vpiConstType:9
                                           |vpiIndex:
-                                          \_ref_obj: (work@top.routing_matrix_p.i), line:49:472, endln:49:473
+                                          \_constant: , line:49:472, endln:49:473
                                             |vpiParent:
                                             \_var_select: (work@top.routing_matrix_p), line:49:452, endln:49:474
-                                            |vpiName:i
-                                            |vpiFullName:work@top.routing_matrix_p.i
+                                            |vpiDecompile:0
+                                            |vpiSize:64
+                                            |UINT:0
+                                            |vpiTypespec:
+                                            \_ref_typespec: (work@top.routing_matrix_p)
+                                              |vpiParent:
+                                              \_constant: , line:49:472, endln:49:473
+                                              |vpiFullName:work@top.routing_matrix_p
+                                              |vpiActual:
+                                              \_int_typespec: , line:4:2, endln:4:18
+                                            |vpiConstType:9
                                         |vpiOperand:
                                         \_constant: , line:49:478, endln:49:480
                                           |vpiParent:
@@ -7030,11 +7489,20 @@ design: (work@top)
                                           |UINT:0
                                           |vpiConstType:9
                                         |vpiIndex:
-                                        \_ref_obj: (work@top.routing_matrix_p.i), line:50:112, endln:50:113
+                                        \_constant: , line:50:112, endln:50:113
                                           |vpiParent:
                                           \_var_select: (work@top.routing_matrix_p), line:50:92, endln:50:114
-                                          |vpiName:i
-                                          |vpiFullName:work@top.routing_matrix_p.i
+                                          |vpiDecompile:0
+                                          |vpiSize:64
+                                          |UINT:0
+                                          |vpiTypespec:
+                                          \_ref_typespec: (work@top.routing_matrix_p)
+                                            |vpiParent:
+                                            \_constant: , line:50:112, endln:50:113
+                                            |vpiFullName:work@top.routing_matrix_p
+                                            |vpiActual:
+                                            \_int_typespec: , line:4:2, endln:4:18
+                                          |vpiConstType:9
                                       |vpiOperand:
                                       \_constant: , line:50:118, endln:50:120
                                         |vpiParent:
@@ -7076,11 +7544,20 @@ design: (work@top)
                                         |UINT:0
                                         |vpiConstType:9
                                       |vpiIndex:
-                                      \_ref_obj: (work@top.routing_matrix_p.i), line:50:152, endln:50:153
+                                      \_constant: , line:50:152, endln:50:153
                                         |vpiParent:
                                         \_var_select: (work@top.routing_matrix_p), line:50:132, endln:50:154
-                                        |vpiName:i
-                                        |vpiFullName:work@top.routing_matrix_p.i
+                                        |vpiDecompile:0
+                                        |vpiSize:64
+                                        |UINT:0
+                                        |vpiTypespec:
+                                        \_ref_typespec: (work@top.routing_matrix_p)
+                                          |vpiParent:
+                                          \_constant: , line:50:152, endln:50:153
+                                          |vpiFullName:work@top.routing_matrix_p
+                                          |vpiActual:
+                                          \_int_typespec: , line:4:2, endln:4:18
+                                        |vpiConstType:9
                                     |vpiOperand:
                                     \_constant: , line:50:158, endln:50:160
                                       |vpiParent:
@@ -7122,11 +7599,20 @@ design: (work@top)
                                       |UINT:0
                                       |vpiConstType:9
                                     |vpiIndex:
-                                    \_ref_obj: (work@top.routing_matrix_p.i), line:50:192, endln:50:193
+                                    \_constant: , line:50:192, endln:50:193
                                       |vpiParent:
                                       \_var_select: (work@top.routing_matrix_p), line:50:172, endln:50:194
-                                      |vpiName:i
-                                      |vpiFullName:work@top.routing_matrix_p.i
+                                      |vpiDecompile:0
+                                      |vpiSize:64
+                                      |UINT:0
+                                      |vpiTypespec:
+                                      \_ref_typespec: (work@top.routing_matrix_p)
+                                        |vpiParent:
+                                        \_constant: , line:50:192, endln:50:193
+                                        |vpiFullName:work@top.routing_matrix_p
+                                        |vpiActual:
+                                        \_int_typespec: , line:4:2, endln:4:18
+                                      |vpiConstType:9
                                   |vpiOperand:
                                   \_constant: , line:50:198, endln:50:200
                                     |vpiParent:
@@ -7168,11 +7654,20 @@ design: (work@top)
                                     |UINT:0
                                     |vpiConstType:9
                                   |vpiIndex:
-                                  \_ref_obj: (work@top.routing_matrix_p.i), line:50:232, endln:50:233
+                                  \_constant: , line:50:232, endln:50:233
                                     |vpiParent:
                                     \_var_select: (work@top.routing_matrix_p), line:50:212, endln:50:234
-                                    |vpiName:i
-                                    |vpiFullName:work@top.routing_matrix_p.i
+                                    |vpiDecompile:0
+                                    |vpiSize:64
+                                    |UINT:0
+                                    |vpiTypespec:
+                                    \_ref_typespec: (work@top.routing_matrix_p)
+                                      |vpiParent:
+                                      \_constant: , line:50:232, endln:50:233
+                                      |vpiFullName:work@top.routing_matrix_p
+                                      |vpiActual:
+                                      \_int_typespec: , line:4:2, endln:4:18
+                                    |vpiConstType:9
                                 |vpiOperand:
                                 \_constant: , line:50:238, endln:50:240
                                   |vpiParent:
@@ -7214,11 +7709,20 @@ design: (work@top)
                                   |UINT:0
                                   |vpiConstType:9
                                 |vpiIndex:
-                                \_ref_obj: (work@top.routing_matrix_p.i), line:50:272, endln:50:273
+                                \_constant: , line:50:272, endln:50:273
                                   |vpiParent:
                                   \_var_select: (work@top.routing_matrix_p), line:50:252, endln:50:274
-                                  |vpiName:i
-                                  |vpiFullName:work@top.routing_matrix_p.i
+                                  |vpiDecompile:0
+                                  |vpiSize:64
+                                  |UINT:0
+                                  |vpiTypespec:
+                                  \_ref_typespec: (work@top.routing_matrix_p)
+                                    |vpiParent:
+                                    \_constant: , line:50:272, endln:50:273
+                                    |vpiFullName:work@top.routing_matrix_p
+                                    |vpiActual:
+                                    \_int_typespec: , line:4:2, endln:4:18
+                                  |vpiConstType:9
                               |vpiOperand:
                               \_constant: , line:50:278, endln:50:280
                                 |vpiParent:
@@ -7260,11 +7764,20 @@ design: (work@top)
                                 |UINT:0
                                 |vpiConstType:9
                               |vpiIndex:
-                              \_ref_obj: (work@top.routing_matrix_p.i), line:50:312, endln:50:313
+                              \_constant: , line:50:312, endln:50:313
                                 |vpiParent:
                                 \_var_select: (work@top.routing_matrix_p), line:50:292, endln:50:314
-                                |vpiName:i
-                                |vpiFullName:work@top.routing_matrix_p.i
+                                |vpiDecompile:0
+                                |vpiSize:64
+                                |UINT:0
+                                |vpiTypespec:
+                                \_ref_typespec: (work@top.routing_matrix_p)
+                                  |vpiParent:
+                                  \_constant: , line:50:312, endln:50:313
+                                  |vpiFullName:work@top.routing_matrix_p
+                                  |vpiActual:
+                                  \_int_typespec: , line:4:2, endln:4:18
+                                |vpiConstType:9
                             |vpiOperand:
                             \_constant: , line:50:318, endln:50:320
                               |vpiParent:
@@ -7306,11 +7819,20 @@ design: (work@top)
                               |UINT:0
                               |vpiConstType:9
                             |vpiIndex:
-                            \_ref_obj: (work@top.routing_matrix_p.i), line:50:352, endln:50:353
+                            \_constant: , line:50:352, endln:50:353
                               |vpiParent:
                               \_var_select: (work@top.routing_matrix_p), line:50:332, endln:50:354
-                              |vpiName:i
-                              |vpiFullName:work@top.routing_matrix_p.i
+                              |vpiDecompile:0
+                              |vpiSize:64
+                              |UINT:0
+                              |vpiTypespec:
+                              \_ref_typespec: (work@top.routing_matrix_p)
+                                |vpiParent:
+                                \_constant: , line:50:352, endln:50:353
+                                |vpiFullName:work@top.routing_matrix_p
+                                |vpiActual:
+                                \_int_typespec: , line:4:2, endln:4:18
+                              |vpiConstType:9
                           |vpiOperand:
                           \_constant: , line:50:358, endln:50:360
                             |vpiParent:
@@ -7352,11 +7874,20 @@ design: (work@top)
                             |UINT:0
                             |vpiConstType:9
                           |vpiIndex:
-                          \_ref_obj: (work@top.routing_matrix_p.i), line:50:392, endln:50:393
+                          \_constant: , line:50:392, endln:50:393
                             |vpiParent:
                             \_var_select: (work@top.routing_matrix_p), line:50:372, endln:50:394
-                            |vpiName:i
-                            |vpiFullName:work@top.routing_matrix_p.i
+                            |vpiDecompile:0
+                            |vpiSize:64
+                            |UINT:0
+                            |vpiTypespec:
+                            \_ref_typespec: (work@top.routing_matrix_p)
+                              |vpiParent:
+                              \_constant: , line:50:392, endln:50:393
+                              |vpiFullName:work@top.routing_matrix_p
+                              |vpiActual:
+                              \_int_typespec: , line:4:2, endln:4:18
+                            |vpiConstType:9
                         |vpiOperand:
                         \_constant: , line:50:398, endln:50:400
                           |vpiParent:
@@ -7398,11 +7929,20 @@ design: (work@top)
                           |UINT:0
                           |vpiConstType:9
                         |vpiIndex:
-                        \_ref_obj: (work@top.routing_matrix_p.i), line:50:432, endln:50:433
+                        \_constant: , line:50:432, endln:50:433
                           |vpiParent:
                           \_var_select: (work@top.routing_matrix_p), line:50:412, endln:50:434
-                          |vpiName:i
-                          |vpiFullName:work@top.routing_matrix_p.i
+                          |vpiDecompile:0
+                          |vpiSize:64
+                          |UINT:0
+                          |vpiTypespec:
+                          \_ref_typespec: (work@top.routing_matrix_p)
+                            |vpiParent:
+                            \_constant: , line:50:432, endln:50:433
+                            |vpiFullName:work@top.routing_matrix_p
+                            |vpiActual:
+                            \_int_typespec: , line:4:2, endln:4:18
+                          |vpiConstType:9
                       |vpiOperand:
                       \_constant: , line:50:438, endln:50:440
                         |vpiParent:
@@ -7444,11 +7984,20 @@ design: (work@top)
                         |UINT:0
                         |vpiConstType:9
                       |vpiIndex:
-                      \_ref_obj: (work@top.routing_matrix_p.i), line:50:472, endln:50:473
+                      \_constant: , line:50:472, endln:50:473
                         |vpiParent:
                         \_var_select: (work@top.routing_matrix_p), line:50:452, endln:50:474
-                        |vpiName:i
-                        |vpiFullName:work@top.routing_matrix_p.i
+                        |vpiDecompile:0
+                        |vpiSize:64
+                        |UINT:0
+                        |vpiTypespec:
+                        \_ref_typespec: (work@top.routing_matrix_p)
+                          |vpiParent:
+                          \_constant: , line:50:472, endln:50:473
+                          |vpiFullName:work@top.routing_matrix_p
+                          |vpiActual:
+                          \_int_typespec: , line:4:2, endln:4:18
+                        |vpiConstType:9
                     |vpiOperand:
                     \_constant: , line:50:478, endln:50:480
                       |vpiParent:
@@ -7490,11 +8039,20 @@ design: (work@top)
                       |UINT:0
                       |vpiConstType:9
                     |vpiIndex:
-                    \_ref_obj: (work@top.routing_matrix_p.i), line:51:112, endln:51:113
+                    \_constant: , line:51:112, endln:51:113
                       |vpiParent:
                       \_var_select: (work@top.routing_matrix_p), line:51:92, endln:51:114
-                      |vpiName:i
-                      |vpiFullName:work@top.routing_matrix_p.i
+                      |vpiDecompile:0
+                      |vpiSize:64
+                      |UINT:0
+                      |vpiTypespec:
+                      \_ref_typespec: (work@top.routing_matrix_p)
+                        |vpiParent:
+                        \_constant: , line:51:112, endln:51:113
+                        |vpiFullName:work@top.routing_matrix_p
+                        |vpiActual:
+                        \_int_typespec: , line:4:2, endln:4:18
+                      |vpiConstType:9
                   |vpiOperand:
                   \_constant: , line:51:118, endln:51:120
                     |vpiParent:
@@ -7536,11 +8094,20 @@ design: (work@top)
                     |UINT:0
                     |vpiConstType:9
                   |vpiIndex:
-                  \_ref_obj: (work@top.routing_matrix_p.i), line:51:152, endln:51:153
+                  \_constant: , line:51:152, endln:51:153
                     |vpiParent:
                     \_var_select: (work@top.routing_matrix_p), line:51:132, endln:51:154
-                    |vpiName:i
-                    |vpiFullName:work@top.routing_matrix_p.i
+                    |vpiDecompile:0
+                    |vpiSize:64
+                    |UINT:0
+                    |vpiTypespec:
+                    \_ref_typespec: (work@top.routing_matrix_p)
+                      |vpiParent:
+                      \_constant: , line:51:152, endln:51:153
+                      |vpiFullName:work@top.routing_matrix_p
+                      |vpiActual:
+                      \_int_typespec: , line:4:2, endln:4:18
+                    |vpiConstType:9
                 |vpiOperand:
                 \_constant: , line:51:158, endln:51:160
                   |vpiParent:
@@ -7582,11 +8149,20 @@ design: (work@top)
                   |UINT:0
                   |vpiConstType:9
                 |vpiIndex:
-                \_ref_obj: (work@top.routing_matrix_p.i), line:51:192, endln:51:193
+                \_constant: , line:51:192, endln:51:193
                   |vpiParent:
                   \_var_select: (work@top.routing_matrix_p), line:51:172, endln:51:194
-                  |vpiName:i
-                  |vpiFullName:work@top.routing_matrix_p.i
+                  |vpiDecompile:0
+                  |vpiSize:64
+                  |UINT:0
+                  |vpiTypespec:
+                  \_ref_typespec: (work@top.routing_matrix_p)
+                    |vpiParent:
+                    \_constant: , line:51:192, endln:51:193
+                    |vpiFullName:work@top.routing_matrix_p
+                    |vpiActual:
+                    \_int_typespec: , line:4:2, endln:4:18
+                  |vpiConstType:9
               |vpiOperand:
               \_constant: , line:51:198, endln:51:200
                 |vpiParent:
@@ -7628,11 +8204,20 @@ design: (work@top)
                 |UINT:0
                 |vpiConstType:9
               |vpiIndex:
-              \_ref_obj: (work@top.routing_matrix_p.i), line:51:232, endln:51:233
+              \_constant: , line:51:232, endln:51:233
                 |vpiParent:
                 \_var_select: (work@top.routing_matrix_p), line:51:212, endln:51:234
-                |vpiName:i
-                |vpiFullName:work@top.routing_matrix_p.i
+                |vpiDecompile:0
+                |vpiSize:64
+                |UINT:0
+                |vpiTypespec:
+                \_ref_typespec: (work@top.routing_matrix_p)
+                  |vpiParent:
+                  \_constant: , line:51:232, endln:51:233
+                  |vpiFullName:work@top.routing_matrix_p
+                  |vpiActual:
+                  \_int_typespec: , line:4:2, endln:4:18
+                |vpiConstType:9
             |vpiOperand:
             \_constant: , line:51:238, endln:51:240
               |vpiParent:
@@ -8513,6 +9098,201 @@ design: (work@top)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
+\_int_typespec: , line:4:2, endln:4:18
+  |vpiParent:
+  \_ref_typespec: (work@top.routing_matrix_p)
 \_function: (work@mailbox::new), line:3:5, endln:4:16
   |vpiParent:
   \_class_defn: (work@mailbox), file:${SURELOG_DIR}/tests/BlackParrotComplex/builtin.sv, line:1:3, endln:27:11

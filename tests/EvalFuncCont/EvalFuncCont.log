@@ -573,7 +573,7 @@ begin                                                  3
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              51
+constant                                              46
 continue_stmt                                          1
 design                                                 1
 enum_const                                             5
@@ -583,7 +583,7 @@ func_call                                              2
 function                                              10
 if_stmt                                                2
 initial                                                1
-int_typespec                                          13
+int_typespec                                          14
 int_var                                                4
 integer_typespec                                       7
 integer_var                                            6
@@ -598,8 +598,8 @@ param_assign                                          10
 parameter                                             10
 port                                                   2
 range                                                  4
-ref_obj                                               14
-ref_typespec                                          37
+ref_obj                                               13
+ref_typespec                                          38
 sys_func_call                                          5
 task                                                   9
 while_stmt                                             1
@@ -611,7 +611,7 @@ begin                                                  6
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              51
+constant                                              46
 continue_stmt                                          2
 design                                                 1
 enum_const                                            10
@@ -621,7 +621,7 @@ func_call                                              2
 function                                              20
 if_stmt                                                4
 initial                                                2
-int_typespec                                          13
+int_typespec                                          14
 int_var                                                4
 integer_typespec                                       7
 integer_var                                            6
@@ -636,8 +636,8 @@ param_assign                                          10
 parameter                                             10
 port                                                   3
 range                                                  4
-ref_obj                                               24
-ref_typespec                                          44
+ref_obj                                               22
+ref_typespec                                          45
 sys_func_call                                         10
 task                                                  18
 while_stmt                                             2
@@ -1351,11 +1351,20 @@ design: (work@t)
               |vpiActual:
               \_integer_var: (work@t.num_out), line:20:13, endln:20:20
           |vpiOperand:
-          \_ref_obj: (work@t.num_out.MAX_WIDTH), line:23:48, endln:23:57
+          \_constant: , line:23:48, endln:23:57
             |vpiParent:
             \_operation: , line:23:14, endln:23:57
-            |vpiName:MAX_WIDTH
-            |vpiFullName:work@t.num_out.MAX_WIDTH
+            |vpiDecompile:11
+            |vpiSize:64
+            |UINT:11
+            |vpiTypespec:
+            \_ref_typespec: (work@t.num_out)
+              |vpiParent:
+              \_constant: , line:23:48, endln:23:57
+              |vpiFullName:work@t.num_out
+              |vpiActual:
+              \_int_typespec: , line:15:4, endln:15:29
+            |vpiConstType:9
         |vpiStmt:
         \_begin: (work@t.num_out), line:23:59, endln:26:10
           |vpiParent:
@@ -1726,13 +1735,7 @@ design: (work@t)
               |vpiActual:
               \_integer_var: (work@t.num_out), line:20:13, endln:20:20
           |vpiOperand:
-          \_ref_obj: (work@t.num_out.MAX_WIDTH), line:23:48, endln:23:57
-            |vpiParent:
-            \_operation: , line:23:14, endln:23:57
-            |vpiName:MAX_WIDTH
-            |vpiFullName:work@t.num_out.MAX_WIDTH
-            |vpiActual:
-            \_parameter: (work@t.MAX_WIDTH), line:15:15, endln:15:24
+          \_constant: , line:23:48, endln:23:57
         |vpiStmt:
         \_begin: (work@t.num_out), line:23:59, endln:26:10
           |vpiParent:
@@ -1898,6 +1901,9 @@ design: (work@t)
   |vpiSigned:1
 \_integer_typespec: , line:21:13, endln:21:20
   |vpiSigned:1
+\_int_typespec: , line:15:4, endln:15:29
+  |vpiParent:
+  \_ref_typespec: (work@t.num_out)
 \_function: (work@mailbox::new), line:3:5, endln:4:16
   |vpiParent:
   \_class_defn: (work@mailbox), file:${SURELOG_DIR}/tests/EvalFuncCont/builtin.sv, line:1:3, endln:27:11

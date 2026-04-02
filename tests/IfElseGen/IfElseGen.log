@@ -174,8 +174,8 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 2.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-bit_typespec                                           4
-constant                                               8
+bit_typespec                                           6
+constant                                              10
 design                                                 1
 gen_if_else                                            2
 gen_scope                                              4
@@ -185,13 +185,12 @@ named_begin                                            4
 param_assign                                           4
 parameter                                              4
 ref_module                                             6
-ref_obj                                                2
-ref_typespec                                          10
+ref_typespec                                          12
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-bit_typespec                                           4
-constant                                               8
+bit_typespec                                           6
+constant                                              10
 design                                                 1
 gen_if_else                                            2
 gen_scope                                              6
@@ -201,8 +200,7 @@ named_begin                                            4
 param_assign                                           4
 parameter                                              4
 ref_module                                             6
-ref_obj                                                2
-ref_typespec                                          10
+ref_typespec                                          12
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/IfElseGen/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/IfElseGen/slpp_all/checker/surelog.chk.html ...
@@ -271,11 +269,20 @@ design: (work@dut1)
     |vpiParent:
     \_module_inst: work@dut1 (work@dut1), file:${SURELOG_DIR}/tests/IfElseGen/dut.sv, line:7:1, endln:14:10
     |vpiCondition:
-    \_ref_obj: (work@dut1.HasSndScratch), line:9:5, endln:9:18
+    \_constant: , line:9:5, endln:9:18
       |vpiParent:
       \_gen_if_else: 
-      |vpiName:HasSndScratch
-      |vpiFullName:work@dut1.HasSndScratch
+      |vpiDecompile:1'b1
+      |vpiSize:1
+      |BIN:1
+      |vpiTypespec:
+      \_ref_typespec: (work@dut1)
+        |vpiParent:
+        \_constant: , line:9:5, endln:9:18
+        |vpiFullName:work@dut1
+        |vpiActual:
+        \_bit_typespec: , line:8:12, endln:8:15
+      |vpiConstType:3
     |vpiStmt:
     \_named_begin: (work@dut1.gen_rom_snd_scratch)
       |vpiParent:
@@ -347,11 +354,20 @@ design: (work@dut1)
     |vpiParent:
     \_module_inst: work@dut2 (work@dut2), file:${SURELOG_DIR}/tests/IfElseGen/dut.sv, line:17:1, endln:24:10
     |vpiCondition:
-    \_ref_obj: (work@dut2.HasSndScratch), line:19:5, endln:19:18
+    \_constant: , line:19:5, endln:19:18
       |vpiParent:
       \_gen_if_else: 
-      |vpiName:HasSndScratch
-      |vpiFullName:work@dut2.HasSndScratch
+      |vpiDecompile:1'b0
+      |vpiSize:1
+      |BIN:0
+      |vpiTypespec:
+      \_ref_typespec: (work@dut2)
+        |vpiParent:
+        \_constant: , line:19:5, endln:19:18
+        |vpiFullName:work@dut2
+        |vpiActual:
+        \_bit_typespec: , line:18:12, endln:18:15
+      |vpiConstType:3
     |vpiStmt:
     \_named_begin: (work@dut2.gen_rom_snd_scratch)
       |vpiParent:
@@ -508,9 +524,15 @@ design: (work@dut1)
 \_bit_typespec: , line:8:12, endln:8:15
   |vpiParent:
   \_parameter: (work@dut1.HasSndScratch), line:8:25, endln:8:38
+\_bit_typespec: , line:8:12, endln:8:15
+  |vpiParent:
+  \_ref_typespec: (work@dut1)
 \_bit_typespec: , line:18:12, endln:18:15
   |vpiParent:
   \_parameter: (work@dut2.HasSndScratch), line:18:25, endln:18:38
+\_bit_typespec: , line:18:12, endln:18:15
+  |vpiParent:
+  \_ref_typespec: (work@dut2)
 \_bit_typespec: , line:8:12, endln:8:15
   |vpiParent:
   \_ref_typespec: (work@dut1.HasSndScratch)

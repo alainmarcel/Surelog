@@ -28,7 +28,7 @@ assignment                                             1
 begin                                                  2
 bit_typespec                                           5
 bit_var                                                1
-constant                                             313
+constant                                             340
 cont_assign                                            2
 design                                                 1
 enum_const                                             4
@@ -36,7 +36,7 @@ enum_typespec                                          2
 hier_path                                              8
 if_stmt                                                2
 import_typespec                                        1
-int_typespec                                          83
+int_typespec                                         110
 integer_typespec                                       2
 logic_net                                             10
 logic_typespec                                        45
@@ -51,8 +51,8 @@ parameter                                             96
 part_select                                            1
 port                                                   2
 range                                                 48
-ref_obj                                               77
-ref_typespec                                         231
+ref_obj                                               50
+ref_typespec                                         258
 struct_net                                             2
 struct_typespec                                        9
 sys_func_call                                         29
@@ -65,7 +65,7 @@ assignment                                             2
 begin                                                  4
 bit_typespec                                           5
 bit_var                                                1
-constant                                             313
+constant                                             340
 cont_assign                                            3
 design                                                 1
 enum_const                                             4
@@ -73,7 +73,7 @@ enum_typespec                                          2
 hier_path                                              8
 if_stmt                                                4
 import_typespec                                        1
-int_typespec                                          83
+int_typespec                                         110
 integer_typespec                                       2
 logic_net                                             10
 logic_typespec                                        45
@@ -88,8 +88,8 @@ parameter                                             96
 part_select                                            2
 port                                                   3
 range                                                 48
-ref_obj                                               84
-ref_typespec                                         233
+ref_obj                                               57
+ref_typespec                                         260
 struct_net                                             2
 struct_typespec                                        9
 sys_func_call                                         29
@@ -408,13 +408,20 @@ design: (work@dut)
       \_param_assign: , line:8:14, endln:8:31
       |vpiOpType:23
       |vpiOperand:
-      \_ref_obj: (top_pkg::TL_DW), line:8:22, endln:8:27
+      \_constant: , line:8:22, endln:8:27
         |vpiParent:
         \_operation: , line:8:22, endln:8:30
-        |vpiName:TL_DW
-        |vpiFullName:top_pkg::TL_DW
-        |vpiActual:
-        \_parameter: (top_pkg::TL_DW), line:4:14, endln:4:19
+        |vpiDecompile:32
+        |vpiSize:64
+        |UINT:32
+        |vpiTypespec:
+        \_ref_typespec: (top_pkg)
+          |vpiParent:
+          \_constant: , line:8:22, endln:8:27
+          |vpiFullName:top_pkg
+          |vpiActual:
+          \_int_typespec: , line:4:3, endln:4:22
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:8:29, endln:8:30
         |vpiParent:
@@ -555,13 +562,20 @@ design: (work@dut)
       |vpiParent:
       \_param_assign: , line:14:14, endln:14:45
       |vpiArgument:
-      \_ref_obj: (top_pkg::FLASH_BANKS), line:14:33, endln:14:44
+      \_constant: , line:14:33, endln:14:44
         |vpiParent:
-        \_sys_func_call: ($clog2), line:14:26, endln:14:45
-        |vpiName:FLASH_BANKS
-        |vpiFullName:top_pkg::FLASH_BANKS
-        |vpiActual:
-        \_parameter: (top_pkg::FLASH_BANKS), line:10:14, endln:10:25
+        \_param_assign: , line:10:14, endln:10:27
+        |vpiDecompile:2
+        |vpiSize:64
+        |UINT:2
+        |vpiTypespec:
+        \_ref_typespec: (top_pkg)
+          |vpiParent:
+          \_constant: , line:14:33, endln:14:44
+          |vpiFullName:top_pkg
+          |vpiActual:
+          \_int_typespec: , line:10:3, endln:10:27
+        |vpiConstType:9
       |vpiName:$clog2
     |vpiLhs:
     \_parameter: (top_pkg::FLASH_BKW), line:14:14, endln:14:23
@@ -574,13 +588,20 @@ design: (work@dut)
       |vpiParent:
       \_param_assign: , line:15:14, endln:15:54
       |vpiArgument:
-      \_ref_obj: (top_pkg::FLASH_PAGES_PER_BANK), line:15:33, endln:15:53
+      \_constant: , line:15:33, endln:15:53
         |vpiParent:
-        \_sys_func_call: ($clog2), line:15:26, endln:15:54
-        |vpiName:FLASH_PAGES_PER_BANK
-        |vpiFullName:top_pkg::FLASH_PAGES_PER_BANK
-        |vpiActual:
-        \_parameter: (top_pkg::FLASH_PAGES_PER_BANK), line:11:14, endln:11:34
+        \_param_assign: , line:11:14, endln:11:38
+        |vpiDecompile:256
+        |vpiSize:64
+        |UINT:256
+        |vpiTypespec:
+        \_ref_typespec: (top_pkg)
+          |vpiParent:
+          \_constant: , line:15:33, endln:15:53
+          |vpiFullName:top_pkg
+          |vpiActual:
+          \_int_typespec: , line:11:3, endln:11:38
+        |vpiConstType:9
       |vpiName:$clog2
     |vpiLhs:
     \_parameter: (top_pkg::FLASH_PGW), line:15:14, endln:15:23
@@ -593,13 +614,20 @@ design: (work@dut)
       |vpiParent:
       \_param_assign: , line:16:14, endln:16:54
       |vpiArgument:
-      \_ref_obj: (top_pkg::FLASH_WORDS_PER_PAGE), line:16:33, endln:16:53
+      \_constant: , line:16:33, endln:16:53
         |vpiParent:
-        \_sys_func_call: ($clog2), line:16:26, endln:16:54
-        |vpiName:FLASH_WORDS_PER_PAGE
-        |vpiFullName:top_pkg::FLASH_WORDS_PER_PAGE
-        |vpiActual:
-        \_parameter: (top_pkg::FLASH_WORDS_PER_PAGE), line:12:14, endln:12:34
+        \_param_assign: , line:12:14, endln:12:38
+        |vpiDecompile:256
+        |vpiSize:64
+        |UINT:256
+        |vpiTypespec:
+        \_ref_typespec: (top_pkg)
+          |vpiParent:
+          \_constant: , line:16:33, endln:16:53
+          |vpiFullName:top_pkg
+          |vpiActual:
+          \_int_typespec: , line:12:3, endln:12:38
+        |vpiConstType:9
       |vpiName:$clog2
     |vpiLhs:
     \_parameter: (top_pkg::FLASH_WDW), line:16:14, endln:16:23
@@ -653,13 +681,20 @@ design: (work@dut)
       \_param_assign: , line:18:14, endln:18:49
       |vpiOpType:25
       |vpiOperand:
-      \_ref_obj: (top_pkg::FLASH_BYTES_PER_WORD), line:18:25, endln:18:45
+      \_constant: , line:18:25, endln:18:45
         |vpiParent:
         \_operation: , line:18:25, endln:18:49
-        |vpiName:FLASH_BYTES_PER_WORD
-        |vpiFullName:top_pkg::FLASH_BYTES_PER_WORD
-        |vpiActual:
-        \_parameter: (top_pkg::FLASH_BYTES_PER_WORD), line:13:14, endln:13:34
+        |vpiDecompile:4
+        |vpiSize:64
+        |UINT:4
+        |vpiTypespec:
+        \_ref_typespec: (top_pkg)
+          |vpiParent:
+          \_constant: , line:18:25, endln:18:45
+          |vpiFullName:top_pkg
+          |vpiActual:
+          \_int_typespec: , line:13:3, endln:13:36
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:18:48, endln:18:49
         |vpiParent:
@@ -2719,11 +2754,20 @@ design: (work@dut)
         \_sys_func_call: ($clog2), line:81:33, endln:81:52
         |vpiOpType:12
         |vpiOperand:
-        \_ref_obj: (work@dut.DataWidth), line:81:40, endln:81:49
+        \_constant: , line:81:40, endln:81:49
           |vpiParent:
           \_operation: , line:81:40, endln:81:51
-          |vpiName:DataWidth
-          |vpiFullName:work@dut.DataWidth
+          |vpiDecompile:32
+          |vpiSize:32
+          |INT:32
+          |vpiTypespec:
+          \_ref_typespec: (work@dut)
+            |vpiParent:
+            \_constant: , line:81:40, endln:81:49
+            |vpiFullName:work@dut
+            |vpiActual:
+            \_int_typespec: , line:80:14, endln:80:17
+          |vpiConstType:7
         |vpiOperand:
         \_constant: , line:81:50, endln:81:51
           |vpiParent:
@@ -3120,7 +3164,7 @@ design: (work@dut)
         \_constant: , line:80:30, endln:80:47
         |vpiFullName:work@dut
         |vpiActual:
-        \_int_typespec: , line:18:3, endln:18:49
+        \_int_typespec: , line:80:14, endln:80:17
       |vpiConstType:7
     |vpiLhs:
     \_parameter: (work@dut.DataWidth), line:80:18, endln:80:27
@@ -3452,10 +3496,25 @@ design: (work@dut)
 \_int_typespec: , line:5:3, endln:5:22
 \_int_typespec: , line:6:3, endln:6:22
 \_int_typespec: , line:7:3, endln:7:23
+\_int_typespec: , line:4:3, endln:4:22
+  |vpiParent:
+  \_ref_typespec: (top_pkg)
 \_int_typespec: , line:10:3, endln:10:27
 \_int_typespec: , line:11:3, endln:11:38
 \_int_typespec: , line:12:3, endln:12:38
 \_int_typespec: , line:13:3, endln:13:36
+\_int_typespec: , line:10:3, endln:10:27
+  |vpiParent:
+  \_ref_typespec: (top_pkg)
+\_int_typespec: , line:11:3, endln:11:38
+  |vpiParent:
+  \_ref_typespec: (top_pkg)
+\_int_typespec: , line:12:3, endln:12:38
+  |vpiParent:
+  \_ref_typespec: (top_pkg)
+\_int_typespec: , line:13:3, endln:13:36
+  |vpiParent:
+  \_ref_typespec: (top_pkg)
 \_logic_typespec: , line:25:5, endln:25:10
   |vpiParent:
   \_typespec_member: (b_valid), line:25:35, endln:25:42
@@ -3931,13 +3990,20 @@ design: (work@dut)
       \_range: , line:53:20, endln:53:35
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (hmac_pkg::AlertAsyncOn::NumAlerts), line:53:21, endln:53:30
+      \_constant: , line:53:21, endln:53:30
         |vpiParent:
         \_operation: , line:53:21, endln:53:32
-        |vpiName:NumAlerts
-        |vpiFullName:hmac_pkg::AlertAsyncOn::NumAlerts
-        |vpiActual:
-        \_parameter: (hmac_pkg::NumAlerts), line:52:18, endln:52:27
+        |vpiDecompile:1
+        |vpiSize:64
+        |UINT:1
+        |vpiTypespec:
+        \_ref_typespec: (hmac_pkg::AlertAsyncOn)
+          |vpiParent:
+          \_constant: , line:53:21, endln:53:30
+          |vpiFullName:hmac_pkg::AlertAsyncOn
+          |vpiActual:
+          \_int_typespec: , line:52:14, endln:52:17
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:53:31, endln:53:32
         |vpiParent:
@@ -3954,6 +4020,12 @@ design: (work@dut)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:52:14, endln:52:17
+  |vpiParent:
+  \_ref_typespec: (hmac_pkg::AlertAsyncOn)
+  |vpiInstance:
+  \_package: hmac_pkg (hmac_pkg::), file:${SURELOG_DIR}/tests/BitsOp/dut.sv, line:48:1, endln:62:11
+  |vpiSigned:1
 \_int_typespec: (NumAlerts), line:52:18, endln:52:18
   |vpiName:NumAlerts
   |vpiInstance:
@@ -4064,6 +4136,10 @@ design: (work@dut)
   |vpiParent:
   \_parameter: (work@dut.DataBitWidth), line:81:18, endln:81:30
   |vpiSigned:1
+\_int_typespec: , line:80:14, endln:80:17
+  |vpiParent:
+  \_ref_typespec: (work@dut)
+  |vpiSigned:1
 \_int_typespec: , line:82:14, endln:82:17
   |vpiParent:
   \_parameter: (work@dut.EraseBitWidth), line:82:18, endln:82:31
@@ -4100,21 +4176,6 @@ design: (work@dut)
       |vpiSize:64
       |UINT:1
       |vpiConstType:9
-\_int_typespec: , line:18:3, endln:18:49
-  |vpiParent:
-  \_ref_typespec: 
-\_ref_typespec: 
-  |vpiParent:
-  \_constant: , line:80:30, endln:80:39
-  |vpiActual:
-  \_int_typespec: , line:18:3, endln:18:49
-\_constant: , line:80:30, endln:80:39
-  |vpiDecompile:32
-  |vpiSize:32
-  |INT:32
-  |vpiTypespec:
-  \_ref_typespec: 
-  |vpiConstType:7
 \_logic_typespec: , line:88:3, endln:88:37
   |vpiParent:
   \_logic_var: (work@dut.err_source), line:88:38, endln:88:48

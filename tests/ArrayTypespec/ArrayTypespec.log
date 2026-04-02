@@ -56,29 +56,29 @@ AST_DEBUG_END
 [NTE:EL0511] Nb leaf instances: 1.
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
-array_typespec                                         4
-constant                                              30
+array_typespec                                         3
+constant                                              25
 design                                                 1
-int_typespec                                           4
+int_typespec                                           3
 module_inst                                            4
-operation                                             10
+operation                                              8
 param_assign                                           2
 parameter                                              3
-range                                                  6
-ref_typespec                                           9
+range                                                  5
+ref_typespec                                           7
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
-array_typespec                                         4
-constant                                              30
+array_typespec                                         3
+constant                                              25
 design                                                 1
-int_typespec                                           4
+int_typespec                                           3
 module_inst                                            4
-operation                                             10
+operation                                              8
 param_assign                                           2
 parameter                                              3
-range                                                  6
-ref_typespec                                           9
+range                                                  5
+ref_typespec                                           7
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ArrayTypespec/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ArrayTypespec/slpp_all/checker/surelog.chk.html ...
@@ -224,13 +224,6 @@ design: (work@top)
     \_operation: , line:2:27, endln:2:36
       |vpiParent:
       \_param_assign: , line:2:19, endln:2:36
-      |vpiTypespec:
-      \_ref_typespec: (work@top)
-        |vpiParent:
-        \_operation: , line:2:27, endln:2:36
-        |vpiFullName:work@top
-        |vpiActual:
-        \_array_typespec: , line:2:15, endln:2:24
       |vpiOpType:75
       |vpiOperand:
       \_constant: , line:2:29, endln:2:31
@@ -267,52 +260,6 @@ design: (work@top)
     |vpiActual:
     \_int_typespec: , line:2:15, endln:2:18
 \_int_typespec: , line:2:15, endln:2:18
-  |vpiSigned:1
-\_array_typespec: , line:2:15, endln:2:24
-  |vpiParent:
-  \_ref_typespec: (work@top)
-  |vpiRange:
-  \_range: , line:2:22, endln:2:23
-    |vpiParent:
-    \_array_typespec: , line:2:15, endln:2:24
-    |vpiLeftRange:
-    \_constant: 
-      |vpiParent:
-      \_range: , line:2:22, endln:2:23
-      |vpiDecompile:0
-      |vpiSize:64
-      |UINT:0
-      |vpiConstType:9
-    |vpiRightRange:
-    \_operation: , line:2:22, endln:2:23
-      |vpiParent:
-      \_range: , line:2:22, endln:2:23
-      |vpiOpType:11
-      |vpiOperand:
-      \_constant: , line:2:22, endln:2:23
-        |vpiParent:
-        \_operation: , line:2:22, endln:2:23
-        |vpiDecompile:2
-        |vpiSize:64
-        |UINT:2
-        |vpiConstType:9
-      |vpiOperand:
-      \_constant: 
-        |vpiParent:
-        \_operation: , line:2:22, endln:2:23
-        |vpiSize:64
-        |INT:1
-        |vpiConstType:7
-  |vpiElemTypespec:
-  \_ref_typespec: (work@top)
-    |vpiParent:
-    \_array_typespec: , line:2:15, endln:2:24
-    |vpiFullName:work@top
-    |vpiActual:
-    \_int_typespec: , line:2:15, endln:2:18
-\_int_typespec: , line:2:15, endln:2:18
-  |vpiParent:
-  \_ref_typespec: (work@top)
   |vpiSigned:1
 \_array_typespec: , line:2:15, endln:2:24
   |vpiParent:

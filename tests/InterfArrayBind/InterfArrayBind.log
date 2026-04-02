@@ -214,7 +214,7 @@ AST_DEBUG_END
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 begin                                                  1
 bit_select                                             6
-constant                                              43
+constant                                              44
 cont_assign                                            6
 design                                                 1
 enum_const                                             2
@@ -224,7 +224,7 @@ gen_region                                             1
 gen_scope                                              4
 gen_scope_array                                        4
 hier_path                                              6
-int_typespec                                           5
+int_typespec                                           6
 interface_inst                                         5
 logic_net                                              2
 logic_typespec                                         5
@@ -236,15 +236,15 @@ operation                                              9
 param_assign                                           2
 parameter                                              4
 range                                                  5
-ref_obj                                               14
-ref_typespec                                          16
+ref_obj                                               12
+ref_typespec                                          17
 sys_func_call                                          1
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 begin                                                  1
 bit_select                                             9
-constant                                              43
+constant                                              44
 cont_assign                                            9
 design                                                 1
 enum_const                                             2
@@ -254,7 +254,7 @@ gen_region                                             1
 gen_scope                                              6
 gen_scope_array                                        6
 hier_path                                              9
-int_typespec                                           5
+int_typespec                                           6
 interface_inst                                         5
 logic_net                                              2
 logic_typespec                                         5
@@ -266,8 +266,8 @@ operation                                              9
 param_assign                                           2
 parameter                                              4
 range                                                  5
-ref_obj                                               20
-ref_typespec                                          18
+ref_obj                                               18
+ref_typespec                                          19
 sys_func_call                                          1
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/InterfArrayBind/slpp_all/surelog.uhdm ...
@@ -369,11 +369,20 @@ design: (work@soc_tb)
         \_range: , line:14:39, endln:14:62
         |vpiOpType:11
         |vpiOperand:
-        \_ref_obj: (work@soc_tb.peripheral_io_bus.NUM_PERIPHERALS), line:14:40, endln:14:55
+        \_constant: , line:14:40, endln:14:55
           |vpiParent:
           \_operation: , line:14:40, endln:14:59
-          |vpiName:NUM_PERIPHERALS
-          |vpiFullName:work@soc_tb.peripheral_io_bus.NUM_PERIPHERALS
+          |vpiDecompile:2
+          |vpiSize:64
+          |UINT:2
+          |vpiTypespec:
+          \_ref_typespec: (work@soc_tb.peripheral_io_bus)
+            |vpiParent:
+            \_constant: , line:14:40, endln:14:55
+            |vpiFullName:work@soc_tb.peripheral_io_bus
+            |vpiActual:
+            \_int_typespec: , line:8:5, endln:8:35
+          |vpiConstType:9
         |vpiOperand:
         \_constant: , line:14:58, endln:14:59
           |vpiParent:
@@ -722,6 +731,9 @@ design: (work@soc_tb)
       |vpiName:peripheral_io_bus[IO_ONES].write_en
 \_weaklyReferenced:
 \_int_typespec: , line:8:5, endln:8:35
+\_int_typespec: , line:8:5, endln:8:35
+  |vpiParent:
+  \_ref_typespec: (work@soc_tb.peripheral_io_bus)
 \_module_typespec: (io_bus_interface), line:14:5, endln:14:21
   |vpiParent:
   \_module_array: (work@io_bus_interface), line:14:22, endln:14:39
@@ -802,10 +814,20 @@ design: (work@soc_tb)
         |vpiParent:
         \_operation: , line:10:16, endln:10:43
         |vpiArgument:
-        \_ref_obj: (NUM_PERIPHERALS), line:10:23, endln:10:38
+        \_constant: , line:10:23, endln:10:38
           |vpiParent:
-          \_sys_func_call: ($clog2), line:10:16, endln:10:39
-          |vpiName:NUM_PERIPHERALS
+          \_param_assign: , line:8:16, endln:8:35
+          |vpiDecompile:2
+          |vpiSize:64
+          |UINT:2
+          |vpiTypespec:
+          \_ref_typespec: (work@soc_tb)
+            |vpiParent:
+            \_constant: , line:10:23, endln:10:38
+            |vpiFullName:work@soc_tb
+            |vpiActual:
+            \_int_typespec: , line:8:5, endln:8:35
+          |vpiConstType:9
         |vpiName:$clog2
       |vpiOperand:
       \_constant: , line:10:42, endln:10:43
@@ -823,6 +845,9 @@ design: (work@soc_tb)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:8:5, endln:8:35
+  |vpiParent:
+  \_ref_typespec: (work@soc_tb)
 \_int_typespec: , line:8:5, endln:8:35
   |vpiParent:
   \_ref_typespec: (work@soc_tb.NUM_PERIPHERALS)

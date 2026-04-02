@@ -246,7 +246,7 @@ case_stmt                                             50
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                            7832
+constant                                            7838
 cont_assign                                          220
 design                                                 1
 enum_const                                           532
@@ -264,7 +264,7 @@ hier_path                                            839
 if_else                                               25
 if_stmt                                               31
 import_typespec                                        7
-int_typespec                                         169
+int_typespec                                         175
 int_var                                               17
 integer_typespec                                      23
 interface_array                                        2
@@ -288,8 +288,8 @@ part_select                                           80
 port                                                 438
 range                                               1359
 ref_module                                            25
-ref_obj                                             6403
-ref_typespec                                        9374
+ref_obj                                             6397
+ref_typespec                                        9380
 return_stmt                                            2
 string_typespec                                     1324
 struct_net                                           100
@@ -318,7 +318,7 @@ case_stmt                                            249
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                            8554
+constant                                            8560
 cont_assign                                          319
 design                                                 1
 enum_const                                           537
@@ -336,7 +336,7 @@ hier_path                                           4681
 if_else                                               95
 if_stmt                                              190
 import_typespec                                        7
-int_typespec                                         169
+int_typespec                                         175
 int_var                                               18
 integer_typespec                                      23
 interface_array                                        2
@@ -360,8 +360,8 @@ part_select                                          217
 port                                                 542
 range                                               1359
 ref_module                                            25
-ref_obj                                            21103
-ref_typespec                                        9857
+ref_obj                                            21095
+ref_typespec                                        9863
 return_stmt                                           16
 string_typespec                                     1324
 struct_net                                           100

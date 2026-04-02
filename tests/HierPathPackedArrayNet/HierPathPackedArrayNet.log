@@ -218,13 +218,13 @@ always                                                 1
 assignment                                             1
 begin                                                  3
 bit_select                                             1
-constant                                              36
+constant                                              37
 design                                                 1
 event_control                                          1
 for_stmt                                               1
 hier_path                                              1
 if_stmt                                                1
-int_typespec                                           8
+int_typespec                                           9
 int_var                                                1
 logic_net                                              2
 logic_typespec                                         2
@@ -237,8 +237,8 @@ param_assign                                          10
 parameter                                             10
 port                                                   2
 range                                                  6
-ref_obj                                               10
-ref_typespec                                          27
+ref_obj                                                9
+ref_typespec                                          28
 struct_net                                             1
 struct_typespec                                        2
 typespec_member                                        2
@@ -249,13 +249,13 @@ always                                                 2
 assignment                                             2
 begin                                                  6
 bit_select                                             2
-constant                                              36
+constant                                              37
 design                                                 1
 event_control                                          2
 for_stmt                                               2
 hier_path                                              2
 if_stmt                                                2
-int_typespec                                           8
+int_typespec                                           9
 int_var                                                2
 logic_net                                              2
 logic_typespec                                         2
@@ -268,8 +268,8 @@ param_assign                                          10
 parameter                                             10
 port                                                   3
 range                                                  6
-ref_obj                                               17
-ref_typespec                                          29
+ref_obj                                               16
+ref_typespec                                          30
 struct_net                                             1
 struct_typespec                                        2
 typespec_member                                        2
@@ -976,13 +976,20 @@ design: (work@rvfi_tracer)
       \_range: , line:6:9, endln:6:19
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (rvfi_pkg::rvfi_pkg::rvfi_instr_t::trap::NRET), line:6:10, endln:6:14
+      \_constant: , line:6:10, endln:6:14
         |vpiParent:
         \_operation: , line:6:10, endln:6:16
-        |vpiName:NRET
-        |vpiFullName:rvfi_pkg::rvfi_pkg::rvfi_instr_t::trap::NRET
-        |vpiActual:
-        \_parameter: (rvfi_pkg::NRET), line:2:12, endln:2:16
+        |vpiDecompile:1
+        |vpiSize:64
+        |UINT:1
+        |vpiTypespec:
+        \_ref_typespec: (rvfi_pkg::rvfi_pkg::rvfi_instr_t::trap)
+          |vpiParent:
+          \_constant: , line:6:10, endln:6:14
+          |vpiFullName:rvfi_pkg::rvfi_pkg::rvfi_instr_t::trap
+          |vpiActual:
+          \_int_typespec: , line:2:1, endln:2:20
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:6:15, endln:6:16
         |vpiParent:
@@ -999,6 +1006,9 @@ design: (work@rvfi_tracer)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:2:1, endln:2:20
+  |vpiParent:
+  \_ref_typespec: (rvfi_pkg::rvfi_pkg::rvfi_instr_t::trap)
 \_int_typespec: , line:12:13, endln:12:25
   |vpiParent:
   \_parameter: (work@rvfi_tracer.NR_COMMIT_PORTS), line:12:26, endln:12:41

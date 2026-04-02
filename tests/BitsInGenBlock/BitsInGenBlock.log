@@ -170,7 +170,7 @@ sys_func_call                                          1
 begin                                                  3
 byte_typespec                                          3
 byte_var                                               1
-constant                                              10
+constant                                              11
 design                                                 1
 gen_if                                                 2
 gen_region                                             1
@@ -550,20 +550,8 @@ design: (work@ibex_top)
         |vpiParent:
         \_gen_scope: (work@ibex_top.genblk1), line:17:5, endln:22:8
         |vpiRhs:
-        \_constant: , line:17:36, endln:22:7
-          |vpiParent:
-          \_param_assign: , line:17:20, endln:22:7
-          |vpiDecompile:10
-          |vpiSize:32
+        \_constant: 
           |UINT:10
-          |vpiTypespec:
-          \_ref_typespec: (work@ibex_top.genblk1)
-            |vpiParent:
-            \_constant: , line:17:36, endln:22:7
-            |vpiFullName:work@ibex_top.genblk1
-            |vpiActual:
-            \_int_typespec: , line:17:16, endln:17:19
-          |vpiConstType:9
         |vpiLhs:
         \_parameter: (work@ibex_top.genblk1.NumBufferBits), line:17:20, endln:17:33
       |vpiGenScopeArray:
@@ -603,87 +591,10 @@ design: (work@ibex_top)
   |vpiParent:
   \_byte_var: (work@ibex_top.b), line:9:15, endln:9:16
   |vpiSigned:1
-\_int_typespec: , line:17:16, endln:17:19
-  |vpiParent:
-  \_parameter: (NumBufferBits), line:17:20, endln:17:33
-  |vpiSigned:1
-\_parameter: (NumBufferBits), line:17:20, endln:17:33
-  |vpiParent:
-  \_param_assign: , line:17:20, endln:22:7
-  |UINT:10
-  |vpiTypespec:
-  \_ref_typespec: (NumBufferBits)
-    |vpiParent:
-    \_parameter: (NumBufferBits), line:17:20, endln:17:33
-    |vpiFullName:NumBufferBits
-    |vpiActual:
-    \_int_typespec: , line:17:16, endln:17:19
-  |vpiSigned:1
-  |vpiLocalParam:1
-  |vpiName:NumBufferBits
-\_param_assign: , line:17:20, endln:22:7
-  |vpiRhs:
-  \_constant: , line:17:36, endln:22:7
-    |vpiParent:
-    \_param_assign: , line:17:20, endln:22:7
-    |vpiDecompile:10
-    |vpiSize:32
-    |UINT:10
-    |vpiTypespec:
-    \_ref_typespec: 
-      |vpiParent:
-      \_constant: , line:17:36, endln:22:7
-      |vpiActual:
-      \_int_typespec: , line:17:16, endln:17:19
-    |vpiConstType:9
-  |vpiLhs:
-  \_parameter: (NumBufferBits), line:17:20, endln:17:33
-\_param_assign: , line:17:20, endln:22:7
-  |vpiParent:
-  \_gen_scope: (work@ibex_top.genblk1), line:17:5, endln:22:8
-  |vpiRhs:
-  \_constant: , line:17:36, endln:22:7
-  |vpiLhs:
-  \_parameter: (work@ibex_top.genblk1.NumBufferBits), line:17:20, endln:17:33
 \_logic_typespec: , line:7:10, endln:7:15
 \_logic_typespec: , line:8:10, endln:8:15
 \_byte_typespec: , line:9:10, endln:9:14
   |vpiSigned:1
-\_gen_scope: (work@ibex_top.genblk1), line:17:5, endln:22:8
-  |vpiParent:
-  \_gen_scope_array: (work@ibex_top.genblk1), line:17:5, endln:22:8
-  |vpiFullName:work@ibex_top.genblk1
-  |vpiParameter:
-  \_parameter: (work@ibex_top.genblk1.NumBufferBits), line:17:20, endln:17:33
-  |vpiParamAssign:
-  \_param_assign: , line:17:20, endln:22:7
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@ibex_top.genblk1.genblk1), line:25:6, endln:25:18
-    |vpiParent:
-    \_gen_scope: (work@ibex_top.genblk1), line:17:5, endln:22:8
-    |vpiName:genblk1
-    |vpiFullName:work@ibex_top.genblk1.genblk1
-    |vpiGenScope:
-    \_gen_scope: (work@ibex_top.genblk1.genblk1), line:25:6, endln:25:18
-      |vpiParent:
-      \_gen_scope_array: (work@ibex_top.genblk1.genblk1), line:25:6, endln:25:18
-      |vpiFullName:work@ibex_top.genblk1.genblk1
-      |vpiModule:
-      \_module_inst: work@GOOD (work@ibex_top.genblk1.genblk1.good), file:${SURELOG_DIR}/tests/BitsInGenBlock/dut.sv, line:25:6, endln:25:18
-        |vpiParent:
-        \_gen_scope: (work@ibex_top.genblk1.genblk1), line:25:6, endln:25:18
-        |vpiName:good
-        |vpiFullName:work@ibex_top.genblk1.genblk1.good
-        |vpiDefName:work@GOOD
-        |vpiDefFile:${SURELOG_DIR}/tests/BitsInGenBlock/dut.sv
-        |vpiDefLineNo:1
-\_gen_scope_array: (work@ibex_top.genblk1), line:17:5, endln:22:8
-  |vpiParent:
-  \_module_inst: work@ibex_top (work@ibex_top), file:${SURELOG_DIR}/tests/BitsInGenBlock/dut.sv, line:5:1, endln:31:10
-  |vpiName:genblk1
-  |vpiFullName:work@ibex_top.genblk1
-  |vpiGenScope:
-  \_gen_scope: (work@ibex_top.genblk1), line:17:5, endln:22:8
 \_int_typespec: , line:17:16, endln:17:19
   |vpiParent:
   \_ref_typespec: (work@ibex_top.genblk1.NumBufferBits)

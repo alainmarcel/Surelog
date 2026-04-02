@@ -32,7 +32,7 @@ ref_typespec                                           4
 class_defn                                             3
 class_typespec                                         1
 class_var                                              1
-constant                                               3
+constant                                               4
 design                                                 1
 function                                               4
 int_typespec                                           2
@@ -99,20 +99,8 @@ design: (unnamed)
       |vpiParent:
       \_class_defn: (pack::uvm_port_base), file:${SURELOG_DIR}/tests/ClassParam/dut.sv, line:3:1, endln:12:9
       |vpiRhs:
-      \_constant: , line:4:16, endln:4:18
-        |vpiParent:
-        \_param_assign: , line:4:11, endln:4:18
-        |vpiDecompile:10
-        |vpiSize:64
+      \_constant: 
         |UINT:10
-        |vpiTypespec:
-        \_ref_typespec: (pack::uvm_port_base)
-          |vpiParent:
-          \_constant: , line:4:16, endln:4:18
-          |vpiFullName:pack::uvm_port_base
-          |vpiActual:
-          \_int_typespec: , line:4:1, endln:4:18
-        |vpiConstType:9
       |vpiLhs:
       \_parameter: (pack::uvm_port_base::p1), line:4:11, endln:4:13
     |vpiParamAssign:
@@ -187,13 +175,6 @@ design: (unnamed)
             |vpiActual:
             \_int_typespec: , line:8:20, endln:8:23
 \_weaklyReferenced:
-\_param_assign: , line:4:11, endln:4:18
-  |vpiParent:
-  \_class_defn: (pack::uvm_port_base), file:${SURELOG_DIR}/tests/ClassParam/dut.sv, line:3:1, endln:12:9
-  |vpiRhs:
-  \_constant: , line:4:16, endln:4:18
-  |vpiLhs:
-  \_parameter: (pack::uvm_port_base::p1), line:4:11, endln:4:13
 \_int_typespec: , line:4:1, endln:4:18
 \_operation: , line:5:17, endln:5:23
   |vpiParent:

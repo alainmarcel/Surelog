@@ -670,7 +670,7 @@ bit_select                                             1
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              75
+constant                                              80
 design                                                 1
 enum_const                                             5
 enum_typespec                                          1
@@ -678,7 +678,7 @@ enum_var                                               1
 event_control                                          1
 function                                               9
 if_stmt                                                2
-int_typespec                                          11
+int_typespec                                          16
 int_var                                                4
 integer_typespec                                       1
 io_decl                                               11
@@ -694,8 +694,8 @@ parameter                                              2
 part_select                                            1
 port                                                   8
 range                                                 17
-ref_obj                                               20
-ref_typespec                                          35
+ref_obj                                               15
+ref_typespec                                          40
 sys_func_call                                          3
 task                                                   9
 === UHDM Object Stats End ===
@@ -708,7 +708,7 @@ bit_select                                             2
 class_defn                                             8
 class_typespec                                         4
 class_var                                              3
-constant                                              76
+constant                                              81
 design                                                 1
 enum_const                                            10
 enum_typespec                                          2
@@ -716,7 +716,7 @@ enum_var                                               1
 event_control                                          2
 function                                              18
 if_stmt                                                4
-int_typespec                                          11
+int_typespec                                          16
 int_var                                                4
 integer_typespec                                       1
 io_decl                                               22
@@ -732,8 +732,8 @@ parameter                                              2
 part_select                                            2
 port                                                  12
 range                                                 17
-ref_obj                                               33
-ref_typespec                                          45
+ref_obj                                               26
+ref_typespec                                          50
 sys_func_call                                          4
 task                                                  18
 === UHDM Object Stats End ===
@@ -1481,11 +1481,20 @@ design: (work@debug_rom)
                       |vpiParent:
                       \_operation: , line:38:25, endln:38:42
                       |vpiArgument:
-                      \_ref_obj: (work@debug_rom.addr_i.RomSize), line:38:32, endln:38:39
+                      \_constant: , line:38:32, endln:38:39
                         |vpiParent:
-                        \_sys_func_call: ($clog2), line:38:25, endln:38:40
-                        |vpiName:RomSize
-                        |vpiFullName:work@debug_rom.addr_i.RomSize
+                        \_param_assign: , line:10:28, endln:10:40
+                        |vpiDecompile:19
+                        |vpiSize:64
+                        |UINT:19
+                        |vpiTypespec:
+                        \_ref_typespec: (work@debug_rom)
+                          |vpiParent:
+                          \_constant: , line:38:32, endln:38:39
+                          |vpiFullName:work@debug_rom
+                          |vpiActual:
+                          \_int_typespec: , line:10:15, endln:10:27
+                        |vpiConstType:9
                       |vpiName:$clog2
                     |vpiOperand:
                     \_constant: , line:38:41, endln:38:42
@@ -1578,11 +1587,20 @@ design: (work@debug_rom)
               \_integer_typespec: , line:46:19, endln:46:34
             |vpiOpType:67
             |vpiOperand:
-            \_ref_obj: (work@debug_rom.p_outmux.RomSize), line:46:36, endln:46:43
+            \_constant: , line:46:36, endln:46:43
               |vpiParent:
               \_operation: , line:46:19, endln:46:44
-              |vpiName:RomSize
-              |vpiFullName:work@debug_rom.p_outmux.RomSize
+              |vpiDecompile:19
+              |vpiSize:64
+              |UINT:19
+              |vpiTypespec:
+              \_ref_typespec: (work@debug_rom.p_outmux)
+                |vpiParent:
+                \_constant: , line:46:36, endln:46:43
+                |vpiFullName:work@debug_rom.p_outmux
+                |vpiActual:
+                \_int_typespec: , line:10:15, endln:10:27
+              |vpiConstType:9
         |vpiStmt:
         \_begin: (work@debug_rom.p_outmux), line:46:46, endln:48:9
           |vpiParent:
@@ -2126,20 +2144,36 @@ design: (work@debug_rom)
 \_int_typespec: , line:10:15, endln:10:27
   |vpiParent:
   \_parameter: (work@debug_rom.RomSize), line:10:28, endln:10:35
+\_int_typespec: , line:10:15, endln:10:27
+  |vpiParent:
+  \_ref_typespec: (work@debug_rom)
+\_int_typespec: , line:10:15, endln:10:27
+  |vpiParent:
+  \_ref_typespec: (work@debug_rom.p_outmux)
 \_integer_typespec: , line:46:19, endln:46:34
   |vpiExpr:
   \_sys_func_call: ($clog2), line:46:19, endln:46:25
     |vpiParent:
     \_operation: , line:46:19, endln:46:44
     |vpiArgument:
-    \_ref_obj: (work@debug_rom.p_outmux.RomSize), line:46:26, endln:46:33
+    \_constant: , line:46:26, endln:46:33
       |vpiParent:
-      \_sys_func_call: ($clog2), line:46:19, endln:46:25
-      |vpiName:RomSize
-      |vpiFullName:work@debug_rom.p_outmux.RomSize
-      |vpiActual:
-      \_parameter: (work@debug_rom.RomSize), line:10:28, endln:10:35
+      \_param_assign: , line:10:28, endln:10:40
+      |vpiDecompile:19
+      |vpiSize:64
+      |UINT:19
+      |vpiTypespec:
+      \_ref_typespec: (work@debug_rom)
+        |vpiParent:
+        \_constant: , line:46:26, endln:46:33
+        |vpiFullName:work@debug_rom
+        |vpiActual:
+        \_int_typespec: , line:10:15, endln:10:27
+      |vpiConstType:9
     |vpiName:$clog2
+\_int_typespec: , line:10:15, endln:10:27
+  |vpiParent:
+  \_ref_typespec: (work@debug_rom)
 \_function: (work@mailbox::new), line:3:5, endln:4:16
   |vpiParent:
   \_class_defn: (work@mailbox), file:${SURELOG_DIR}/tests/ClogCast/builtin.sv, line:1:3, endln:27:11
@@ -2570,10 +2604,19 @@ design: (work@debug_rom)
       \_range: , line:12:16, endln:12:29
       |vpiOpType:11
       |vpiOperand:
-      \_ref_obj: (RomSize), line:12:17, endln:12:24
+      \_constant: , line:12:17, endln:12:24
         |vpiParent:
         \_operation: , line:12:17, endln:12:26
-        |vpiName:RomSize
+        |vpiDecompile:19
+        |vpiSize:64
+        |UINT:19
+        |vpiTypespec:
+        \_ref_typespec: 
+          |vpiParent:
+          \_constant: , line:12:17, endln:12:24
+          |vpiActual:
+          \_int_typespec: , line:10:15, endln:10:27
+        |vpiConstType:9
       |vpiOperand:
       \_constant: , line:12:25, endln:12:26
         |vpiParent:
@@ -2610,6 +2653,9 @@ design: (work@debug_rom)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:10:15, endln:10:27
+  |vpiParent:
+  \_ref_typespec: 
 \_logic_typespec: , line:34:4, endln:34:31
   |vpiRange:
   \_range: , line:34:10, endln:34:31
@@ -2625,10 +2671,20 @@ design: (work@debug_rom)
         |vpiParent:
         \_operation: , line:34:11, endln:34:28
         |vpiArgument:
-        \_ref_obj: (RomSize), line:34:18, endln:34:25
+        \_constant: , line:34:18, endln:34:25
           |vpiParent:
-          \_sys_func_call: ($clog2), line:34:11, endln:34:26
-          |vpiName:RomSize
+          \_param_assign: , line:10:28, endln:10:40
+          |vpiDecompile:19
+          |vpiSize:64
+          |UINT:19
+          |vpiTypespec:
+          \_ref_typespec: (work@debug_rom)
+            |vpiParent:
+            \_constant: , line:34:18, endln:34:25
+            |vpiFullName:work@debug_rom
+            |vpiActual:
+            \_int_typespec: , line:10:15, endln:10:27
+          |vpiConstType:9
         |vpiName:$clog2
       |vpiOperand:
       \_constant: , line:34:27, endln:34:28
@@ -2646,6 +2702,9 @@ design: (work@debug_rom)
       |vpiSize:64
       |UINT:0
       |vpiConstType:9
+\_int_typespec: , line:10:15, endln:10:27
+  |vpiParent:
+  \_ref_typespec: (work@debug_rom)
 \_int_typespec: , line:10:15, endln:10:27
   |vpiParent:
   \_ref_typespec: (work@debug_rom.RomSize)

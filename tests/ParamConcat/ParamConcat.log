@@ -416,7 +416,7 @@ function                                               9
 int_typespec                                           9
 int_var                                                4
 io_decl                                               11
-logic_typespec                                        10
+logic_typespec                                         8
 logic_var                                              1
 module_inst                                            7
 operation                                              7
@@ -426,11 +426,11 @@ parameter                                              5
 range                                                  2
 ref_module                                             1
 ref_typespec                                          41
-string_typespec                                        8
-struct_typespec                                        5
-tagged_pattern                                         8
+string_typespec                                       10
+struct_typespec                                        4
+tagged_pattern                                        10
 task                                                   9
-typespec_member                                       10
+typespec_member                                        8
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
@@ -447,7 +447,7 @@ function                                              18
 int_typespec                                           9
 int_var                                                4
 io_decl                                               22
-logic_typespec                                        10
+logic_typespec                                         8
 logic_var                                              1
 module_inst                                            7
 operation                                              7
@@ -457,11 +457,11 @@ parameter                                              5
 range                                                  2
 ref_module                                             1
 ref_typespec                                          46
-string_typespec                                        8
-struct_typespec                                        5
-tagged_pattern                                         8
+string_typespec                                       10
+struct_typespec                                        4
+tagged_pattern                                        10
 task                                                  18
-typespec_member                                       10
+typespec_member                                        8
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/ParamConcat/slpp_all/surelog.uhdm ...
 [INF:UH0709] Writing UHDM Html Coverage: ${SURELOG_DIR}/build/regression/ParamConcat/slpp_all/checker/surelog.chk.html ...
@@ -1138,10 +1138,7 @@ design: (work@top)
       |vpiParent:
       \_param_assign: , line:14:23, endln:15:53
       |vpiTypespec:
-      \_ref_typespec: (work@top)
-        |vpiParent:
-        \_operation: , line:14:41, endln:15:53
-        |vpiFullName:work@top
+      \_ref_typespec: 
         |vpiActual:
         \_struct_typespec: (status_t), line:9:11, endln:12:4
       |vpiOpType:75
@@ -1486,7 +1483,7 @@ design: (work@top)
   |vpiSigned:1
 \_struct_typespec: (status_t), line:9:11, endln:12:4
   |vpiParent:
-  \_ref_typespec: (work@top)
+  \_ref_typespec: (work@top.MSTATUS_RST_VAL)
   |vpiName:status_t
   |vpiPacked:1
   |vpiTypespecMember:
@@ -1495,10 +1492,10 @@ design: (work@top)
     \_struct_typespec: (status_t), line:9:11, endln:12:4
     |vpiName:mie
     |vpiTypespec:
-    \_ref_typespec: (work@top.status_t.mie)
+    \_ref_typespec: (work@top.MSTATUS_RST_VAL.status_t.mie)
       |vpiParent:
       \_typespec_member: (mie), line:10:11, endln:10:14
-      |vpiFullName:work@top.status_t.mie
+      |vpiFullName:work@top.MSTATUS_RST_VAL.status_t.mie
       |vpiActual:
       \_logic_typespec: , line:10:5, endln:10:10
     |vpiRefFile:${SURELOG_DIR}/tests/ParamConcat/dut.sv
@@ -1512,10 +1509,10 @@ design: (work@top)
     \_struct_typespec: (status_t), line:9:11, endln:12:4
     |vpiName:mpie
     |vpiTypespec:
-    \_ref_typespec: (work@top.status_t.mpie)
+    \_ref_typespec: (work@top.MSTATUS_RST_VAL.status_t.mpie)
       |vpiParent:
       \_typespec_member: (mpie), line:11:11, endln:11:15
-      |vpiFullName:work@top.status_t.mpie
+      |vpiFullName:work@top.MSTATUS_RST_VAL.status_t.mpie
       |vpiActual:
       \_logic_typespec: , line:11:5, endln:11:10
     |vpiRefFile:${SURELOG_DIR}/tests/ParamConcat/dut.sv
@@ -1523,12 +1520,26 @@ design: (work@top)
     |vpiRefColumnNo:5
     |vpiRefEndLineNo:11
     |vpiRefEndColumnNo:10
+\_ref_typespec: (work@top.MSTATUS_RST_VAL)
+  |vpiParent:
+  \_parameter: (work@top.MSTATUS_RST_VAL), line:14:23, endln:14:38
+  |vpiFullName:work@top.MSTATUS_RST_VAL
+  |vpiActual:
+  \_struct_typespec: (status_t), line:9:11, endln:12:4
+\_parameter: (work@top.MSTATUS_RST_VAL), line:14:23, endln:14:38
+  |vpiParent:
+  \_param_assign: , line:14:23, endln:15:53
+  |vpiTypespec:
+  \_ref_typespec: (work@top.MSTATUS_RST_VAL)
+  |vpiLocalParam:1
+  |vpiName:MSTATUS_RST_VAL
+  |vpiFullName:work@top.MSTATUS_RST_VAL
 \_logic_typespec: , line:10:5, endln:10:10
   |vpiParent:
-  \_ref_typespec: (work@top.status_t.mie)
+  \_ref_typespec: (work@top.MSTATUS_RST_VAL.status_t.mie)
 \_logic_typespec: , line:11:5, endln:11:10
   |vpiParent:
-  \_ref_typespec: (work@top.status_t.mpie)
+  \_ref_typespec: (work@top.MSTATUS_RST_VAL.status_t.mpie)
 \_struct_typespec: (status_t), line:9:11, endln:12:4
   |vpiParent:
   \_ref_typespec: (work@top)

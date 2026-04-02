@@ -193,37 +193,37 @@ AST_DEBUG_END
 [INF:UH0706] Creating UHDM Model...
 === UHDM Object Stats Begin (Non-Elaborated Model) ===
 begin                                                  1
-constant                                             112
+constant                                             113
 design                                                 1
 gen_if_else                                            1
 gen_scope                                             34
 gen_scope_array                                       34
-int_typespec                                          47
+int_typespec                                          48
 module_inst                                            6
 named_begin                                            1
 operation                                             42
 param_assign                                           9
 parameter                                             25
-ref_obj                                                4
-ref_typespec                                          59
+ref_obj                                                3
+ref_typespec                                          60
 sys_func_call                                          1
 === UHDM Object Stats End ===
 [INF:UH0707] Elaborating UHDM...
 === UHDM Object Stats Begin (Elaborated Model) ===
 begin                                                  1
-constant                                             112
+constant                                             114
 design                                                 1
 gen_if_else                                            1
 gen_scope                                             51
 gen_scope_array                                       51
-int_typespec                                          47
+int_typespec                                          48
 module_inst                                            6
 named_begin                                            1
 operation                                             42
 param_assign                                          10
 parameter                                             25
-ref_obj                                                4
-ref_typespec                                          77
+ref_obj                                                3
+ref_typespec                                          78
 sys_func_call                                          1
 === UHDM Object Stats End ===
 [INF:UH0708] Writing UHDM DB: ${SURELOG_DIR}/build/regression/IfGen1/slpp_all/surelog.uhdm ...
@@ -354,11 +354,20 @@ design: (work@lzc)
       \_gen_if_else: 
       |vpiOpType:14
       |vpiOperand:
-      \_ref_obj: (work@lzc.level), line:10:9, endln:10:14
+      \_constant: , line:10:9, endln:10:14
         |vpiParent:
         \_operation: , line:10:9, endln:10:30
-        |vpiName:level
-        |vpiFullName:work@lzc.level
+        |vpiDecompile:4
+        |vpiSize:64
+        |UINT:4
+        |vpiTypespec:
+        \_ref_typespec: (work@lzc)
+          |vpiParent:
+          \_constant: , line:10:9, endln:10:14
+          |vpiFullName:work@lzc
+          |vpiActual:
+          \_int_typespec: , line:8:14, endln:8:17
+        |vpiConstType:9
       |vpiOperand:
       \_operation: , line:10:18, endln:10:30
         |vpiParent:
@@ -575,20 +584,8 @@ design: (work@lzc)
         |vpiParent:
         \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
         |vpiRhs:
-        \_constant: , line:12:31, endln:12:39
-          |vpiParent:
-          \_param_assign: , line:12:22, endln:12:39
-          |vpiDecompile:16
-          |vpiSize:32
+        \_constant: 
           |INT:16
-          |vpiTypespec:
-          \_ref_typespec: (work@lzc.genblk1)
-            |vpiParent:
-            \_constant: , line:12:31, endln:12:39
-            |vpiFullName:work@lzc.genblk1
-            |vpiActual:
-            \_int_typespec: , line:12:18, endln:12:21
-          |vpiConstType:7
         |vpiLhs:
         \_parameter: (work@lzc.genblk1.POWER), line:12:22, endln:12:27
       |vpiGenScopeArray:
@@ -1019,50 +1016,12 @@ design: (work@lzc)
   |vpiParent:
   \_parameter: (work@lzc.level), line:8:19, endln:8:24
   |vpiSigned:1
-\_int_typespec: , line:12:18, endln:12:21
+\_int_typespec: , line:8:14, endln:8:17
+  |vpiParent:
+  \_ref_typespec: (work@lzc)
   |vpiSigned:1
 \_int_typespec: , line:12:18, endln:12:21
-  |vpiParent:
-  \_parameter: (POWER), line:12:22, endln:12:27
   |vpiSigned:1
-\_parameter: (POWER), line:12:22, endln:12:27
-  |vpiParent:
-  \_param_assign: , line:12:22, endln:12:39
-  |INT:16
-  |vpiTypespec:
-  \_ref_typespec: (POWER)
-    |vpiParent:
-    \_parameter: (POWER), line:12:22, endln:12:27
-    |vpiFullName:POWER
-    |vpiActual:
-    \_int_typespec: , line:12:18, endln:12:21
-  |vpiSigned:1
-  |vpiLocalParam:1
-  |vpiName:POWER
-\_param_assign: , line:12:22, endln:12:39
-  |vpiRhs:
-  \_constant: , line:12:31, endln:12:32
-    |vpiParent:
-    \_param_assign: , line:12:22, endln:12:39
-    |vpiDecompile:16
-    |vpiSize:32
-    |INT:16
-    |vpiTypespec:
-    \_ref_typespec: 
-      |vpiParent:
-      \_constant: , line:12:31, endln:12:32
-      |vpiActual:
-      \_int_typespec: , line:12:18, endln:12:21
-    |vpiConstType:7
-  |vpiLhs:
-  \_parameter: (POWER), line:12:22, endln:12:27
-\_param_assign: , line:12:22, endln:12:39
-  |vpiParent:
-  \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-  |vpiRhs:
-  \_constant: , line:12:31, endln:12:39
-  |vpiLhs:
-  \_parameter: (work@lzc.genblk1.POWER), line:12:22, endln:12:27
 \_int_typespec: , line:2:13, endln:2:25
   |vpiParent:
   \_ref_typespec: (work@lzc.WIDTH)
@@ -1074,229 +1033,6 @@ design: (work@lzc)
   |vpiParent:
   \_ref_typespec: (work@lzc.level)
   |vpiSigned:1
-\_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-  |vpiParent:
-  \_gen_scope_array: (work@lzc.genblk1), line:12:7, endln:12:40
-  |vpiFullName:work@lzc.genblk1
-  |vpiParameter:
-  \_parameter: (work@lzc.genblk1.POWER), line:12:22, endln:12:27
-  |vpiParamAssign:
-  \_param_assign: , line:12:22, endln:12:39
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[0]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[0]
-    |vpiFullName:work@lzc.genblk1.g_level[0]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[0]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[0]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[0]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[0].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[1]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[1]
-    |vpiFullName:work@lzc.genblk1.g_level[1]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[1]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[1]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[1]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[1].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[2]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[2]
-    |vpiFullName:work@lzc.genblk1.g_level[2]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[2]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[2]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[2]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[2].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[3]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[3]
-    |vpiFullName:work@lzc.genblk1.g_level[3]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[3]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[3]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[3]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[3].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[4]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[4]
-    |vpiFullName:work@lzc.genblk1.g_level[4]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[4]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[4]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[4]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[4].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[5]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[5]
-    |vpiFullName:work@lzc.genblk1.g_level[5]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[5]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[5]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[5]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[5].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[6]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[6]
-    |vpiFullName:work@lzc.genblk1.g_level[6]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[6]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[6]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[6]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[6].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[7]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[7]
-    |vpiFullName:work@lzc.genblk1.g_level[7]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[7]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[7]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[7]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[7].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[8]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[8]
-    |vpiFullName:work@lzc.genblk1.g_level[8]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[8]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[8]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[8]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[8].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[9]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[9]
-    |vpiFullName:work@lzc.genblk1.g_level[9]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[9]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[9]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[9]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[9].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[10]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[10]
-    |vpiFullName:work@lzc.genblk1.g_level[10]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[10]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[10]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[10]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[10].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[11]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[11]
-    |vpiFullName:work@lzc.genblk1.g_level[11]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[11]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[11]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[11]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[11].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[12]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[12]
-    |vpiFullName:work@lzc.genblk1.g_level[12]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[12]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[12]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[12]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[12].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[13]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[13]
-    |vpiFullName:work@lzc.genblk1.g_level[13]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[13]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[13]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[13]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[13].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[14]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[14]
-    |vpiFullName:work@lzc.genblk1.g_level[14]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[14]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[14]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[14]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[14].l), line:13:0
-  |vpiGenScopeArray:
-  \_gen_scope_array: (work@lzc.genblk1.g_level[15]), line:13:45, endln:14:10
-    |vpiParent:
-    \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
-    |vpiName:g_level[15]
-    |vpiFullName:work@lzc.genblk1.g_level[15]
-    |vpiGenScope:
-    \_gen_scope: (work@lzc.genblk1.g_level[15]), line:13:45, endln:14:10
-      |vpiParent:
-      \_gen_scope_array: (work@lzc.genblk1.g_level[15]), line:13:45, endln:14:10
-      |vpiFullName:work@lzc.genblk1.g_level[15]
-      |vpiParameter:
-      \_parameter: (work@lzc.genblk1.g_level[15].l), line:13:0
-\_gen_scope_array: (work@lzc.genblk1), line:12:7, endln:12:40
-  |vpiParent:
-  \_module_inst: work@lzc (work@lzc), file:${SURELOG_DIR}/tests/IfGenenerate/test1/dut1.sv, line:1:1, endln:19:16
-  |vpiName:genblk1
-  |vpiFullName:work@lzc.genblk1
-  |vpiGenScope:
-  \_gen_scope: (work@lzc.genblk1), line:12:7, endln:12:40
 \_int_typespec: , line:12:18, endln:12:21
   |vpiParent:
   \_ref_typespec: (work@lzc.genblk1.POWER)
